@@ -1,5 +1,5 @@
 # Hersenvulsel
-Repository and Hosting for Hersenvulsel's website. Available soon at [hersenvulsel.be](hersenvulsel.be).
+Repository and Hosting for Hersenvulsel's website. Available now at [samgielis.github.io/Hersenvulsel](samgielis.github.io/Hersenvulsel). Available soon at [hersenvulsel.be](hersenvulsel.be).
 
 ## Status: INITIAL
 Currently experimenting with design (nav, logo, ...), figuring out the website's features and planning the code's architecture.
