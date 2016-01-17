@@ -24,5 +24,6 @@ An overview of the website's most important pages, their use and status.
 * **hersenvulsel.be/advertising:** Page with information on and call to action for advertisement on the website.
 * **hersenvulsel.be/podcast:** Page that allows users to listen to the existing hersenvulsel podcasts.
 * **hersenvulsel.be/cookies:** (Future) page that provides readers with info about our cookie policy. See [this issue](https://github.com/samgielis/Hersenvulsel/issues/1).
+
 # TODO
 # DONE
