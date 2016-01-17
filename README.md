@@ -20,9 +20,9 @@ An overview of the website's most important pages, their use and status.
 * **hersenvulsel.be/%category%/%article-name%:** Page for one article named %article-name% in the designated %category%. Could/should include advertisement.
 
 ### Other
-* **hersenvulsel.be/contact:** *Page with contact information: e-mail, facebook and a specific call to send in your topics or suggestions.*
-* **hersenvulsel.be/advertising:** *Page with information on and call to action for advertisement on the website.*
-* **hersenvulsel.be/podcast:** *Page that allows users to listen to the existing hersenulsel podcasts.*
-
+* **hersenvulsel.be/contact:** Page with contact information: e-mail, facebook and a specific call to send in your topics or suggestions.
+* **hersenvulsel.be/advertising:** Page with information on and call to action for advertisement on the website.
+* **hersenvulsel.be/podcast:** Page that allows users to listen to the existing hersenvulsel podcasts.
+* **hersenvulsel.be/cookies:** (Future) page that provides readers with info about our cookie policy. See [this issue](https://github.com/samgielis/Hersenvulsel/issues/1).
 # TODO
 # DONE
