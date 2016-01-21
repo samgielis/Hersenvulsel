@@ -48,13 +48,23 @@ header {
   border-radius: 0 !important;
 }
   </style>
+
+<style type="text/css">
+
+#share-buttons img {
+width: 40px;
+padding: 0px;
+
+}
+
+</style>
   <script>
   window.onload = function() {
     $('#nav').affix({
         offset: {
           top: $('header').height()
         }
-	
+
   });
 
 };
@@ -78,7 +88,7 @@ header {
 
 
 <!-- Begin Navbar -->
-<div class="nav-wrapper" style="height:70px;">
+<div class="nav-wrapper" style="height:80px;">
 <div id="nav"  >
   <div class="navbar navbar-inverse navbar-static" style="z-index: 10;">
     <div class="container-fluid">
@@ -117,26 +127,60 @@ header {
 
       <div class="row">
 
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-8 blog-main" style=" padding-bottom: 20px; ">
 
             <div class="page-header" style="width: 100%; border-bottom:none;">
-              <h3 style="color: #239625; font-weight: bold; text-transform: uppercase; padding-top: 30px; padding-bottom: 0px;  margin-bottom: 0px;">MENSEN</h3>
-              <h1 style="color: #1A1A1A; font-size: 4.2em; font-weight: bold; padding-top: 0px;    margin-top: 0px;">Had het skelet in jouw biologie&shy;lokaal ook een naam?</h1>
+              <h3 style="color: #239625; font-weight: bold; text-transform: uppercase; padding-top: 30px;   margin-bottom: 0px;">MENSEN</h3>
+              <h1 style="color: #1A1A1A; font-size: 4.2em; font-weight: bold; padding-bottom: 10px; margin-top: 0px;">Had het skelet in jouw biologie&shy;lokaal ook een naam?</h1>
             </div>
-            <p class="blog-post-meta">January 15, 2015 by <a href="#">Hersenvulsel</a></p>
+            <div class="row">
+            <div class="col-sm-8">
+              <div style="max-height: 70px; padding-right: 10px" class="pull-left">
+                  <img style="max-height: 70px" src="./a/shanna_verspreet/shanna_verspreet.png"/>
+              </div>
+              <div style="padding-left: 10px">
+                <p style="letter-spacing: -1px;font-size: 1.7em; font-weight: 350;  margin:0; padding-top:10px ">Shanna Verspreet</p>
+                <p style="color: #595959; font-size: 1.1em; padding: 0">18 Januari 2016</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div  id="share-buttons"  style="padding-top:13px; text-align: right">
+
+
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u=http://samgielis.github.io/Hersenvulsel" target="_blank" style=" text-decoration: none !important">
+                    <img src="./img/soc/fb.png" alt="Share on Facebook" onmouseover="this.src='./img/soc/fb_hov.png';"
+                    onmouseout="this.src='./img/soc/fb.png';" title="Share on Facebook" />
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=http://samgielis.github.io/Hersenvulsel&amp;text=Simple%20Share%20Buttons&amp;hashtags=hersenvulsel" target="_blank" style=" text-decoration: none !important">
+                    <img src="./img/soc/twit.png" alt="Share on Twitter" onmouseover="this.src='./img/soc/twit_hov.png';"
+                    onmouseout="this.src='./img/soc/twit.png';" title="Share on Twitter"/>
+                </a>
+                <!-- Google+ -->
+                <a href="https://plus.google.com/share?url=http://samgielis.github.io/Hersenvulsel" target="_blank" style=" text-decoration: none !important">
+                    <img src="./img/soc/g+.png" alt="Share on Google+" onmouseover="this.src='./img/soc/g+_hov.png';"
+                    onmouseout="this.src='./img/soc/g+.png';" title="Share on Google+"/>
+                </a>
+
+            </div>
+            </div>
+
+
+          </div>
         </div>
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar" >
         </div>
         <div class="col-sm-8 blog-main">
             <div style="width: 100%">
             	<div class="pull-left" style="width: 100%; adding-bottom: 50px;">
-            	  <img src="./img/skel.jpg"  class="pull-left" style="padding-bottom: 50px; max-width: 100%"/>
+            	  <img src="./img/skel.jpg"  class="pull-left" style="float: left; padding-bottom: 50px; max-width: 100%"/>
             	</div>
             </div>
 
-              <div class="row" style="width: 100%">
+              <div class="row" style="max-width: 100%">
                 <div class="col-sm-5" style="text-align: justify; font-size: 1.7em; width: 100%">
-                  <p style="padding-bottom: 10px;">Een school in het Engelse Liverpool ontdekte in december dat hun skelet Arthur een echt menselijk skelet was.
+                  <p style="padding-bottom: 10px; float: none;">Een school in het Engelse Liverpool ontdekte in december dat hun skelet Arthur een echt menselijk skelet was.
             	  Arthur kwam 50 jaar geleden in de school aan - eerst stond hij in het biologielokaal, daarna deed hij dienst als model in de tekenklas.</p>
                   <p style="padding-bottom: 10px;">Maar een tijd terug was Arthur vervangen door een nieuw, plastic skelet en werd hijzelf naar de zolder verhuisd.
             	  Eind vorig jaar werd hij dus teruggevonden en bleek dat hij ooit een echt mens was geweest. </p>
