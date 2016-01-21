@@ -20,9 +20,9 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/ico" href="favicon.ico">
   <style>
-  .navbar-nav > li > a {padding-top:30px !important; padding-bottom:30px !important; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 1.05em}
-  .navbar-brand {height: 80px;  vertical-align: middle; padding-right: 50px; !important; padding-left: 8px; !important;padding-left: 7%; }
-  .navbar-toggle  {padding-top:20px !important; padding-bottom:20px !important;}
+  .navbar-nav > li > a {padding-top:25px !important; padding-bottom:25px !important; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 1.05em}
+  .navbar-brand {height: 64px;  vertical-align: middle; padding-right: 50px; !important; padding-left: 8px; !important;padding-left: 7%; }
+  .navbar-toggle  {padding-top:15px !important; padding-bottom:15px !important;}
   /* bootstrap 3 helpers */
 
 .navbar-form input, .form-inline input {
@@ -31,6 +31,9 @@
 
 
 
+p {
+    line-height: 130%;
+}
 header {
 	height:240px;
   background: #222222;
@@ -63,9 +66,15 @@ header {
   </script>
 </head>
 <body>
-  <header class="masthead" style="max-height: 14vw; width: 100%; min-height: 100px">
-  <div style="float: none; vertical-align: middle; text-align:center;  min-height: 100px; max-height: 14vw; max-width: 100%">
-    <img class="pull-center" style="padding-top: 1em; padding 1em;  min-height: 100px; max-width: 95%; max-height: 12vw" src="./img/hv2.png"
+  <header class="masthead" style="position: relative;max-height: 14vw; width: 100%; min-height: 100px">
+  <div style="position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; text-align:center;
+    font: 0/0 a; vertical-align: middle;
+    display: inline-block; min-height: 100px; max-height: 14vw; max-width: 100%">
+    <img  style="min-height: 100px; max-width: 95%; max-height: 14vw" src="./img/hv2.png"
     onmouseover="this.src='./img/hv3.png';"
     onmouseout="this.src='./img/hv2.png';"/>
   </div>
@@ -105,29 +114,64 @@ header {
   </div><!-- /.navbar -->
 </div>
 <div class="container">
-<div class="page-header" style="width: 60%">
-  <h1 style="font-size: 4em">Had het skelet in jouw biologielokaal ook een naam?</h1>
-</div>
-<div style="width: 100%">
-	<div class="pull-left" style="width: 60%; height: 500px">
-	  <img src="./img/skel.jpg"  class="pull-left" style="max-width: 100%"/>
-	</div>
-	<div class="panel-body pull-left" style="width: 40%;height: 500px">
-	</div>
-</div>
 
-  <div class="row" style="width: 100%">
-    <div class="col-sm-5" style="text-align: justify; font-size: 1.5em; width: 62%">
-      <p>Een school in het Engelse Liverpool ontdekte in december dat hun skelet Arthur een echt menselijk skelet was.
-	  Arthur kwam 50 jaar geleden in de school aan - eerst stond hij in het biologielokaal, daarna deed hij dienst als model in de tekenklas.</p>
-      <p>Maar een tijd terug was Arthur vervangen door een nieuw, plastic skelet en werd hijzelf naar de zolder verhuisd.
-	  Eind vorig jaar werd hij dus teruggevonden en bleek dat hij ooit een echt mens was geweest. </p>
-      <p>De school mocht de botten niet zomaar weggooien, dat is tegen de wet: daarom hebben leerkrachten en leerlingen Arthur een plechtige begrafenis gegeven.</p>
 
-    </div>
+      <div class="row">
 
-  </div>
-</div>
+        <div class="col-sm-8 blog-main">
+
+            <div class="page-header" style="width: 100%; border-bottom:none;">
+              <h3 style="color: #239625; font-weight: bold; text-transform: uppercase; padding-top: 30px; padding-bottom: 0px;  margin-bottom: 0px;">MENSEN</h3>
+              <h1 style="color: #1A1A1A; font-size: 4.2em; font-weight: bold; padding-top: 0px;    margin-top: 0px;">Had het skelet in jouw biologie&shy;lokaal ook een naam?</h1>
+            </div>
+            <p class="blog-post-meta">January 15, 2015 by <a href="#">Hersenvulsel</a></p>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar" >
+        </div>
+        <div class="col-sm-8 blog-main">
+            <div style="width: 100%">
+            	<div class="pull-left" style="width: 100%; adding-bottom: 50px;">
+            	  <img src="./img/skel.jpg"  class="pull-left" style="padding-bottom: 50px; max-width: 100%"/>
+            	</div>
+            </div>
+
+              <div class="row" style="width: 100%">
+                <div class="col-sm-5" style="text-align: justify; font-size: 1.7em; width: 100%">
+                  <p style="padding-bottom: 10px;">Een school in het Engelse Liverpool ontdekte in december dat hun skelet Arthur een echt menselijk skelet was.
+            	  Arthur kwam 50 jaar geleden in de school aan - eerst stond hij in het biologielokaal, daarna deed hij dienst als model in de tekenklas.</p>
+                  <p style="padding-bottom: 10px;">Maar een tijd terug was Arthur vervangen door een nieuw, plastic skelet en werd hijzelf naar de zolder verhuisd.
+            	  Eind vorig jaar werd hij dus teruggevonden en bleek dat hij ooit een echt mens was geweest. </p>
+                  <p style="padding-bottom: 90px;">De school mocht de botten niet zomaar weggooien, dat is tegen de wet: daarom hebben leerkrachten en leerlingen Arthur een plechtige begrafenis gegeven.</p>
+
+                </div>
+
+              </div>
+
+
+
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="list-group">
+            <div class="list-group-item active" style="font-weight: bold; font-size: 1.3em; background: #239625; border: none;">MEER MENSEN</div>
+            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Telefoonboeken zorgen elk jaar voor anderhalf miljoen ton broeikasgassen</a>
+            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Eerste meting MT. Everest vervalst</a>
+            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Baymax uit Big Hero 6 wint de Lotto</a>
+            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Kurt Searvogel fietst 122.000km in 1 jaar</a>
+            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">James Blunt verkoopt zus op e-bay</a>
+
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      Shanna is king.
+    </footer>
+
 
 </body>
 </html>
