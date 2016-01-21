@@ -23,11 +23,8 @@
   .navbar-nav > li > a {padding-top:25px !important; padding-bottom:25px !important; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 1.05em}
   .navbar-brand {height: 64px;  vertical-align: middle; padding-right: 50px; !important; padding-left: 8px; !important;padding-left: 7%; }
   .navbar-toggle  {padding-top:15px !important; padding-bottom:15px !important;}
-  /* bootstrap 3 helpers */
 
-.navbar-form input, .form-inline input {
-	width:auto;
-}
+
 
 
 
@@ -59,27 +56,21 @@ header {
         }
 	
   });
-$('#navbar').affix({
-        offset: {
-          top: $('header').height()
-        }
-	
-  });
 
 };
 
   </script>
 </head>
 <body>
-  <header class="masthead" style="position: relative;max-height: 14vw; width: 100%; min-height: 100px">
+  <header class="masthead" style="max-height: 14vw; width: 100%; min-height: 90px">
   <div style="position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; text-align:center;
     font: 0/0 a; vertical-align: middle;
-    display: inline-block; min-height: 100px; max-height: 14vw; max-width: 100%">
-    <img  style="min-height: 100px; max-width: 95%; max-height: 14vw" src="./img/hv2.png"
+    min-height: 90px; max-height: 14vw; max-width: 100%">
+    <img  style="min-height: 90%; max-width: 95%; max-height: 14vw" src="./img/hv2.png"
     onmouseover="this.src='./img/hv3.png';"
     onmouseout="this.src='./img/hv2.png';"/>
   </div>
@@ -87,9 +78,9 @@ $('#navbar').affix({
 
 
 <!-- Begin Navbar -->
-<div class="nav-wrapper" style="height:80px;">
-<div id="nav">
-  <div class="navbar navbar-inverse navbar-static">
+<div class="nav-wrapper" style="height:70px;">
+<div id="nav"  >
+  <div class="navbar navbar-inverse navbar-static" style="z-index: 10;">
     <div class="container-fluid">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -102,7 +93,7 @@ $('#navbar').affix({
         <a class="navbar-brand pull-left" href="index.html"><img src="./img/hv4.png" style="max-height: 100%"/></a>
       </div>
 --->
-      <div class="navbar-collapse collapse">
+      <div class="navbar-collapse collapse" >
         <ul class="nav navbar-nav">
           <li class="active"><a href="./index.html">Home</a></li>
           <li><a href="./c/wetenschap">Wetenschap</a></li>
@@ -121,7 +112,7 @@ $('#navbar').affix({
 </div>
 </div>
 
-<div class="container" style="padding-top: 10px">
+<div class="container" style="">
 
 
       <div class="row">
