@@ -10,7 +10,7 @@ var hv_article = function(){
       $( "#hv-category-title" ).text(article.category);
       $( "#hv-article-figcaption" ).html("<b>Credit: <\/b>" + article.img_credit);
       hv_article.sharesocial(article.id, article.category);
-      $('#fbLike').data('href', "http://samgielis.github.io/Hersenvulsel/c/" + article.category + "/" + article.id);
+      $('#fb-comments').data('href', "http://samgielis.github.io/Hersenvulsel/c/" + article.category + "/" + article.id);
     })
     .error(function() { alert("error loading article"); })
   }
