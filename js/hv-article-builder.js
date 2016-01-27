@@ -10,7 +10,8 @@ var hv_article = function(){
       $( "#hv-category-title" ).text(article.category);
       $( "#hv-article-figcaption" ).html("<b>Credit: <\/b>" + article.img_credit);
       hv_article.sharesocial(article.id, article.category);
-      $('#fb-comments').data('href', "http://samgielis.github.io/Hersenvulsel/c/" + article.category + "/" + article.id);
+      hv_article.authordate(article.authorname, article.authorid, article.day);
+
     })
     .error(function() { alert("error loading article"); })
   }
@@ -38,4 +39,26 @@ var hv_article = function(){
 
       $("#share-buttons").html(soc);
   }
+
+
+  hv_article.prototype.authordate = function(authid, authname, date){
+      $( "#author-and-date" ).html(hv_article.decorateauthordate(authid, authname, date));
+  }
+
+
+    hv_article.prototype.decorateauthordate = function(authid, name, date){
+        var auth="";
+            auth += "<div class=\"hv-author-thumbnail-container pull-left\">";
+            auth += "            <a href=\"..\/..\/..\/a\/" + authid + "\">";
+            auth += "              <img title=\"" + name + "\" class=\"hv-author-thumbnail\" src=\"..\/..\/..\/a\/" + authid + "\/" + authid + ".png\"\/>";
+            auth += "            <\/a>";
+            auth += "          <\/div>";
+            auth += "          <div style=\"padding-left: 10px\">";
+            auth += "            <p class=\"hv-author-name\"><a class=\"hv-author-name-link\" href=\"..\/..\/..\/a\/" + authid + "\">" + name + "<\/a><\/p>";
+            auth += "            <p class=\"hv-date-line\">18 Januari 2016<\/p>";
+            auth += "          <\/div>";
+        return auth;
+    }
+
+
 }

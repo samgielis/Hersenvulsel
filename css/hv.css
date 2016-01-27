@@ -13,17 +13,7 @@ header {
 .hv-article-title {
   color: #1A1A1A;
   font-size: 4.2em;
-  font-wei  header {
-      height:240px;
-      background: #222222;
-      background-image: url(../../../img/bg.png);
-      background-size: cover;
-    }
-
-    * {
-      border-radius: 0 !important;
-    }
-    ght: bold;
+  font-weight: bold;
   padding-bottom: 10px;
   margin-top: 0px;
 }
@@ -37,8 +27,9 @@ header {
   color: #239625;
 }
 .hv-c-wetenschap {
-  color: #2d66c5;
+  color: #2a6fa4;
 }
+
 /* AUTHOR STYLE */
 .hv-author-thumbnail {
   max-height: 70px;
