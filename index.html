@@ -8,7 +8,7 @@
   <meta name="description" content="Hersenvulsel is een website boordevol interessante weetjes en entertainment." />
 
   <meta name="keywords" content="hersenvulsel, weetjes, nieuws, wetenschap, entertainment, interessant, hersenen,
-              geschiedenis, natuur, mensen, varia, trivia, wist je datjes, wist u dat">
+  geschiedenis, natuur, mensen, varia, trivia, wist je datjes, wist u dat">
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,182 +27,190 @@
 
 
 
-p {
+  hv-content-body-p {
     line-height: 130%;
-}
-header {
-	height:240px;
-  background: #222222;
-  background-image: url(./img/bg.png);
-  background-size: cover;
-}
+  }
+  hv-10top {
+    padding-top: 10px;
+  }
+  hv-10bot {
+    padding-bottom: 10px;
+  }
+  header {
+    height:240px;
+    background: #222222;
+    background-image: url(./img/bg.png);
+    background-size: cover;
+  }
 
-#nav.affix {
+  #nav.affix {
     top: 0px;
     width: 100%;
     z-index:10;
-}
+  }
 
-* {
-  border-radius: 0 !important;
-}
+  * {
+    border-radius: 0 !important;
+  }
   </style>
 
-<style type="text/css">
+  <style type="text/css">
 
-#share-buttons img {
-width: 40px;
-padding: 0px;
+  #share-buttons img {
+    width: 40px;
+    padding: 0px;
 
-}
+  }
 
-</style>
+  </style>
   <script>
   window.onload = function() {
     $('#nav').affix({
-        offset: {
-          top: $('header').height()
-        }
+      offset: {
+        top: $('header').height()
+      }
 
-  });
+    });
 
-};
+  };
 
   </script>
 </head>
 <body>
   <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-<header class="masthead" style="max-height: 14vw; width: 100%; min-height: 90px">
-<div style="position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; text-align:center;
-  font: 0/0 a; vertical-align: middle;
-  min-height: 90px; max-height: 14vw; max-width: 100%">
-  <img  style="min-height: 90%; max-width: 95%; max-height: 14vw" src="./img/hv2.png"
-  onmouseover="this.src='./img/hv3.png';"
-  onmouseout="this.src='./img/hv2.png';"/>
-</div>
+  <header class="masthead" style="max-height: 14vw; width: 100%; min-height: 90px">
+    <div style="position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; text-align:center;
+    font: 0/0 a; vertical-align: middle;
+    min-height: 90px; max-height: 14vw; max-width: 100%">
+    <img  style="min-height: 90%; max-width: 95%; max-height: 14vw" src="./img/hv2.png"
+    onmouseover="this.src='./img/hv3.png';"
+    onmouseout="this.src='./img/hv2.png';"/>
+  </div>
 </header>
 
 
 <!-- Begin Navbar -->
 <div class="nav-wrapper" style="height:90px;">
-<div id="nav"  >
-  <div class="navbar navbar-inverse navbar-static" style="z-index: 10;">
-    <div class="container">
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-<!--
-      <div class="pull-left" style="height: 10px; max-width: 100px">
+  <div id="nav"  >
+    <div class="navbar navbar-inverse navbar-static" style="z-index: 10;">
+      <div class="container">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--
+        <div class="pull-left" style="height: 10px; max-width: 100px">
         <a class="navbar-brand pull-left" href="index.html"><img src="./img/hv4.png" style="max-width: 150px"/></a>
       </div>
--->
-      <div class="navbar-collapse collapse" >
-        <ul class="nav  navbar-nav">
-          <li class="active"><a href="./index.html">Home</a></li>
-          <li><a href="./c/wetenschap">Wetenschap</a></li>
-          <li><a href="./c/geschiedenis">Geschiedenis</a></li>
-          <li><a href="./c/mensen">Mensen</a></li>
-          <li><a href="./c/natuur">Natuur</a></li>
-          <li><a href="./c/entertainment">Entertainment</a></li>
-          <li><a href="./c/faitsdivers">Faits Divers</a></li>
-        </ul>
-        <ul class="nav pull-right navbar-nav">
-          <li><a href="https://facebook.com/hersenvulsel" target="_blank" ><i class="fa fa-facebook fa-lg"></i></a></li>
-          <li><a href="#"><i class="fa fa-envelope fa-lg"></i>  </a></li>
-        </ul>
-      </div>
+    -->
+    <div class="navbar-collapse collapse" >
+      <ul class="nav  navbar-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./c/wetenschap">Wetenschap</a></li>
+        <li><a href="./c/geschiedenis">Geschiedenis</a></li>
+        <li><a href="./c/mensen">Mensen</a></li>
+        <li><a href="./c/natuur">Natuur</a></li>
+        <li><a href="./c/entertainment">Entertainment</a></li>
+        <li><a href="./c/faitsdivers">Faits Divers</a></li>
+      </ul>
+      <ul class="nav pull-right navbar-nav">
+        <li><a href="https://facebook.com/hersenvulsel" target="_blank" ><i class="fa fa-facebook fa-lg"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope fa-lg"></i>  </a></li>
+      </ul>
     </div>
-  </div><!-- /.navbar -->
+  </div>
+</div><!-- /.navbar -->
 </div>
 </div>
 
 <div class="container" style="">
 
 
+  <div class="row">
+
+    <div class="col-sm-8 blog-main" style=" padding-bottom: 20px; ">
+
+      <!-- Begin Navbar -->
+      <div class="page-header" style="width: 100%; border-bottom:none;">
+        <h3 class="hv-category-title hv-c-mensen">MENSEN</h3>
+        <h1 class="hv-article-title">Had het skelet in jouw biologie&shy;lokaal ook een naam?</h1>
+      </div>
       <div class="row">
-
-        <div class="col-sm-8 blog-main" style=" padding-bottom: 20px; ">
-
-            <div class="page-header" style="width: 100%; border-bottom:none;">
-              <h3 style="color: #239625; font-weight: bold; text-transform: uppercase; padding-top: 30px;   margin-bottom: 0px;">MENSEN</h3>
-              <h1 style="color: #1A1A1A; font-size: 4.2em; font-weight: bold; padding-bottom: 10px; margin-top: 0px;">Had het skelet in jouw biologie&shy;lokaal ook een naam?</h1>
-            </div>
-            <div class="row">
-            <div class="col-sm-8">
-              <div style="max-height: 70px; padding-right: 10px" class="pull-left">
-                <a href="./a/shannaverspreet">
-                  <img class="hv-author-thumbnail" src="./a/shannaverspreet/shannaverspreet.png"/>
-                </a>
-              </div>
-              <div style="padding-left: 10px">
-                <p style="letter-spacing: -1px;font-size: 1.7em; font-weight: 350;  margin:0; padding-top:10px; "><a href="./a/shannaverspreet" style="color: #333333 !important;">Shanna Verspreet</a></p>
-                <p style="color: #595959; font-size: 1.1em; padding: 0">18 Januari 2016</p>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div  id="share-buttons"  style="padding-top:13px; text-align: right">
+        <div class="col-sm-8">
+          <!-- Author & Date -->
+          <div class="hv-author-thumbnail-container pull-left">
+            <a href="./a/shannaverspreet">
+              <img title="Shanna Verspreet" class="hv-author-thumbnail" src="./a/shannaverspreet/shannaverspreet.png"/>
+            </a>
+          </div>
+          <div style="padding-left: 10px">
+            <p class="hv-author-name"><a class="hv-author-name-link" href="./a/shannaverspreet">Shanna Verspreet</a></p>
+            <p class="hv-date-line">18 Januari 2016</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div  id="share-buttons"  style="padding-top:13px; text-align: right">
 
 
-                <!-- Facebook -->
-                <a href="http://www.facebook.com/sharer.php?u=http://samgielis.github.io/Hersenvulsel" target="_blank" style=" text-decoration: none !important">
-                    <img src="./img/soc/fb.png" alt="Share on Facebook" onmouseover="this.src='./img/soc/fb_hov.png';"
-                    onmouseout="this.src='./img/soc/fb.png';" title="Share on Facebook" />
-                </a>
-                <!-- Twitter -->
-                <a href="https://twitter.com/share?url=http://samgielis.github.io/Hersenvulsel&amp;text=Simple%20Share%20Buttons&amp;hashtags=hersenvulsel" target="_blank" style=" text-decoration: none !important">
-                    <img src="./img/soc/twit.png" alt="Share on Twitter" onmouseover="this.src='./img/soc/twit_hov.png';"
-                    onmouseout="this.src='./img/soc/twit.png';" title="Share on Twitter"/>
-                </a>
-                <!-- Google+ -->
-                <a href="https://plus.google.com/share?url=http://samgielis.github.io/Hersenvulsel" target="_blank" style=" text-decoration: none !important">
-                    <img src="./img/soc/g+.png" alt="Share on Google+" onmouseover="this.src='./img/soc/g+_hov.png';"
-                    onmouseout="this.src='./img/soc/g+.png';" title="Share on Google+"/>
-                </a>
-
-            </div>
-            </div>
-
+            <!-- Facebook -->
+            <a href="http://www.facebook.com/sharer.php?u=http://samgielis.github.io/Hersenvulsel" target="_blank" style=" text-decoration: none !important">
+              <img src="./img/soc/fb.png" alt="Share on Facebook" onmouseover="this.src='./img/soc/fb_hov.png';"
+              onmouseout="this.src='./img/soc/fb.png';" title="Share on Facebook" />
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/share?url=http://samgielis.github.io/Hersenvulsel&amp;text=Simple%20Share%20Buttons&amp;hashtags=hersenvulsel" target="_blank" style=" text-decoration: none !important">
+              <img src="./img/soc/twit.png" alt="Share on Twitter" onmouseover="this.src='./img/soc/twit_hov.png';"
+              onmouseout="this.src='./img/soc/twit.png';" title="Share on Twitter"/>
+            </a>
+            <!-- Google+ -->
+            <a href="https://plus.google.com/share?url=http://samgielis.github.io/Hersenvulsel" target="_blank" style=" text-decoration: none !important">
+              <img src="./img/soc/g+.png" alt="Share on Google+" onmouseover="this.src='./img/soc/g+_hov.png';"
+              onmouseout="this.src='./img/soc/g+.png';" title="Share on Google+"/>
+            </a>
 
           </div>
         </div>
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar" >
+
+
+      </div>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar" >
+    </div>
+    <div class="col-sm-8 blog-main">
+      <div style="width: 100%">
+        <div class="pull-left" style="width: 100%; padding-bottom: 50px;">
+          <figure>
+            <img src="./img/skel.jpg"  class="pull-left" style="float: left; max-width: 100%"/>
+            <figcaption style="text-transform: uppercase; font-size: 0.7em; "> <b>Credit:</b> liverpoolecho.co.uk </figcaption>
+          </figure>
         </div>
-        <div class="col-sm-8 blog-main">
-            <div style="width: 100%">
-            	<div class="pull-left" style="width: 100%; padding-bottom: 50px;">
-                <figure>
-            	     <img src="./img/skel.jpg"  class="pull-left" style="float: left; max-width: 100%"/>
-                   <figcaption style="text-transform: uppercase; font-size: 0.7em; "> <b>Credit:</b> liverpoolecho.co.uk </figcaption>
-                </figure>
-            	</div>
+      </div>
+
+      <div class="row" style="max-width: 100%; padding-bottom: 90px;">
+        <div class="col-sm-5" style="text-align: justify; font-size: 1.7em; width: 100%">
+          <p class="hv-content-body-p hv-10bot" >Een school in het Engelse Liverpool ontdekte in december dat hun skelet Arthur een echt menselijk skelet was.
+            Arthur kwam 50 jaar geleden in de school aan - eerst stond hij in het biologielokaal, daarna deed hij dienst als model in de tekenklas.</p>
+            <p class="hv-content-body-p hv-10bot" >Maar een tijd terug was Arthur vervangen door een nieuw, plastic skelet en werd hijzelf naar de zolder verhuisd.
+              Eind vorig jaar werd hij dus teruggevonden en bleek dat hij ooit een echt mens was geweest. </p>
+            <p class="hv-content-body-p">De school mocht de botten niet zomaar weggooien, dat is tegen de wet: daarom hebben leerkrachten en leerlingen Arthur een plechtige begrafenis gegeven.</p>
             </div>
 
-              <div class="row" style="max-width: 100%">
-                <div class="col-sm-5" style="text-align: justify; font-size: 1.7em; width: 100%">
-                  <p style="padding-bottom: 10px; float: none;">Een school in het Engelse Liverpool ontdekte in december dat hun skelet Arthur een echt menselijk skelet was.
-            	  Arthur kwam 50 jaar geleden in de school aan - eerst stond hij in het biologielokaal, daarna deed hij dienst als model in de tekenklas.</p>
-                  <p style="padding-bottom: 10px;">Maar een tijd terug was Arthur vervangen door een nieuw, plastic skelet en werd hijzelf naar de zolder verhuisd.
-            	  Eind vorig jaar werd hij dus teruggevonden en bleek dat hij ooit een echt mens was geweest. </p>
-                  <p style="padding-bottom: 90px;">De school mocht de botten niet zomaar weggooien, dat is tegen de wet: daarom hebben leerkrachten en leerlingen Arthur een plechtige begrafenis gegeven.</p>
-<div class="fb-comments" data-href="http://samgielis.github.io/Hersenvulsel/c/entertainment/skelet" data-width="100%" data-numposts="5"></div>
-                </div>
-
-              </div>
+          </div>
+          <div class="fb-comments" data-href="http://samgielis.github.io/Hersenvulsel/c/entertainment/skelet" data-width="100%" data-numposts="5"></div>
 
 
 
@@ -225,12 +233,13 @@ padding: 0px;
 
     </div><!-- /.container -->
 
+    <!-- WEBSITE FOOTER -->
     <footer class="hv-footer">
       <div class="row hv-footer-inner-container">
         <div class="container">
           <div class="row">
             <div class="col-sm-4">
-                <img class="logo-footer pull-left"src="./img/logo/hv-footr.png" />
+              <img class="logo-footer pull-left"src="./img/logo/hv-footr.png" />
               <div class="credits-label">
                 © <a class="footer-link-red" href="http://facebook.com/hersenvulsel" target="_blank">Hersenvulsel</a> 2016 <br>
                 Design: <a class="footer-link-red" href="https://be.linkedin.com/in/samgielis" target="_blank">Sam Gielis</a>
@@ -257,26 +266,63 @@ padding: 0px;
                 <a class="footer-link" href="./adverteren">Adverteren</a>
               </div>
               <div class="footer-spacer"></div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 
 </body>
 <style>
-
+/* TITE STYLE */
+.hv-article-title {
+  color: #1A1A1A;
+  font-size: 4.2em;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+.hv-category-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+.hv-c-mensen {
+  color: #239625;
+}
 
 /* AUTHOR STYLE */
 .hv-author-thumbnail {
   max-height: 70px;
 }
+.hv-author-thumbnail-container {
+  max-height: 70px;
+  padding-right: 10px
+}
 .hv-author-thumbnail:hover {
   opacity: 0.7;
   filter: alpha(opacity=70); /* For IE8 and earlier */
 }
+.hv-author-name {
+  letter-spacing: -1px;
+  font-size: 1.7em;
+  font-weight: 350;
+  margin:0;
+  padding-top:10px;
+}
+.hv-author-name-link {
+  color: #333333 !important;
+}
+.hv-date-line {
+  color: #595959;
+  font-size: 1.1em;
+  padding: 0
+}
+
+
 /* FOOTER STYLE */
 .footer-spacer {
   width: 100%;
@@ -292,7 +338,7 @@ padding: 0px;
 .hv-footer-inner-container {
   padding-top: 50px;
   padding-bottom: 40px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .logo-footer {
   max-width: 4.5em;
@@ -311,12 +357,12 @@ padding: 0px;
 }
 .hv-footer-link-container {
 
-  	border-left: thick double #c22d2d;
-    border-left-width: 1px !important;
-    text-transform: uppercase;
-    padding-left: 7px;
-    display: table;
-    width: 250px;
+  border-left: thick double #c22d2d;
+  border-left-width: 1px !important;
+  text-transform: uppercase;
+  padding-left: 7px;
+  display: table;
+  width: 250px;
 }
 .credits-label {
   padding-top: 3px;
