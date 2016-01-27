@@ -20,8 +20,7 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/ico" href="favicon.ico">
   <style>
-  .navbar-nav > li > a {height: 65px !important; vertical-align: middle; display: table-cell; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 1.05em}
-  .navbar-brand {height: 64px;   padding-right: 50px; !important; padding-left: 8px; !important; }
+
 
 
 
@@ -54,46 +53,21 @@
   }
   </style>
 
-  <style type="text/css">
 
-  #share-buttons img {
-    width: 40px;
-    padding: 0px;
-
-  }
-
-  </style>
-  <script>
-  window.onload = function() {
-    $('#nav').affix({
-      offset: {
-        top: $('header').height()
-      }
-
-    });
-
-  };
-
-  </script>
 </head>
 <body>
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>
+    window.onload = function() {
+      $('#nav').affix({
+        offset: {
+          top: $('header').height()
+        }});
+    };
+  </script>
 
-  <header class="masthead" style="max-height: 14vw; width: 100%; min-height: 90px">
-    <div style="position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; text-align:center;
-    font: 0/0 a; vertical-align: middle;
-    min-height: 90px; max-height: 14vw; max-width: 100%">
+  <header class="masthead hv-pagehead-cont">
+    <div class="hv-pagehead">
     <img  style="min-height: 90%; max-width: 95%; max-height: 14vw" src="./img/hv2.png"
     onmouseover="this.src='./img/hv3.png';"
     onmouseout="this.src='./img/hv2.png';"/>
@@ -162,10 +136,9 @@
             <p class="hv-date-line">18 Januari 2016</p>
           </div>
         </div>
+
         <div class="col-sm-4">
-          <div  id="share-buttons"  style="padding-top:13px; text-align: right">
-
-
+          <div  class="share-buttons">
             <!-- Facebook -->
             <a href="http://www.facebook.com/sharer.php?u=http://samgielis.github.io/Hersenvulsel" target="_blank" style=" text-decoration: none !important">
               <img src="./img/soc/fb.png" alt="Share on Facebook" onmouseover="this.src='./img/soc/fb_hov.png';"
@@ -217,21 +190,28 @@
 
         </div><!-- /.blog-main -->
 
+        <!-- SIDEBAR -->
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+
+
           <div class="list-group">
-            <div class="list-group-item active" style="font-weight: bold; font-size: 1.3em; background: #239625; border: none;">MEER MENSEN</div>
+            <div class="list-group-item active" style="font-weight: bold; font-size: 1.3em; background: #239625; border: none;">TRENDING</div>
             <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Telefoonboeken zorgen elk jaar voor anderhalf miljoen ton broeikasgassen</a>
             <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Eerste meting MT. Everest vervalst</a>
-            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Baymax uit Big Hero 6 wint de Lotto</a>
             <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Kurt Searvogel fietst 122.000km in 1 jaar</a>
-            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">James Blunt verkoopt zus op e-bay</a>
-
           </div>
-        </div><!-- /.blog-sidebar -->
 
-      </div><!-- /.row -->
+          <div class="list-group">
+            <div class="list-group-item active" style="font-weight: bold; font-size: 1.3em; background: #239625; border: none;">MEER MENSEN</div>
+            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Eerste meting MT. Everest vervalst</a>
+            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">Baymax uit Big Hero 6 wint de Lotto</a>
+            <a href="#" class="list-group-item"  style="color: #1a1a1a; font-weight: bold; font-size: 1.2em;">James Blunt verkoopt zus op e-bay</a>
+          </div>
+        </div>
 
-    </div><!-- /.container -->
+      </div>
+
+    </div>
 
     <!-- WEBSITE FOOTER -->
     <footer class="hv-footer">
@@ -275,6 +255,11 @@
 
 
 </body>
+
+<!-- CODE DEPENDENCIES -->
+<script src="./js/hv-social-plugins.js"></script>
+
+<!-- STYLE -->
 <style>
 /* TITE STYLE */
 .hv-article-title {
@@ -323,6 +308,57 @@
 }
 
 
+
+
+/* SOCIAL STYLE */
+.share-buttons {
+  padding-top:13px;
+  text-align: right
+}
+.share-buttons img {
+  width: 40px;
+  padding: 0px;
+}
+
+/* NAVBAR STYLE */
+.navbar-nav > li > a {
+  height: 65px !important;
+  vertical-align: middle;
+  display: table-cell;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.05em
+}
+.navbar-brand {
+  height: 64px;
+  padding-right: 50px !important;
+  padding-left: 8px !important;
+}
+
+
+
+/* HEADER STYLE */
+.hv-pagehead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align:center;
+  font: 0/0 a;
+  vertical-align: middle;
+  min-height: 90px;
+  max-height: 14vw;
+  max-width: 100%
+}
+.hv-pagehead-cont {
+  max-height: 14vw;
+  width: 100%;
+  min-height: 90px
+}
+
+
 /* FOOTER STYLE */
 .footer-spacer {
   width: 100%;
@@ -356,7 +392,6 @@
   font-size: 1.05em;
 }
 .hv-footer-link-container {
-
   border-left: thick double #c22d2d;
   border-left-width: 1px !important;
   text-transform: uppercase;
