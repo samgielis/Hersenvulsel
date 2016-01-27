@@ -1,6 +1,6 @@
 {
   "id":"muizen-en-penicilline",
-  "title":"Uitvinding penicilline puur geluk",
+  "title":"Uitvinding penicilline dankzij muizen",
   "short":"Wat hebben muizen met penicilline te maken? Alles!",
   "authorid":"shannaverspreet",
   "category":"wetenschap",
@@ -8,7 +8,7 @@
   "publish-time":"19:00:00",
   "source-name":"afma-curedisease.org",
   "source-url":"http://www.afma-curedisease.org/pdf/penicillin.pdf",
-  "img-credit":"http://gaia.be",
+  "img_credit":"http://gaia.be",
   "content":[
       {"type":"paragraph",
       "content":"In de jaren '40 kregen drie wetenschappers de Nobelprijs voor de ontdekking van penicilline, een belangrijk antibioticum. Het scheelde weinig, of het geneesmiddel was gewoon nooit op de markt gebracht. Dierenproeven hebben de onderzoekers namelijk misleid!"},

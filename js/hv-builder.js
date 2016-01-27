@@ -59,6 +59,17 @@ var hv = function(){
           }});
   }
 
+  hv.prototype.header = function(){
+    var header="";
+        header += "<div class=\"hv-pagehead\">";
+        header += "    <img  style=\"min-height: 90%; max-width: 95%; max-height: 14vw\" src=\"..\/..\/..\/img\/hv2.png\"";
+        header += "    onmouseover=\"this.src='..\/..\/..\/img\/hv3.png';\"";
+        header += "    onmouseout=\"this.src='..\/..\/..\/img\/hv2.png';\"\/>";
+        header += "  <\/div>";
+
+      $( "#hv-header" ).html(header);
+  }
+  
   hv.prototype.footer =  function(){
     var footer="";
         footer += "<div class=\"row hv-footer-inner-container\">";
@@ -101,17 +112,4 @@ var hv = function(){
 
   }
 
-}
-
-/*
-  THE HV_ARTICLE OBJECT
-  Constructs HV article pages and their elements.
-*/
-var hv_article = function(){
-  hv_article.prototype.load = function(){
-    $.getJSON("./descriptor.json", function(article) {
-      $( "#hv-article-title" ).text(article.title);
-    })
-    .error(function() { alert("error loading article"); })
-  }
 }
