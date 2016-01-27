@@ -10,7 +10,7 @@ var hv_article = function(){
       $( "#hv-category-title" ).text(article.category);
       $( "#hv-article-figcaption" ).html("<b>Credit: <\/b>" + article.img_credit);
       hv_article.sharesocial(article.id, article.category);
-      hv_article.authordate(article.authorname, article.authorid, article.day);
+      hv_article.authordate(article.authorid, article.authorname, article.day);
 
     })
     .error(function() { alert("error loading article"); })
