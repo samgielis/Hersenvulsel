@@ -29,6 +29,10 @@ header {
 .hv-c-wetenschap {
   color: #2a6fa4;
 }
+.hv-title-container {
+  width: 100%;
+  border-bottom:none;
+}
 
 /* AUTHOR STYLE */
 .hv-author-thumbnail {
@@ -69,6 +73,15 @@ hv-10bot {
 .hv-article-figcaption {
   text-transform: uppercase;
   font-size: 0.7em;
+}
+.maintext-col {
+  text-align: justify;
+  font-size: 1.6em;
+  width: 100%
+}
+.maintext-row {
+  max-width: 100%;
+  padding-bottom: 90px;
 }
 
 /* SOCIAL STYLE */
