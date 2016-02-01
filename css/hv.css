@@ -6,27 +6,27 @@ header {
 }
 
 .header-wetenschap {
-  background: #2869a4;
+  background: #2869a4 !important;
   background-size: cover;
 }
 .header-geschiedenis {
-  background: #e9d822;
+  background: #e9d822 !important;
   background-size: cover;
 }
 .header-mensen {
-  background: #de3737;
+  background: #de3737 !important;
   background-size: cover;
 }
 .header-natuur {
-  background: #4ea648;
+  background: #4ea648 !important;
   background-size: cover;
 }
 .header-entertainment {
-  background: #8833af;
+  background: #8833af !important;
   background-size: cover;
 }
 .header-faitsdivers {
-  background: #ff8534;
+  background: #ff8534 !important;
   background-size: cover;
 }
 * {
@@ -117,6 +117,7 @@ hv-10bot {
   padding-bottom: 90px;
 }
 
+
 /* SOCIAL STYLE */
 #share-buttons {
   padding-top:13px;
@@ -126,7 +127,18 @@ hv-10bot {
   width: 40px;
   padding: 0px;
 }
+/* SIDEBAR STYLE */
+.sidebar-article-entry {
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 
+.hv-sidebar-head {
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+}
 /* NAVBAR STYLE */
 .navbar-nav > li > a {
   height: 65px !important;

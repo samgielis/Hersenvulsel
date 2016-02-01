@@ -7,12 +7,14 @@ var hv_article = function(){
   // LOADS AND CONSTRUCTS AN ENTIRE ARTICLE PAGE
   hv_article.prototype.load = function(hv){
     $.getJSON("./descriptor.json", function(article) {
+      $("meta[property='og\\:title']").attr("content", article.title + " | Hersenvulsel");
       hv.header(article.category, hv);
       hv_article.title(article.title, article.category)
       $( "#hv-article-figcaption" ).html("<b>Credit: <\/b>" + article.img_credit);
       hv_article.share_social(article.id, article.category);
       hv_article.author_date(article.authorid, article.authorname, article.day);
       hv_article.article_content(article.content);
+      hv_article.sidebar(article.category);
 
     })
     .error(function() { alert("error loading article"); })
@@ -65,6 +67,21 @@ var hv_article = function(){
     return auth;
   }
 
+  // CONSTRUCTS THE "NIEUW" SIDEBAR FOR ARTICLES
+  // contains the 4 newest articles that have been published on the website
+  hv_article.prototype.sidebar = function(cat){
+    $( ".hv-sidebar-head" ).addClass("header-" + cat);
+    $( "#hv-sidebar-ads" ).text("RECLAME");
+    $( "#hv-sidebar-newest" ).text("NIEUW");
+    this.sidebar_more_x(cat);
+
+  }
+
+  hv_article.prototype.sidebar_more_x = function(cat){
+    $( "#hv-sidebar-more-x" ).text("MEER " + cat.toUpperCase());
+
+
+  }
   // CONSTRUCTS THE ARTICLE'S MAIN CONTENT
   // uses the content-type constructers as implemented below
   hv_article.prototype.article_content = function(content){
