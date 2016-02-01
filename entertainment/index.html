@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hersenvulsel - Trakteer je Brain op een Snack</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+  .navbar-nav > li > a {padding-top:30px !important; padding-bottom:30px !important; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 1.05em}
+  .navbar-brand {height: 80px;  vertical-align: middle; padding-right: 50px; !important; padding-left: 8px; !important;padding-left: 7%; }
+  .navbar-toggle  {padding-top:20px !important; padding-bottom:20px !important;}
+  /* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+
+
+header {
+	height:240px;
+  background: #222222;
+  background-image: url(bg.png);
+  background-size: cover;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+* {
+  border-radius: 0 !important;
+}
+  </style>
+  <script>
+  window.onload = function() {
+    $('#nav').affix({
+        offset: {
+          top: $('header').height()
+        }
+  });
+
+
+};
+
+  </script>
+</head>
+<body>
+  <header class="masthead">
+  <div style="display: inline-block;
+    vertical-align: middle;
+    float: none; vertical-align: middle; text-align:center; display: inline-block;">
+    <img style="padding-top: 18px; max-width: 65%;" src="hv2.png"
+    onmouseover="this.src='hv3.png';"
+    onmouseout="this.src='hv2.png';"/>
+  </div>
+</header>
+
+
+<!-- Begin Navbar -->
+<div id="nav">
+  <div class="navbar navbar-inverse navbar-static">
+    <div class="container-fluid">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="pull-left" style="height: 100%;">
+        <a class="navbar-brand pull-left" href="index.html"><img src="hv4.png" style="max-height: 100%"/></a>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="./index.html">Home</a></li>
+          <li><a href="../wetenschap">Wetenschap</a></li>
+          <li><a href="../entertainment">Entertainment</a></li>
+          <li><a href="../dieren">Dieren</a></li>
+          <li><a href="../geschiedenis">Geschiedenis</a></li>
+          <li><a href="../varia">Varia</a></li>
+        </ul>
+        <ul class="nav pull-right navbar-nav">
+          <li><a href="https://facebook.com/hersenvulsel" target="_blank" ><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope fa-lg"></i>  </a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /.navbar -->
+</div>
+<div class="container">
+  <div class="jumbotron">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
