@@ -4,7 +4,7 @@
 */
 var hv = function(){
 
-  hv.prototype.navbar =  function(cat){
+  hv.prototype.navbar =  function(prefix){
     var navbar="";
         navbar += "<div id=\"nav\"  >";
         navbar += "    <div class=\"navbar navbar-inverse navbar-static\" style=\"z-index: 10;\">";
@@ -15,13 +15,13 @@ var hv = function(){
         navbar += "        <\/button>";
         navbar += "    <div class=\"navbar-collapse collapse\" >";
         navbar += "      <ul class=\"nav  navbar-nav\">";
-        navbar += "        <li><a href=\"..\/..\/\">Home<\/a><\/li>";
-        navbar+= "<li><a href=\"..\/wetenschap\">Wetenschap<\/a><\/li>";
-        navbar += "        <li><a href=\"..\/geschiedenis\">Geschiedenis<\/a><\/li>";
-        navbar += "        <li><a href=\"..\/mensen\">Mensen<\/a><\/li>";
-        navbar += "        <li><a href=\"..\/natuur\">Natuur<\/a><\/li>";
-        navbar += "        <li><a href=\"..\/entertainment\">Entertainment<\/a><\/li>";
-        navbar += "        <li><a href=\"..\/faitsdivers\">Faits Divers<\/a><\/li>";
+        navbar += "        <li><a href=\"..\/" + prefix +"\">Home<\/a><\/li>";
+        navbar+= "<li><a href=\"" + prefix + "wetenschap\">Wetenschap<\/a><\/li>";
+        navbar += "        <li><a href=\"" + prefix + "geschiedenis\">Geschiedenis<\/a><\/li>";
+        navbar += "        <li><a href=\"" + prefix + "mensen\">Mensen<\/a><\/li>";
+        navbar += "        <li><a href=\"" + prefix + "natuur\">Natuur<\/a><\/li>";
+        navbar += "        <li><a href=\"" + prefix + "entertainment\">Entertainment<\/a><\/li>";
+        navbar += "        <li><a href=\"" + prefix + "faitsdivers\">Faits Divers<\/a><\/li>";
         navbar += "      <\/ul>";
         navbar += "      <ul class=\"nav pull-right navbar-nav\">";
         navbar += "        <li><a href=\"https:\/\/facebook.com\/hersenvulsel\" target=\"_blank\" ><i class=\"fa fa-facebook fa-lg\"><\/i><\/a><\/li>";
@@ -46,7 +46,7 @@ var hv = function(){
       $( "#hv-header" ).html(header);
   }
 
-  hv.prototype.footer =  function(){
+  hv.prototype.footer =  function(prefix){
     var footer="";
         footer += "<div class=\"row hv-footer-inner-container\">";
         footer += "        <div class=\"container\">";
@@ -62,21 +62,21 @@ var hv = function(){
         footer += "            <div class=\"col-sm-4\">";
         footer += "              <div class=\"hv-footer-link-container\">";
         footer += "                <a class=\"footer-link\" href=\"..\/..\/\">Home<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/wetenschap\">Wetenschap<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/geschiedenis\">Geschiedenis<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/mensen\">Mensen<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/natuur\">Natuur<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/entertainment\">Entertainment<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/faitsdivers\">Faits Divers<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "wetenschap\">Wetenschap<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "geschiedenis\">Geschiedenis<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "mensen\">Mensen<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "natuur\">Natuur<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "entertainment\">Entertainment<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "faitsdivers\">Faits Divers<\/a><br>";
         footer += "              <\/div>";
         footer += "              <div class=\"footer-spacer\"><\/div>";
         footer += "            <\/div>";
         footer += "            <div class=\"col-sm-4\">";
         footer += "              <div class=\"hv-footer-link-container\">";
-        footer += "                <a class=\"footer-link\" href=\"..\/..\/privacybeleid\">PrivacyBeleid<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/..\/gebruiksvoorwaarden\">Gebruiksvoorwaarden<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/..\/contact\">Contact<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"..\/..\/adverteren\">Adverteren<\/a>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "privacybeleid\">PrivacyBeleid<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "gebruiksvoorwaarden\">Gebruiksvoorwaarden<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "contact\">Contact<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "adverteren\">Adverteren<\/a>";
         footer += "              <\/div>";
         footer += "              <div class=\"footer-spacer\"><\/div>";
         footer += "            <\/div>";
