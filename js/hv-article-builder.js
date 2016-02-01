@@ -7,7 +7,6 @@ var hv_article = function(){
   // LOADS AND CONSTRUCTS AN ENTIRE ARTICLE PAGE
   hv_article.prototype.load = function(hv){
     $.getJSON("./descriptor.json", function(article) {
-      $("meta[property='og\\:title']").attr("content", article.title + " | Hersenvulsel");
       hv.header(article.category, hv);
       hv_article.title(article.title, article.category)
       $( "#hv-article-figcaption" ).html("<b>Credit: <\/b>" + article.img_credit);
