@@ -10,6 +10,7 @@
   <meta name="keywords" content="hersenvulsel, weetjes, nieuws, wetenschap, entertainment, interessant, hersenen,
   geschiedenis, natuur, mensen, varia, trivia, wist je datjes, wist u dat">
 
+  <link rel="image_src" href="./img/main.jpg" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -105,10 +106,11 @@
           <script>
 
           var disqus_config = function () {
-          this.page.url = "http://hersenvulsel.be/natuur/zo-ziet-de-yeti-er-uit";
-          this.page.identifier = "zo-ziet-de-yeti-er-uit;"
+          this.page.url = window.location.href;
+          var path = window.location.pathname.split( '/' );
+          this.page.identifier = path[path.length - 1];
           };
-          
+
           (function() { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
 
