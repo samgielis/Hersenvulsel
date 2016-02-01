@@ -1,94 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-  <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hersenvulsel - Trakteer je Brain op een Snack</title>
+
+  <meta name="description" content="Hersenvulsel is een website boordevol interessante weetjes en entertainment." />
+
+  <meta name="keywords" content="hersenvulsel, weetjes, nieuws, wetenschap, entertainment, interessant, hersenen,
+  geschiedenis, natuur, mensen, varia, trivia, wist je datjes, wist u dat">
+
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <style>
-  .navbar-nav > li > a {padding-top:30px !important; padding-bottom:30px !important; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 1.05em}
-  .navbar-brand {height: 80px; padding-top:10px !important; padding-bottom:10px !important; vertical-align: middle; padding-right: 60px; !important;  }
-  .navbar-toggle  {padding-top:20px !important; padding-bottom:20px !important;}
-  </style>
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/ico" href="favicon.ico">
+	<style>
+		html, body {
+			height: 100%;
+		}
+
+		html {
+			display: table;
+			margin: auto;
+		}
+
+		body {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		body {
+			background-color: e9d822 !important;
+		}
+		h1 {
+			font-size: 5em;
+			transform:scale(1,1.1); /* W3C */
+			-webkit-transform:scale(1,1.1); /* Safari and Chrome */
+			-moz-transform:scale(1,1.1); /* Firefox */
+			-ms-transform:scale(1,1.1); /* IE 9 */
+			-o-transform:scale(1,1.1); /* Opera */
+			color: white;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+		p {
+			background-color: 252525;
+			color: white;
+			font-size: 3em;
+			font-weight: 600;
+			padding: 0 10;
+			line-height: 50px;
+			margin-top: 0.07em;
+			margin-bottom: 0.07em;
+		}
+
+		.extension {
+			font-size: 3m;
+		}
+
+		.imgwrap-out {
+			width: 100%;
+			height: 250px;
+			text-align: center;
+		}
+
+		.imgwrap-in {
+			overflow:hidden;
+		}
+		img {
+			-webkit-transition: all 200ms ease-in;
+			-webkit-transform: scale(1);
+			-ms-transition: all 200ms ease-in;
+			-ms-transform: scale(1);
+			-moz-transition: all 200ms ease-in;
+			-moz-transform: scale(1);
+			transition: all 200ms ease-in;
+			transform: scale(1);
+		}
+
+		img:hover {
+			-webkit-transition: all 200ms ease-in;
+			-webkit-transform: scale(1.25);
+			-ms-transition: all 200ms ease-in;
+			-ms-transform: scale(1.25);
+			-moz-transition: all 200ms ease-in;
+			-moz-transform: scale(1.25);
+			transition: all 200ms ease-in;
+			transform: scale(1.25);
+		}
+
+		a:hover {
+			color: white;
+		}
+	</style>
+
+
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><img style="max-height: 100%;"src="hv2.png"/></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="../wetenschap">Wetenschap</a></li>
-        <li><a href="../entertainment">Entertainment</a></li>
-        <li><a href="../dieren">Dieren</a></li>
-        <li class="active"><a href="../geschiedenis">Geschiedenis</a></li>
-        <li><a href="../varia">Varia</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://facebook.com/hersenvulsel" target="_blank" ><i class="fa fa-facebook fa-lg"></i></a></li>
-        <li><a href="#"><i class="fa fa-envelope fa-lg"></i>  Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="container">
-  <div class="jumbotron">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-
-    </div>
-  </div>
-</div>
-
+	<div class="imgwrap-out">
+		<a class="imgwrap-in" href="http://facebook.com/hersenvulsel">
+			<img src="../img/logo/logo.png" alt="fuck dees zou moeten werken" height="250" width="250"></img>
+		</a>
+	</div>
+	<div>
+		<a href="http://facebook.com/hersenvulsel"><h1>HERSENVULSEL<span class="extension">.BE</span></h1></a>
+    <a href="http://facebook.com/hersenvulsel"><h1>/GESCHIEDENIS</h1></a>
+		<p>WIST JE DAT...</p>
+		<p>HERSENVULSEL BINNENKORT</p>
+		<p>EEN EIGEN WEBSITE KRIJGT?</p>
+	</div>
 </body>
 </html>
