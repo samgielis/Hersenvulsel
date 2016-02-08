@@ -35,7 +35,7 @@ var hv = function(){
           }});
   }
 
-  hv.prototype.header = function(cat, hv){
+  hv.prototype.header = function(cat, prefix){
     var header="";
         if(cat != ""){
           header += "<div class=\"hv-pagehead header-" + cat + "\">";
@@ -43,7 +43,7 @@ var hv = function(){
         else {
           header += "<div class=\"hv-pagehead" + cat + "\">";
         }
-        header += "    <img  style=\"min-height: 90%; max-width: 95%; max-height: 14vw\" src=\"..\/..\/img\/hv2-seethrough.png\"";
+        header += "    <img  style=\"min-height: 90%; max-width: 95%; max-height: 14vw\" src=\"" + prefix + "img\/hv2-seethrough.png\"";
         //header += "    onmouseover=\"this.src='..\/..\/img\/hv3.png';\"";
         //header += "    onmouseout=\"this.src='..\/..\/img\/hv2.png';\"\/>";
         header += "  <\/div>";
@@ -57,7 +57,7 @@ var hv = function(){
         footer += "        <div class=\"container\">";
         footer += "          <div class=\"row\">";
         footer += "            <div class=\"col-sm-4\">";
-        footer += "              <img class=\"logo-footer pull-left\"src=\"..\/..\/img\/logo\/hv-footr.png\" \/>";
+        footer += "              <img class=\"logo-footer pull-left\"src=\"" + prefix + "img\/logo\/hv-footr.png\" \/>";
         footer += "              <div class=\"credits-label\">";
         footer += "                © <a class=\"footer-link-red\" href=\"http:\/\/facebook.com\/hersenvulsel\" target=\"_blank\">Hersenvulsel<\/a> 2016 <br>";
         footer += "                Design: <a class=\"footer-link-red\" href=\"https:\/\/be.linkedin.com\/in\/samgielis\" target=\"_blank\">Sam Gielis<\/a>";

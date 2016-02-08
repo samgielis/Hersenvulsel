@@ -3,18 +3,13 @@
 <head>
   <meta charset="utf-8">
 
+  <!-- ARTICLE METADATA, CUSTOMIZE FOR EACH ARTICLE -->
   <title>Hersenvulsel - Trakteer je Brain op een Snack</title>
-
   <meta name="description" content="Hersenvulsel is een website boordevol interessante weetjes en entertainment." />
-
   <meta name="keywords" content="hersenvulsel, weetjes, nieuws, wetenschap, entertainment, interessant, hersenen,
   geschiedenis, natuur, mensen, varia, trivia, wist je datjes, wist u dat">
-
-  <link rel="image_src" href="./img/main.jpg" />
-
-  <!-- FACEBOOK OPEN GRAPH -->
-  <meta property=”og:image” content=”./img/main.jpg” />
-  <meta property=”og:title” content=”Hersenvulsel” />
+  <link rel="image_src" href="./geschiedenis/apollo-11-tapes/img/main.jpg" />
+  <!-- END MANUAL CUSTOMIZATION -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -44,9 +39,10 @@
   <div id="fb-root"></div>
   <script>
   $(document).ready(function() {
-    hv.navbar("..\/..\/");
-    hv.footer("..\/..\/");
-    hv_article.load(hv);
+    var prefix = "..\/..\/";
+    hv.navbar(prefix);
+    hv.footer(prefix);
+    hv_article.load();
   });
   </script>
 

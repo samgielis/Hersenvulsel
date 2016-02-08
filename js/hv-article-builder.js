@@ -5,9 +5,9 @@ Constructs HV article pages and their elements.
 var hv_article = function(){
 
   // LOADS AND CONSTRUCTS AN ENTIRE ARTICLE PAGE
-  hv_article.prototype.load = function(hv){
+  hv_article.prototype.load = function(){
     $.getJSON("./descriptor.json", function(article) {
-      hv.header(article.category, hv);
+      hv.header(article.category, "../../");
       hv_article.title(article.title, article.category)
       $( "#hv-article-figcaption" ).html("<b>Credit: <\/b>" + article.img_credit);
       hv_article.share_social(article.id, article.category);
@@ -21,7 +21,7 @@ var hv_article = function(){
 
   // CONSTRUCTS THE TITLE AND CATEGORY TITLE
   hv_article.prototype.title = function(title, cat){
-    $( "#hv-title-container" ).append("<h3 class=\"hv-category-title hv-c-" + cat +"\">" + cat + "</h3>");
+    $( "#hv-title-container" ).append("<h3 style=\"padding-top: 15px;\" class=\"hv-category-title hv-c-" + cat +"\">" + cat + "</h3>");
     $( "#hv-title-container" ).append("<h1 class=\"hv-article-title\" id=\"hv-article-title\">" + title + "</h1>");
   }
 
