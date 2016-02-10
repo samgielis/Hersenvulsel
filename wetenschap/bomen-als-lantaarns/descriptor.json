@@ -6,9 +6,9 @@
   "authorname":"Shanna Verspreet",
   "category":"wetenschap",
   "day":"2016/02/02",
-  "publish-time":"19:00:00",
-  "source-name":"huffingtonpost.com",
-  "source-url":"http://www.huffingtonpost.com/2014/03/30/daan-roosegaarde_n_5044578.html?BFAD",
+  "publish_time":"19:00:00",
+  "source_name":"huffingtonpost.com",
+  "source_url":"http://www.huffingtonpost.com/2014/03/30/daan-roosegaarde_n_5044578.html",
   "img_credit":"huffingtonpost.com",
   "content":[
       {"type":"paragraph",

@@ -36,6 +36,14 @@
     }
 }
 
+/* PADDINGS */
+.pad-bot-20{
+  padding-bottom: 20px;
+}
+.pad-bot-30{
+  padding-bottom: 30px;
+}
+
 
 /* HEADER STYLE */
 header {
@@ -73,17 +81,28 @@ header {
 }
 
 /* TITE STYLE */
-.hv-article-title {
+.hv-article-title, .hv-article-title-mostrecent {
   color: #1A1A1A;
   font-size: 4.2em;
   font-weight: bold;
   padding-bottom: 10px;
   margin-top: 0px;
 }
-.hv-category-title {
+
+.hv-article-title-mostrecent {
+  text-align: left;
+  font-size: 2.5em !important;
+  min-height: 125px
+}
+.hv-category-title, .hv-category-title-small {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0px;
+}
+
+.hv-category-title-small {
+  font-size: 1.5em;
+  margin:0 ! important
 }
 .hv-c-mensen {
   color: #de3737;
@@ -132,7 +151,11 @@ header {
   font-size: 1.1em;
   padding: 0
 }
-
+.hv-author-date-most-recent {
+  margin-bottom: 11px;
+  font-size: 1.3em;
+  transform:scale(1,1.1);
+}
 
 /* CONTENT STYLE */
 hv-content-body-p {
@@ -155,6 +178,18 @@ hv-10bot {
   padding-bottom: 90px;
 }
 
+
+/* MOST RECENT STYLE */
+.hv-lees-meer {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+.hv-most-recent-content {
+  font-size: 1.4em;
+  font-weight: 200;
+  transform:scale(1,1.1);
+}
 
 /* SOCIAL STYLE */
 #share-buttons {

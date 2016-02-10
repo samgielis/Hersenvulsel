@@ -6,9 +6,9 @@
   "authorname":"Shanna Verspreet",
   "category":"geschiedenis",
   "day":"2016/01/08",
-  "publish-time":"15:20:00",
-  "source-name":"npr.org",
-  "source-url":"http://www.npr.org/templates/story/story.php?storyId=106637066",
+  "publish_time":"15:20:00",
+  "source_name":"npr.org",
+  "source_url":"http://www.npr.org/templates/story/story.php?storyId=106637066",
   "img_credit":"http://guardianlv.com",
   "content":[
       {"type":"paragraph",

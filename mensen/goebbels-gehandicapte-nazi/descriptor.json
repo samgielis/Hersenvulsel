@@ -6,9 +6,9 @@
   "authorname":"Shanna Verspreet",
   "category":"mensen",
   "day":"2016/01/07",
-  "publish-time":"15:45:00",
-  "source-name":"wikipedia.org",
-  "source-url":"https://en.wikipedia.org/wiki/Joseph_Goebbels#Early_life",
+  "publish_time":"15:45:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Joseph_Goebbels#Early_life",
   "img_credit":"ytimg.com",
   "content":[
       {"type":"paragraph",

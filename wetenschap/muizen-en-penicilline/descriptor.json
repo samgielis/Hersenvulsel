@@ -7,8 +7,8 @@
   "category":"wetenschap",
   "day":"2016/01/25",
   "publish-time":"19:00:00",
-  "source-name":"afma-curedisease.org",
-  "source-url":"http://www.afma-curedisease.org/pdf/penicillin.pdf",
+  "source_name":"afma-curedisease.org",
+  "source_url":"http://www.afma-curedisease.org/pdf/penicillin.pdf",
   "img_credit":"http://gaia.be",
   "content":[
       {"type":"paragraph",
