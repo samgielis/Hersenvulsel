@@ -40,21 +40,20 @@ var hv_category = function(){
           }});
   }
 
-  hv_category.prototype.most_recent = function(art_id, cat){
+  hv_category.prototype.most_recent = function(art_id, cat, supercat){
 
     // set category title
-    $( "#hv-most-recent-cat-title" ).addClass( "hv-c-" + cat);
+    $( "#hv-most-recent-cat-title" ).addClass( "hv-c-" + supercat);
     $( "#hv-most-recent-cat-title" ).text(cat);
 
     // set lees meer
-    $( "#hv-lees-meer-b" ).addClass( "hv-c-" + cat);
+    $( "#hv-lees-meer-b" ).addClass( "hv-c-" + supercat);
     $( "#hv-lees-meer-a" ).attr("href","../" + cat + "/" + art_id );
 
     // set main image
     $( "#most_recent_img" ).attr("src","../" + cat + "/" + art_id + "/img/main.jpg");
 
     // get article data
-    alert("../"+cat+"/"+art_id+"/descriptor.json");
     $.getJSON("../"+cat+"/"+art_id+"/descriptor.json", function(article) {
 
       // set most recent title
@@ -62,10 +61,10 @@ var hv_category = function(){
 
       // set author and date
       var date = article.day.split("/");
-      $("#author-date-most-recent").text(date[2] + "/" + date[1] + "/" + date[0] +" - " + article.authorname);
+      $("#author-date-most-recent").html(date[2] + "/" + date[1] + "/" + date[0] +" - <a style=\"color: #333333; !important;\" href=\"../a/" + article.authorid + "\">" + article.authorname + "</a>");
 
       // set most recent source
-      $( "#hv-most-recent-source-a").addClass("hv-c-" + cat);
+      $( "#hv-most-recent-source-a").addClass("hv-c-" + supercat);
       $( "#hv-most-recent-source-a" ).attr("href",article.source_url);
       $( "#hv-most-recent-source-a" ).text(article.source_name);
 

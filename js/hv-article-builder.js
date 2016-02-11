@@ -12,7 +12,7 @@ var hv_article = function(){
       $( "#hv-article-figcaption" ).html("<b>Credit: <\/b>" + article.img_credit);
       hv_article.share_social(article.id, article.category);
       hv_article.author_date(article.authorid, article.authorname, article.day);
-      hv_article.article_content(article.content);
+      hv_article.article_content(article);
       hv_article.sidebar(article.category);
 
     })
@@ -83,7 +83,8 @@ var hv_article = function(){
   }
   // CONSTRUCTS THE ARTICLE'S MAIN CONTENT
   // uses the content-type constructers as implemented below
-  hv_article.prototype.article_content = function(content){
+  hv_article.prototype.article_content = function(article){
+    var content = article.content;
     for (var i = 0; i < content.length; i++) {
       switch (content[i].type) {
         case "paragraph":
@@ -94,6 +95,13 @@ var hv_article = function(){
 
       }
     }
+    var source = "<span id=\"hv-most-recent-source-p\" style=\"text-transform: uppercase; font-size: 0.6em !important; padding-top: 22px; display: table;\">";
+    source    +=    "<img src=\"../../img/source.png\" title=\"Bron\" style=\"width: 23px;\"/>";
+    source    +=    "<a id=\"hv-most-recent-source-a\" href=\"" + article.source_url + "\" target=\"_blank\" style=\"padding-left: 10px; display: table-cell;  vertical-align: middle;\">";
+    source    +=      article.source_name;
+    source    +=    "</a>";
+    source    += "</span>";
+    $( "#article_body" ).append(source);
   }
 
 

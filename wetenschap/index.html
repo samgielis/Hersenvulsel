@@ -95,11 +95,12 @@
   <script>
   $(document).ready(function() {
     var prefix = "..\/";
+    var supercat = "wetenschap";
     hv.navbar(prefix);
     hv.footer(prefix);
-    hv.header("wetenschap", prefix);
-    //hv_category.most_recent("bomen-als-lantaarns", "wetenschap");
-    hv_category.most_recent("apollo-11-tapes", "geschiedenis");
+    hv.header(supercat, prefix);
+    hv_category.most_recent("muizen-en-penicilline", "wetenschap", supercat);
+    //hv_category.most_recent("apollo-11-tapes", "geschiedenis", supercat);
   });
   </script>
 
