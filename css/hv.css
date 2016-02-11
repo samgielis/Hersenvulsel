@@ -105,19 +105,19 @@ header {
   margin:0 ! important
 }
 .hv-c-mensen {
-  color: #de3737;
+  color: #de3737 !important;
 }
 .hv-c-wetenschap {
-  color: #2a6fa4;
+  color: #2a6fa4 !important;
 }
 .hv-c-geschiedenis {
-  color: #e9d822;
+  color: #e9d822 !important;
 }
 .hv-c-natuur {
-  color: #4ea648;
+  color: #4ea648 !important;
 }
 .hv-c-entertainment {
-  color: #8833af;
+  color: #8833af !important;
 }
 .hv-title-container {
   width: 100%;

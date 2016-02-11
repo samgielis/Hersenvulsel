@@ -6,7 +6,6 @@ var hv_category = function(){
 
   hv_category.prototype.load = function(cat){
 
-
   }
 
   hv_category.prototype.titlethumb =  function(article_id, category, callback){
@@ -43,11 +42,12 @@ var hv_category = function(){
   hv_category.prototype.most_recent = function(art_id, cat, supercat){
 
     // set category title
+    $( "#hv-most-recent-mr" ).addClass( "hv-c-" + supercat);
     $( "#hv-most-recent-cat-title" ).addClass( "hv-c-" + supercat);
     $( "#hv-most-recent-cat-title" ).text(cat);
 
     // set lees meer
-    $( "#hv-lees-meer-b" ).addClass( "hv-c-" + supercat);
+    $( "#hv-lees-meer-a" ).addClass( "hv-c-" + supercat);
     $( "#hv-lees-meer-a" ).attr("href","../" + cat + "/" + art_id );
 
     // set main image

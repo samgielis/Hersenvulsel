@@ -1,114 +1,259 @@
-<html lang="nl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
 
+  <!-- ARTICLE METADATA, CUSTOMIZE FOR EACH ARTICLE -->
   <title>Hersenvulsel - Trakteer je Brain op een Snack</title>
-
   <meta name="description" content="Hersenvulsel is een website boordevol interessante weetjes en entertainment." />
-
   <meta name="keywords" content="hersenvulsel, weetjes, nieuws, wetenschap, entertainment, interessant, hersenen,
   geschiedenis, natuur, mensen, varia, trivia, wist je datjes, wist u dat">
+  <link rel="image_src" href="./geschiedenis/apollo-11-tapes/img/main.jpg" />
+  <!-- END MANUAL CUSTOMIZATION -->
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" type="image/ico" href="favicon.ico">
-	<style>
-		html, body {
-			height: 100%;
-		}
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/ico" href="../favicon.ico">
 
-		html {
-			display: table;
-			margin: auto;
-		}
+  <script src="../js/hv-builder.js"></script>
+  <script src="../js/hv-category-builder.js"></script>
 
-		body {
-			display: table-cell;
-			vertical-align: middle;
-		}
-		body {
-			background-color: e9d822 !important;
-		}
-		h1 {
-			font-size: 5em;
-			transform:scale(1,1.1); /* W3C */
-			-webkit-transform:scale(1,1.1); /* Safari and Chrome */
-			-moz-transform:scale(1,1.1); /* Firefox */
-			-ms-transform:scale(1,1.1); /* IE 9 */
-			-o-transform:scale(1,1.1); /* Opera */
-			color: white;
-			font-weight: 700;
-			letter-spacing: 1px;
-		}
-		p {
-			background-color: 252525;
-			color: white;
-			font-size: 3em;
-			font-weight: 600;
-			padding: 0 10;
-			line-height: 50px;
-			margin-top: 0.07em;
-			margin-bottom: 0.07em;
-		}
+  <link rel="stylesheet" href="../css/hv.css">
 
-		.extension {
-			font-size: 3m;
-		}
-
-		.imgwrap-out {
-			width: 100%;
-			height: 250px;
-			text-align: center;
-		}
-
-		.imgwrap-in {
-			overflow:hidden;
-		}
-		img {
-			-webkit-transition: all 200ms ease-in;
-			-webkit-transform: scale(1);
-			-ms-transition: all 200ms ease-in;
-			-ms-transform: scale(1);
-			-moz-transition: all 200ms ease-in;
-			-moz-transform: scale(1);
-			transition: all 200ms ease-in;
-			transform: scale(1);
-		}
-
-		img:hover {
-			-webkit-transition: all 200ms ease-in;
-			-webkit-transform: scale(1.25);
-			-ms-transition: all 200ms ease-in;
-			-ms-transform: scale(1.25);
-			-moz-transition: all 200ms ease-in;
-			-moz-transform: scale(1.25);
-			transition: all 200ms ease-in;
-			transform: scale(1.25);
-		}
-
-		a:hover {
-			color: white;
-		}
-	</style>
-
-
+  <script>
+  // CREATE HV OBJECT (=ELEMENT BUILDER)
+  var hv = new hv();
+  var hv_category = new hv_category();
+  </script>
 </head>
+
 <body>
-	<div class="imgwrap-out">
-		<a class="imgwrap-in" href="http://facebook.com/hersenvulsel">
-			<img src="../img/logo/logo-seethrough.png" alt="fuck dees zou moeten werken" height="250" width="250"></img>
-		</a>
-	</div>
-	<div>
-		<a href="http://facebook.com/hersenvulsel"><h1>HERSENVULSEL<span class="extension">.BE</span></h1></a>
-    <a href="http://facebook.com/hersenvulsel"><h1>/GESCHIEDENIS</h1></a>
-		<p>WIST JE DAT...</p>
-		<p>HERSENVULSEL BINNENKORT</p>
-		<p>EEN EIGEN WEBSITE KRIJGT?</p>
-	</div>
+  <div id="fb-root"></div>
+  <style>
+  .image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    height: 220px;
+    background: black;
+  }
+  .image img {
+    height: 100%;
+    opacity: 0.7;
+  }
+  .title-container {
+      position: absolute;
+      top: 35px;
+      left: 3px;
+      width: 95%;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .title-h2 {
+      position: absolute;
+  }
+
+  .title-h2 span:hover {
+      background-color: rgba(40,105,164,0.8);
+      box-shadow: 10px 0 0 rgba(40,105,164,0.8),-0 0 0 rgba(208,44,42,0.8);
+  }
+
+  .title-h2 span {
+      display: inline;
+      font-family: arial;
+      box-shadow: 10px 0 0 rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 1.02em;
+      line-height: 1.1em;
+      background: rgba(0,0,0,0.6);
+  }
+
+  .cat {
+      font-weight: 700;
+      font-family: arial;
+      position: absolute;
+      font-size: .8em;
+      top: 15px;
+      left: 25px;
+      color: #fff;
+      padding-bottom: 2px;
+      border-bottom: 3px solid rgb(208,44,42);
+      transform:scale(1,1.1);
+  }
+  .thumblink {
+    color: white !important;
+    text-decoration: none !important;
+  }
+  </style>
+  <script>
+  $(document).ready(function() {
+    var prefix = "..\/";
+    var supercat = "geschiedenis";
+    hv.navbar(prefix);
+    hv.footer(prefix);
+    hv.header(supercat, prefix);
+    //hv_category.most_recent("muizen-en-penicilline", "wetenschap", supercat);
+    hv_category.most_recent("apollo-11-tapes", "geschiedenis", supercat);
+  });
+  </script>
+
+  <header id="hv-header" class="masthead hv-pagehead-cont">
+    <!-- AUTOGENERATED BY hv.header() -->
+  </header>
+
+  <!-- Begin Navbar -->
+  <div id="nav-wrapper" class="nav-wrapper" style="height:90px;">
+    <!-- AUTOGENERATED BY hv.navbar() -->
+  </div>
+
+  <div class="container">
+
+    <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20" style="padding-top: 30px;">MEEST RECENT</h2>
+
+    <div class="row">
+
+      <!-- MOST-RECENT ARTICLE -->
+      <div class="col-sm-12 pad-bot-20">
+        <div class="row">
+          <div class="col-sm-6 pad-bot-30">
+            <img id="most_recent_img" src="./bomen-als-lantaarns/img/main.jpg" style="max-width: 100%;">
+          </div>
+          <div class="col-sm-6 pad-bot-30">
+            <h3 class="hv-category-title-small" id="hv-most-recent-cat-title"></h3>
+            <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title">
+              <!-- AUTO-GENERATED BY HV-CATEGORY-BUILDER.MOST_RECENT()-->
+            </h1>
+            <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
+              <!-- AUTO-GENERATED BY HV-CATEGORY-BUILDER.MOST_RECENT()-->
+            </b></h4>
+            <p class="hv-most-recent-content" id="most-recent-content">
+              <!-- AUTO-GENERATED BY HV-CATEGORY-BUILDER.MOST_RECENT()-->
+            </p>
+            <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
+            <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
+              <img src="../img/source.png" title="Bron" style="width: 23px;"/>
+              <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
+              <!-- AUTO-GENERATED BY HV-CATEGORY-BUILDER.MOST_RECENT()-->
+              </a>
+            </p>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <h2 class="hv-category-title hv-c-wetenschap pad-bot-20">MEER ARTIKELS</h2>
+      <div class="row">
+        <div class="col-sm-12" style="padding-bottom: 50px;">
+
+          <div class="row" >
+            <div class="col-sm-4" style="padding-bottom: 20px">
+              <div class="image" >
+                <img alt="" src="http://hersenvulsel.be/wetenschap/bomen-als-lantaarns/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
+                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="title-container">
+                    <h2 class="title-h2">
+                      <span>
+                        <a href="./bomen-als-lantaarns/index.html" class="thumblink"> Vervangen lichtgevende bomen binnenkort onze lantaarnpalen? </a>
+                      </span>
+                     </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding-bottom: 20px">
+              <div class="image" >
+                <img alt="" src="http://hersenvulsel.be/wetenschap/muizen-en-penicilline/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
+                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="title-container">
+                    <h2 class="title-h2">
+                      <span>
+                        <a href="./muizen-en-penicilline/index.html" class="thumblink"> Uitvinding penicilline dankzij muizen </a>
+                      </span>
+                     </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding-bottom: 20px">
+              <div class="image" >
+                <img alt="" src="http://hersenvulsel.be/geschiedenis/apollo-11-tapes/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
+                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="title-container">
+                    <h2 class="title-h2">
+                      <span>
+                        <a href="../geschiedenis/apollo-11-tapes/index.html" class="thumblink"> Houston, waar zijn die Apollo 11 tapes? </a>
+                      </span>
+                     </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding-bottom: 20px">
+              <div class="image" >
+                <img alt="" src="http://hersenvulsel.be/mensen/goebbels-gehandicapte-nazi/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
+                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="title-container">
+                    <h2 class="title-h2">
+                      <span>
+                        <a href="../mensen/goebbels-gehandicapte-nazi/index.html" class="thumblink"> Gefrusteerd door eigen handicap: Joseph Goebbels, Nazi </a>
+                      </span>
+                     </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding-bottom: 20px">
+              <div class="image" >
+                <img alt="" src="http://hersenvulsel.be/natuur/zo-ziet-de-yeti-er-uit/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
+                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="title-container">
+                    <h2 class="title-h2">
+                      <span>
+                        <a href="../mensen/natuur/zo-ziet-de-yeti-er-uit/index.html" class="thumblink">  Wij weten hoe een yeti er écht uitziet! </a>
+                      </span>
+                     </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding-bottom: 20px">
+              <div class="image" >
+                <img alt="" src="http://hersenvulsel.be/entertainment/5-dollar-voor-helemaal-niks/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
+                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="title-container">
+                    <h2 class="title-h2">
+                      <span>
+                        <a href="../entertainment/5-dollar-voor-helemaal-niks/index.html" class="thumblink"> Geld vragen voor 'helemaal niks' en toch $71.000 verdienen... Goeie marketing! </a>
+                     </h2>
+                </div>
+              </div>
+            </div>
+          </div><!--/row-->
+
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+</div>
+
+
+  <footer class="hv-footer" id="hv-footer">
+    <!-- AUTOGENERATED BY hv.footer() -->
+  </footer>
+
+
 </body>
+
+<!-- CODE DEPENDENCIES -->
+<script src="../js/hv-social-plugins.js"></script>
+<script>
+$(document).ready(function () {
+      $(".navbar-nav li.trigger-collapse a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+    });
+</script>
 </html>

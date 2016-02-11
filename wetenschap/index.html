@@ -24,6 +24,7 @@
   <script src="../js/hv-category-builder.js"></script>
 
   <link rel="stylesheet" href="../css/hv.css">
+  <link rel="stylesheet" href="../css/hv-article-tile.css">
 
   <script>
   // CREATE HV OBJECT (=ELEMENT BUILDER)
@@ -34,64 +35,6 @@
 
 <body>
   <div id="fb-root"></div>
-  <style>
-  .image {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    min-width: 300px;
-    height: 220px;
-    background: black;
-  }
-  .image img {
-    height: 100%;
-    opacity: 0.7;
-  }
-  .title-container {
-      position: absolute;
-      top: 35px;
-      left: 3px;
-      width: 95%;
-      padding-left: 20px;
-      padding-right: 20px;
-  }
-
-  .title-h2 {
-      position: absolute;
-  }
-
-  .title-h2 span:hover {
-      background-color: rgba(40,105,164,0.8);
-      box-shadow: 10px 0 0 rgba(40,105,164,0.8),-0 0 0 rgba(208,44,42,0.8);
-  }
-
-  .title-h2 span {
-      display: inline;
-      font-family: arial;
-      box-shadow: 10px 0 0 rgba(0,0,0,0.6);
-      color: #fff;
-      font-size: 1.02em;
-      line-height: 1.1em;
-      background: rgba(0,0,0,0.6);
-  }
-
-  .cat {
-      font-weight: 700;
-      font-family: arial;
-      position: absolute;
-      font-size: .8em;
-      top: 15px;
-      left: 25px;
-      color: #fff;
-      padding-bottom: 2px;
-      border-bottom: 3px solid rgb(208,44,42);
-      transform:scale(1,1.1);
-  }
-  .thumblink {
-    color: white !important;
-    text-decoration: none !important;
-  }
-  </style>
   <script>
   $(document).ready(function() {
     var prefix = "..\/";
@@ -115,7 +58,7 @@
 
   <div class="container">
 
-    <h2 class="hv-category-title hv-c-wetenschap" style="padding-bottom: 20px; padding-top: 30px;">MEEST RECENT</h2>
+    <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20" style="padding-top: 30px;">MEEST RECENT</h2>
 
     <div class="row">
 
@@ -149,17 +92,17 @@
 
   </div>
 
-  <h2 class="hv-category-title hv-c-wetenschap" style="padding-bottom: 20px;">MEER ARTIKELS</h2>
+  <h2 class="hv-category-title hv-c-wetenschap pad-bot-20">MEER ARTIKELS</h2>
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12" style="padding-bottom: 50px;">
 
           <div class="row" >
-            <div class="col-sm-4" style="padding-bottom: 20px">
-              <div class="image" >
+            <div class="col-sm-4 pad-bot-20">
+              <div class="hv-tile-image-container" >
                 <img alt="" src="http://hersenvulsel.be/wetenschap/bomen-als-lantaarns/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
-                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
-                <div class="title-container">
-                    <h2 class="title-h2">
+                <b><p class="hv-tile-category">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="hv-tile-title-container">
+                    <h2 class="hv-tile-title">
                       <span>
                         <a href="./bomen-als-lantaarns/index.html" class="thumblink"> Vervangen lichtgevende bomen binnenkort onze lantaarnpalen? </a>
                       </span>
@@ -167,12 +110,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4" style="padding-bottom: 20px">
-              <div class="image" >
+            <div class="col-sm-4 pad-bot-20">
+              <div class="hv-tile-image-container" >
                 <img alt="" src="http://hersenvulsel.be/wetenschap/muizen-en-penicilline/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
-                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
-                <div class="title-container">
-                    <h2 class="title-h2">
+                <b><p class="hv-tile-category">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="hv-tile-title-container">
+                    <h2 class="hv-tile-title">
                       <span>
                         <a href="./muizen-en-penicilline/index.html" class="thumblink"> Uitvinding penicilline dankzij muizen </a>
                       </span>
@@ -180,12 +123,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4" style="padding-bottom: 20px">
-              <div class="image" >
-                <img alt="" src="http://hersenvulsel.be/geschiedenis/apollo-11-tapes/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
-                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
-                <div class="title-container">
-                    <h2 class="title-h2">
+            <div class="col-sm-4 pad-bot-20">
+              <div class="hv-tile-image-container" >
+                <img alt="" src="http://hersenvulsel.be/geschiedenis/apollo-11-tapes/img/main.jpg">
+                <b><p class="hv-tile-category">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="hv-tile-title-container">
+                    <h2 class="hv-tile-title">
                       <span>
                         <a href="../geschiedenis/apollo-11-tapes/index.html" class="thumblink"> Houston, waar zijn die Apollo 11 tapes? </a>
                       </span>
@@ -193,12 +136,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4" style="padding-bottom: 20px">
-              <div class="image" >
-                <img alt="" src="http://hersenvulsel.be/mensen/goebbels-gehandicapte-nazi/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
-                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
-                <div class="title-container">
-                    <h2 class="title-h2">
+            <div class="col-sm-4 pad-bot-20">
+              <div class="hv-tile-image-container" >
+                <img alt="" src="http://hersenvulsel.be/mensen/goebbels-gehandicapte-nazi/img/main.jpg" >
+                <b><p class="hv-tile-category">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="hv-tile-title-container">
+                    <h2 class="hv-tile-title">
                       <span>
                         <a href="../mensen/goebbels-gehandicapte-nazi/index.html" class="thumblink"> Gefrusteerd door eigen handicap: Joseph Goebbels, Nazi </a>
                       </span>
@@ -206,12 +149,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4" style="padding-bottom: 20px">
-              <div class="image" >
-                <img alt="" src="http://hersenvulsel.be/natuur/zo-ziet-de-yeti-er-uit/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
-                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
-                <div class="title-container">
-                    <h2 class="title-h2">
+            <div class="col-sm-4 pad-bot-20">
+              <div class="hv-tile-image-container" >
+                <img alt="" src="http://hersenvulsel.be/natuur/zo-ziet-de-yeti-er-uit/img/main.jpg" >
+                <div class="hv-tile-title-container">
+                    <h2 class="hv-tile-title">
                       <span>
                         <a href="../mensen/natuur/zo-ziet-de-yeti-er-uit/index.html" class="thumblink">  Wij weten hoe een yeti er écht uitziet! </a>
                       </span>
@@ -219,12 +161,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4" style="padding-bottom: 20px">
-              <div class="image" >
-                <img alt="" src="http://hersenvulsel.be/entertainment/5-dollar-voor-helemaal-niks/img/main.jpg" style="width: 100%; height: 100%; background-color: black;">
-                <b><p class="cat">WETENSCHAP / GESCHIEDENIS</p></b>
-                <div class="title-container">
-                    <h2 class="title-h2">
+            <div class="col-sm-4 pad-bot-20">
+              <div class="hv-tile-image-container" >
+                <img alt="" src="http://hersenvulsel.be/entertainment/5-dollar-voor-helemaal-niks/img/main.jpg" >
+                <b><p class="hv-tile-category">WETENSCHAP / GESCHIEDENIS</p></b>
+                <div class="hv-tile-title-container">
+                    <h2 class="hv-tile-title">
                       <span>
                         <a href="../entertainment/5-dollar-voor-helemaal-niks/index.html" class="thumblink"> Geld vragen voor 'helemaal niks' en toch $71.000 verdienen... Goeie marketing! </a>
                      </h2>

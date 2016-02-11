@@ -53,6 +53,7 @@ var hv_article = function(){
   }
 
   hv_article.prototype.decorate_author_date = function(authid, name, date){
+    var datum = date.split("/");
     var auth="";
     auth += "<div class=\"hv-author-thumbnail-container pull-left\">";
     auth += "            <a href=\"..\/..\/a\/" + authid + "\">";
@@ -61,9 +62,55 @@ var hv_article = function(){
     auth += "          <\/div>";
     auth += "          <div style=\"padding-left: 10px\">";
     auth += "            <p class=\"hv-author-name\"><a class=\"hv-author-name-link\" href=\"..\/..\/a\/" + authid + "\">" + name + "<\/a><\/p>";
-    auth += "            <p class=\"hv-date-line\">18 Januari 2016<\/p>";
+    auth += "            <p class=\"hv-date-line\">" + datum[2] + " " + this.month_to_monthname(datum[1]) + " " + datum[0] + "<\/p>";
     auth += "          <\/div>";
     return auth;
+  }
+
+  hv_article.prototype.month_to_monthname = function(month_numeral){
+    var res = "";
+    switch (month_numeral) {
+      case "01":
+        res = "Januari";
+        break;
+      case "02":
+        res = "Februari";
+        break;
+      case "03":
+        res = "Maart";
+        break;
+      case "04":
+        res = "April";
+        break;
+      case "05":
+        res = "Mei";
+        break;
+      case "06":
+        res = "Juni";
+        break;
+      case "07":
+        res = "Juli";
+        break;
+      case "08":
+        res = "Augustus";
+        break;
+      case "09":
+        res = "September";
+        break;
+      case "10":
+        res = "Oktober";
+        break;
+      case "11":
+        res = "November";
+        break;
+      case "12":
+        res = "December";
+        break;
+      default:
+        res = "Onbekend"
+
+    }
+    return res;
   }
 
   // CONSTRUCTS THE "NIEUW" SIDEBAR FOR ARTICLES
