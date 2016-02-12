@@ -1,0 +1,15 @@
+{
+	"articles":[
+		{
+			"id":				"meisje-gered-door-leeuwen",
+			"category":	"natuur",
+			"pubtime": 	"2014/11/07 14:45:00"
+		},
+		{
+			"id":				"zo-ziet-de-yeti-er-uit",
+			"category":	"natuur",
+			"pubtime": 	"2015/12/12 14:45:00"
+		}
+
+	]
+}

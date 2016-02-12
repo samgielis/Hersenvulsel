@@ -137,6 +137,9 @@ var hv_article = function(){
         case "paragraph":
           hv_article.paragraph(content[i].content);
           break;
+        case "embed":
+          hv_article.paragraph(content[i].code);
+          break;
         default:
           console.log("ignoring unsupported content-type: " + content[i].type);
 
@@ -165,4 +168,11 @@ var hv_article = function(){
     $( "#article_body" ).append(p);
   }
 
+  // embed
+  hv_article.prototype.embed = function(code){
+    var div = "<div style=\"padding-top:35px;\" class=\"hv-10bot\">";
+    div += code;
+    div += "</div>"
+    $( "#article_body" ).append(div);
+  }
 }

@@ -1,0 +1,17 @@
+{
+	"articles":[
+		{
+			"id":		"klaag-me-aan-scientology",
+			"category":	"entertainment",
+			"pubdate": 	"2016/02/12",
+			"pubtime": 	"15:10:00"
+		},
+		{
+			"id":		"vijf-dollar-voor-helemaal-niets",
+			"category":	"entertainment",
+			"pubdate": 	"2015/11/28",
+			"pubtime": 	"15:35:00"
+		}
+	
+	]
+}

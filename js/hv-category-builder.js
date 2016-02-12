@@ -4,41 +4,6 @@
 */
 var hv_category = function(){
 
-  hv_category.prototype.load = function(cat){
-
-  }
-
-  hv_category.prototype.titlethumb =  function(article_id, category, callback){
-    var navbar="";
-        navbar += "<div id=\"nav\"  >";
-        navbar += "    <div class=\"navbar navbar-inverse navbar-static\" style=\"z-index: 10;\">";
-        navbar += "      <div class=\"container\">";
-        navbar += "        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->";
-        navbar += "        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">";
-        navbar += "          <span class=\"icon-bar\"><\/span><span class=\"icon-bar\"><\/span><span class=\"icon-bar\"><\/span>";
-        navbar += "        <\/button>";
-        navbar += "    <div class=\"navbar-collapse collapse\" >";
-        navbar += "      <ul class=\"nav  navbar-nav\">";
-        navbar += "        <li><a href=\"" + prefix +"\">Home<\/a><\/li>";
-        navbar += "        <li><a href=\"" + prefix + "wetenschap\">Wetenschap<\/a><\/li>";
-        navbar += "        <li><a href=\"" + prefix + "geschiedenis\">Geschiedenis<\/a><\/li>";
-        navbar += "        <li><a href=\"" + prefix + "mensen\">Mensen<\/a><\/li>";
-        navbar += "        <li><a href=\"" + prefix + "natuur\">Natuur<\/a><\/li>";
-        navbar += "        <li><a href=\"" + prefix + "entertainment\">Entertainment<\/a><\/li>";
-        navbar += "        <li><a href=\"" + prefix + "faitsdivers\">Faits Divers<\/a><\/li>";
-        navbar += "      <\/ul>";
-        navbar += "      <ul class=\"nav pull-right navbar-nav\">";
-        navbar += "        <li><a href=\"https:\/\/facebook.com\/hersenvulsel\" target=\"_blank\" ><i class=\"fa fa-facebook fa-lg\"><\/i><\/a><\/li>";
-        navbar += "        <li><a href=\"#\"><i class=\"fa fa-envelope fa-lg\"><\/i>  <\/a><\/li>";
-        navbar += "      <\/ul>";
-        navbar += "    <\/div><\/div><\/div><\/div>";
-        document.getElementById('nav-wrapper').innerHTML = navbar;
-        $('#nav').affix({
-          offset: {
-            top: $('header').height()
-          }});
-  }
-
   hv_category.prototype.most_recent = function(art_id, cat, supercat){
 
     // set category title
@@ -49,6 +14,9 @@ var hv_category = function(){
     // set lees meer
     $( "#hv-lees-meer-a" ).addClass( "hv-c-" + supercat);
     $( "#hv-lees-meer-a" ).attr("href","../" + cat + "/" + art_id );
+
+    // set meer artikels
+    $( "#hv-meer-artikels" ).addClass( "hv-c-" + supercat);
 
     // set main image
     $( "#most_recent_img" ).attr("src","../" + cat + "/" + art_id + "/img/main.jpg");
