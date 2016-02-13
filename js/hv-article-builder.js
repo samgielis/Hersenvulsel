@@ -67,6 +67,7 @@ var hv_article = function(){
     return auth;
   }
 
+  // TRANSFORMS A MONTH NUMERAL TO ITS DUTCH NAME
   hv_article.prototype.month_to_monthname = function(month_numeral){
     var res = "";
     switch (month_numeral) {
@@ -123,11 +124,58 @@ var hv_article = function(){
 
   }
 
+
+  // FILLS 'MEER ARTIKELS' WITH RANDOM SUGGESTIONS WITHIN THE SAME CATEGORY.
   hv_article.prototype.sidebar_more_x = function(cat){
+    alert("heyho");
     $( "#hv-sidebar-more-x" ).text("MEER " + cat.toUpperCase());
 
+    $.getJSON("../directory.json", function(directory) {
+
+      var suggestions = directory.articles;
+      suggestions = randomize(suggestions);
+
+      var suggamt = 2;
+
+      if(suggestions.length < suggamt){
+        suggamt = suggestions.length
+      }
+      for (var i = 0; i < suggamt; i++) {
+        $.getJSON("../../" + suggestions[i].category + "/" + suggestions[i].id + "/descriptor.json", function(article) {
+          var entry = "<a href=\"#\" class=\"list-group-item sidebar-article-entry\">" + article.title + "</a>";
+          $( "#hv-sidebar-more-x" ).append(entry);
+        })
+        .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het suggereren van andere artikelen binnen deze categorie. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
+
+      }
+    })
+    .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het suggereren van andere artikelen binnen deze categorie. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
 
   }
+
+
+  // RANDOMIZES AN ARRAY
+  function randomize(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  }
+
+
+
+
   // CONSTRUCTS THE ARTICLE'S MAIN CONTENT
   // uses the content-type constructers as implemented below
   hv_article.prototype.article_content = function(article){
