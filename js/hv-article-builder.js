@@ -235,7 +235,10 @@ var hv_article = function(){
           hv_article.paragraph(content[i].content);
           break;
         case "embed":
-          hv_article.paragraph(content[i].code);
+          hv_article.embed(content[i].code);
+          break;
+        case "image":
+          hv_article.image(content[i].name, content[i].credit);
           break;
         default:
           console.log("ignoring unsupported content-type: " + content[i].type);
@@ -265,11 +268,24 @@ var hv_article = function(){
     $( "#article_body" ).append(p);
   }
 
-  // embed
+  // EMBED
   hv_article.prototype.embed = function(code){
     var div = "<div style=\"padding-top:35px;\" class=\"hv-10bot\">";
     div += code;
     div += "</div>"
     $( "#article_body" ).append(div);
+  }
+
+  // IMAGE
+  hv_article.prototype.image = function(name, credit){
+    var img = "<figure style=\"padding-top: 20px; padding-bottom: 20px;\">";
+        img +=  "<img src=\"./img/" + name + "\" style=\"max-width: 100%\"/>";
+        if(credit != ""){
+          img +=      "<figcaption class=\"hv-article-figcaption\" style=\"font-size: 0.4em;\">";
+          img +=        "<b>credit: </b>" + credit;
+          img +=      "</figcaption>";
+        }
+        img += "</figure>";
+    $( "#article_body" ).append(img);
   }
 }

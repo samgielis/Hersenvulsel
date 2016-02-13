@@ -1,0 +1,17 @@
+{
+  "id":"beste-brood-ter-wereld",
+  "title":"Het beste brood ter wereld",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"faitsdivers",
+  "day":"2014/10/14",
+  "source_name":"nytimes.com",
+  "source_url":"http://cooking.nytimes.com/recipes/1016277-tartines-country-bread",
+  "img_credit":"wikimedia.org",
+  "content":[
+      {"type":"paragraph",
+      "content":"'Het beste brood ter wereld'. Het is een recept van bakker Chad Robertson dat maar liefst 38 pagina's telt - en het bereiden van dit brood, van de eerste voorbereidingen tot je het uit de oven haalt, duurt twee weken. De moeite dus!"},
+	  {"type":"paragraph",
+      "content":"Een korte samenvatting van het recept vind je in onderstaand artikel van de New York Times. Wie echt benieuwd is, kan het boek bestellen via <a href=\"http://www.tartinebread.com\"> de officiële website</a>."}
+  ]
+}
