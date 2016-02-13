@@ -162,7 +162,8 @@ var hv_article = function(){
       $.getJSON("../../" + cats[i] + "/directory.json", function(directory) {
         var newest = directory.articles;
         set_newest_first(newest);
-        $.merge(allarticles, newest.slice(0,2));
+        newest = newest.slice(0,2);
+        $.merge(allarticles, newest);
         count = count + 1;
         if(count >= 6){
           set_newest_first(allarticles);
