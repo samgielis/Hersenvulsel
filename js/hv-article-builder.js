@@ -144,7 +144,7 @@ var hv_article = function(){
       if(suggestions.length < suggamt){
         suggamt = suggestions.length
       }
-      for (var i = 0; i < suggamt; i++) {
+      for (var i = 0; i <= suggamt; i++) {
         $.getJSON("../../" + suggestions[i].category + "/" + suggestions[i].id + "/descriptor.json", function(article) {
           var entry = "<a href=\"../../" + article.category + "/" + article.id + "\" class=\"list-group-item sidebar-article-entry\">" + article.title + "</a>";
           $( "#hv-sidebar-more-x-list" ).append(entry);
