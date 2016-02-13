@@ -21,7 +21,12 @@ var hv_article = function(){
 
   // CONSTRUCTS THE TITLE AND CATEGORY TITLE
   hv_article.prototype.title = function(title, cat){
-    $( "#hv-title-container" ).append("<h3 style=\"padding-top: 15px;\" class=\"hv-category-title hv-c-" + cat +"\">" + cat + "</h3>");
+	if(cat == "faitsdivers"){
+		$( "#hv-title-container" ).append("<h3 style=\"padding-top: 15px;\" class=\"hv-category-title hv-c-" + cat +"\">faits divers</h3>");
+	}
+	else{
+		$( "#hv-title-container" ).append("<h3 style=\"padding-top: 15px;\" class=\"hv-category-title hv-c-" + cat +"\">" + cat + "</h3>");
+	}
     $( "#hv-title-container" ).append("<h1 class=\"hv-article-title\" id=\"hv-article-title\">" + title + "</h1>");
   }
 

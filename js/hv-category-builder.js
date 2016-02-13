@@ -9,7 +9,11 @@ var hv_category = function(){
     // set category title
     $( "#hv-most-recent-mr" ).addClass( "hv-c-" + supercat);
     $( "#hv-most-recent-cat-title" ).addClass( "hv-c-" + supercat);
-    $( "#hv-most-recent-cat-title" ).text(cat);
+	if(cat == "faitsdivers"){
+		$( "#hv-most-recent-cat-title" ).text("faits divers");
+	} else {
+		$( "#hv-most-recent-cat-title" ).text(cat);
+	}
 
     // set lees meer
     $( "#hv-lees-meer-a" ).addClass( "hv-c-" + supercat);
