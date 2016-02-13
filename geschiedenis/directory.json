@@ -1,6 +1,11 @@
 {
 	"articles":[
 		{
+			"id":		"eiffeltoren-te-koop",
+			"category":	"geschiedenis",
+			"pubtime": 	"2014/08/1 15:10:00"
+		},
+		{
 			"id":		"spotify-in-1897",
 			"category":	"geschiedenis",
 			"pubtime": 	"2016/02/10 15:10:00"
