@@ -141,7 +141,7 @@ var hv_article = function(){
       }
       for (var i = 0; i < suggamt; i++) {
         $.getJSON("../../" + suggestions[i].category + "/" + suggestions[i].id + "/descriptor.json", function(article) {
-          var entry = "<a href=\"#\" class=\"list-group-item sidebar-article-entry\">" + article.title + "</a>";
+          var entry = "<a href=\"" + article.category + "/" + article.id + "\" class=\"list-group-item sidebar-article-entry\">" + article.title + "</a>";
           $( "#hv-sidebar-more-x-list" ).append(entry);
         })
         .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het suggereren van andere artikelen binnen deze categorie. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
