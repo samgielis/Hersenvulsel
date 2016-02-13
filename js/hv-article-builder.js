@@ -161,11 +161,11 @@ var hv_article = function(){
     for (var i = 0; i < cats.length; i++) {
       $.getJSON("../../" + cats[i] + "/directory.json", function(directory) {
         var newest = directory.articles;
-        this.set_newest_first(newest);
+        set_newest_first(newest);
         $.merge(allarticles, newest.slice(0,2));
         count = count + 1;
         if(count >= 6){
-          this.set_newest_first(allarticles);
+          set_newest_first(allarticles);
           allarticles = allarticles.slice(0,3);
 
           for (var i = 0; i < allarticles.length; i++) {
@@ -181,7 +181,7 @@ var hv_article = function(){
     }
 
   }
-  hv_article.prototype.set_newest_first = function(array) {
+  function set_newest_first(array) {
     function newest_first(a, b) {
       var key1 = new Date(a.pubtime).getTime();
       var key2 = new Date(b.pubtime).getTime();
