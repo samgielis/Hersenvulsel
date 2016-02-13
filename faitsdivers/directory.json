@@ -1,6 +1,21 @@
 {
 	"articles":[
 		{
+			"id":		"22u-verboden-te-studeren",
+			"category":	"faitsdivers",
+			"pubtime": 	"2014/08/2 20:30:00"
+		},
+		{
+			"id":		"truc-blad-steen-schaar",
+			"category":	"faitsdivers",
+			"pubtime": 	"2014/08/2 15:15:00"
+		},
+		{
+			"id":		"tieners-te-vondeling",
+			"category":	"faitsdivers",
+			"pubtime": 	"2014/08/1 15:10:00"
+		},
+		{
 			"id":		"waar-komt-dude-vandaan",
 			"category":	"faitsdivers",
 			"pubtime": 	"2016/02/7 15:10:00"
