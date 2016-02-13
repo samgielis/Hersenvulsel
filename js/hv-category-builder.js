@@ -29,7 +29,7 @@ var hv_category = function(){
     $.getJSON("../"+cat+"/"+art_id+"/descriptor.json", function(article) {
 
       // set most recent title
-      $("#hv-most-recent-title").text(article.title);
+      $("#hv-most-recent-title").html("<a style=\"color: inherit;\" href=\"../" + article.category + "/" + article.id + "\"> " + article.title + " </a>");
 
       // set author and date
       var date = article.day.split("/");
