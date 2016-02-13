@@ -121,7 +121,7 @@ var hv_article = function(){
     $( "#hv-sidebar-ads" ).text("RECLAME");
     $( "#hv-sidebar-newest" ).text("NIEUW");
     this.sidebar_more_x(cat);
-
+    this.sidebar_newest(cat);
   }
 
 
@@ -152,6 +152,50 @@ var hv_article = function(){
 
   }
 
+  hv_article.prototype.sidebar_newest = function(cat){
+    $( "#hv-sidebar-newest-title" ).text("NIEUW");
+
+    var cats = ["wetenschap", "natuur", "mensen", "geschiedenis", "entertainment", "faitsdivers"];
+    var allarticles = [];
+    var count = 0;
+    for (var i = 0; i < cats.length; i++) {
+      $.getJSON("../../" + cats[i] + "/directory.json", function(directory) {
+        var newest = directory.articles;
+        this.set_newest_first(newest);
+        $.merge(allarticles, newest.slice(0,2));
+        count = count + 1;
+        if(count >= 6){
+          this.set_newest_first(allarticles);
+          allarticles = allarticles.slice(0,3);
+
+          for (var i = 0; i < allarticles.length; i++) {
+            $.getJSON("../../" + allarticles[i].category + "/" + allarticles[i].id + "/directory.json", function(article) {
+              var entry = "<a href=\"../../" + article.category + "/" + article.id + "\" class=\"list-group-item sidebar-article-entry\">" + article.title + "</a>";
+              $( "#hv-sidebar-newest-list" ).append(entry);
+            })
+            .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het maken van de suggestie voor het artikels met de link: " + allarticles[i].category + "/" + allarticles[i].id + ". Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
+          }
+        }
+      })
+      .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het ophalen van de nieuwste artikels. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
+    }
+
+  }
+  hv_article.prototype.set_newest_first = function(array) {
+    function newest_first(a, b) {
+      var key1 = new Date(a.pubtime).getTime();
+      var key2 = new Date(b.pubtime).getTime();
+
+      if (key1 < key2) {
+          return 1;
+      } else if (key1 == key2) {
+          return 0;
+      } else {
+          return -1;
+      }
+    }
+    array.sort(newest_first);
+  }
 
   // RANDOMIZES AN ARRAY
   function randomize(array) {
