@@ -169,7 +169,7 @@ var hv_article = function(){
           allarticles = allarticles.slice(0,3);
 
           for (var i = 0; i < allarticles.length; i++) {
-            $.getJSON("../../" + allarticles[i].category + "/" + allarticles[i].id + "/directory.json", function(article) {
+            $.getJSON("../../" + allarticles[i].category + "/" + allarticles[i].id + "/descriptor.json", function(article) {
               var entry = "<a href=\"../../" + article.category + "/" + article.id + "\" class=\"list-group-item sidebar-article-entry\">" + article.title + "</a>";
               $( "#hv-sidebar-newest-list" ).append(entry);
             })
