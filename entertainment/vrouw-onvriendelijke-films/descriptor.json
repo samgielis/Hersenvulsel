@@ -1,0 +1,22 @@
+{
+  "id":"vrouw-onvriendelijke-films",
+  "title":"De test die bepaalt of een film vrouwonvriendelijk is",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2014/07/29",
+  "publish_time":"14:18:00",
+  "source_name":"bechdeltest.com ",
+  "source_url":"http://bechdeltest.com",
+  "img_credit":"metrotime.be",
+  "content":[
+      {"type":"paragraph",
+      "content":"In 1985 werd de zogenaamde Bechdel-test voor films in het leven geroepen: een manier om te controleren of een film vrouwvriendelijk is of niet. Het gaat niet om de hoeveelheid naakte borsten of de grootte van het vrouwelijk IQ, wel om volgende drie simpele puntjes:"},
+	  {"type":"paragraph",
+      "content":"Ten eerste moet de film twee vrouwen bevatten die met naam genoemd worden. Die vrouwen moeten een hoorbaar gesprek hebben met elkaar en tot slot moet dat gesprek over iets anders gaan dan een man."},
+      {"type":"paragraph",
+      "content":"Niet alle films slagen in deze test, maar vreemd genoeg komen sommigen zelfs niet verder dan het eerste criterium. Hoewel we alles natuurlijk met een korreltje zout moeten nemen. De film Gravity (2013), met Sandra Bullock, faalt bijvoorbeeld op de volledige Bechdel-test – maar natuurlijk draait de hele film rond het personage van Bullock als astronaut. Vrouwonvriendelijk kunnen we hem dus niet noemen."},
+	  {"type":"paragraph",
+	  "content":"Op <a href=\"http://bechdeltest.com\"> http://bechdeltest.com </a> kan je een lijst met geslaagde én gefaalde films zien, of zelf de test toepassen op een film!"}
+  ]
+}
