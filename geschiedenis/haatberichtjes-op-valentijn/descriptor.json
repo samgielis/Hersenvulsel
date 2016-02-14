@@ -1,0 +1,31 @@
+﻿{
+  "id":"haatberichtjes-op-valentijn",
+  "title":"Vroeger kreeg je haatberichtjes op valentijn",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"2016/02/14",
+  "source_name":"collectorsweekly.com",
+  "source_url":"http://www.collectorsweekly.com/articles/happy-valentines-day-i-hate-you/",
+  "img_credit":"collectorsweekly.com",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Ook romantische berichtjes ontvangen vandaag? Prijs jezelf gelukkig, want tussen 1840 en 1940 was het net andersom. Toen kreeg je regelmatig haatberichtjes op 14 februari."},
+		   {"type": "paragraph",
+		   "content": "Valentijn bestond al wel zoals we het vandaag kennen, maar daarbovenop was er de 'Vinegar Valentine' - 'azijnvalentijn'. Je vertelde je lief dat je hem of haar graag zag en andere mensen kon je anoniem vertellen dat ze net niét zo tof waren."},
+		   {"type": "image",
+		   "name": "1.jpg",
+		   "credit": "collectorsweekly.com"},
+		   {"type": "paragraph",
+		   "content": "Sommige anti-valentijnskaartjes waren heel luchtig, zelfs grappig. Ze waren een manier om je hart te luchten. Een collega of vriend met een vervelende eigenschap, kon je een anoniem kaartje sturen met een grappig gedicht. Andere boodschappen zijn dan weer zwaarder - gedumpt worden met een kaart op valentijn is natuurlijk helemaal niet leuk."},
+		   {"type": "image",
+		   "name": "2.jpg",
+		   "credit": "collectorsweekly.com"},
+		   {"type": "image",
+		   "name": "3.jpg",
+		   "credit": "collectorsweekly.com"},
+		   {"type": "image",
+		   "name": "5.jpg",
+		   "credit": "collectorsweekly.com"}
+		   ]
+}

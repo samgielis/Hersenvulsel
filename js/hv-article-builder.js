@@ -132,7 +132,11 @@ var hv_article = function(){
 
   // FILLS 'MEER ARTIKELS' WITH RANDOM SUGGESTIONS WITHIN THE SAME CATEGORY.
   hv_article.prototype.sidebar_more_x = function(cat){
-    $( "#hv-sidebar-more-x-title" ).text("MEER " + cat.toUpperCase());
+	if(cat == "faitsdivers"){
+		$( "#hv-sidebar-more-x-title" ).text("MEER " + "faits divers".toUpperCase());
+	} else {
+		$( "#hv-sidebar-more-x-title" ).text("MEER " + cat.toUpperCase());
+	}
 
     $.getJSON("../directory.json", function(directory) {
 

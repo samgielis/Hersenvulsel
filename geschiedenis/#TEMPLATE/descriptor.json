@@ -1,0 +1,24 @@
+﻿{
+  "id":"",
+  "title":""
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"",
+  "source_name":"",
+  "source_url":"",
+  "img_credit":"",
+  "content":[
+          {"type": "paragraph",
+		   "content": ""},
+		   {"type": "paragraph",
+		   "content": ""},
+		   {"type": "paragraph",
+		   "content": ""},
+		   {"type": "embed",
+		   "code": ""},
+		   {"type": "image",
+		   "name": "",
+		   "credit": ""}
+		   ]
+}
