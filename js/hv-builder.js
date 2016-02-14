@@ -41,7 +41,7 @@ var hv = function(){
           header += "<div class=\"hv-pagehead header-" + cat + "\">";
         }
         else {
-          header += "<div class=\"hv-pagehead" + cat + "\">";
+          header += "<div class=\"hv-pagehead\">";
         }
         header += "    <img  style=\"min-height: 90%; max-width: 95%; max-height: 95%\" src=\"" + prefix + "img\/hv2-seethrough.png\"";
         //header += "    onmouseover=\"this.src='..\/..\/img\/hv3.png';\"";

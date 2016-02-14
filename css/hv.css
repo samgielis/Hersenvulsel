@@ -47,7 +47,7 @@
 
 /* HEADER STYLE */
 header {
-  height:240px;
+  height:14vw;
   /*background-image: url(../img/bg.png);*/
   background-size: cover;
 }
@@ -239,22 +239,16 @@ hv-10bot {
 
 /* HEADER STYLE */
 .hv-pagehead {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+ 
   text-align:center;
   font: 0/0 a;
   vertical-align: middle;
-  min-height: 90px;
-  max-height: 14vw;
+  height: 14vw;
   max-width: 100%
 }
 .hv-pagehead-cont {
-  max-height: 14vw;
   width: 100%;
-  min-height: 90px
+  height: 14vw;
 }
 
 
