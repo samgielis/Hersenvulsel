@@ -1,6 +1,11 @@
 {
 	"articles":[
 		{
+			"id":		"dilemma-trilemma",
+			"category":	"faitsdivers",
+			"pubtime": 	"2014/08/3 14:15:00"
+		},
+		{
 			"id":		"kidzania-kinderen-volwassenen",
 			"category":	"faitsdivers",
 			"pubtime": 	"2014/10/19 17:22:00"
