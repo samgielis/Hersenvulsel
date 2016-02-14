@@ -23,13 +23,41 @@ var hv_directory = function(){
   hv_directory.prototype.show_directory = function(supercat) {
     $( "#hv-directory-container").empty();
 
-    for (var i = 0; i < this.directory.length; i++) {
-      this.article_tile(this.directory[i].id, this.directory[i].category, supercat, function(article_tile){
-        $( "#hv-directory-container").append(article_tile);
-      });
-    }
+    var i = 0;
+    this.add_tile(i, supercat);
+  
+  }
+  
+  hv_directory.prototype.add_tile = function(i, supercat) {
+	
+	var self = this;
+	var hasAppeared = false;
+    this.article_tile(this.directory[i].id, this.directory[i].category, supercat, i, function(article_tile){
+		$(article_tile).hide().appendTo("#hv-directory-container").fadeIn(1000);
+		var waypoint = new Waypoint({
+		  element: document.getElementById('directory-item-' + i),
+		  handler: function(direction) {
+			if( i + 1 < self.directory.length && !hasAppeared){
+				hasAppeared = true;
+				self.add_tile(i+1, supercat);
+			}
+		  },
+		  offset: 'bottom-in-view'
+		});
+    });
   }
 
+	/*
+	hv_directory.prototype.show_directory = function(supercat) {
+		$( "#hv-directory-container").empty();
+
+		for (var i = 0; i < this.directory.length; i++) {
+		  this.article_tile(this.directory[i].id, this.directory[i].category, supercat, function(article_tile){
+			$( "#hv-directory-container").append(article_tile);
+		  });
+		}
+	  }
+	*/
 
   /*
     SORTING FUNCTIONS FOR THE DIRECTORY
@@ -90,12 +118,14 @@ var hv_directory = function(){
 
 
 
-  hv_directory.prototype.article_tile =  function(article_id, cat, supercat, callback){
+  hv_directory.prototype.article_tile =  function(article_id, cat, supercat, entrynumber, callback){
+	  
+	var id_no = entrynumber;
 
     $.getJSON("../" + cat + "/" + article_id + "/descriptor.json", function(article) {
 
       var article_tile = "";
-      article_tile += "<div class=\"col-sm-4 pad-bot-20\">";
+      article_tile += "<div class=\"col-sm-4 pad-bot-20\" id=\"directory-item-" + id_no + "\">";
       article_tile += "              <div class=\"hv-tile-image-container\" >";
       article_tile += "                <img alt=\"\" src=\"../" + cat + "/" + article_id + "\/img\/main.jpg\" style=\"width: 100%; height: 100%; background-color: black;\">";
       if(cat != supercat){
