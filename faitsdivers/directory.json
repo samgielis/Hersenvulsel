@@ -1,6 +1,11 @@
 {
 	"articles":[
 		{
+			"id":		"skelet-in-het-biologielokaal-begraven",
+			"category":	"faitsdivers",
+			"pubtime": 	"2016/01/18 15:30:00"
+		},
+		{
 			"id":		"22u-verboden-te-studeren",
 			"category":	"faitsdivers",
 			"pubtime": 	"2014/08/2 20:30:00"
