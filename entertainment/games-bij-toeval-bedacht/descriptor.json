@@ -1,0 +1,20 @@
+{
+  "id":"games-bij-toeval-bedacht",
+  "title":"Populaire games die quasi toevallig bedacht zijn",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2014/10/20",
+  "source_name":"gamefaqs.com",
+  "source_url":"http://www.gamefaqs.com/top10/2563-the-top-10-glitches-that-became-features",
+  "img_credit":"finalreplay.com",
+  "content":[
+      {"type":"paragraph",
+      "content":"Bij de ontwikkeling van 'Grand Theft Auto' zat er bijvoorbeeld een fout in de politie-achtervolgingen. Om één of andere reden begonnen de agenten in het spel enorm roekeloos te rijden, wat vaak grote crashes veroorzaakte. En het testpubliek vond het geweldig."},
+	  {"type":"paragraph",
+      "content":"Het spel werd dus volledig omgedraaid en de oorspronkelijke fout werd een belangrijk aspect van GTA."},
+	  {"type":"paragraph",
+      "content":"In <a href=\"http://www.gamefaqs.com/top10/2563-the-top-10-glitches-that-became-features\">deze blogpost</a> vind je nog negen andere bekende games die door een foutje heel populair zijn geworden - zoals Diablo II, Street Fighter en Space Invaders!"}
+	  
+  ]
+}
