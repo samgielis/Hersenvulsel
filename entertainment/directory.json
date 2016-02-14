@@ -1,6 +1,16 @@
 {
 	"articles":[
 		{
+			"id":		"games-bij-toeval-bedacht",
+			"category":	"entertainment",
+			"pubtime": 	"2014/10/20 20:10:00"
+		},
+		{
+			"id":		"dicaprio-leert-drugs-gebruiken",
+			"category":	"entertainment",
+			"pubtime": 	"2014/10/20 17:40:00"
+		},
+		{
 			"id":		"dont-shake-polaroid",
 			"category":	"entertainment",
 			"pubtime": 	"2014/07/31 15:00:00"
