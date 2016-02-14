@@ -9,7 +9,7 @@ var hv_directory = function(){
     var self = this;
     $.getJSON("./directory.json", { as: this.object }, function(dir) {
       self.directory = dir.articles;
-      self.set_random_first();
+      self.set_newest_first();
       self.show_directory(supercat);
 
     })
