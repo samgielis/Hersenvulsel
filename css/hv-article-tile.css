@@ -1,22 +1,18 @@
 @media only screen and (max-width: 360px) {
 
     .hv-tile-title span {
-    	font-size: 0.1em;
-    	line-height: 0.1em;
+    	font-size: 0.5em;
+    	line-height: 0.5em;
     }
-    .hv-tile-image-container img {
-      height: 100%;
-      opacity: 0.1;
-      width: 100%;
-    }
+   
 
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     .hv-tile-title span {
-    	font-size: 0.7em;
-    	line-height: 0.75em;
+    	font-size: 0.5em;
+    	line-height: 0.5em;
     }
 
 

@@ -52,6 +52,10 @@ header {
   background-size: cover;
 }
 
+.header-default {
+  background: #b93e46 !important;
+  background-size: cover;
+}
 .header-wetenschap {
   background: #2869a4 !important;
   background-size: cover;
@@ -103,6 +107,9 @@ header {
 .hv-category-title-small {
   font-size: 1.5em;
   margin:0 ! important
+}
+.hv-c-default {
+  color: #b93e46 !important;
 }
 .hv-c-mensen {
   color: #de3737 !important;
@@ -239,7 +246,7 @@ hv-10bot {
 
 /* HEADER STYLE */
 .hv-pagehead {
- 
+
   text-align:center;
   font: 0/0 a;
   vertical-align: middle;
