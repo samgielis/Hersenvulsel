@@ -1,0 +1,17 @@
+{
+  "id":"james-bond-als-gandalf",
+  "title":"Gandalf werd bijna gespeeld door James Bond",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2016/02/15",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Sean_Connery#Beyond_Bond",
+  "img_credit":"wikimedia.org",
+  "content":[
+      {"type":"paragraph",
+      "content":"Als het aan regisseur Peter Jackson lag, werd Gandalf in The Lord of the Rings Trilogy gespeeld door James Bond!"},
+	  {"type":"paragraph",
+      "content":"Sean Connery kreeg de rol aangeboden, maar hij weigerde. Achteraf zei hij meermaals in interviews dat hij 'het script niet echt snapte'. Jammer, want Jackson wou hem écht graag strikken: hij bood Connery 15% van de opbrengsten van de films aan. Zo had hij als Gandalf dus $400 miljoen kunnen verdienen..."}
+  ]
+}
