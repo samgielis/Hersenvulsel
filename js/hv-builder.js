@@ -37,7 +37,7 @@ var hv = function(){
 
   hv.prototype.header = function(cat, prefix){
     var header="";
-        if(cat != ""){
+        if(cat == ""){
           cat = "default"
         }
         header += "<div class=\"hv-pagehead header-" + cat + "\">";
