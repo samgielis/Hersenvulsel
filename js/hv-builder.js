@@ -25,7 +25,7 @@ var hv = function(){
         navbar += "      <\/ul>";
         navbar += "      <ul class=\"nav pull-right navbar-nav\">";
         navbar += "        <li><a href=\"https:\/\/facebook.com\/hersenvulsel\" target=\"_blank\" ><i class=\"fa fa-facebook fa-lg\"><\/i><\/a><\/li>";
-        navbar += "        <li><a href=\"#\"><i class=\"fa fa-envelope fa-lg\"><\/i>  <\/a><\/li>";
+        navbar += "        <li><a href=\"" + prefix + "contact" + "\"><i class=\"fa fa-envelope fa-lg\"><\/i>  <\/a><\/li>";
         navbar += "      <\/ul>";
         navbar += "    <\/div><\/div><\/div><\/div>";
         document.getElementById('nav-wrapper').innerHTML = navbar;
@@ -38,11 +38,10 @@ var hv = function(){
   hv.prototype.header = function(cat, prefix){
     var header="";
         if(cat != ""){
-          header += "<div class=\"hv-pagehead header-" + cat + "\">";
+          cat = "default"
         }
-        else {
-          header += "<div class=\"hv-pagehead\">";
-        }
+        header += "<div class=\"hv-pagehead header-" + cat + "\">";
+
         header += "    <img  style=\"padding-top: 0.49vw; max-width: 95%; max-height: 95%\" src=\"" + prefix + "img\/hv2-seethrough.png\"";
         //header += "    onmouseover=\"this.src='..\/..\/img\/hv3.png';\"";
         //header += "    onmouseout=\"this.src='..\/..\/img\/hv2.png';\"\/>";
