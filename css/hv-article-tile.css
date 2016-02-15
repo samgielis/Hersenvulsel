@@ -1,3 +1,12 @@
+@media only screen and (max-width: 360px) {
+
+    .hv-tile-title span {
+    	font-size: 0.7em;
+    	line-height: 0.75em;
+    }
+
+
+}
 .hv-tile-image-container {
   position: relative;
   width: 100%;
@@ -54,8 +63,8 @@
     font-family: arial;
     box-shadow: 10px 0 0 rgba(0,0,0,0.6);
     color: #fff;
-    font-size: 4.2vh;
-    line-height: 4.2vh;
+    font-size: 1.05em;
+    line-height: 1.15em;
     background: rgba(0,0,0,0.6);
 }
 
