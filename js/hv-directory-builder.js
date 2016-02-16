@@ -24,12 +24,22 @@ var hv_directory = function(){
     $( "#hv-directory-container").empty();
 
     var i = 0;
+    var self = this;
+
+    // add the first 3 items.
+    // uses a small delay after one another as to not mess up their natural order
     this.add_tile(i, supercat);
-  
+    setTimeout(function(){
+      self.add_tile(1, supercat);
+      setTimeout(function(){
+        self.add_tile(2, supercat);
+      }, 200);
+    }, 200);
+
   }
-  
+
   hv_directory.prototype.add_tile = function(i, supercat) {
-	
+
 	var self = this;
 	var hasAppeared = false;
     this.article_tile(this.directory[i].id, this.directory[i].category, supercat, i, function(article_tile){
@@ -37,9 +47,20 @@ var hv_directory = function(){
 		var waypoint = new Waypoint({
 		  element: document.getElementById('directory-item-' + i),
 		  handler: function(direction) {
-			if( i + 1 < self.directory.length && !hasAppeared){
+      // if there's unadded items and the next item hasn't been added yet, add it.
+			if( i + 1 < self.directory.length && !$('#hv-directory-container #directory-item-'+ (i+1)).length){
 				hasAppeared = true;
 				self.add_tile(i+1, supercat);
+        setTimeout(function(){
+          if( i + 2 < self.directory.length  && !$('#hv-directory-container #directory-item-'+ (i+2)).length){
+            self.add_tile(i+2, supercat);
+          }
+          setTimeout(function(){
+            if( i + 3 < self.directory.length  && !$('#hv-directory-container #directory-item-'+ (i+3)).length){
+              self.add_tile(i+3, supercat);
+            }
+          }, 200);
+        }, 200);
 			}
 		  },
 		  offset: 'bottom-in-view'
@@ -119,7 +140,7 @@ var hv_directory = function(){
 
 
   hv_directory.prototype.article_tile =  function(article_id, cat, supercat, entrynumber, callback){
-	  
+
 	var id_no = entrynumber;
 
     $.getJSON("../" + cat + "/" + article_id + "/descriptor.json", function(article) {
