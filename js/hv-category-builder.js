@@ -43,12 +43,8 @@ var hv_category = function(){
       // set first 225 content characters (or full content if < 225 characters).
       var fullcontent =""
       for (var i = 0; i < article.content.length; i++) {
-        switch (article.content[i].type) {
-          case "paragraph":
+        if (article.content[i].type == "paragraph") {
             fullcontent += article.content[i].content + " ";
-            break;
-          default:
-            console.log("ignoring unsupported content-type: " + article.content[i].type);
         }
       }
       if(fullcontent.length < 225){

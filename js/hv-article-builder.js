@@ -274,7 +274,7 @@ var hv_article = function(){
 
   // EMBED
   hv_article.prototype.embed = function(code){
-    var div = "<div style=\"padding-top:35px;\" class=\"hv-10bot\">";
+    var div = "<div style=\"padding-top:35px;\" class=\"hv-10bot embed-responsive embed-responsive-16by9\">";
     div += code;
     div += "</div>"
     $( "#article_body" ).append(div);
