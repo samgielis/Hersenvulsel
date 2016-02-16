@@ -6,7 +6,7 @@ function hv_404(){
     var allarticles = [];
     var count = 0;
     for (var i = 0; i < cats.length; i++) {
-      $.getJSON("../" + cats[i] + "/directory.json", function(directory) {
+      $.getJSON("http://hersenvulsel.be/" + cats[i] + "/directory.json", function(directory) {
         var newest = directory.articles;
         newest = randomize(newest);
         newest = newest.slice(0,10);
@@ -14,7 +14,7 @@ function hv_404(){
         count = count + 1;
         if(count >= 6){
           allarticles = randomize(allarticles);
-          $( "#404-random-link" ).attr("href", "../" + allarticles[0].category + "/" + allarticles[0].id + "/");
+          $( "#404-random-link" ).attr("href", "http://hersenvulsel.be/" + allarticles[0].category + "/" + allarticles[0].id + "/");
         }
       })
       .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het ophalen van een random artikel. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
