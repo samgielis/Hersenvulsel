@@ -142,7 +142,7 @@ var hv_article = function(){
       var suggestions = directory.articles;
       suggestions = randomize(suggestions);
 
-      var suggamt = 5;
+      var suggamt = 4;
 
       if(suggestions.length < suggamt){
         suggamt = suggestions.length
@@ -176,7 +176,7 @@ var hv_article = function(){
         count = count + 1;
         if(count >= 6){
           set_newest_first(allarticles);
-          allarticles = allarticles.slice(0,6);
+          allarticles = allarticles.slice(0,5);
 
           for (var i = 0; i < allarticles.length; i++) {
             $.getJSON("../../" + allarticles[i].category + "/" + allarticles[i].id + "/descriptor.json", function(article) {
