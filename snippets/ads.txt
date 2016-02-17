@@ -1,0 +1,15 @@
+<div class="list-group">
+          <div class="list-group-item active hv-sidebar-head" id="hv-sidebar-ads"></div>
+          <div class="list-group-item sidebar-article-entry">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- HV-article-sidebar-anysize -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4533326203427746"
+                 data-ad-slot="3275498912"
+                 data-ad-format="auto"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>

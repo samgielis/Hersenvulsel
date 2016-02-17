@@ -119,8 +119,7 @@ var hv_article = function(){
     return res;
   }
 
-  // CONSTRUCTS THE "NIEUW" SIDEBAR FOR ARTICLES
-  // contains the 4 newest articles that have been published on the website
+  // CONSTRUCTS THE "NIEUW" & "MEER ARTIKELS" SIDEBARS FOR ARTICLES
   hv_article.prototype.sidebar = function(cat){
     $( ".hv-sidebar-head" ).addClass("header-" + cat);
     $( "#hv-sidebar-ads" ).text("RECLAME");
@@ -143,7 +142,7 @@ var hv_article = function(){
       var suggestions = directory.articles;
       suggestions = randomize(suggestions);
 
-      var suggamt = 2;
+      var suggamt = 5;
 
       if(suggestions.length < suggamt){
         suggamt = suggestions.length
@@ -160,7 +159,8 @@ var hv_article = function(){
     .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het suggereren van andere artikelen binnen deze categorie. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
 
   }
-
+  
+  // contains the 6 newest articles that have been published on the website
   hv_article.prototype.sidebar_newest = function(cat){
     $( "#hv-sidebar-newest-title" ).text("NIEUW");
 
@@ -171,12 +171,12 @@ var hv_article = function(){
       $.getJSON("../../" + cats[i] + "/directory.json", function(directory) {
         var newest = directory.articles;
         set_newest_first(newest);
-        newest = newest.slice(0,2);
+        newest = newest.slice(0,5);
         $.merge(allarticles, newest);
         count = count + 1;
         if(count >= 6){
           set_newest_first(allarticles);
-          allarticles = allarticles.slice(0,3);
+          allarticles = allarticles.slice(0,6);
 
           for (var i = 0; i < allarticles.length; i++) {
             $.getJSON("../../" + allarticles[i].category + "/" + allarticles[i].id + "/descriptor.json", function(article) {

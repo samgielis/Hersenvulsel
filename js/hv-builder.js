@@ -68,7 +68,7 @@ var hv = function(){
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "\">Home<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "wetenschap\">Wetenschap<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "geschiedenis\">Geschiedenis<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"" + prefix + "mensen\">Mensen<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "mensen\">Mensen<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "natuur\">Natuur<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "entertainment\">Entertainment<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "faitsdivers\">Faits Divers<\/a><br>";
@@ -77,7 +77,7 @@ var hv = function(){
         footer += "            <\/div>";
         footer += "            <div class=\"col-sm-4\">";
         footer += "              <div class=\"hv-footer-link-container\">";
-        footer += "                <a class=\"footer-link\" href=\"" + prefix + "privacybeleid\">PrivacyBeleid<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "cookies-en-privacy\">Cookies & Privacy<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "gebruiksvoorwaarden\">Gebruiksvoorwaarden<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "contact\">Contact<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "adverteren\">Adverteren<\/a>";
