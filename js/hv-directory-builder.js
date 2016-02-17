@@ -22,63 +22,61 @@ var hv_directory = function(){
   */
   hv_directory.prototype.show_directory = function(supercat) {
     $( "#hv-directory-container").empty();
+    // add the first row of 3 items.
+    this.add_row_of_tiles(0, supercat);
+  }
 
-    var i = 0;
+  hv_directory.prototype.add_row_of_tiles = function(i, supercat) {
     var self = this;
-
-    // add the first 3 items.
-    // uses a small delay after one another as to not mess up their natural order
-    this.add_tile(i, supercat);
-    setTimeout(function(){
-      self.add_tile(1, supercat);
-      setTimeout(function(){
-        self.add_tile(2, supercat);
-      }, 200);
-    }, 200);
-
+    for (var j = i; j < this.directory.length && j <= i + 2; j++) {
+      if(j == i + 2 && j != this.directory.length - 1){
+        // add a waypoint for the tile at the end of the row which will trigger the next row
+        self.add_waypoint_tile(j, supercat);
+      }
+      else {
+        // add a normal tile
+        self.add_tile(j, supercat);
+      }
+    }
   }
 
-  hv_directory.prototype.add_tile = function(i, supercat) {
+  /*
+    Adds a tile and creates a waypoint for it that will trigger once it appears on the screen.
+    When triggered, the waypoint will load the next row.
+  */
+  hv_directory.prototype.add_waypoint_tile = function(i, supercat) {
 
-	var self = this;
-	var hasAppeared = false;
+    var self = this;
+  	var hasAppeared = false;
+
     this.article_tile(this.directory[i].id, this.directory[i].category, supercat, i, function(article_tile){
-		$(article_tile).hide().appendTo("#hv-directory-container").fadeIn(1000);
-		var waypoint = new Waypoint({
-		  element: document.getElementById('directory-item-' + i),
-		  handler: function(direction) {
-      // if there's unadded items and the next item hasn't been added yet, add it.
-			if( i + 1 < self.directory.length && !$('#hv-directory-container #directory-item-'+ (i+1)).length){
-				hasAppeared = true;
-				self.add_tile(i+1, supercat);
-        setTimeout(function(){
-          if( i + 2 < self.directory.length  && !$('#hv-directory-container #directory-item-'+ (i+2)).length){
-            self.add_tile(i+2, supercat);
-          }
-          setTimeout(function(){
-            if( i + 3 < self.directory.length  && !$('#hv-directory-container #directory-item-'+ (i+3)).length){
-              self.add_tile(i+3, supercat);
-            }
-          }, 200);
-        }, 200);
-			}
-		  },
-		  offset: 'bottom-in-view'
-		});
-    });
+      // add a random fade time for a more natural vibe
+  	   $(article_tile).hide().appendTo("#hv-directory-container").fadeIn(Math.random()*1500+750);
+
+       var waypoint = new Waypoint({
+     	  element: document.getElementById('directory-item-' + i),
+     	  handler: function(direction) {
+          // don't add twice
+           if( !hasAppeared ){
+             // add the next row
+             self.add_row_of_tiles(i+1, supercat);
+           }
+           hasAppeared = true;
+     		},
+     		offset: 'bottom-in-view'
+     	});
+     });
   }
 
-	/*
-	hv_directory.prototype.show_directory = function(supercat) {
-		$( "#hv-directory-container").empty();
+  /*
+    Adds a tile to the directory
+  */
+  hv_directory.prototype.add_tile = function(i, supercat) {
+    this.article_tile(this.directory[i].id, this.directory[i].category, supercat, i, function(article_tile){
+  	   $(article_tile).hide().appendTo("#hv-directory-container").fadeIn(1000);
+     });
+  }
 
-		for (var i = 0; i < this.directory.length; i++) {
-		  this.article_tile(this.directory[i].id, this.directory[i].category, supercat, function(article_tile){
-			$( "#hv-directory-container").append(article_tile);
-		  });
-		}
-	  }
-	*/
 
   /*
     SORTING FUNCTIONS FOR THE DIRECTORY
