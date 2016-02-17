@@ -12,6 +12,9 @@
           {"type": "paragraph",
 		   "content": "De meme 'that awkward moment when' bestaat dus al <i>zo</i> lang!"},
 		   {"type": "paragraph",
-		   "content": "In de Chicago Daily Tribune van maandag 4 augustus 1924 komt het voor het eerst voor in een cartoon. We zien een groep mensen die een krant lezen - meer bepaald het verslag van een psycholoog over een of andere crimineel. Iedereen die de krant leest, denkt van zichzelf dat ze ook weleens zo gek zouden kunnen zijn als die crimineel... Awkward!"}
+		   "content": "In de Chicago Daily Tribune van maandag 4 augustus 1924 komt het voor het eerst voor in een cartoon. We zien een groep mensen die een krant lezen - meer bepaald het verslag van een psycholoog over een of andere crimineel. Iedereen die de krant leest, denkt van zichzelf dat ze ook weleens zo gek zouden kunnen zijn als die crimineel... Awkward!"},
+		   {"type": "image",
+		   "name": "cartoon.png",
+		   "credit": "chicagotribune.com"}
 		   ]
 }
