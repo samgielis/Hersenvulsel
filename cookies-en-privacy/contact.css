@@ -1,0 +1,34 @@
+.circle{
+    width:80px;
+    height:80px;
+    text-align:center;
+    margin-bottom: 20px;
+    font-size: 4em;
+    color: white;
+}
+
+.hv-contact-mail {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.hv-contact-element-title {
+  padding-top: -10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 0.5em;
+}
+
+.hc-contact-content {
+  font-weight: 200;
+  padding: 5px 20px;
+  color: white;
+  font-size: 1.2em;
+}
+
+a[href^="mailto"] {
+  font-weight: bold;
+  color: white;
+}

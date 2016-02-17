@@ -1,4 +1,4 @@
-@media (max-width: 1199px) and (min-width: 768px) {
+@media all and (max-width: 1199px) and (min-width: 768px) {
     .navbar-header {
         float: none;
     }
