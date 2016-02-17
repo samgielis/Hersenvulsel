@@ -1,6 +1,11 @@
 {
 	"articles":[
 		{
+			"id":		"viagra-met-toestemming",
+			"category":	"faitsdivers",
+			"pubtime": 	"2016/02/17 15:00:00"
+		},
+		{
 			"id":		"dilemma-trilemma",
 			"category":	"faitsdivers",
 			"pubtime": 	"2014/08/3 14:15:00"
