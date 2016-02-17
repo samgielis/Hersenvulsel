@@ -1,6 +1,11 @@
 {
 	"articles":[
 		{
+			"id":				"placebo-zonder-pil",
+			"category":	"wetenschap",
+			"pubtime": 	"2014/08/4 20:20:00"
+		},
+		{
 			"id":				"eten-volgens-wetenschap",
 			"category":	"wetenschap",
 			"pubtime": 	"2014/08/4 17:00:00"
