@@ -22,12 +22,13 @@ public class HVDirectoryReader {
 		ArrayList<HVArticle> directory = new ArrayList<HVArticle>();
 		
 		for (String article : articles)
-			if( !article.contains("#TEMPLATE"))
-				try {
-					directory.add(HVArticle.fromJSON(path + "/" + article + "/descriptor.json"));
-				} catch (IOException | ParseException e) {
-					e.printStackTrace();
-				} 
+			if(article != "")
+			try {
+				directory.add(HVArticle.fromJSON(path + "/" + article + "/descriptor.json"));
+			} catch (IOException | ParseException e) {
+				e.printStackTrace();
+			} 
+		
 		return directory;
 	}
 }

@@ -6,29 +6,32 @@ import java.util.ArrayList;
 
 
 public class HVDirectoryWriter {
-
+	
 	private static String nl = System.lineSeparator();
 
 	public static void write(String path, ArrayList<HVArticle>  articles){
-
+		
 		String json = "{" + nl;
 		json += "\t"+"\"articles\":[" + nl;
-
+		
 		for (int i = 0; i < articles.size(); i++) {
-			json += articles.get(i).toJSON();
-			if(i != articles.size() - 1){
-				json += ",";
+			System.out.println(articles.get(i).id);
+			System.out.println(articles.get(i).id == "");
+			if(!articles.get(i).id.contains("#TEMPLATE")){
+				json += articles.get(i).toJSON();
+				if(i != articles.size() - 1){
+					json += ",";
+				}
+				json += nl;
 			}
-			json += nl;
-
 		}
-
+		
 		json += "\t" + "]" + nl;
 		json += "}";
-
+		
 		File oldDirectory = new File(path +  "/directory.json");
 		oldDirectory.delete();
-
+		
 		File newDirectory = new File(path +  "/directory.json");
 		try {
 			newDirectory.createNewFile();
@@ -42,7 +45,7 @@ public class HVDirectoryWriter {
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-
+		
 		System.out.println(json);
 	}
 }

@@ -10,7 +10,7 @@ import org.json.simple.parser.ParseException;
 
 public class HVArticle {
 
-	public String id;
+	private String id;
 	private String cat;
 	private String day;
 	private String time;

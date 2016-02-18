@@ -28,6 +28,7 @@ public class HVDirectoryReader {
 				} catch (IOException | ParseException e) {
 					e.printStackTrace();
 				} 
+		
 		return directory;
 	}
 }
