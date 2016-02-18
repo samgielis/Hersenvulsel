@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+
+public class HVDirectoryReader {
+	
+	public static ArrayList<HVArticle> readDirectory(String cat){
+		ArrayList<HVArticle> directory = new ArrayList<HVArticle>();
+		return directory();
+	}
+
+}

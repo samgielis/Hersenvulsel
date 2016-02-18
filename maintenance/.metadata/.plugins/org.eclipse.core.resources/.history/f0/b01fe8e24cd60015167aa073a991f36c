@@ -1,0 +1,9 @@
+
+public class HVArticle {
+	
+	private String id;
+	private String cat;
+	private String day;
+	private String time;
+
+}

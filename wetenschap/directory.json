@@ -1,35 +1,34 @@
 {
 	"articles":[
 		{
-			"id":				"placebo-zonder-pil",
+			"id":		"bomen-als-lantaarns",
 			"category":	"wetenschap",
-			"pubtime": 	"2014/08/4 20:20:00"
+			"pubtime":	"2016/02/02 19:00:00"
 		},
 		{
-			"id":				"eten-volgens-wetenschap",
+			"id":		"electronica-gaat-snel-stuk",
 			"category":	"wetenschap",
-			"pubtime": 	"2014/08/4 17:00:00"
+			"pubtime":	"2014/08/31 20:45:00"
 		},
 		{
-			"id":				"electronica-gaat-snel-stuk",
+			"id":		"eten-volgens-wetenschap",
 			"category":	"wetenschap",
-			"pubtime": 	"2014/08/3 20:45:00"
+			"pubtime":	"2014/08/4 17:00:00"
 		},
 		{
-			"id":				"muizen-en-penicilline",
+			"id":		"muizen-en-penicilline",
 			"category":	"wetenschap",
-			"pubtime": 	"2016/01/25 19:00:00"
+			"pubtime":	"2016/01/25 19:00:00"
 		},
 		{
-			"id":				"bomen-als-lantaarns",
+			"id":		"placebo-zonder-pil",
 			"category":	"wetenschap",
-			"pubtime": 	"2016/02/02 19:00:00"
+			"pubtime":	"2014/08/4 20:20:00"
 		},
 		{
-			"id":				"tweelingen-ander-jaar-geboren",
+			"id":		"tweelingen-ander-jaar-geboren",
 			"category":	"wetenschap",
-			"pubtime": 	"2014/07/31 15:00:00"
+			"pubtime":	"2014/07/31 15:00:00"
 		}
-
 	]
 }
