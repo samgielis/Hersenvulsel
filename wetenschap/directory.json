@@ -6,6 +6,11 @@
 			"pubtime":	"2016/02/02 19:00:00"
 		},
 		{
+			"id":		"de-perfecte-kaastosti",
+			"category":	"wetenschap",
+			"pubtime":	"2014/10/21 17:50:00"
+		},
+		{
 			"id":		"electronica-gaat-snel-stuk",
 			"category":	"wetenschap",
 			"pubtime":	"2014/08/31 20:45:00"
@@ -14,6 +19,11 @@
 			"id":		"eten-volgens-wetenschap",
 			"category":	"wetenschap",
 			"pubtime":	"2014/08/4 17:00:00"
+		},
+		{
+			"id":		"kan-jij-goed-liegen",
+			"category":	"wetenschap",
+			"pubtime":	"21/10/2014 19:35:00"
 		},
 		{
 			"id":		"muizen-en-penicilline",
