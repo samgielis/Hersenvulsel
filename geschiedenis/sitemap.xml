@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+	 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	 xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+		  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://hersenvulsel.be/geschiedenis/haatberichtjes-op-valentijn</loc>
-  <lastmod>2016-02-14T15:32:53+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+	<loc>http://hersenvulsel.be/geschiedenis/apollo-11-tapes/</loc>
+	<lastmod>2016-01-18T14:16:46+00:00</lastmod>
+	<changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/geschiedenis/apollo-11-tapes</loc>
-  <lastmod>2016-02-14T10:45:53+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+	<loc>http://hersenvulsel.be/geschiedenis/eiffeltoren-te-koop/</loc>
+	<lastmod>2016-01-18T14:16:46+00:00</lastmod>
+	<changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/geschiedenis/eiffeltoren-te-koop</loc>
-  <lastmod>2016-02-14T10:45:53+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+	<loc>http://hersenvulsel.be/geschiedenis/haatberichtjes-op-valentijn/</loc>
+	<lastmod>2016-01-18T14:16:46+00:00</lastmod>
+	<changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/geschiedenis/spotify-in-1897</loc>
-  <lastmod>2016-02-14T10:45:53+00:00</lastmod>
-  <changefreq>hourly</changefreq>
+	<loc>http://hersenvulsel.be/geschiedenis/langste-palindroom-ooit/</loc>
+	<lastmod>2016-01-18T14:16:46+00:00</lastmod>
+	<changefreq>hourly</changefreq>
+</url>
+<url>
+	<loc>http://hersenvulsel.be/geschiedenis/meme-in-1924/</loc>
+	<lastmod>2016-01-18T14:16:46+00:00</lastmod>
+	<changefreq>hourly</changefreq>
+</url>
+<url>
+	<loc>http://hersenvulsel.be/geschiedenis/spotify-in-1897/</loc>
+	<lastmod>2016-01-18T14:16:46+00:00</lastmod>
+	<changefreq>hourly</changefreq>
+</url>
+<url>
+	<loc>http://hersenvulsel.be/geschiedenis/tandenfee-uitvinding-disney/</loc>
+	<lastmod>2016-01-18T14:16:46+00:00</lastmod>
+	<changefreq>hourly</changefreq>
 </url>
 </urlset>

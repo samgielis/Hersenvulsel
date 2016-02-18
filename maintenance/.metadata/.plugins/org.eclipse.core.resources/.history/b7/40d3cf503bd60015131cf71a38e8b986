@@ -1,0 +1,17 @@
+import java.io.File;
+
+public class HVSitemapBuilder {
+	
+	private static String[] categories = new String[]{	
+														"wetenschap", "geschiedenis", "natuur", "mensen",
+														"faitsdivers", "entertainment"
+													};
+	
+	private void deleteSitemap(String category){
+		String path = "D:/programming/Hersenvulsel/git-repository/Hersenvulsel/";
+		path += category +"/";
+		File oldSitemap = new File(path + "sitemap.xml");
+		oldSitemap.delete();
+	}
+
+}

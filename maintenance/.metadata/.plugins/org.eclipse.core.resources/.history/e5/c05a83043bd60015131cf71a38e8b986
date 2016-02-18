@@ -1,0 +1,11 @@
+public class HVSitemapBuilder {
+	
+	private static String[] categories = new String[]{	
+														"wetenschap", "geschiedenis", "natuur", "mensen",
+														"faitsdivers", "entertainment"
+													};
+	private void deleteSitemap(String category){
+		
+	}
+
+}

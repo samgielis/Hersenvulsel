@@ -1,0 +1,16 @@
+public class XMLSitemapWriter {
+
+	public static void generateSitemap(String category){
+		System.out.println(("" + 1).length());
+		for (String article : HVCategoryReader.getArticleIDs(category)) {
+			if(article != "#TEMPLATE")
+				System.out.println(XMLDresser.url(article, category));
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		XMLSitemapWriter.generateSitemap("geschiedenis");
+	}
+}
