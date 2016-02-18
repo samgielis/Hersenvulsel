@@ -1,0 +1,22 @@
+{
+  "id":"de-perfecte-kaastosti",
+  "title":"De wetenschappelijke formule voor een perfecte kaastosti",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"wetenschap",
+  "day":"2014/10/21",
+  "time":"17:50:00",
+  "source_name":"rsc.org",
+  "source_url":"http://www.rsc.org/AboutUs/News/PressReleases/2013/formula-perfect-cheese-on-toast.asp",
+  "img_credit":"wikimedia.org",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Zeer belangrijk nieuws vandaag! Wetenschappers hebben de perfecte manier ontdekt om kaas op een boterham te roosteren."},
+		   {"type": "paragraph",
+		   "content": "Via <a href=\"http://www.rsc.org/AboutUs/News/PressReleases/2013/formula-perfect-cheese-on-toast.asp\">deze</a> link vind je de wetenschappelijke formule, maar we zullen hem voor het gemak even ontleden."},
+		   {"type": "paragraph",
+		   "content": "We hebben nodig: 50 gram harde kaas (cheddar is ideaal), een snee brood, 10 millimeter dik (wit brood is ideaal) en een grill"},
+		   {"type": "paragraph",
+		   "content": "Laat de grill voorverwarmen op 115°C. De boterham met kaas moet er dan ingelegd worden op 18 centimeter afstand van de warmtebron. Na exact vier minuten heb je de perfecte geroosterde boterham met kaas!"}
+		   ]
+}
