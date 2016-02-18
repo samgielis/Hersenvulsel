@@ -20,6 +20,6 @@
 		   {"type": "paragraph",
 		   "content": "De test wijst dus uit of je bezig bent met de manier waarop mensen je zien. Als het streepje van de Q naar links wijst, zou je een betere leugenaar zijn."},
 		   {"type": "embed",
-		   "code": "<iframe width=\"100%\" src=\"https://www.youtube.com/watch?v=yRAmvLV_EmY\" frameborder=\"0\" allowfullscreen></iframe>"}
+		   "code": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/yRAmvLV_EmY\" frameborder=\"0\" allowfullscreen></iframe>"}
 		   ]
 }
