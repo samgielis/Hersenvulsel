@@ -1,0 +1,21 @@
+{
+  "id":"hello-kitty-not-a-kitty",
+  "title":"Hello Kitty: not a kitty",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2014/10/26",
+  "time":"19:25:00",
+  "source_name":"hello-kitty.sanriotown.com",
+  "source_url":"http://hello-kitty.sanriotown.com/",
+  "img_credit":"youtube.com",
+  "keywords":"hello kitty, meisje",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Wist je dat... Hello Kitty helemaal geen kat is?"},
+		   {"type": "paragraph",
+		   "content": "Ze moet gewoon een 'jong meisje' voorstellen. Meer nog: er bestaat een hele biografie over Hello Kitty. Ze woont in Londen, is jarig op 1 november en haar lievelingskleur is rood. Haar echte naam? Kitty White."},
+		   {"type": "paragraph",
+		   "content": "En om helemaal meta te gaan... Kitty heeft zelf een kat, Charmmy Kitty, en een hamster, Sugar."}	
+		   ]
+}

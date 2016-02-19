@@ -5,48 +5,58 @@
 		  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
+	<loc>http://hersenvulsel.be/wetenschap/afvallen-supporter-winnaars/</loc>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
+	<changefreq>hourly</changefreq>
+</url>
+<url>
 	<loc>http://hersenvulsel.be/wetenschap/bomen-als-lantaarns/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 <url>
 	<loc>http://hersenvulsel.be/wetenschap/de-perfecte-kaastosti/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 <url>
 	<loc>http://hersenvulsel.be/wetenschap/dutjes-zijn-goed-voor-je/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 <url>
 	<loc>http://hersenvulsel.be/wetenschap/electronica-gaat-snel-stuk/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 <url>
 	<loc>http://hersenvulsel.be/wetenschap/eten-volgens-wetenschap/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
+	<changefreq>hourly</changefreq>
+</url>
+<url>
+	<loc>http://hersenvulsel.be/wetenschap/functie-appendix/</loc>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 <url>
 	<loc>http://hersenvulsel.be/wetenschap/kan-jij-goed-liegen/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 <url>
 	<loc>http://hersenvulsel.be/wetenschap/muizen-en-penicilline/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 <url>
 	<loc>http://hersenvulsel.be/wetenschap/placebo-zonder-pil/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 <url>
 	<loc>http://hersenvulsel.be/wetenschap/tweelingen-ander-jaar-geboren/</loc>
-	<lastmod>2016-01-18T19:46:06+00:00</lastmod>
+	<lastmod>2016-01-19T13:43:53+00:00</lastmod>
 	<changefreq>hourly</changefreq>
 </url>
 </urlset>

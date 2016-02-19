@@ -1,0 +1,21 @@
+{
+  "id":"contactlenzen-da-vinci",
+  "title":"Contactlenzen: een uitvinding van Da Vinci",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"2014/10/26",
+  "time":"16:50:00",
+  "source_name":"graydonkey.com",
+  "source_url":"http://www.graydonkey.com/contact-lenses-from-leonardo-to-silicone/",
+  "img_credit":"wikimedia.org",
+  "keywords":"ontstaan, contactlezen, da vinci",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Het idee van contactlenzen zou ontstaan zijn in 1508 - in het hoofd van Leonardo da Vinci."},
+		   {"type": "paragraph",
+		   "content": "René Descartes vond het een fantastisch idee en werkte verder op een schets van da Vinci. Hij bouwde zo een telescoop. Beide uitvindingen zijn gebaseerd op hetzelfde principe, maar er zijn natuurlijk wel enkele verschillen."},
+		   {"type": "paragraph",
+		   "content": "In 1801 werden er voor het eerst stappen gezet naar de ontwikkeling van contactlenzen. De Duitser Adolf Flick nam er in 1888 een patent op. Leonardo was dus alweer zijn tijd ver vooruit!"}
+		   ]
+}

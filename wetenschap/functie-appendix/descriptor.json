@@ -1,0 +1,23 @@
+{
+  "id":"functie-appendix",
+  "title":"Onze appendix heeft wél een functie!",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"wetenschap",
+  "day":"2014/10/27",
+  "time":"17:50:00",
+  "source_name":"politicalblindspot.com",
+  "source_url":"http://politicalblindspot.com/scientists-finally-discover-the-function-of-the-human-appendix/",
+  "img_credit":"wikimedia.org",
+  "keywords":"appendix, functie, cholera, bacteriën, darmen",
+  "content":[
+          {"type": "paragraph",
+		   "content": "In tegenstelling tot wat we lang geloofden, heeft de appendix wel degelijk een functie!"},
+		   {"type": "paragraph",
+		   "content": "In onze darmen zitten heel wat bacteriën, die belangrijk zijn voor onze gezondheid. De appendix bewaart een 'back-up' van al die goede bacteriën."},
+		   {"type": "paragraph",
+		   "content": "Soms kan een ziekte, zoals cholera, ervoor zorgen dat die bacteriën uit je darmen verdwijnen. En je appendix geeft de back-up dan door aan je darmen."},
+		   {"type": "paragraph",
+		   "content": "Het kan dus toch een nuttig orgaan zijn, maar de appendix blijft toch gevaarlijk. Niet twijfelen dus om hem weg te laten halen als er iets mis is!"}
+		   ]
+}

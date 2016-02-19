@@ -21,6 +21,11 @@
 			"pubtime":	"2014/10/20 20:10:00"
 		},
 		{
+			"id":		"hello-kitty-not-a-kitty",
+			"category":	"entertainment",
+			"pubtime":	"2014/10/26 19:25:00"
+		},
+		{
 			"id":		"james-bond-als-gandalf",
 			"category":	"entertainment",
 			"pubtime":	"2016/02/15 15:10:00"

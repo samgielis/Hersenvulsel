@@ -1,0 +1,24 @@
+{
+  "id":"seizoen-bepaalt-vorm-hersenen",
+  "title":"Hoe jouw geboorteseizoen in jouw hersenen gegrift staat",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"natuur",
+  "day":"2014/10/25",
+  "time":"15:20:00",
+  "source_name":"wired.com",
+  "source_url":"http://www.wired.com/2014/03/season-birth-etched-brain/",
+  "img_credit":"wikimedia.org",
+  "keywords":"geboorteseizoen, hersenen, gegrift, Spiro Pantazatos, hersenscan",
+  "content":[
+          {"type": "paragraph",
+		   "content": "We hebben allemaal een sterrenbeeld, maar wat betekenen die precies? Kan je je persoonlijkheid echt toeschrijven aan je sterrenbeeld?"},
+		   {"type": "paragraph",
+		   "content": "Spiro Pantazatos, een neuroloog aan de universiteit van Columbia, heeft 550 hersenscans van gezonde volwassenen onderzocht. En op sommige plaatsen in de hersenen valt af te leiden wanneer die persoon geboren is! Bepaalde delen van de hersenen hebben meer massa bij winterbaby's, terwijl andere delen groter zijn bij lente-, zomer- of herfstbaby's."},
+		   {"type": "image",
+		   "name": "1.jpg",
+		   "credit": "flickr.com"},
+		   {"type": "paragraph",
+		   "content": "De verklaring is tot nog toe niet gevonden, maar Pantazatos denkt dat de seizoenen echt een invloed kunnen hebben op een zwangerschap. In de zomer krijgt je huid bijvoorbeeld veel meer zonlicht (en dus vitamine D), in de winter komt een moeder meer in aanraking met virussen. Dat alles kan de ontwikkeling van een kind in de buik beïnvloeden."}		   
+		   ]
+}
