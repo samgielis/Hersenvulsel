@@ -1,0 +1,23 @@
+{
+  "id":"foreign-accent-syndrome",
+  "title":"Wakker worden met een volledig ander accent",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"wetenschap",
+  "day":"2014/10/28",
+  "time":"18:12:00",
+  "source_name":"youtube.com",
+  "source_url":"https://www.youtube.com/watch?v=AR_HyIyTSZg",
+  "img_credit":"flickr.com",
+  "keywords":"foreign accent syndrome",
+  "content":[
+          {"type": "paragraph",
+		   "content": "'Foreign accent syndrome' - wakker worden met een volledig ander accent dan je ervoor sprak. Het gebeurt echt, raar maar waar."},
+		   {"type": "paragraph",
+		   "content": "Er zijn gevallen bekend van over de hele wereld. Na een ongeval met hersenletsel spreken sommige mensen met een volledig ander accent, zoals de vrouw in onderstaand filmpje."},
+		   {"type": "paragraph",
+		   "content": "Volgens verschillende wetenschappers gaat het om speciale gevallen waarbij een deel van de hersenen wordt geraakt dat taalgevoelig is. Andere mensen geloven dan weer dat de patiënten na een ongeval de taal spreken van hun vorig leven. Hoe het ook zit - het is grappig om te zien!"},
+		   {"type": "embed",
+		   "code": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/AR_HyIyTSZg\" frameborder=\"0\" allowfullscreen></iframe>"}
+		   ]
+}
