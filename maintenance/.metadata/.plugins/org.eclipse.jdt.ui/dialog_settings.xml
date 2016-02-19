@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="JavaSE-1.8" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+	</section>
 	<section name="FatJarPackageWizard">
 		<item value="D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
-		<item value="HVSitemapBuilder - sitemap-generator" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
-		<item value="sitemap-generator\sitemap-generator.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="HVIndexGenerator - article-generator" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="article-generator\article-generator.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
-			<item value="sitemap-generator/sitemap-generator.jar"/>
+			<item value="article-generator\article-generator.jar"/>
+			<item value="article-generator/article-generator.jar"/>
+			<item value="directory-generator\directory-generator.jar"/>
+			<item value="directory-generator/directory-generator.jar"/>
+			<item value="sitemap-generator/directory-generator.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance.xml"/>
 			<item value=".xml"/>
 		</list>
 	</section>
@@ -24,6 +31,8 @@
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
