@@ -6,6 +6,11 @@
 			"pubtime":	"2014/10/15 21:30:00"
 		},
 		{
+			"id":		"de-engste-filmscene-ooit",
+			"category":	"entertainment",
+			"pubtime":	"2014/10/31 19:15:00"
+		},
+		{
 			"id":		"dicaprio-leert-drugs-gebruiken",
 			"category":	"entertainment",
 			"pubtime":	"2014/10/20 17:40:00"
@@ -49,6 +54,11 @@
 			"id":		"vrouw-onvriendelijke-films",
 			"category":	"entertainment",
 			"pubtime":	"2014/07/29 14:18:00"
+		},
+		{
+			"id":		"wiskundige-geheimen-the-simpsons",
+			"category":	"entertainment",
+			"pubtime":	"2014/10/30 16:40:00"
 		}
 	]
 }

@@ -1,0 +1,21 @@
+{
+  "id":"de-engste-filmscene-ooit",
+  "title":"De engste filmscène ooit",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2014/10/31",
+  "time":"19:15:00",
+  "source_name":"theguardian.com",
+  "source_url":"http://www.theguardian.com/film/2013/oct/31/the-shining-heres-johnny-scariest-movie-scene-jack-nicholson",
+  "img_credit":"youtube.com",
+  "keywords":"the shining, jack nicholson, eng, film, scène",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Op zoek naar een enge film dit weekend? Dan hebben we wel wat tips..."},
+		   {"type": "paragraph",
+		   "content": "Volgens een onderzoek van Play.com is de bekende 'Here's Johnny!'-scène uit The Shining de engste filmscène ooit."},
+		   {"type": "paragraph",
+		   "content": "De film is wel pas de derde film op de schaal van engheid. Op de tweede plaats staat 'A Nightmare On Elm Street', op één 'The Exorcist'."}
+		   ]
+}
