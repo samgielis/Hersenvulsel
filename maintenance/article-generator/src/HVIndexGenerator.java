@@ -28,15 +28,16 @@ public class HVIndexGenerator {
 		System.out.println(template);
 
 		Files.write(templatePath, template.getBytes(charset));
-		JOptionPane.showMessageDialog(null, "sukzes", "Error",
-                JOptionPane.ERROR_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Gelukt!", "Succes",
+                JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	public static void main(String[] args){
 		try {
 			generate();
 		} catch (IOException | ParseException e) {
-			 
+			JOptionPane.showMessageDialog(null, "Mislukt :(!", "Error",
+	                JOptionPane.ERROR_MESSAGE);
 		}
 	}
 }

@@ -751,3 +751,15 @@
 2016-02-20 11:45:15,526 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance\directory-generator\src\main\resources
 2016-02-20 11:45:15,528 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-02-20 11:45:15,531 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance\directory-generator\src\test\resources
+2016-02-20 12:05:09,035 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-20 12:05:09,039 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance\article-generator\src\main\resources
+2016-02-20 12:05:09,043 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-20 12:05:09,043 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance\article-generator\src\test\resources
+2016-02-20 12:05:09,092 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-20 12:05:09,092 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance\directory-generator\src\main\resources
+2016-02-20 12:05:09,092 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-20 12:05:09,092 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance\directory-generator\src\test\resources
+2016-02-20 12:15:09,384 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-20 12:15:09,416 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance\article-generator\src\main\resources
+2016-02-20 12:15:09,416 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-20 12:15:09,416 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance\article-generator\src\test\resources
