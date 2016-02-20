@@ -5,16 +5,16 @@
 	</section>
 	<section name="FatJarPackageWizard">
 		<item value="D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
-		<item value="HVIndexGenerator - article-generator" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
-		<item value="article-generator\article-generator.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="HVDirectoryGenerator - directory-generator" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="directory-generator\directory-generator.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="directory-generator/directory-generator.jar"/>
+			<item value="sitemap-generator/sitemap-generator.jar"/>
 			<item value="article-generator\article-generator.jar"/>
 			<item value="article-generator/article-generator.jar"/>
 			<item value="directory-generator\directory-generator.jar"/>
-			<item value="directory-generator/directory-generator.jar"/>
-			<item value="sitemap-generator/directory-generator.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
 			<item value="D:\programming\Hersenvulsel\git-repository\Hersenvulsel\maintenance.xml"/>
