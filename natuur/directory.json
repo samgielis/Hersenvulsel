@@ -1,6 +1,16 @@
 {
 	"articles":[
 		{
+			"id":		"aap-selfie-copyright",
+			"category":	"natuur",
+			"pubtime":	"2014/08/7 16:30:00"
+		},
+		{
+			"id":		"katten-negeren-mensen",
+			"category":	"natuur",
+			"pubtime":	"2014/08/12 14:30:00"
+		},
+		{
 			"id":		"meisje-gered-door-leeuwen",
 			"category":	"natuur",
 			"pubtime":	"2014/11/07 14:45:00"

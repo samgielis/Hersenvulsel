@@ -46,9 +46,19 @@
 			"pubtime":	"21/10/2014 19:35:00"
 		},
 		{
+			"id":		"koffie-om-1416",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/10 14:16:00"
+		},
+		{
 			"id":		"muizen-en-penicilline",
 			"category":	"wetenschap",
 			"pubtime":	"2016/01/25 19:00:00"
+		},
+		{
+			"id":		"muziek-neemt-pijn-weg",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/9 17:00:00"
 		},
 		{
 			"id":		"placebo-zonder-pil",
