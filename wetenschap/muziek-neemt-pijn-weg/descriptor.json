@@ -8,7 +8,7 @@
   "time":"17:00:00",
   "source_name":"smithsonianmag.com",
   "source_url":"http://www.smithsonianmag.com/smart-news/music-makes-working-out-hurt-less-1969786/",
-  "img_credit":"wikimedia.com",
+  "img_credit":"wikimedia.org",
   "keywords":"sport, muziek, pijn",
   "content":[
           {"type": "paragraph",
@@ -25,7 +25,6 @@
 		   {"type": "paragraph",
 		   "content": "Fritz heeft deze manier van sporten ‘jymmin’ genoemd, een samentrekking van gym en jammin’, muziek maken dus. Voor wie benieuwd is naar de fitnessruimte van Fritz: er bestaat natuurlijk een filmpje van."},
 		   {"type": "embed",
-		   "code": "<iframe src=\"https://player.vimeo.com/video/55720139\" width=\"100%\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href=\"https://vimeo.com/55720139\">Stepper, Tower and Stomach Trainer (close up)</a> from <a href=\"https://vimeo.com/benvandenberghe\">Ben Van den Berghe</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"}
+		   "code": "<iframe src=\"https://player.vimeo.com/video/55720139\" width=\"100%\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href=\"https://vimeo.com/55720139\">Stepper, Tower and Stomach Trainer (close up)</a> from <a href=\"https://vimeo.com/benvandenberghe\">Ben Van den Berghe</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"}
 		   ]
 }
