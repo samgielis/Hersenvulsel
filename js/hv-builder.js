@@ -42,7 +42,7 @@ var hv = function(){
         }
         header += "<div class=\"hv-pagehead header-" + cat + "\">";
 
-        header += "    <img  style=\"padding-top: 0.49vw; max-width: 95%; max-height: 95%\" src=\"" + prefix + "img\/hv2-seethrough.png\"";
+        header += "    <img  style=\"padding-top: 0.49vw; max-width: 95%; max-height: 95%\" src=\"" + prefix + "img\/header-" + cat + ".png\"";
         //header += "    onmouseover=\"this.src='..\/..\/img\/hv3.png';\"";
         //header += "    onmouseout=\"this.src='..\/..\/img\/hv2.png';\"\/>";
         header += "  <\/div>";
