@@ -11,6 +11,16 @@
 			"pubtime":	"2014/10/14 18:22:00"
 		},
 		{
+			"id":		"beste-plaats-bioscoop",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/13 18:00:00"
+		},
+		{
+			"id":		"dikkerdjeskamp-voor-honden",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/8 18:30:00"
+		},
+		{
 			"id":		"dilemma-trilemma",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/3 14:15:00"
@@ -26,9 +36,19 @@
 			"pubtime":	"2014/07/30 16:16:00"
 		},
 		{
+			"id":		"jamais-vu-presque-vu",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/11 16:30:00"
+		},
+		{
 			"id":		"kidzania-kinderen-volwassenen",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/10/19 17:22:00"
+		},
+		{
+			"id":		"M-V-X-geslachten",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/14 18:15:00"
 		},
 		{
 			"id":		"skelet-in-het-biologielokaal-begraven",
