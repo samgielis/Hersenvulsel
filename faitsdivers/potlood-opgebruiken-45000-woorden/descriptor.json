@@ -1,0 +1,21 @@
+{
+  "id":"potlood-opgebruiken-45000-woorden",
+  "title":"Een potlood opgebruiken doe je in 45000 woorden",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"faitsdivers",
+  "day":"2016/02/18",
+  "time":"15:15:00",
+  "source_name":"discovermagazine.com",
+  "source_url":"http://discovermagazine.com/2007/may/20-things-you-didnt-know-about-pencils",
+  "img_credit":"flickr.com",
+  "keywords":"potlood",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Heb je al ooit een potlood opgebruikt?"},
+		   {"type": "paragraph",
+		   "content": "Met het gemiddelde potlood kan je zo'n 45000 woorden schrijven, of één rechte lijn trekken van zo'n 56 kilometer lang. Tenminste, dat denken we... niemand heeft het ooit echt uitgetest."},
+		   {"type": "paragraph",
+		   "content": "Als je niet weet wat te doen dit weekend, heb je nu dus alvast een interessant experimentje!"}
+		   ]
+}
