@@ -197,7 +197,7 @@ body {
 
 				if(count >= 6){
 				  allarticles = random_first(allarticles);
-				  setTimeout(function(){window.location.replace("http://hersenvulsel.be/"+allarticles[0].category+"/" + allarticles[0].id +"/")}, 3000);
+				  setTimeout(function(){window.location.href = "http://hersenvulsel.be/"+allarticles[0].category+"/" + allarticles[0].id +"/" }, 3000);
 				}
 			  })
 			  .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het ophalen van een random artikel. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
