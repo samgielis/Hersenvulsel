@@ -28,6 +28,8 @@
   <script src="./js/hv-builder.js"></script>
   <script src="./js/hv-category-builder.js"></script>
   <script src="./js/hv-directory-builder.js"></script>
+  <script src="./js/hv-home-builder.js"></script>
+
 
   <!-- WEBSITE STYLE -->
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -41,6 +43,7 @@
   var hv = new hv();
   var hv_category = new hv_category();
   var hv_directory = new hv_directory();
+  var hv_home = new hv_home();
   </script>
   <script>
 	// GOOGLE ANALYTICS
@@ -109,6 +112,15 @@
   <div id="fb-root"></div>
   <script>
   $(document).ready(function() {
+    var entries = [];
+    entries.push(["wetenschap","muizen-en-penicilline"]);
+    entries.push(["geschiedenis","spotify-in-1897"]);
+    entries.push(["mensen","houdini-leert-soldaten-ontsnappen"]);
+    entries.push(["natuur","meisje-gered-door-leeuwen"]);
+    entries.push(["entertainment","klaag-me-aan-scientology"]);
+    entries.push(["faitsdivers","waar-komt-dude-vandaan"]);
+    hv_home.carousel(entries);
+
     var prefix = ".\/";
     var supercat = "default";
     hv.navbar(prefix);
@@ -139,93 +151,10 @@
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators" style="z-index: 5;">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
           </ol>
 
           <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox" style="background-color: white;">
-            <div class="item active">
-              <div class="row">
-                <div class="col-sm-8" >
-                  <img style=" width: 100%;" src="./entertainment/james-bond-als-gandalf/img/main.jpg" alt="..."></img>
-                </div>
-                <div class="col-sm-4 pad-bot-30">
-                  <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 3.5em !important">
-                    Gandalf werd bijna gespeeld door James Bond
-                  </h1>
-                  <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-                    12/02/2016 - Shanna Verspreet
-                  </b></h4>
-                  <p class="hv-most-recent-content" id="most-recent-content">
-                    Als het aan regisseur Peter Jackson lag, werd Gandalf in The Lord of the Rings Trilogy gespeeld door James Bond!
-Sean Connery kreeg de rol aangeboden, maar...
-                  </p>
-                  <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-                  <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-                    <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-                    <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-                    WIKIPEDIA.ORG
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-8" >
-                  <img style=" width: 100%;" src="./geschiedenis/haatberichtjes-op-valentijn/img/main.jpg" alt="..."></img>
-                </div>
-                <div class="col-sm-4 pad-bot-30">
-                  <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 3.5em !important">
-                    Vroeger kreeg je haatberichtjes op valentijn
-                  </h1>
-                  <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-                    12/02/2016 - Shanna Verspreet
-                  </b></h4>
-                  <p class="hv-most-recent-content" id="most-recent-content">
-                    Ook romantische berichtjes ontvangen vandaag? Prijs jezelf gelukkig, want tussen 1840 en 1940 was het net andersom. Toen kreeg je regelmatig haatberichtjes op 14 februari...
-                  </p>
-                  <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-                  <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-                    <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-                    <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-                    COLLECTORSWEEKLY.COM
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-8" >
-                  <img style=" width: 100%;" src="./entertainment/klaag-me-aan-scientology/img/main.jpg" alt="..."></img>
-                </div>
-                <div class="col-sm-4 pad-bot-30">
-                  <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 3.5em !important">
-                    South Park makers dagen Scientology uit: klaag ons aan!
-                  </h1>
-                  <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-                    12/02/2016 - Shanna Verspreet
-                  </b></h4>
-                  <p class="hv-most-recent-content" id="most-recent-content">
-                    Met Scientology kan je maar beter niet lachen - de kerk houdt wel van rechtszaken. Dat weten ook de makers van South Park. In een aflevering uit 2005 lachen ze wél met Scientology, én met het feit dat ze daarvoor graag mense [...]
-                  </p>
-                  <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-                  <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-                    <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-                    <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-                    SOUTHPARK.WIKIA.COM
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
+          <div class="carousel-inner" id="carousel-entries" role="listbox" style="background-color: white;">
           </div>
 
           <!-- Controls -->
@@ -243,7 +172,7 @@ Sean Connery kreeg de rol aangeboden, maar...
   </div> <!-- END CAROUSEL -->
 
   <!-- ART #1 & #2 -->
-  <div class="row" style="align: center">
+  <div class="row">
 
     <div class="col-sm-4" style="padding-bottom: 50px;">
       <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-wetenschap" style="padding-top: 30px;">WETENSCHAP</h2>
@@ -307,6 +236,75 @@ Sean Connery kreeg de rol aangeboden, maar...
       </p>
     </div>
   </div>
+
+
+
+<div class="row" style="align: center">
+  <div class="col-sm-4" style="padding-bottom: 50px;">
+    <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-natuur" style="padding-top: 30px;">natuur</h2>
+    <img style=" width: 100%;" src="./wetenschap/dutjes-zijn-goed-voor-je/img/main.jpg" alt="..."></img>
+    <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
+      Dutjes zijn goed voor je
+    </h1>
+    <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
+      12/02/2016 - Shanna Verspreet
+    </b></h4>
+    <p class="hv-most-recent-content" id="most-recent-content">
+      Goed nieuws van de dag: dutjes zijn goed voor je! Peuters en kleuters doen vaak nog middagdutjes. Omdat ze moe zijn na een drukke voormiddag spelen, maar ook omdat ...
+    </p>
+    <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
+    <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
+      <img src="./img/source.png" title="Bron" style="width: 23px;"/>
+      <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
+        PNAS.ORG
+      </a>
+    </p>
+  </div>
+
+  <div class="col-sm-4" style="padding-bottom: 50px;">
+      <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-entertainment" style="padding-top: 30px;">entertainment</h2>
+      <img style=" width: 100%;" src="./geschiedenis/spotify-in-1897/img/main.jpg" alt="..."></img>
+      <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
+        Wist je dat de voorloper van Spotify al sinds 1897 bestaat?
+      </h1>
+      <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
+        12/02/2016 - Shanna Verspreet
+      </b></h4>
+      <p class="hv-most-recent-content" id="most-recent-content">
+        Wist je dat de voorloper van Spotify al sinds 1897 bestaat? Het 'telharmonium' was een dienst waarmee je via de telefoon naar muziek kon luisteren. Bij de centrale zaten muzikanten die live muziek speelden, en daar werd je [...]
+      </p>
+      <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
+      <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
+        <img src="./img/source.png" title="Bron" style="width: 23px;"/>
+        <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
+          ATLASOBSCURA.COM
+        </a>
+      </p>
+  </div>
+
+  <div class="col-sm-4" style="padding-bottom: 50px;">
+    <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-faitsdivers" style="padding-top: 30px;">faits divers</h2>
+    <img style=" width: 100%;" src="./mensen/vanwaar-komt-siamese-tweeling/img/main.jpg" alt="..."></img>
+    <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
+      Vanwaar komt de term 'Siamese tweeling'?
+    </h1>
+    <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
+      12/02/2016 - Shanna Verspreet
+    </b></h4>
+    <p class="hv-most-recent-content" id="most-recent-content">
+      Vanwaar komt de term 'Siamese tweeling'? Van de eerste beroemde Siamese tweeling, natuurlijk! Chang en Eng Bunker zijn in 1811 geboren in ... </p>
+    <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
+    <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
+      <img src="./img/source.png" title="Bron" style="width: 23px;"/>
+      <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
+        WIKIPEDIA.ORG
+      </a>
+    </p>
+  </div>
+</div>
+
+
+
 
 
   <div class="row">
