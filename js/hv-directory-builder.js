@@ -9,12 +9,36 @@ var hv_directory = function(){
     var self = this;
     $.getJSON("./directory.json", { as: this.object }, function(dir) {
       self.directory = dir.articles;
-      self.set_newest_first();
+      set_newest_first(self.directory);
       self.show_directory(supercat);
 
     })
     .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het ophalen van de artikelen in deze categorie. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})});
   }
+
+  hv_directory.prototype.load_default_directory = function(){
+
+    var self = this;
+    var cats = ["wetenschap", "natuur", "mensen", "geschiedenis", "entertainment", "faitsdivers"];
+    var allarticles = [];
+    var count = 0;
+    for (i = 0; i < cats.length; i++) {
+      $.getJSON("./" + cats[i] + "/directory.json", function(directory) {
+        var newest = directory.articles;
+        set_newest_first(newest);
+        newest = newest.slice(0,5);
+        $.merge(allarticles, newest);
+        count = count + 1;
+
+        if(count >= 6){
+          self.directory = allarticles;
+          set_newest_first(self.directory);
+          self.show_directory("default");
+        }
+      })
+      .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het ophalen van de nieuwste artikels in de categorie " + cats[i] + ". Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
+    }
+}
 
 
   /*
@@ -97,7 +121,7 @@ var hv_directory = function(){
     this.directory.sort(oldest_first);
   }
 
-  hv_directory.prototype.set_newest_first = function() {
+  function set_newest_first(array) {
     function newest_first(a, b) {
       var key1 = new Date(a.pubtime).getTime();
       var key2 = new Date(b.pubtime).getTime();
@@ -110,7 +134,7 @@ var hv_directory = function(){
           return -1;
       }
     }
-    this.directory.sort(newest_first);
+    array.sort(newest_first);
   }
 
   hv_directory.prototype.set_random_first = function() {
@@ -140,22 +164,25 @@ var hv_directory = function(){
   hv_directory.prototype.article_tile =  function(article_id, cat, supercat, entrynumber, callback){
 
 	var id_no = entrynumber;
-
-    $.getJSON("../" + cat + "/" + article_id + "/descriptor.json", function(article) {
+  var prefix = "../"
+  if(supercat == "default"){
+    prefix= "./"
+  }
+    $.getJSON(prefix + cat + "/" + article_id + "/descriptor.json", function(article) {
 
       var article_tile = "";
       article_tile += "<div class=\"col-sm-4 pad-bot-20\" id=\"directory-item-" + id_no + "\">";
       article_tile += "              <div class=\"hv-tile-image-container\" >";
-      article_tile += "                <img alt=\"\" src=\"../" + cat + "/" + article_id + "\/img\/main.jpg\" style=\"width: 100%; height: 100%; background-color: black;\">";
-      if(cat != supercat){
+      article_tile += "                <img alt=\"\" src=\"" + prefix + cat + "/" + article_id + "\/img\/main.jpg\" style=\"width: 100%; height: 100%; background-color: black;\">";
+      if(cat != supercat && supercat != "default"){
         article_tile += "                <b><p class=\"hv-tile-category\">"+ supercat.toUpperCase() +" \/ " + cat.toUpperCase() + "<\/p><\/b>";
       } else {
-        article_tile += "                <b><p class=\"hv-tile-category\">"+ supercat.toUpperCase() + "<\/p><\/b>";
+        article_tile += "                <b><p class=\"hv-tile-category\">"+ cat.toUpperCase() + "<\/p><\/b>";
       }
       article_tile += "                <div class=\"hv-tile-title-container\">";
       article_tile += "                    <h2 class=\"hv-tile-title hv-tile-title-" + supercat + "\">";
       article_tile += "                      <span>";
-      article_tile += "                        <a href=\"..\/" + cat + "/" + article_id + "\" class=\"thumblink\"> " + article.title + " <\/a>";
+      article_tile += "                        <a href=\"" + prefix + cat + "/" + article_id + "\" class=\"thumblink\"> " + article.title + " <\/a>";
       article_tile += "                      <\/span>";
       article_tile += "                     <\/h2>";
       article_tile += "                <\/div>";

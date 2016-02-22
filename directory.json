@@ -1,0 +1,19 @@
+{
+	"carousel":[
+			["mensen", "peter-pan-begraven-west-vlaanderen"],
+			["wetenschap", "muizen-en-penicilline"],
+			["geschiedenis", "spotify-in-1897"],
+			["mensen", "houdini-leert-soldaten-ontsnappen"],
+			["natuur", "meisje-gered-door-leeuwen"],
+			["entertainment", "klaag-me-aan-scientology"],
+			["faitsdivers", "waar-komt-dude-vandaan"]
+	],
+	"articles":[
+			["wetenschap", "dutjes-zijn-goed-voor-je"],
+			["geschiedenis", "haatberichtjes-op-valentijn"],
+			["mensen", "de-langste-baard-ooit"],
+			["natuur", "planeet-horizontaal-glas-regent"],
+			["entertainment", "james-bond-als-gandalf"],
+			["faitsdivers", "viagra-met-toestemming"]
+	]
+}
