@@ -72,6 +72,7 @@ var hv = function(){
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "natuur\">Natuur<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "entertainment\">Entertainment<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "faitsdivers\">Faits Divers<\/a><br>";
+		footer += "                <a class=\"footer-link\" href=\"" + prefix + "random\">Random<\/a><br>";
         footer += "              <\/div>";
         footer += "              <div class=\"footer-spacer\"><\/div>";
         footer += "            <\/div>";
