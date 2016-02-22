@@ -6,6 +6,11 @@
 			"pubtime":	"2014/08/2 20:30:00"
 		},
 		{
+			"id":		"app-verplicht-ouders-terugbellen",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/24 18:30:00"
+		},
+		{
 			"id":		"beste-brood-ter-wereld",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/10/14 18:22:00"
@@ -76,6 +81,11 @@
 			"pubtime":	"2014/08/16 14:45:00"
 		},
 		{
+			"id":		"robot-lift-canada",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/24 14:50:00"
+		},
+		{
 			"id":		"scrabble-valsspelen-mag",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/22 18:15:00"
@@ -109,6 +119,11 @@
 			"id":		"waar-komt-dude-vandaan",
 			"category":	"faitsdivers",
 			"pubtime":	"2016/02/7 15:10:00"
+		},
+		{
+			"id":		"zweden-dansen-verboden",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/23 17:55:00"
 		}
 	]
 }
