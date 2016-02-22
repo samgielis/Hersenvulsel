@@ -26,6 +26,11 @@
 			"pubtime":	"2014/08/3 14:15:00"
 		},
 		{
+			"id":		"fietsen-in-de-amsterdamse-kanalen",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/11/01 18:50:00"
+		},
+		{
 			"id":		"het-bed-van-murphy",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/10/16 2014/10/16 20:38:00"
@@ -51,6 +56,11 @@
 			"pubtime":	"2014/10/19 17:22:00"
 		},
 		{
+			"id":		"lezen-maakt-gelukkig",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/21 18:50:00"
+		},
+		{
 			"id":		"M-V-X-geslachten",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/14 18:15:00"
@@ -64,6 +74,11 @@
 			"id":		"restaurant-voor-een-dag",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/16 14:45:00"
+		},
+		{
+			"id":		"scrabble-valsspelen-mag",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/22 18:15:00"
 		},
 		{
 			"id":		"skelet-in-het-biologielokaal-begraven",
