@@ -11,14 +11,29 @@
 			"pubtime":	"2014/10/26 16:50:00"
 		},
 		{
+			"id":		"de-saaiste-dag",
+			"category":	"geschiedenis",
+			"pubtime":	"2014/11/03 20:27:00"
+		},
+		{
 			"id":		"eiffeltoren-te-koop",
 			"category":	"geschiedenis",
 			"pubtime":	"2014/08/1 15:10:00"
 		},
 		{
+			"id":		"groenland-verkeerde-naam",
+			"category":	"geschiedenis",
+			"pubtime":	"2014/08/22 14:10:00"
+		},
+		{
 			"id":		"haatberichtjes-op-valentijn",
 			"category":	"geschiedenis",
 			"pubtime":	"2016/02/14 15:00:00"
+		},
+		{
+			"id":		"het-jaar-zonder-zomer",
+			"category":	"geschiedenis",
+			"pubtime":	"2014/11/01 15:30:00"
 		},
 		{
 			"id":		"langste-palindroom-ooit",
