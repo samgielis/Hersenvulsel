@@ -1,0 +1,21 @@
+{
+  "id":"de-succesvolste-investeerder-ooit",
+  "title":"De meest succesvolle investeerder ooit",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"mensen",
+  "day":"2016/02/13",
+  "time":"15:19:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Warren_Buffett",
+  "img_credit":"flickr.com",
+  "keywords":"warren buffet",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Warren Buffett is één van de rijkste mensen ter wereld - hij wordt zelfs de 'meest succesvolle investeerder ter wereld' genoemd. Buffett zit sinds z'n elfde in the business, en op z'n veertiende kocht hij al zijn eigen boerderij!"},
+		   {"type": "paragraph",
+		   "content": "Als kind had Buffett verschillende handeltjes: hij verkocht frisdrank en kranten deur aan deur, en hij kocht oude pinballmachines die hij dan bij de kapper zette om er geld mee te verdienen."},
+		   {"type": "paragraph",
+		   "content": "Met dat spaargeld kocht hij dus een boerderij, inclusief boer. Die bewerkte het land terwijl Buffett gewoon naar school ging en er geld aan verdiende."}
+		   ]
+}
