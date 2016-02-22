@@ -1,0 +1,23 @@
+{
+  "id":"disney-recycleert-danspasjes",
+  "title":"Disney recycleert danspasjes",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2014/11/04",
+  "time":"17:10:00",
+  "source_name":"youtube.com",
+  "source_url":"https://www.youtube.com/watch?v=hjmaOj3_sKk",
+  "img_credit":"youtube.com",
+  "keywords":"disney, danspasjes, recycleren, Sneeuwwitje, Robin Hood, Jungle Book, Aristokatten.",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Sneeuwwitje, Robin Hood, Jungle Book, de Aristokatten... Het zijn allemaal Disneyfilms, maar daarnaast hebben ze nog iets gemeen: danspasjes!"},
+		   {"type": "paragraph",
+		   "content": "Hetzelfde dansje wordt in verschillende films gebruikt - kijk maar in onderstaande video!"},
+		   {"type": "paragraph",
+		   "content": ""},
+		   {"type": "embed",
+		   "code": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/hjmaOj3_sKk\" frameborder=\"0\" allowfullscreen></iframe>"}
+		   ]
+}
