@@ -35,6 +35,7 @@
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/ico" href="../favicon.ico">
   <link rel="stylesheet" href="./css/hv.css">
+  <link rel="stylesheet" href="./css/hv-home.css">
   <link rel="stylesheet" href="./css/hv-article-tile.css">
 
 
@@ -62,70 +63,21 @@
 	</script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 	<!-- End Cookie Consent plugin -->
-  <style>
-    .hv-carousel-link {
-      color: #222222;
-      /*background-color: rgba(0, 0, 0, 0.8);
-      box-shadow: 10px 0 0 rgba(0,0,0,0.8),-0 0 0 rgba(0,0,0,0.8);*/
-      text-decoration: none !important;
-      font-size: 2.5em;
-      line-height: 1.22em;
-      font-weight: bold;
-    }
-
-
-    .carousel-control.left, .carousel-control.right {
-        background-image: none
-    }
-    .carousel-control {
-      color: #c93942 !important;
-    }
-    .carousel-control:hover {
-      color: #c93942 !important;
-    }
-
-
-    .hv-carousel-link:hover {
-      /*color: white !important;
-      background-color: rgba(185,62,70,0.8);
-      box-shadow: 10px 0 0 rgba(185,62,70,0.8),-0 0 0 rgba(185,62,70,0.8);*/
-
-    }
-    @media all and (max-width: 450px) {
-      .hv-carousel-link {
-        font-size: 1.2em;
-        line-height: 0.5em !important;
-      }
-    }
-
-    @media all and (min-width: 768px) and (max-width: 990px) {
-      .sidebar-article-entry {
-        font-size: 0.8em;
-      }
-    }
-
-
-  </style>
 </head>
 
 <body>
   <div id="fb-root"></div>
   <script>
   $(document).ready(function() {
-    var entries = [];
-    entries.push(["wetenschap","muizen-en-penicilline"]);
-    entries.push(["geschiedenis","spotify-in-1897"]);
-    entries.push(["mensen","houdini-leert-soldaten-ontsnappen"]);
-    entries.push(["natuur","meisje-gered-door-leeuwen"]);
-    entries.push(["entertainment","klaag-me-aan-scientology"]);
-    entries.push(["faitsdivers","waar-komt-dude-vandaan"]);
-    hv_home.carousel(entries);
+
+    hv_home.load();
 
     var prefix = ".\/";
     var supercat = "default";
     hv.navbar(prefix);
     hv.footer(prefix);
     hv.header(supercat, prefix);
+    hv_directory.load_default_directory();
     //hv_directory.load_cat_directory("default");
     //hv_category.most_recent("apollo-11-tapes", "geschiedenis", supercat);
   });
@@ -143,11 +95,9 @@
 
   <div class="container" style="padding-top: 50px;">
 
-
-    <div class="row">
-
-      <!-- CAROUSEL -->
-      <div class="col-sm-14 pad-bot-20" >
+    <!-- CAROUSEL -->
+    <div class="row" style="padding-bottom: 50px;">
+      <div class="col-sm-14">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators" style="z-index: 5;">
@@ -168,145 +118,33 @@
           </a>
         </div>
       </div>
-
   </div> <!-- END CAROUSEL -->
 
-  <!-- ART #1 & #2 -->
-  <div class="row">
+  <!-- ART #1, #2 & #3 -->
+  <div class="row" id="hv-art123" style="padding-bottom: 40px;">
+  </div>
 
-    <div class="col-sm-4" style="padding-bottom: 50px;">
-      <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-wetenschap" style="padding-top: 30px;">WETENSCHAP</h2>
-      <img style=" width: 100%;" src="./wetenschap/dutjes-zijn-goed-voor-je/img/main.jpg" alt="..."></img>
-      <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
-        Dutjes zijn goed voor je
-      </h1>
-      <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-        12/02/2016 - Shanna Verspreet
-      </b></h4>
-      <p class="hv-most-recent-content" id="most-recent-content">
-        Goed nieuws van de dag: dutjes zijn goed voor je! Peuters en kleuters doen vaak nog middagdutjes. Omdat ze moe zijn na een drukke voormiddag spelen, maar ook omdat ...
-      </p>
-      <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-      <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-        <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-        <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-          PNAS.ORG
-        </a>
-      </p>
+  <!-- ART #4, #5 & #6 -->
+  <div class="row" id="hv-art456" style="padding-bottom: 30px;">
+  </div>
+
+  <div class="row" style="padding-bottom: 30px;">
+    <div class="col-sm-6" style="padding: 10px; text-align:center;">
+      <div class="header-wetenschap">
+        <a class="hv-bigline" href="https://facebook.com/hersenvulsel">volg ons ook op facebook!</a>
+      </div>
     </div>
 
-    <div class="col-sm-4" style="padding-bottom: 50px;">
-        <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-geschiedenis" style="padding-top: 30px;">geschiedenis</h2>
-        <img style=" width: 100%;" src="./geschiedenis/spotify-in-1897/img/main.jpg" alt="..."></img>
-        <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
-          Wist je dat de voorloper van Spotify al sinds 1897 bestaat?
-        </h1>
-        <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-          12/02/2016 - Shanna Verspreet
-        </b></h4>
-        <p class="hv-most-recent-content" id="most-recent-content">
-          Wist je dat de voorloper van Spotify al sinds 1897 bestaat? Het 'telharmonium' was een dienst waarmee je via de telefoon naar muziek kon luisteren. Bij de centrale zaten muzikanten die live muziek speelden, en daar werd je [...]
-        </p>
-        <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-        <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-          <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-          <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-            ATLASOBSCURA.COM
-          </a>
-        </p>
-    </div>
-
-    <div class="col-sm-4" style="padding-bottom: 50px;">
-      <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-mensen" style="padding-top: 30px;">mensen</h2>
-      <img style=" width: 100%;" src="./mensen/vanwaar-komt-siamese-tweeling/img/main.jpg" alt="..."></img>
-      <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
-        Vanwaar komt de term 'Siamese tweeling'?
-      </h1>
-      <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-        12/02/2016 - Shanna Verspreet
-      </b></h4>
-      <p class="hv-most-recent-content" id="most-recent-content">
-        Vanwaar komt de term 'Siamese tweeling'? Van de eerste beroemde Siamese tweeling, natuurlijk! Chang en Eng Bunker zijn in 1811 geboren in ... </p>
-      <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-      <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-        <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-        <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-          WIKIPEDIA.ORG
-        </a>
-      </p>
+    <div class="col-sm-6" style="padding: 10px; text-align:center;">
+      <div class="header-faitsdivers">
+        <a class="hv-bigline" href="https://facebook.com/hersenvulsel">Zin in avontuur? klik hier!</a>
+      </div>
     </div>
   </div>
 
 
 
-<div class="row" style="align: center">
-  <div class="col-sm-4" style="padding-bottom: 50px;">
-    <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-natuur" style="padding-top: 30px;">natuur</h2>
-    <img style=" width: 100%;" src="./wetenschap/dutjes-zijn-goed-voor-je/img/main.jpg" alt="..."></img>
-    <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
-      Dutjes zijn goed voor je
-    </h1>
-    <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-      12/02/2016 - Shanna Verspreet
-    </b></h4>
-    <p class="hv-most-recent-content" id="most-recent-content">
-      Goed nieuws van de dag: dutjes zijn goed voor je! Peuters en kleuters doen vaak nog middagdutjes. Omdat ze moe zijn na een drukke voormiddag spelen, maar ook omdat ...
-    </p>
-    <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-    <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-      <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-      <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-        PNAS.ORG
-      </a>
-    </p>
-  </div>
-
-  <div class="col-sm-4" style="padding-bottom: 50px;">
-      <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-entertainment" style="padding-top: 30px;">entertainment</h2>
-      <img style=" width: 100%;" src="./geschiedenis/spotify-in-1897/img/main.jpg" alt="..."></img>
-      <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
-        Wist je dat de voorloper van Spotify al sinds 1897 bestaat?
-      </h1>
-      <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-        12/02/2016 - Shanna Verspreet
-      </b></h4>
-      <p class="hv-most-recent-content" id="most-recent-content">
-        Wist je dat de voorloper van Spotify al sinds 1897 bestaat? Het 'telharmonium' was een dienst waarmee je via de telefoon naar muziek kon luisteren. Bij de centrale zaten muzikanten die live muziek speelden, en daar werd je [...]
-      </p>
-      <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-      <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-        <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-        <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-          ATLASOBSCURA.COM
-        </a>
-      </p>
-  </div>
-
-  <div class="col-sm-4" style="padding-bottom: 50px;">
-    <h2 id="hv-most-recent-mr" class="hv-category-title pad-bot-20 hv-c-faitsdivers" style="padding-top: 30px;">faits divers</h2>
-    <img style=" width: 100%;" src="./mensen/vanwaar-komt-siamese-tweeling/img/main.jpg" alt="..."></img>
-    <h1 class="hv-article-title-mostrecent" id="hv-most-recent-title" style="font-size: 2.5em !important">
-      Vanwaar komt de term 'Siamese tweeling'?
-    </h1>
-    <h4 class="hv-author-date-most-recent" ><b id="author-date-most-recent">
-      12/02/2016 - Shanna Verspreet
-    </b></h4>
-    <p class="hv-most-recent-content" id="most-recent-content">
-      Vanwaar komt de term 'Siamese tweeling'? Van de eerste beroemde Siamese tweeling, natuurlijk! Chang en Eng Bunker zijn in 1811 geboren in ... </p>
-    <p class="hv-lees-meer"><b id="hv-lees-meer-b"><a id="hv-lees-meer-a" href="">lees meer</a></b></p>
-    <p id="hv-most-recent-source-p" style="text-transform: uppercase;">
-      <img src="./img/source.png" title="Bron" style="width: 23px;"/>
-      <a id="hv-most-recent-source-a" href="" target="_blank" style="padding-left: 10px">
-        WIKIPEDIA.ORG
-      </a>
-    </p>
-  </div>
-</div>
-
-
-
-
-
+  <h2 id="hv-meer-artikels" class="hv-category-title hv-c-default pad-bot-20">MEER ARTIKELS</h2>
   <div class="row">
     <div class="col-sm-12" style="padding-bottom: 50px;">
       <div class="row" id="hv-directory-container">

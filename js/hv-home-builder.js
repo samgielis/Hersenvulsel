@@ -4,6 +4,35 @@
 */
 var hv_home = function(){
 
+  hv_home.prototype.load = function(){
+    var self = this;
+    $.getJSON("./directory.json", function(dir){
+      self.carousel(dir);
+      self.articles(dir);
+    });
+  };
+
+
+  ///////////////////////
+  /* CODE FOR CAROUSEL */
+  ///////////////////////
+  hv_home.prototype.carousel = function(dir){
+
+    var self = this;
+
+    for (var i = 0; i < dir.carousel.length; i++) {
+      $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators');
+      $.getJSON("./" + dir.carousel[i][0] + "/" + dir.carousel[i][1] + "/descriptor.json", function(article, i) {
+        $( "#carousel-entries" ).append(self.carousel_entry(article, i));
+        $('.item').removeClass('active');
+        $('.item').first().addClass('active');
+        $('.carousel-indicators > li').removeClass('active');
+        $('.carousel-indicators > li').first().addClass('active');
+        $('#carousel-example-generic').carousel();
+      }).error(function() { alert("error loading article: "+art_id); });
+    }
+  }
+
   hv_home.prototype.carousel_entry = function(article, i){
     var carousel_item="";
         carousel_item += "<div class=\"item\" id=\"citem-" + i + "\">";
@@ -48,26 +77,77 @@ var hv_home = function(){
         carousel_item += "            <\/div>";
 
         return carousel_item;
-
   }
 
-  hv_home.prototype.carousel = function(entries){
 
+
+  ////////////////////////////////
+  /* CODE FOR CATEGORY ARTICLES */
+  ////////////////////////////////
+  hv_home.prototype.articles = function(dir){
     var self = this;
-
-    for (var i = 0; i < entries.length; i++) {
-      $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
-      $.getJSON("./" + entries[i][0] + "/" + entries[i][1] + "/descriptor.json", function(article, i) {
-        $( "#carousel-entries" ).append(self.carousel_entry(article, i));
-        $('.item').removeClass('active');
-        $('.item').first().addClass('active');
-        $('.carousel-indicators > li').removeClass('active');
-        $('.carousel-indicators > li').first().addClass('active');
-        $('#carousel-example-generic').carousel();
-
-      }).error(function() { alert("error loading article: "+art_id); });
-    }
-
+    $.getJSON("./" + dir.articles[0][0] + "/" + dir.articles[0][1] + "/descriptor.json", function(art) {
+      $("#hv-art123").append(self.article(art));
+    });
+    $.getJSON("./" + dir.articles[1][0] + "/" + dir.articles[1][1] + "/descriptor.json", function(art) {
+      $("#hv-art123").append(self.article(art));
+    });
+    $.getJSON("./" + dir.articles[2][0] + "/" + dir.articles[2][1] + "/descriptor.json", function(art) {
+      $("#hv-art123").append(self.article(art));
+    });
+    $.getJSON("./" + dir.articles[3][0] + "/" + dir.articles[3][1] + "/descriptor.json", function(art) {
+      $("#hv-art456").append(self.article(art));
+    });
+    $.getJSON("./" + dir.articles[4][0] + "/" + dir.articles[4][1] + "/descriptor.json", function(art) {
+      $("#hv-art456").append(self.article(art));
+    });
+    $.getJSON("./" + dir.articles[5][0] + "/" + dir.articles[5][1] + "/descriptor.json", function(art) {
+      $("#hv-art456").append(self.article(art));
+    });
   }
 
+  hv_home.prototype.article = function(art){
+
+    var catfull = art.category;
+    if(art.category == "faitsdivers"){
+      catfull= "faits divers";
+    }
+    var article="";
+        article += "<div class=\"col-sm-4\">";
+        article += "      <h2 class=\"hv-category-title pad-bot-20 hv-c-"+ art.category + "\"> <a style=\"color: inherit;\" href=\"./" + art.category + "/\">" + catfull + "</a><\/h2>";
+        article += "      <img style=\" width: 100%;\" src=\".\/" + art.category + "\/" + art.id + "\/img\/main.jpg\"><\/img>";
+        article += "      <h1 class=\"hv-article-title-mostrecent\" style=\"font-size: 2.5em !important\">";
+        article += "        <a style=\"color: #222222 !important;\" href=\".\/" + art.category +"\/" + art.id + "/\">" +   art.title + "</a>";
+        article += "      <\/h1>";
+        article += "      <h4 class=\"hv-author-date-most-recent\" ><b >";
+        var date = art.day;
+        date = date.split("/");
+        article += "        " + date[2] + "\/" + date[1] + "\/" + date[0] + " - <a style=\"color: #222222 !important; \" href=\"./a/" + art.authorid + "/\">" + art.authorname + "</a>";
+        article += "      <\/b><\/h4>";
+        article += "      <p class=\"hv-most-recent-content\">";
+
+        var fullcontent =""
+        for (var i = 0; i < art.content.length; i++) {
+          if (art.content[i].type == "paragraph") {
+              fullcontent += art.content[i].content + " ";
+          }
+        }
+        if(fullcontent.length < 200){
+          article += "                    " + fullcontent;
+        }
+        else{
+          article += "                    " + fullcontent.substring(0,199) + "[...]";
+        }
+        article += "      <\/p>";
+        article += "      <p class=\"hv-lees-meer\"><b><a href=\"./" + art.category + "/" + art.id + "/\">lees meer<\/a><\/b><\/p>";
+        article += "        <p style=\"text-transform: uppercase;\">";
+        article += "          <img src=\".\/img\/source.png\" title=\"Bron\" style=\"width: 23px;\"\/>";
+        article += "          <a href=\"" + art.source_url + "\" target=\"_blank\" style=\"padding-left: 10px\">";
+        article += "            " + art.source_name;
+        article += "          <\/a>";
+        article += "        <\/p>";
+        article += "    <\/div>";
+
+        return article;
+  }
 }

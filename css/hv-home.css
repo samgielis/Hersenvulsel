@@ -1,0 +1,47 @@
+.hv-bigline {
+  text-align: center !important;
+  font-size: 2.5em !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+.hv-carousel-link {
+  color: #222222;
+  /*background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 0 0 rgba(0,0,0,0.8),-0 0 0 rgba(0,0,0,0.8);*/
+  text-decoration: none !important;
+  font-size: 2.5em;
+  line-height: 1.22em;
+  font-weight: bold;
+}
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+.carousel-control {
+  color: #c93942 !important;
+}
+.carousel-control:hover {
+  color: #c93942 !important;
+}
+
+
+.hv-carousel-link:hover {
+  /*color: white !important;
+  background-color: rgba(185,62,70,0.8);
+  box-shadow: 10px 0 0 rgba(185,62,70,0.8),-0 0 0 rgba(185,62,70,0.8);*/
+
+}
+@media all and (max-width: 450px) {
+  .hv-carousel-link {
+    font-size: 1.2em;
+    line-height: 0.5em !important;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 990px) {
+  .sidebar-article-entry {
+    font-size: 0.8em;
+  }
+}
