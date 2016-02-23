@@ -1,0 +1,19 @@
+{
+  "id":"bevers-zijn-eigenlijk-vissen",
+  "title":"Wist je dat bevers eigenlijk vissen zijn?",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"2016/01/29",
+  "time":"15:10:00",
+  "source_name":"scientificamerican.com",
+  "source_url":"http://blogs.scientificamerican.com/thoughtful-animal/once-upon-a-time-the-catholic-church-decided-that-beavers-were-fish/",
+  "img_credit":"wikimedia.org",
+  "keywords":"bever, vissen, katholieke kerk",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Toch volgens de katholieke kerk! In de 17de eeuw was er in Noord-Amerika namelijk een discussie over bevervlees. De bevolking at daar al eeuwenlang lekkere bevers, maar door de kolonisatie door Europa was een groot deel van die bevolking bekeerd tot het katholicisme. En nu wisten ze niet of ze nog wel bever mochten eten, zeker tijdens het vasten."},
+		   {"type": "paragraph",
+		   "content": "En dus besloot de kerk dat een bever eigenlijk een soort vis was - omdat ze grotendeels in het water leven en zo goed kunnen zwemmen. Dus mag iedereen tijdens het vasten bever eten op woensdag en vrijdag, want dan is vis eten toegestaan!"}
+		   ]
+}

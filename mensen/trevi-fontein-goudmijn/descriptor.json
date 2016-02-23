@@ -1,0 +1,19 @@
+{
+  "id":"trevi-fontein-goudmijn",
+  "title":"De Trevi fontein als persoonlijke goudmijn",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"mensen",
+  "day":"2015/02/05",
+  "time":"15:10:00",
+  "source_name":"nytimes.com",
+  "source_url":"http://www.nytimes.com/2002/08/07/world/rome-journal-the-trevi-fountain-was-his-gold-mine.html",
+  "img_credit":"wikimedia.org",
+  "keywords":"trevi fontein, goudmijn, rome",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Wat gebeurt er met het geld dat je in een fontein gooit? Wel, voor sommige mensen is dat hun inkomen... soms stiekem."},
+		   {"type": "paragraph",
+		   "content": "Van 1968 tot 2002 haalde een Italiaan elke ochtend de Trevifontein in Rome leeg. Hij was werkloos - en volgens het gelinkte artikel ook mentaal onstabiel - maar hij haalde zo elke dag wel ruim €1000 binnen. Kassa!"}
+		   ]
+}

@@ -1,0 +1,22 @@
+{
+  "id":"olsen-tweeling-vals-gebit",
+  "title":"De Olsen-zusjes droegen vroeger een vals gebit",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"mensen",
+  "day":"2016/02/09",
+  "time":"15:10:00",
+  "source_name":"abcnews.go.com",
+  "source_url":"http://abcnews.go.com/Entertainment/28-facts-forgot-mary-kate-ashley-olsen/story?id=24123270",
+  "img_credit":"wikimedia.org",
+  "keywords":"olsen, full house, michelle tanner",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Handig, twee kleine actrices die een tweeling zijn! In de serie Full House speelden Mary-Kate en Ashley Olsen de schattige Michelle. Eén personage gespeeld door twee kinderen, dus de kindsterretjes raakten niet overwerkt... Maar ze moesten wel een vals gebit dragen."},
+		   {"type": "image",
+		   "name": "michelle.jpg",
+		   "credit": "youtube.com"},
+		   {"type": "paragraph",
+		   "content": "Mary-Kate en Ashley waren namelijk allebei wat babytandjes kwijt, maar natuurlijk niet dezelfde tanden. En dat mocht niet opvallen bij hun personage Michelle. Haar stralende glimlach was dus een vals gebit!"}
+		   ]
+}

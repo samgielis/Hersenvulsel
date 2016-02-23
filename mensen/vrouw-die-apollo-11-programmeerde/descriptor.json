@@ -1,0 +1,19 @@
+{
+  "id":"vrouw-die-apollo-11-programmeerde",
+  "title":"De vrouw die de Apollo 11 programmeerde",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"mensen",
+  "day":"2016/02/01",
+  "time":"15:10:00",
+  "source_name":"wired.com",
+  "source_url":"http://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/",
+  "img_credit":"",
+  "keywords":"",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Iedereen kent Neil Armstrong, misschien ook Buzz Aldrin, maar weinigen kennen de vrouw achter de maanlanding: Margaret Hamilton. Ze wordt zowaar 'de moeder van de software' genoemd. Hamilton programmeerde namelijk de Apollo 11, die astronauten voor het eerst naar de maan bracht!"},
+		   {"type": "paragraph",
+		   "content": "In die tijd was het uitzonderlijk dat een vrouw in die sector werkte, laat staan dat ze zo'n belangrijke rol had. Hamilton werd in '65 verantwoordelijk voor de software aan boord van de Apollo 11 - vier jaar voor de maanlanding dus. Op bovenstaande foto zie je Hamilton poseren met de code die ze voor de raket geschreven heeft!"}
+		   ]
+}
