@@ -76,6 +76,11 @@
 			"pubtime":	"2014/08/14 18:15:00"
 		},
 		{
+			"id":		"mag-ik-geld-verkopen",
+			"category":	"faitsdivers",
+			"pubtime":	"2016/02/02 15:10:00"
+		},
+		{
 			"id":		"medische-bijstand-vliegtuig",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/29 18:15:00"
@@ -94,6 +99,11 @@
 			"id":		"robot-lift-canada",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/24 14:50:00"
+		},
+		{
+			"id":		"samjiyon-noord-koreaanse-tablet",
+			"category":	"faitsdivers",
+			"pubtime":	"2016/01/31 15:10:00"
 		},
 		{
 			"id":		"scrabble-valsspelen-mag",
@@ -129,6 +139,16 @@
 			"id":		"waar-komt-dude-vandaan",
 			"category":	"faitsdivers",
 			"pubtime":	"2016/02/7 15:10:00"
+		},
+		{
+			"id":		"wat-als-shitterton",
+			"category":	"faitsdivers",
+			"pubtime":	"2016/01/30 15:05:00"
+		},
+		{
+			"id":		"weermannen-liegen-expres",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/09/03 18:40:00"
 		},
 		{
 			"id":		"zweden-dansen-verboden",

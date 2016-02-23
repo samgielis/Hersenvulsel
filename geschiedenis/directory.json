@@ -6,6 +6,16 @@
 			"pubtime":	"2016/01/08 15:20:00"
 		},
 		{
+			"id":		"bevers-zijn-eigenlijk-vissen",
+			"category":	"geschiedenis",
+			"pubtime":	"2016/01/29 15:10:00"
+		},
+		{
+			"id":		"broek-dragen-toegestaan",
+			"category":	"geschiedenis",
+			"pubtime":	"2014/09/02 18:45:00"
+		},
+		{
 			"id":		"contactlenzen-da-vinci",
 			"category":	"geschiedenis",
 			"pubtime":	"2014/10/26 16:50:00"
@@ -31,6 +41,11 @@
 			"pubtime":	"2016/02/14 15:00:00"
 		},
 		{
+			"id":		"hebreeuws-bijna-verdwenen",
+			"category":	"geschiedenis",
+			"pubtime":	"2016/02/08 15:10:00"
+		},
+		{
 			"id":		"het-jaar-zonder-zomer",
 			"category":	"geschiedenis",
 			"pubtime":	"2014/11/01 15:30:00"
@@ -49,6 +64,11 @@
 			"id":		"museum-vol-oude-robots",
 			"category":	"geschiedenis",
 			"pubtime":	"2014/10/30 19:35:00"
+		},
+		{
+			"id":		"president-kop-of-munt",
+			"category":	"geschiedenis",
+			"pubtime":	"2016/02/03 15:10:00"
 		},
 		{
 			"id":		"samen-op-jacht-met-orkas",

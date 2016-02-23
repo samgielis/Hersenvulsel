@@ -31,9 +31,19 @@
 			"pubtime":	"2014/10/16 18:17:00"
 		},
 		{
+			"id":		"koningin-en-tolkien-illustrator",
+			"category":	"mensen",
+			"pubtime":	"2016/01/28 15:10:00"
+		},
+		{
 			"id":		"marie-curie-nog-steeds-radioactief",
 			"category":	"mensen",
 			"pubtime":	"2014/10/18 18:26:00"
+		},
+		{
+			"id":		"olsen-tweeling-vals-gebit",
+			"category":	"mensen",
+			"pubtime":	"2016/02/09 15:10:00"
 		},
 		{
 			"id":		"oplichter-doet-zich-voor-als-hitler",
@@ -46,9 +56,19 @@
 			"pubtime":	"2014/08/16 18:45:00"
 		},
 		{
+			"id":		"trevi-fontein-goudmijn",
+			"category":	"mensen",
+			"pubtime":	"2015/02/05 15:10:00"
+		},
+		{
 			"id":		"vanwaar-komt-siamese-tweeling",
 			"category":	"mensen",
 			"pubtime":	"2014/10/29 17:40:00"
+		},
+		{
+			"id":		"vrouw-die-apollo-11-programmeerde",
+			"category":	"mensen",
+			"pubtime":	"2016/02/01 15:10:00"
 		},
 		{
 			"id":		"zo-sprak-shakespeare",

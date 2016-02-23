@@ -6,6 +6,11 @@
 			"pubtime":	"2014/08/7 16:30:00"
 		},
 		{
+			"id":		"al-gehoord-van-de-bergkip",
+			"category":	"natuur",
+			"pubtime":	"2016/02/06 15:05:00"
+		},
+		{
 			"id":		"bestaat-zwarte-leeuw-echt",
 			"category":	"natuur",
 			"pubtime":	"2014/08/30 16:45:00"
@@ -14,6 +19,11 @@
 			"id":		"blobvis-toch-niet-lelijk",
 			"category":	"natuur",
 			"pubtime":	"2014/08/17 14:30:00"
+		},
+		{
+			"id":		"hond-veilig-slapen",
+			"category":	"natuur",
+			"pubtime":	"2014/09/02 15:50:00"
 		},
 		{
 			"id":		"kangoeroe-altijd-zwanger",
@@ -56,9 +66,19 @@
 			"pubtime":	"2014/10/27 20:05:00"
 		},
 		{
+			"id":		"rups-wordt-vlinder",
+			"category":	"natuur",
+			"pubtime":	"2014/08/30 14:25:00"
+		},
+		{
 			"id":		"seizoen-bepaalt-vorm-hersenen",
 			"category":	"natuur",
 			"pubtime":	"2014/10/25 15:20:00"
+		},
+		{
+			"id":		"trekduif-100-jaar-uitgestorven",
+			"category":	"natuur",
+			"pubtime":	"2014/09/01 18:10:00"
 		},
 		{
 			"id":		"van-eieren-tot-zoogdier",

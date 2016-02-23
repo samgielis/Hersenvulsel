@@ -36,6 +36,11 @@
 			"pubtime":	"2014/07/31 15:00:00"
 		},
 		{
+			"id":		"eddie-murphy-drie-keer-slecht",
+			"category":	"entertainment",
+			"pubtime":	"2014/09/04 19:00:00"
+		},
+		{
 			"id":		"games-bij-toeval-bedacht",
 			"category":	"entertainment",
 			"pubtime":	"2014/10/20 20:10:00"
@@ -89,6 +94,11 @@
 			"id":		"simpsons-eerste-homokus",
 			"category":	"entertainment",
 			"pubtime":	"2014/08/25 14:25:00"
+		},
+		{
+			"id":		"the-asylum-mockbusters",
+			"category":	"entertainment",
+			"pubtime":	"2014/09/05 18:15:00"
 		},
 		{
 			"id":		"vijf-dollar-voor-helemaal-niets",
