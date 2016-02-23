@@ -6,6 +6,11 @@
 			"pubtime":	"2014/10/15 21:30:00"
 		},
 		{
+			"id":		"atari-games-begraven",
+			"category":	"entertainment",
+			"pubtime":	"2014/08/25 18:40:00"
+		},
+		{
 			"id":		"bohemian-rhapsody-alle-laagjes",
 			"category":	"entertainment",
 			"pubtime":	"2014/08/17 18:30:00"
@@ -39,6 +44,11 @@
 			"id":		"harry-potter-streetview",
 			"category":	"entertainment",
 			"pubtime":	"2014/08/19 18:30:00"
+		},
+		{
+			"id":		"harry-potter-valse-boeken",
+			"category":	"entertainment",
+			"pubtime":	"2014/08/26 16:30:00"
 		},
 		{
 			"id":		"hello-kitty-not-a-kitty",
@@ -76,9 +86,19 @@
 			"pubtime":	"2014/11/03 17:43:00"
 		},
 		{
+			"id":		"simpsons-eerste-homokus",
+			"category":	"entertainment",
+			"pubtime":	"2014/08/25 14:25:00"
+		},
+		{
 			"id":		"vijf-dollar-voor-helemaal-niets",
 			"category":	"entertainment",
 			"pubtime":	"2015/11/28 15:35:00"
+		},
+		{
+			"id":		"virtueel-onthoofd",
+			"category":	"entertainment",
+			"pubtime":	"2014/08/26 18:50:00"
 		},
 		{
 			"id":		"vrouw-onvriendelijke-films",

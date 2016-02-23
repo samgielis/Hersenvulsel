@@ -6,6 +6,11 @@
 			"pubtime":	"2014/08/2 20:30:00"
 		},
 		{
+			"id":		"altijd-941-apple",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/27 14:00:00"
+		},
+		{
 			"id":		"app-verplicht-ouders-terugbellen",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/24 18:30:00"
@@ -69,6 +74,11 @@
 			"id":		"M-V-X-geslachten",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/14 18:15:00"
+		},
+		{
+			"id":		"medische-bijstand-vliegtuig",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/08/29 18:15:00"
 		},
 		{
 			"id":		"potlood-opgebruiken-45000-woorden",

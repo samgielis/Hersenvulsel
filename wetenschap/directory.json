@@ -66,6 +66,11 @@
 			"pubtime":	"2014/08/9 17:00:00"
 		},
 		{
+			"id":		"pek-vast-of-vloeibaar",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/27 18:20:00"
+		},
+		{
 			"id":		"placebo-zonder-pil",
 			"category":	"wetenschap",
 			"pubtime":	"2014/08/4 20:20:00"
@@ -94,6 +99,11 @@
 			"id":		"tweelingen-ander-jaar-geboren",
 			"category":	"wetenschap",
 			"pubtime":	"2014/07/31 15:00:00"
+		},
+		{
+			"id":		"vier-op-een-rij-winnen",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/28 18:25:00"
 		},
 		{
 			"id":		"vijfsecondenregel-klopt-dat",

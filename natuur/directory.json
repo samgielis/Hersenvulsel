@@ -6,6 +6,11 @@
 			"pubtime":	"2014/08/7 16:30:00"
 		},
 		{
+			"id":		"bestaat-zwarte-leeuw-echt",
+			"category":	"natuur",
+			"pubtime":	"2014/08/30 16:45:00"
+		},
+		{
 			"id":		"blobvis-toch-niet-lelijk",
 			"category":	"natuur",
 			"pubtime":	"2014/08/17 14:30:00"
@@ -39,6 +44,11 @@
 			"id":		"ooievaar-op-de-maan",
 			"category":	"natuur",
 			"pubtime":	"2014/08/5 19:15:00"
+		},
+		{
+			"id":		"panda-zwangerschap-gefaked",
+			"category":	"natuur",
+			"pubtime":	"2014/08/29 14:00:00"
 		},
 		{
 			"id":		"planeet-horizontaal-glas-regent",
