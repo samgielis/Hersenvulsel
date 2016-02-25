@@ -78,10 +78,10 @@ var hv = function(){
         footer += "            <\/div>";
         footer += "            <div class=\"col-sm-4\">";
         footer += "              <div class=\"hv-footer-link-container\">";
+		footer += "                <a class=\"footer-link\" href=\"" + prefix + "contact\">Contact<\/a><br>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "adverteren\">Adverteren<\/a><br>";
         footer += "                <a class=\"footer-link\" href=\"" + prefix + "cookies-en-privacy\">Cookies & Privacy<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"" + prefix + "gebruiksvoorwaarden\">Gebruiksvoorwaarden<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"" + prefix + "contact\">Contact<\/a><br>";
-        footer += "                <a class=\"footer-link\" href=\"" + prefix + "adverteren\">Adverteren<\/a>";
+        footer += "                <a class=\"footer-link\" href=\"" + prefix + "gebruiksvoorwaarden\">Gebruiksvoorwaarden<\/a>";
         footer += "              <\/div>";
         footer += "              <div class=\"footer-spacer\"><\/div>";
         footer += "            <\/div>";
