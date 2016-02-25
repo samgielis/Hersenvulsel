@@ -67,6 +67,9 @@ var hv_article = function(){
     auth += "          <\/div>";
     auth += "          <div style=\"padding-left: 10px\">";
     auth += "            <p class=\"hv-author-name\"><a class=\"hv-author-name-link\" href=\"..\/..\/a\/" + authid + "\">" + name + "<\/a><\/p>";
+	if(datum[2].charAt(0) == "0"){
+		datum[2] = datum[2].charAt(1);
+	}
     auth += "            <p class=\"hv-date-line\">" + datum[2] + " " + this.month_to_monthname(datum[1]) + " " + datum[0] + "<\/p>";
     auth += "          <\/div>";
     return auth;
