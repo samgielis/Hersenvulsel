@@ -1,0 +1,21 @@
+{
+  "id":"eerste-meting-mt-everest-vervalst",
+  "title":"Eerste meting MT. Everest vervalst",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"natuur",
+  "day":"2016/01/14",
+  "time":"15:48:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Mount_Everest",
+  "img_credit":"",
+  "keywords":"flickr.com/rupertuk",
+  "content":[
+          {"type": "paragraph",
+		   "content": "In 1856 werd voor het eerst een officiële hoogte vastgesteld van de Mount Everest. Dat was toen 8839,2 meter, of 29000 voet."},
+		   {"type": "paragraph",
+		   "content": "Omdat dat laatste zo'n perfect rond getal was, waren de onderzoekers bang dat de resultaten vals zouden lijken - de mensheid zou denken dat ze gewoon gegokt hadden. En dus veranderden ze de resultaten. De Mount Everest was in 1856 dus officieel 29002 voet hoog, of 8839,8 meter."},
+		   {"type": "paragraph",
+		   "content": "En dus waren de resultaten éigenlijk vals. Trouwens, de top van de Mount Everest is nu ongeveer 8848 meter of 29028 voet hoog!"}
+		   ]
+}

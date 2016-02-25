@@ -1,0 +1,19 @@
+{
+  "id":"zo-vervuilend-zijn-telefoonboeken",
+  "title":"Zo vervuilend zijn telefoonboeken",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"natuur",
+  "day":"2016/01/20",
+  "time":"15:10:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Telephone_directory#History",
+  "img_credit":"flickr.com/jamie",
+  "keywords":"telefoonboek, klimaat, milieu",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Heb jij nog een telefoonboek in huis?"},
+		   {"type": "paragraph",
+		   "content": "Vroeger was dat standaard, nu allesbehalve. En terecht - de telefoonboeken moeten jaarlijks hernieuwd worden, waardoor er steeds een massa papier nodig is. Op dit moment wordt er jaarlijks 600 000 ton papier gebruikt voor telefoonboeken. De productie daarvan zorgt ook elk jaar voor anderhalf miljoen ton broeikasgassen!"}
+		   ]
+}

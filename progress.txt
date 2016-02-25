@@ -1,6 +1,5 @@
 ---- 2016
-vanaf: 		28 januari-- margaretha
-tot-en-met	NU
+DONE
 
 ---- 2014
 vanaf:		eerste niet-afbeelding

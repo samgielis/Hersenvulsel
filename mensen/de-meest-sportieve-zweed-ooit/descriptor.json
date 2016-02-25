@@ -1,0 +1,19 @@
+{
+  "id":"de-meest-sportieve-zweed-ooit",
+  "title":"De meest sportieve Zweed ooit",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"mensen",
+  "day":"2016/01/04",
+  "time":"15:30:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/G%C3%B6ran_Kropp",
+  "img_credit":"summitpost.org",
+  "keywords":"Göran Kropp, Mount Everest",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Göran Kropp is misschien wel de meest sportieve Zweed die er ooit geweest is!"},
+		   {"type": "paragraph",
+		   "content": "De man fietste van z'n thuisland naar de Mount Everest, een goeie 13000 kilometer, om daar de berg te beklimmen zonder de hulp van sherpa's en zonder zuurstofflessen. Daarna fietste hij gewoon terug naar huis."}
+		   ]
+}
