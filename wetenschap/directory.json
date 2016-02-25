@@ -51,6 +51,11 @@
 			"pubtime":	"21/10/2014 19:35:00"
 		},
 		{
+			"id":		"kinderen-sugar-rush",
+			"category":	"wetenschap",
+			"pubtime":	"2014/09/14 15:15:00"
+		},
+		{
 			"id":		"koffie-om-1416",
 			"category":	"wetenschap",
 			"pubtime":	"2014/08/10 14:16:00"
@@ -84,6 +89,11 @@
 			"id":		"schommelen-beste-manier",
 			"category":	"wetenschap",
 			"pubtime":	"2014/08/14 14:45:00"
+		},
+		{
+			"id":		"sterren-die-je-kan-aanraken",
+			"category":	"wetenschap",
+			"pubtime":	"2014/09/11 14:45:00"
 		},
 		{
 			"id":		"stilste-kamer-ter-wereld",

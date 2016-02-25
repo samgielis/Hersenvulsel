@@ -16,9 +16,24 @@
 			"pubtime":	"2014/08/30 16:45:00"
 		},
 		{
+			"id":		"bijen-voortplanting-een-ouder",
+			"category":	"natuur",
+			"pubtime":	"2014/09/10 15:45:00"
+		},
+		{
 			"id":		"blobvis-toch-niet-lelijk",
 			"category":	"natuur",
 			"pubtime":	"2014/08/17 14:30:00"
+		},
+		{
+			"id":		"de-duurste-koe-ter-wereld",
+			"category":	"natuur",
+			"pubtime":	"2016/01/24 15:10:00"
+		},
+		{
+			"id":		"eerste-meting-mt-everest-vervalst",
+			"category":	"natuur",
+			"pubtime":	"2016/01/14 15:48:00"
 		},
 		{
 			"id":		"hond-veilig-slapen",
@@ -34,6 +49,11 @@
 			"id":		"katten-negeren-mensen",
 			"category":	"natuur",
 			"pubtime":	"2014/08/12 14:30:00"
+		},
+		{
+			"id":		"lamas-beste-waakhonden",
+			"category":	"natuur",
+			"pubtime":	"2016/01/21 15:32:00"
 		},
 		{
 			"id":		"leopon-kruising-leeuw-luipaard",
@@ -76,6 +96,11 @@
 			"pubtime":	"2014/10/25 15:20:00"
 		},
 		{
+			"id":		"spinnen-eten-tijdens-slaap",
+			"category":	"natuur",
+			"pubtime":	"2014/09/13 16:05:00"
+		},
+		{
 			"id":		"trekduif-100-jaar-uitgestorven",
 			"category":	"natuur",
 			"pubtime":	"2014/09/01 18:10:00"
@@ -86,9 +111,19 @@
 			"pubtime":	"2014/11/02 16:05:00"
 		},
 		{
+			"id":		"voedsel-in-bloei",
+			"category":	"natuur",
+			"pubtime":	"2016/01/23 15:05:00"
+		},
+		{
 			"id":		"wat-honden-echt-zien",
 			"category":	"natuur",
 			"pubtime":	"2014/08/18 18:45:00"
+		},
+		{
+			"id":		"zo-vervuilend-zijn-telefoonboeken",
+			"category":	"natuur",
+			"pubtime":	"2016/01/20 15:10:00"
 		},
 		{
 			"id":		"zo-ziet-de-yeti-er-uit",

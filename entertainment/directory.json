@@ -16,9 +16,19 @@
 			"pubtime":	"2014/08/25 18:40:00"
 		},
 		{
+			"id":		"betekenis-paper-towns",
+			"category":	"entertainment",
+			"pubtime":	"2016/01/27 15:00:00"
+		},
+		{
 			"id":		"bohemian-rhapsody-alle-laagjes",
 			"category":	"entertainment",
 			"pubtime":	"2014/08/17 18:30:00"
+		},
+		{
+			"id":		"censuur-warner-bros",
+			"category":	"entertainment",
+			"pubtime":	"2014/09/09 18:10:00"
 		},
 		{
 			"id":		"de-engste-filmscene-ooit",
@@ -39,6 +49,11 @@
 			"id":		"dont-shake-polaroid",
 			"category":	"entertainment",
 			"pubtime":	"2014/07/31 15:00:00"
+		},
+		{
+			"id":		"download-rubiks-oplossing",
+			"category":	"entertainment",
+			"pubtime":	"2014/09/11 18:05:00"
 		},
 		{
 			"id":		"eddie-murphy-drie-keer-slecht",
