@@ -1,0 +1,28 @@
+{
+  "id":"rijkste-fictieve-personages",
+  "title":"De allerrijkste fictieve personages",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2016/02/25",
+  "time":"15:45:00",
+  "source_name":"forbes.com",
+  "source_url":"http://www.forbes.com/special-report/2013/fictional-15/index.html",
+  "img_credit":"flickr.com/randar",
+  "keywords":"fictief, personage, rijk, geld, bezit, dagobert, duck, disney, smaug, hobbit, tolkien, carlisle, cullen, twilight",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Forbes maakt om de paar jaar een lijst van de rijkste fictieve personages. De laatste lijst dateert van 2013 en op de eerste plaats vinden we... <b>Dagobert Duck</b>, de stinkend rijke eendenoom van Disney!"},
+		   {"type": "paragraph",
+		   "content": "Zijn vermogen werd geschat op 65,4 miljard dollar. Niet moeilijk, want hij zwemt letterlijk in het geld."},
+		   {"type": "paragraph",
+		   "content": "Het zilver gaat naar <b>Smaug</b> uit The Hobbit van J.R.R. Tolkien, goed voor zo'n 54,1 miljard dollar. Ook niet meteen een verrassing, want Smaug woont gewoon op een berg geld en schatten."},
+		   {"type": "image",
+		   "name": "2.jpg",
+		   "credit": "youtube.com/callmegrim"},
+		   {"type": "paragraph",
+		   "content": "Misschien wel een verrassing: de top drie wordt aangevuld door <b>Carlisle Cullen</b>, de vader van Edward in de Twilight-trilogie. De vampierenfamilie zou zo'n 46 miljard dollar waard zijn."},
+		   {"type": "paragraph",
+		   "content": "Wie we wél in deze lijst hadden verwacht: <b>Tony Stark</b>, aka Iron Man, staat op plaats vier met 12,4 miljard dollar; Batman <b>Bruce Wayne</b> is pas de zesde rijkste met 9,2 miljard dollar."}
+		   ]
+}
