@@ -20,6 +20,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="../../dep/sweetalert.js"></script>
   <script src="../../dep/jquery.waypoints.min.js"></script>
+  <script src="https://code.highcharts.com"></script>
 
   <!-- WEBSITE CODE -->
   <script src="../../js/hv-builder.js"></script>
@@ -63,6 +64,62 @@
     hv.footer(prefix);
     hv_directory.load_cat_directory("author");
     //hv.header(supercat, prefix);
+
+    $(function () {
+    $('#author-chart').highcharts({
+    		colors: ['#2869a4', '#e9d822', '#de3737', '#4ea648', '#8833af', '#ff8534'],
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+            text: 'Artikels<br>per<br>Categorie',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 40
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y:1f} art.</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textShadow: '0px 1px 2px black'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Aantal',
+            innerSize: '50%',
+            data: [
+                ['Wetenschap',   31],
+                ['Geschiedenis',      33],
+                ['Mensen', 24],
+                ['Natuur',    19],
+                ['Entertainment',    19],
+                ['Faits Divers',     29],
+                {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2,
+                    dataLabels: {
+                        enabled: false
+                    }
+                }
+            ]
+        }]
+    });
+});
   });
   </script>
 
@@ -111,6 +168,14 @@
               <br>
               <i class="fa fa-envelope" style="padding-right: 5px"></i><a href="mailto:shanna@hersenvulsel.be">shanna@hersenvulsel.be</a>
             </p>
+          </div>
+          <div class="col-sm-3" style="height: 1px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3" style="height: 10px">
+          </div>
+          <div class="col-sm-6 pad-bot-20" id="author-chart" style="height: 500px">
           </div>
           <div class="col-sm-3" style="height: 1px">
           </div>

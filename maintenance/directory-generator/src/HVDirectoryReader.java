@@ -13,14 +13,7 @@ public class HVDirectoryReader {
 	
 	public static ArrayList<HVArticle> read(String path){
 		
-		File file = new File(path);
-		
-		String[] articles = file.list(new FilenameFilter() {
-		  @Override
-		  public boolean accept(File current, String name) {
-		    return new File(current, name).isDirectory();
-		  }
-		});
+		String[] articles = getDirectoryEntries(path);
 		
 		ArrayList<HVArticle> directory = new ArrayList<HVArticle>();
 		
@@ -39,5 +32,17 @@ public class HVDirectoryReader {
 			                JOptionPane.ERROR_MESSAGE);
 				} 
 		return directory;
+	}
+
+	static String[] getDirectoryEntries(String path) {
+		File file = new File(path);
+		
+		String[] articles = file.list(new FilenameFilter() {
+		  @Override
+		  public boolean accept(File current, String name) {
+		    return new File(current, name).isDirectory();
+		  }
+		});
+		return articles;
 	}
 }

@@ -43,6 +43,6 @@ public class HVDirectoryWriter {
 			e1.printStackTrace();
 		}
 
-		System.out.println(json);
+		//System.out.println(json);
 	}
 }

@@ -14,19 +14,21 @@ public class HVArticle {
 	private String cat;
 	private String day;
 	private String time;
+	public String authid;
 
 	private static String nl = System.lineSeparator();
 
-	public HVArticle(String id, String category, String day, String time){
+	public HVArticle(String id, String category, String day, String time, String authid){
 		this.id = id;
 		this.cat = category;
 		this.day = day;
 		this.time = time;
+		this.authid = authid;
 	}
 
 	public static HVArticle fromJSON(String path) throws FileNotFoundException, IOException, ParseException{
 		
-		String id, cat, day, time;
+		String id, cat, day, time, authid;
 
 		JSONParser parser = new JSONParser();
 		JSONObject article;
@@ -36,8 +38,9 @@ public class HVArticle {
 		cat 	= (String) article.get("category");
 		day 	= (String) article.get("day");
 		time 	= (String) article.get("time");
+		authid	= (String) article.get("authorid");
 
-		return new HVArticle(id, cat, day, time);
+		return new HVArticle(id, cat, day, time, authid);
 	}
 	
 	public String toJSON() {
