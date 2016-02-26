@@ -201,6 +201,11 @@
 			"pubtime":	"2016/02/03 15:10:00"
 		},
 		{
+			"id":		"rap-battles-in-de-5e-eeuw",
+			"category":	"geschiedenis",
+			"pubtime":	"2014/11/07 17:10:00"
+		},
+		{
 			"id":		"samen-op-jacht-met-orkas",
 			"category":	"geschiedenis",
 			"pubtime":	"2014/10/28 20:10:00"
@@ -296,6 +301,11 @@
 			"pubtime":	"2014/08/5 19:15:00"
 		},
 		{
+			"id":		"opwarming-aarde-in-beeld",
+			"category":	"natuur",
+			"pubtime":	"2014/11/08 19:15:00"
+		},
+		{
 			"id":		"panda-zwangerschap-gefaked",
 			"category":	"natuur",
 			"pubtime":	"2014/08/29 14:00:00"
@@ -359,6 +369,11 @@
 			"id":		"bugs-bunny-kan-levens-redden",
 			"category":	"mensen",
 			"pubtime":	"2014/11/05 17:10:00"
+		},
+		{
+			"id":		"de-jongste-grootmoeder",
+			"category":	"mensen",
+			"pubtime":	"2014/11/09 17:20:00"
 		},
 		{
 			"id":		"de-langste-baard-ooit",
@@ -451,6 +466,11 @@
 			"pubtime":	"2016/01/26 15:05:00"
 		},
 		{
+			"id":		"sylvan-goldman-winkelkarretjes",
+			"category":	"mensen",
+			"pubtime":	"2014/11/9 20:05:00"
+		},
+		{
 			"id":		"trevi-fontein-goudmijn",
 			"category":	"mensen",
 			"pubtime":	"2015/02/05 15:10:00"
@@ -484,6 +504,11 @@
 			"id":		"22u-verboden-te-studeren",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/2 20:30:00"
+		},
+		{
+			"id":		"40-procent-snuffelt",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/11/05 19:25:00"
 		},
 		{
 			"id":		"altijd-941-apple",
@@ -636,6 +661,11 @@
 			"pubtime":	"2016/02/7 15:10:00"
 		},
 		{
+			"id":		"waar-komt-vinkje-vandaan",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/11/06 19:09:00"
+		},
+		{
 			"id":		"wat-als-shitterton",
 			"category":	"faitsdivers",
 			"pubtime":	"2016/01/30 15:05:00"
@@ -644,6 +674,11 @@
 			"id":		"weermannen-liegen-expres",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/09/03 18:40:00"
+		},
+		{
+			"id":		"win-met-schaak-speel-met-wit",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/11/08 17:35:00"
 		},
 		{
 			"id":		"zweden-dansen-verboden",

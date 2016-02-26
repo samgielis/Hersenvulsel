@@ -1,0 +1,21 @@
+{
+  "id":"rap-battles-in-de-5e-eeuw",
+  "title":"Wist je dat... 'rap battles' al bestonden in de 5e eeuw?",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"2014/11/07",
+  "time":"17:10:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Flyting",
+  "img_credit":"wikimedia.org",
+  "keywords":"flyting, rap battle, loki, noorse",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Wist je dat... rap battles al bestonden in de 5e eeuw?"},
+		   {"type": "paragraph",
+		   "content": "'Flyting' of 'fliting' was een traditie waarbij twee tegenstanders elkaar beledigden in rijmvorm. Volgens een legende zou de Noorse god Loki een geweldige battler geweest zijn!"},
+		   {"type": "paragraph",
+		   "content": "Vaak werden deelnemers beledigd omdat ze laf zouden zijn of een vreemde seksuele voorkeur zouden hebben. Dat lijkt dus nog niet zo veel veranderd."}
+		   ]
+}

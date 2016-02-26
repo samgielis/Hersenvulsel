@@ -6,6 +6,11 @@
 			"pubtime":	"2014/08/2 20:30:00"
 		},
 		{
+			"id":		"40-procent-snuffelt",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/11/05 19:25:00"
+		},
+		{
 			"id":		"altijd-941-apple",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/27 14:00:00"
@@ -156,6 +161,11 @@
 			"pubtime":	"2016/02/7 15:10:00"
 		},
 		{
+			"id":		"waar-komt-vinkje-vandaan",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/11/06 19:09:00"
+		},
+		{
 			"id":		"wat-als-shitterton",
 			"category":	"faitsdivers",
 			"pubtime":	"2016/01/30 15:05:00"
@@ -164,6 +174,11 @@
 			"id":		"weermannen-liegen-expres",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/09/03 18:40:00"
+		},
+		{
+			"id":		"win-met-schaak-speel-met-wit",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/11/08 17:35:00"
 		},
 		{
 			"id":		"zweden-dansen-verboden",
