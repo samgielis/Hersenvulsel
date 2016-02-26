@@ -183,9 +183,9 @@ var hv_directory = function(){
       }
       article_tile += "                <div class=\"hv-tile-title-container\">";
 	  if(supercat == "author"){
-		article_tile += "                    <h2 class=\"hv-tile-title hv-tile-title-default"\">";
+		supercat == "default"
 	  }
-      article_tile += "                    <h2 class=\"hv-tile-title hv-tile-title-" + supercat + "\">";
+	  article_tile += "                    <h2 class=\"hv-tile-title hv-tile-title-" + supercat + "\">";
       article_tile += "                      <span>";
       article_tile += "                        <a href=\"" + prefix + cat + "/" + article_id + "\" class=\"thumblink\"> " + article.title + " <\/a>";
       article_tile += "                      <\/span>";
