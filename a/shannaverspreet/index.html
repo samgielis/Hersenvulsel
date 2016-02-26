@@ -20,7 +20,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="../../dep/sweetalert.js"></script>
   <script src="../../dep/jquery.waypoints.min.js"></script>
-  <script src="https://code.highcharts.com"></script>
+  <script src="../../dep/highcharts.js"></script>
 
   <!-- WEBSITE CODE -->
   <script src="../../js/hv-builder.js"></script>
@@ -67,11 +67,85 @@
 
     $(function () {
     $('#author-chart').highcharts({
+        credits: false,
+        colors: ['#2869a4', '#e9d822', '#de3737', '#4ea648', '#8833af', '#ff8534'],
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie',
+            spacingTop: -50,
+            spacingBottom: -50,
+            spacingLeft: 0,
+            spacingRight: 0,
+            marginTop: -50,
+            marginBottom: -50,
+            marginLeft: 0,
+            marginRight: 0
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: <b>{point.y:1f} art.</b>',
+                    style: {
+                        color: '#222222'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Categorie',
+            colorByPoint: true,
+            data: [{
+                name: 'Wetenschap',
+                y: 29
+            }, {
+                name: 'Geschiedenis',
+                y: 24
+            }, {
+                name: 'Mensen',
+                y: 24
+            }, {
+                name: 'Natuur',
+                y: 19
+            }, {
+                name: 'Entertainment',
+                y: 35,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Faits Divers',
+                y: 25
+            }]
+        }]
+    });
+});
+/*
+    $(function () {
+    $('#author-chart').highcharts({
+        credits: false,
     		colors: ['#2869a4', '#e9d822', '#de3737', '#4ea648', '#8833af', '#ff8534'],
         chart: {
             plotBackgroundColor: null,
             plotBorderWidth: 0,
-            plotShadow: false
+            plotShadow: false,
+            spacingTop: -100,
+            spacingBottom: -100,
+            spacingLeft: 250,
+            spacingRight: 250,
+            marginTop: -150,
+            marginBottom: -50,
+            marginLeft: 50,
+            marginRight: 50
         },
         title: {
             text: 'Artikels<br>per<br>Categorie',
@@ -90,7 +164,8 @@
                     style: {
                         fontWeight: 'bold',
                         color: 'white',
-                        textShadow: '0px 1px 2px black'
+                        textShadow: 'none',
+                        textTransform: "uppercase"
                     }
                 },
                 startAngle: -90,
@@ -113,13 +188,17 @@
                     name: 'Proprietary or Undetectable',
                     y: 0.2,
                     dataLabels: {
-                        enabled: false
+                        enabled: false,
+                        style: {
+                            shadow: false,
+                            textShadow: false
+                        }
                     }
                 }
             ]
         }]
     });
-});
+});*/
   });
   </script>
 
@@ -160,7 +239,7 @@
         <div class="row">
           <div class="col-sm-3" style="height: 10px">
           </div>
-          <div class="col-sm-6 pad-bot-20">
+          <div class="col-sm-6" style="padding-bottom: -500px">
             <h5 class="hv-article-title" style=" font-size: 3em !important;">Shanna Verspreet</h5>
             <p class="hv-auth-descriptor">Journaliste van opleiding, de originele Hersenvuller. <br>First of her kind. Geïnteresseerd in alles.</p>
             <p class="hv-auth-links">
@@ -172,12 +251,14 @@
           <div class="col-sm-3" style="height: 1px">
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-3" style="height: 10px">
+        <div class="row" style="padding-top: -50px;">
+          <div class="col-sm-3">
           </div>
-          <div class="col-sm-6 pad-bot-20" id="author-chart" style="height: 500px">
+          <div class="col-sm-6 pad-bot-20">
+            <div id="author-chart" style="width: 100%;"  style="height: 200px;">
+            </div>
           </div>
-          <div class="col-sm-3" style="height: 1px">
+          <div class="col-sm-3">
           </div>
         </div>
 
