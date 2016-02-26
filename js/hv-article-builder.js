@@ -62,7 +62,7 @@ var hv_article = function(){
     var auth="";
     auth += "<div class=\"hv-author-thumbnail-container pull-left\">";
     auth += "            <a href=\"..\/..\/a\/" + authid + "\">";
-    auth += "              <img title=\"" + name + "\" class=\"hv-author-thumbnail\" src=\"..\/..\/a\/" + authid + "\/" + authid + ".png\"\/>";
+    auth += "              <img title=\"" + name + "\" class=\"hv-author-thumbnail\" src=\"..\/..\/a\/" + authid + "\/" + "profiel.png\"\/>";
     auth += "            <\/a>";
     auth += "          <\/div>";
     auth += "          <div style=\"padding-left: 10px\">";
@@ -162,7 +162,7 @@ var hv_article = function(){
     .error(function() { swal({   title: "Oeps...", type: "error", html: true, text:"Er heeft zich een probleem voorgedaan bij het suggereren van andere artikelen binnen deze categorie. Dat spijt ons, waarschijnlijk hebben we ergens een dom foutje gemaakt. Laat jij het even weten op <a href=\"mailto:bugs@hersenvulsel.be\">bugs@hersenvulsel.be</a>? Dan lossen wij het zo snel mogelijk op. Bedankt!"})})
 
   }
-  
+
   // contains the 6 newest articles that have been published on the website
   hv_article.prototype.sidebar_newest = function(cat){
     $( "#hv-sidebar-newest-title" ).text("NIEUW");

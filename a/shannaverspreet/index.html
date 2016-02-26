@@ -6,95 +6,46 @@
 
   <meta name="description" content="Hersenvulsel is een website boordevol interessante weetjes en entertainment." />
 
-  <meta name="keywords" content="hersenvulsel, weetjes, nieuws, wetenschap, entertainment, interessant, hersenen,
-  geschiedenis, natuur, mensen, varia, trivia, wist je datjes, wist u dat">
+  <meta name="keywords" content="hersenvulsel, weetjes, nieuws, wetenschap, entertainment, interessant,
+  geschiedenis, natuur, mensen, varia, trivia, wist je dat, shanna verspreet, auteur">
 
+  <!-- STYLE DEPENDENCIES -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="../../dep/sweetalert.css" rel="stylesheet" type="text/css">
+
+  <!-- CODE DEPENDENCIES -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="../../dep/sweetalert.js"></script>
+  <script src="../../dep/jquery.waypoints.min.js"></script>
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" type="image/ico" href="favicon.ico">
-	<style>
-		html, body {
-			height: 100%;
-		}
+  <!-- WEBSITE CODE -->
+  <script src="../../js/hv-builder.js"></script>
+  <script src="../../js/hv-category-builder.js"></script>
+  <script src="../../js/hv-directory-builder.js"></script>
 
-		html {
-			display: table;
-			margin: auto;
-		}
+  <!-- WEBSITE STYLE -->
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/ico" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../css/hv.css">
+  <link rel="stylesheet" href="../../css/hv-article-tile.css">
 
-		body {
-			display: table-cell;
-			vertical-align: middle;
-		}
-		body {
-			background-color: ad403f !important;
-		}
-		h1 {
-			font-size: 5em;
-			transform:scale(1,1.1); /* W3C */
-			-webkit-transform:scale(1,1.1); /* Safari and Chrome */
-			-moz-transform:scale(1,1.1); /* Firefox */
-			-ms-transform:scale(1,1.1); /* IE 9 */
-			-o-transform:scale(1,1.1); /* Opera */
-			color: white;
-			font-weight: 700;
-			letter-spacing: 1px;
-		}
-		p {
-			background-color: 252525;
-			color: white;
-			font-size: 3em;
-			font-weight: 600;
-			padding: 0 10;
-			line-height: 50px;
-			margin-top: 0.07em;
-			margin-bottom: 0.07em;
-		}
+  <script>
+    var hv = new hv();
+    var hv_directory = new hv_directory();
+  </script>
+  <script>
+	// GOOGLE ANALYTICS
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		.extension {
-			font-size: 3m;
-		}
-
-		.imgwrap-out {
-			width: 100%;
-			height: 250px;
-			text-align: center;
-		}
-
-		.imgwrap-in {
-			overflow:hidden;
-		}
-		img {
-			-webkit-transition: all 200ms ease-in;
-			-webkit-transform: scale(1);
-			-ms-transition: all 200ms ease-in;
-			-ms-transform: scale(1);
-			-moz-transition: all 200ms ease-in;
-			-moz-transform: scale(1);
-			transition: all 200ms ease-in;
-			transform: scale(1);
-		}
-
-		img:hover {
-			-webkit-transition: all 200ms ease-in;
-			-webkit-transform: scale(1.25);
-			-ms-transition: all 200ms ease-in;
-			-ms-transform: scale(1.25);
-			-moz-transition: all 200ms ease-in;
-			-moz-transform: scale(1.25);
-			transition: all 200ms ease-in;
-			transform: scale(1.25);
-		}
-
-		a:hover {
-			color: white;
-		}
-	</style>
-
+	ga('create', 'UA-72966848-1', 'auto');
+	ga('send', 'pageview');
+	</script>
 
 	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
 	<script type="text/javascript">
@@ -104,16 +55,85 @@
 	<!-- End Cookie Consent plugin -->
 </head>
 <body>
-	<div id="seventyfive" class="imgwrap-out">
-		<a class="imgwrap-in" href="http://facebook.com/hersenvulsel">
-			<img src="../../img/logo/logo.png" alt="fuck dees zou moeten werken" height="250" width="250"></img>
-		</a>
-	</div>
-	<div>
-		<a href="http://facebook.com/hersenvulsel"><h1>HERSENVULSEL<span class="extension">.BE</span></h1></a>
-		<p>WIST JE DAT...</p>
-		<p>HERSENVULSEL BINNENKORT</p>
-		<p>EEN EIGEN WEBSITE KRIJGT?</p>
-	</div>
+  <script>
+  $(document).ready(function() {
+    var prefix = "..\/..\/";
+    var supercat = "default";
+    hv.navbar(prefix);
+    hv.footer(prefix);
+    hv_directory.load_cat_directory("author");
+    //hv.header(supercat, prefix);
+  });
+  </script>
+
+   <!--<header id="hv-header" class="masthead hv-pagehead-cont">   AUTOGENERATED BY hv.header()  </header>-->
+
+  <!-- Begin Navbar -->
+  <div id="nav-wrapper" class="nav-wrapper" style="height:90px;">
+    <!-- AUTOGENERATED BY hv.navbar() -->
+  </div>
+
+  <style>
+  .hv-auth-links .hv-auth-descriptor {
+    color: #555555;
+  }
+  .hv-auth-descriptor {
+    font-size: 1.2em;
+  }
+  .hv-auth-links {
+    font-size: 1.1em;
+    padding-top: 20px;
+
+  }
+  </style>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 pad-bot-20" style="padding-top: 20px;text-align: center; display: table-cell !important; vertical-align: middle !important;">
+        <div class="row">
+          <div class="col-sm-4" style="height: 1px">
+          </div>
+          <div class="col-sm-4 pad-bot-20">
+            <img src="./profiel.png" style="width: 175px;"></img>
+          </div>
+          <div class="col-sm-4" style="height: 10px">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3" style="height: 10px">
+          </div>
+          <div class="col-sm-6 pad-bot-20">
+            <h5 class="hv-article-title" style=" font-size: 3em !important;">Shanna Verspreet</h5>
+            <p class="hv-auth-descriptor">Journaliste van opleiding, de originele Hersenvuller. <br>First of her kind. Geïnteresseerd in alles.</p>
+            <p class="hv-auth-links">
+              <i class="fa fa-link" style="padding-right: 5px"></i><a href="http://hersenvulsel.be">hersenvulsel.be</a>
+              <br>
+              <i class="fa fa-envelope" style="padding-right: 5px"></i><a href="mailto:shanna@hersenvulsel.be">shanna@hersenvulsel.be</a>
+            </p>
+          </div>
+          <div class="col-sm-3" style="height: 1px">
+          </div>
+        </div>
+
+
+        <h2 id="hv-most-recent-mr" class="hv-c-default hv-category-title pad-bot-20" >DOOR SHANNA</h2>
+        <div class="row">
+          <div class="col-sm-12" style="padding-bottom: 50px;">
+            <div class="row" id="hv-directory-container">
+              <!-- AUTO-GENERATED BY HV-DIRECTORY-BUILDER.LOAD_CAT_DIRECTORY()-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="hv-footer" id="hv-footer">
+    <!-- AUTOGENERATED BY hv.footer() -->
+  </footer>
+
 </body>
 </html>

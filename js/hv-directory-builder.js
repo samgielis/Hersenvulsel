@@ -40,7 +40,6 @@ var hv_directory = function(){
     }
 }
 
-
   /*
     (RE-)FILLS THE DIRECTORY WITH THUMBLINKS
   */
@@ -163,18 +162,21 @@ var hv_directory = function(){
 
   hv_directory.prototype.article_tile =  function(article_id, cat, supercat, entrynumber, callback){
 
-	var id_no = entrynumber;
-  var prefix = "../"
-  if(supercat == "default"){
-    prefix= "./"
-  }
+  	var id_no = entrynumber;
+    var prefix = "../"
+    if(supercat == "default"){
+      prefix= "./"
+    }
+    if(supercat == "author"){
+      prefix= "../../"
+    }
     $.getJSON(prefix + cat + "/" + article_id + "/descriptor.json", function(article) {
 
       var article_tile = "";
       article_tile += "<div class=\"col-sm-4 pad-bot-20\" id=\"directory-item-" + id_no + "\">";
       article_tile += "              <div class=\"hv-tile-image-container\" >";
       article_tile += "                <img alt=\"\" src=\"" + prefix + cat + "/" + article_id + "\/img\/main.jpg\" style=\"width: 100%; height: 100%; background-color: black;\">";
-      if(cat != supercat && supercat != "default"){
+      if(cat != supercat && !(supercat == "default" || supercat == "author")){
         article_tile += "                <b><p class=\"hv-tile-category\">"+ supercat.toUpperCase() +" \/ " + cat.toUpperCase() + "<\/p><\/b>";
       } else {
         article_tile += "                <b><p class=\"hv-tile-category\">"+ cat.toUpperCase() + "<\/p><\/b>";
