@@ -15,7 +15,7 @@ public class HVDirectoryGenerator {
 		
 		
 		HVAuthorDirectoryGenerator.generate();
-		/*
+		
 		for (String cat : categories) {
 			File d = new File("../../"+cat);
 			String path;
@@ -30,6 +30,6 @@ public class HVDirectoryGenerator {
 			}			
 		}
 		JOptionPane.showMessageDialog(null, "Gelukt!", "Succes",
-                JOptionPane.INFORMATION_MESSAGE);*/
+                JOptionPane.INFORMATION_MESSAGE);
 	}
 }

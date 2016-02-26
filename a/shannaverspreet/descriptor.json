@@ -1,7 +1,16 @@
-{
-	"id":"shannaverspreet",
-	"name":"Shanna Verspreet",
-	"fname":"Shanna",
-	"lname":"Verspreet",
-	"url":"https://facebook.com/hersenvulsel"
-}
+		{
+			"id":		"shannaverspreet",
+			"fname":	"Shanna",
+			"lname":		"Verspreet",
+			"url":	"http://hersenvulsel.be",
+			"urlname":		"hersenvulsel.be",
+			"contact":	"shanna@hersenvulsel.be",
+			"bio":	"Journaliste van opleiding, de originele Hersenvuller. <br>First of her kind. Geïnteresseerd in alles.",
+			"count":	"159",
+			"wcount":	"25",
+			"gcount":	"19",
+			"mcount":	"26",
+			"ncount":	"26",
+			"ecount":	"29",
+			"fcount":	"34"
+		}

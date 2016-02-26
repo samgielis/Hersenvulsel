@@ -11,7 +11,7 @@ import org.json.simple.parser.ParseException;
 public class HVArticle {
 
 	public String id;
-	private String cat;
+	public String cat;
 	private String day;
 	private String time;
 	public String authid;

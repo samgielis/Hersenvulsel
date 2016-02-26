@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
+import org.json.simple.parser.ParseException;
+
 
 public class HVAuthorDirectoryGenerator {
 
@@ -20,6 +22,43 @@ public class HVAuthorDirectoryGenerator {
 			for (String authorid : authors) {
 				ArrayList<HVArticle> entries = getArticlesFor(authorid);
 				File aid = new File("../../a/" + authorid+"/");
+				File adesc = new File("../../a/" + authorid+"/descriptor.json");
+				HVAuthor author;
+				try {
+					author = HVAuthor.fromJSON(adesc.getCanonicalPath());
+					for (HVArticle art : entries) {
+						switch (art.cat) {
+						case "wetenschap":
+							author.count++;
+							author.wcount++;
+							break;
+						case "geschiedenis":
+							author.count++;
+							author.gcount++;
+							break;
+						case "mensen":
+							author.count++;
+							author.mcount++;
+							break;
+						case "natuur":
+							author.count++;
+							author.ncount++;
+							break;
+						case "entertainment":
+							author.count++;
+							author.ecount++;
+							break;
+						case "faitsdivers":
+							author.count++;
+							author.fcount++;
+							break;
+						}
+					}
+					HVAuthor.write(author);
+				} catch (ParseException e) {
+					JOptionPane.showMessageDialog(null, "Fout bij het lezen van de descriptor voor auteur "+authorid, "Error",
+			                JOptionPane.ERROR_MESSAGE);
+				}
 				String authorpath = aid.getCanonicalPath();
 				HVDirectoryWriter.write(authorpath, entries);
 			}
