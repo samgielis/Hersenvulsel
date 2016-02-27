@@ -23,7 +23,7 @@ var hv_author = function(){
       $( '#hv-auth-mail').text(author.contact);
 
       // author total work
-      $( '#hv-most-recent-mr').append(" (" + author.count + ")")
+      $( '#hv-most-recent-mr').append(" " + author.fname + " (" + author.count + ")")
 
       // author work chart
       var others = [parseFloat(author.wcount),parseFloat(author.gcount),parseFloat(author.mcount),
@@ -38,6 +38,12 @@ var hv_author = function(){
               plotBorderWidth: null,
               plotShadow: false,
               type: 'pie',
+			  margin: [0, 0, 0, 0],
+			  spacingTop: 0,
+			  spacingBottom: 0,
+			  spacingLeft: 0,
+			  spacingRight: 0
+			  /*
               spacingTop: -50,
               spacingBottom: -50,
               spacingLeft: 0,
@@ -45,7 +51,7 @@ var hv_author = function(){
               marginTop: -50,
               marginBottom: -50,
               marginLeft: 0,
-              marginRight: 0
+              marginRight: 0*/
           },
           title: {
               text: ''
@@ -58,6 +64,7 @@ var hv_author = function(){
                   allowPointSelect: true,
                   cursor: 'pointer',
                   dataLabels: {
+					  size:'100%',
                       enabled: true,
                       format: '<b>{point.name}</b>: <b>{point.y:1f} art.</b>',
                       style: {

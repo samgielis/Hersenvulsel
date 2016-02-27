@@ -9,7 +9,7 @@ var hv_article = function(){
     $.getJSON("./descriptor.json", function(article) {
       hv.header(article.category, "../../");
       hv_article.title(article.title, article.category)
-      $( "#hv-article-figcaption" ).html("<b>Credit: <\/b>" + article.img_credit);
+      $( "#hv-article-figcaption" ).html("<i class=\"fa fa-camera\"></i> <b>Credit: <\/b>" + article.img_credit);
       hv_article.share_social(article.id, article.category, article.title);
       hv_article.author_date(article.authorid, article.authorname, article.day);
       hv_article.article_content(article);
@@ -277,7 +277,7 @@ var hv_article = function(){
 
   // EMBED
   hv_article.prototype.embed = function(code){
-    var div = "<div style=\"padding-top:35px;\" class=\"hv-10bot embed-responsive embed-responsive-16by9\">";
+    var div = "<div style=\"padding-top: 35px; margin-top:30px; margin-bottom: 10px\" class=\"hv-10bot embed-responsive embed-responsive-16by9\">";
     div += code;
     div += "</div>"
     $( "#article_body" ).append(div);
@@ -288,8 +288,8 @@ var hv_article = function(){
     var img = "<figure style=\"padding-top: 20px; padding-bottom: 20px;\">";
         img +=  "<img src=\"./img/" + name + "\" style=\"max-width: 100%\"/>";
         if(credit != ""){
-          img +=      "<figcaption class=\"hv-article-figcaption\" style=\"font-size: 0.4em;\">";
-          img +=        "<b>credit: </b>" + credit;
+          img +=      "<figcaption class=\"hv-article-figcaption\" style=\"font-size: 0.5em;\">";
+          img +=        "<i class=\"fa fa-camera\"></i><b> credit: </b>" + credit;
           img +=      "</figcaption>";
         }
         img += "</figure>";
