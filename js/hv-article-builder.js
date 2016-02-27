@@ -22,10 +22,10 @@ var hv_article = function(){
   // CONSTRUCTS THE TITLE AND CATEGORY TITLE
   hv_article.prototype.title = function(title, cat){
 	if(cat == "faitsdivers"){
-		$( "#hv-title-container" ).append("<h3 style=\"padding-top: 15px;\" class=\"hv-category-title hv-c-" + cat +"\">faits divers</h3>");
+		$( "#hv-title-container" ).append("<h3 class=\"hv-category-title-15px hv-c-" + cat +"\">faits divers</h3>");
 	}
 	else{
-		$( "#hv-title-container" ).append("<h3 style=\"padding-top: 15px;\" class=\"hv-category-title hv-c-" + cat +"\">" + cat + "</h3>");
+		$( "#hv-title-container" ).append("<h3 class=\"hv-category-title-15px hv-c-" + cat +"\">" + cat + "</h3>");
 	}
     $( "#hv-title-container" ).append("<h1 class=\"hv-article-title\" id=\"hv-article-title\">" + title + "</h1>");
   }
@@ -288,7 +288,7 @@ var hv_article = function(){
     var img = "<figure style=\"padding-top: 20px; padding-bottom: 20px;\">";
         img +=  "<img src=\"./img/" + name + "\" style=\"max-width: 100%\"/>";
         if(credit != ""){
-          img +=      "<figcaption class=\"hv-article-figcaption\" style=\"font-size: 0.5em;\">";
+          img +=      "<figcaption class=\"hv-article-figcaption\" style=\"font-size: 0.4em;\">";
           img +=        "<i class=\"fa fa-camera\"></i><b> credit: </b>" + credit;
           img +=      "</figcaption>";
         }
