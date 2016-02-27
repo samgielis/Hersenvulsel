@@ -109,18 +109,23 @@ header {
   font-size: 2.5em !important;
   min-height: 125px
 }
-.hv-category-title, .hv-category-title-15px, .hv-category-title-small {
+.hv-category-title, .hv-category-title-15px, .hv-category-title-30px-top, .hv-category-title-small {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0px;
 }
-
+.hv-category-title-30px-top {
+	padding-top: 30px;
+}
 .hv-category-title-15px {
   padding-top: 15px;
 }
 @media all and (max-width: 460px) {
     .hv-category-title-15px {
 	  margin-top: -50px !important;
+	}
+	.hv-category-title-30px-top {
+	  margin-top: -30px !important;
 	}
 }
 
