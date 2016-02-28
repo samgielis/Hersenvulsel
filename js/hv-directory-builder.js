@@ -183,10 +183,12 @@ var hv_directory = function(){
         article_tile += "                <b><p class=\"hv-tile-category\">"+ cat.toUpperCase() + "<\/p><\/b>";
       }
       article_tile += "                <div class=\"hv-tile-title-container\">";
-	  if(supercat.trim() == "author"){
-		supercat == "default";
+	  if(supercat.trim() === "author"){
+		  	  article_tile += "                    <h2 class=\"hv-tile-title hv-tile-title-default\">";
 	  }
-	  article_tile += "                    <h2 class=\"hv-tile-title hv-tile-title-" + supercat + "\">";
+	  else {
+		  article_tile += "                    <h2 class=\"hv-tile-title hv-tile-title-" + supercat + "\">";
+	  }
       article_tile += "                      <span>";
       article_tile += "                        <a href=\"" + prefix + cat + "/" + article_id + "\" class=\"thumblink\"> " + article.title + " <\/a>";
       article_tile += "                      <\/span>";
