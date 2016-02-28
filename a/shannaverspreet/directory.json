@@ -26,6 +26,11 @@
 			"pubtime":	"2014/10/23 20:10:00"
 		},
 		{
+			"id":		"2suit-een-ruimtepak-voor-koppels",
+			"category":	"wetenschap",
+			"pubtime":	"2014/11/11 20:10:00"
+		},
+		{
 			"id":		"electronica-gaat-snel-stuk",
 			"category":	"wetenschap",
 			"pubtime":	"2014/08/31 20:45:00"
@@ -341,6 +346,11 @@
 			"pubtime":	"2016/01/23 15:05:00"
 		},
 		{
+			"id":		"waarom-gieren-niet-ziek-worden",
+			"category":	"natuur",
+			"pubtime":	"2014/11/13 19:50:00"
+		},
+		{
 			"id":		"wat-honden-echt-zien",
 			"category":	"natuur",
 			"pubtime":	"2014/08/18 18:45:00"
@@ -364,6 +374,11 @@
 			"id":		"bugs-bunny-kan-levens-redden",
 			"category":	"mensen",
 			"pubtime":	"2014/11/05 17:10:00"
+		},
+		{
+			"id":		"dali-betaalde-met-een-doodle",
+			"category":	"mensen",
+			"pubtime":	"2014/11/12 17:40:00"
 		},
 		{
 			"id":		"de-jongste-grootmoeder",
@@ -404,6 +419,11 @@
 			"id":		"houdini-leert-soldaten-ontsnappen",
 			"category":	"mensen",
 			"pubtime":	"2016/02/11 15:45:00"
+		},
+		{
+			"id":		"invloed-ruimtereis-testen-met-tweeling",
+			"category":	"mensen",
+			"pubtime":	"2014/11/10 20:10:00"
 		},
 		{
 			"id":		"is-stevie-wonder-wel-echt-blind",
@@ -491,6 +511,11 @@
 			"pubtime":	"2016/02/01 15:10:00"
 		},
 		{
+			"id":		"zelfmoord-als-pleidooi",
+			"category":	"mensen",
+			"pubtime":	"2014/11/10 17:30:00"
+		},
+		{
 			"id":		"zo-sprak-shakespeare",
 			"category":	"mensen",
 			"pubtime":	"2014/08/15 16:00:00"
@@ -514,6 +539,11 @@
 			"id":		"app-verplicht-ouders-terugbellen",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/24 18:30:00"
+		},
+		{
+			"id":		"ave-maria-geen-stemrecht",
+			"category":	"faitsdivers",
+			"pubtime":	"2014/11/11 18:35:00"
 		},
 		{
 			"id":		"beste-brood-ter-wereld",
