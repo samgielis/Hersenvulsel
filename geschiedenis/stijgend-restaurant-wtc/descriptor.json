@@ -1,0 +1,21 @@
+{
+  "id":"stijgend-restaurant-wtc",
+  "title":"Een stijgend restaurant voor de bouwvakkers aan het WTC",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"2016/03/02",
+  "time":"16:20:00",
+  "source_name":"nytimes.com",
+  "source_url":"http://www.nytimes.com/2010/06/17/nyregion/17subshop.html?_r=0",
+  "img_credit":"wikimedia.org",
+  "keywords":"WTC, World, Trade, Center, Subway, restaurant, broodjes, broodjesbar, bouwvakkers, bouw, stijgt, hoogte, hoog",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Een gigantische wolkenkrabber bouwen is een hele uitdaging. Elke middag weer naar beneden gaan om iets te eten te gaan halen, is op zo'n moment <i>ook</i> een uitdaging. Gelukkig was er in 2010 een mooie oplossing voor de bouwvakkers bovenop het nieuwe One World Trade Center in New York: het restaurant kwam gewoon naar hen toe."},
+		   {"type": "paragraph",
+		   "content": "3 miljoen dollar heeft het Subway-filiaal gekost. Een hele investering - niet alleen moest er een container gebouwd worden die mee de hoogte in kon, die container moest ook nog eens een volledig restaurant bevatten. Een écht restaurant, met een keuken, een vriezer, een zitplaats én een compostruimte, waar het afval verwerkt werd."},
+		   {"type": "paragraph",
+		   "content": "Een hele investering dus, maar z'n geld wel waard. Vroeger verloren de bouwvakkers enorm veel tijd door helemaal naar beneden te gaan, eten te gaan kopen en daarna weer naar boven te moeten. Dankzij de stijgende Subway kon die tijd dus beter gespendeerd worden. En wat een prachtig uitzicht zouden ze in dat restaurant gehad hebben!"}
+		   ]
+}
