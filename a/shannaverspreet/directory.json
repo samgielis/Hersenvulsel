@@ -96,6 +96,11 @@
 			"pubtime":	"2014/08/19 14:45:00"
 		},
 		{
+			"id":		"schaak-winnen-met-wit",
+			"category":	"wetenschap",
+			"pubtime":	"2014/11/08 17:35:00"
+		},
+		{
 			"id":		"schommelen-beste-manier",
 			"category":	"wetenschap",
 			"pubtime":	"2014/08/14 14:45:00"
@@ -114,6 +119,11 @@
 			"id":		"tranen-van-geluk",
 			"category":	"wetenschap",
 			"pubtime":	"2014/08/18 15:10:00"
+		},
+		{
+			"id":		"truc-blad-steen-schaar",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/2 15:15:00"
 		},
 		{
 			"id":		"tweelingen-ander-jaar-geboren",
@@ -681,11 +691,6 @@
 			"pubtime":	"2016/01/05 15:20:00"
 		},
 		{
-			"id":		"truc-blad-steen-schaar",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/2 15:15:00"
-		},
-		{
 			"id":		"vergiftigd-door-halloweensnoep",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/10/31 17:50:00"
@@ -716,11 +721,6 @@
 			"pubtime":	"2014/09/03 18:40:00"
 		},
 		{
-			"id":		"win-met-schaak-speel-met-wit",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/11/08 17:35:00"
-		},
-		{
 			"id":		"zweden-dansen-verboden",
 			"category":	"faitsdivers",
 			"pubtime":	"2014/08/23 17:55:00"
@@ -749,6 +749,11 @@
 			"id":		"bohemian-rhapsody-alle-laagjes",
 			"category":	"entertainment",
 			"pubtime":	"2014/08/17 18:30:00"
+		},
+		{
+			"id":		"borat-toeristen-naar-kazachstan",
+			"category":	"entertainment",
+			"pubtime":	"2016/02/29 15:30:00"
 		},
 		{
 			"id":		"censuur-warner-bros",
