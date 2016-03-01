@@ -1,19 +1,18 @@
 {
 	"carousel":[
-			["mensen", "peter-pan-begraven-west-vlaanderen"],
+			["entertainment", "borat-toeristen-naar-kazachstan"],
+			["mensen", "boogschutter-zonder-armen"],
+			["geschiedenis", "brandweer-romeinse-tijd"],
+			["natuur", "leopon-kruising-leeuw-luipaard"],
+			["faitsdivers", "viagra-met-toestemming"],
 			["wetenschap", "muizen-en-penicilline"],
-			["geschiedenis", "spotify-in-1897"],
-			["mensen", "houdini-leert-soldaten-ontsnappen"],
-			["natuur", "meisje-gered-door-leeuwen"],
-			["entertainment", "klaag-me-aan-scientology"],
-			["faitsdivers", "waar-komt-dude-vandaan"]
 	],
 	"articles":[
-			["wetenschap", "dutjes-zijn-goed-voor-je"],
+			["wetenschap", "bomen-als-lantaarns"],
 			["geschiedenis", "haatberichtjes-op-valentijn"],
-			["mensen", "de-langste-baard-ooit"],
-			["natuur", "planeet-horizontaal-glas-regent"],
-			["entertainment", "james-bond-als-gandalf"],
-			["faitsdivers", "viagra-met-toestemming"]
+			["mensen", "de-succesvolste-investeerder-ooit"],
+			["natuur", "de-duurste-koe-ter-wereld"],
+			["entertainment", "rijkste-fictieve-personages"],
+			["faitsdivers", "potlood-opgebruiken-45000-woorden"]
 	]
 }

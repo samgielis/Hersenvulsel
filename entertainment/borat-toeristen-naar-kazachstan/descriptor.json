@@ -1,0 +1,21 @@
+{
+  "id":"borat-toeristen-naar-kazachstan",
+  "title":"Borat brengt veel toeristen naar Kazachstan",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2016/02/29",
+  "time":"15:30:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Borat#Reception_in_Kazakhstan",
+  "img_credit":"flickr.com/ekai",
+  "keywords":"borat, sacha, baron, cohen, film, kazachstan, tegenstand, interesse",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Eens op vakantie in Kazachstan? Dankzij de film Borat waren veel toeristen blijkbaar geïnteresseerd, en daar was de overheid Sacha Baron Cohen héél dankbaar voor. Jaren later, tenminste."},
+		   {"type": "paragraph",
+		   "content": "Toen de film in 2006 uitkwam, was de overheid er meteen tegen. Het was wel duidelijk dat Cohen een heel negatief beeld over Kazachstan gaf, en zo mocht de wereld niet over hen denken. De film is in eerste instantie zelfs niet uitgebracht in Centraal-Azië."},
+		   {"type": "paragraph",
+		   "content": "In 2012 realiseerde de Minister van Buitenlandse Zaken dat het aantal visa-aanvragen de laatste jaren vertienvoudigd was. Borat had blijkbaar Kazachstan op de kaart gezet - de hele wereld kende het nu en veel toeristen waren dus benieuwd. De houding van de overheid sloeg meteen om. Dankjewel, Borat!"}
+		   ]
+}
