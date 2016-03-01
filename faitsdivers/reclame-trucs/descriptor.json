@@ -1,0 +1,26 @@
+{
+  "id":"reclame-trucs",
+  "title":"Reclametrucs: eten fotograferen",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"faitsdivers",
+  "day":"2014/09/16",
+  "time":"20:30:00",
+  "source_name":"cracked.com",
+  "source_url":"http://www.cracked.com/photoplasty_664_13-mind-blowing-tricks-advertisers-use-to-manipulate-photos_p2/?utm_source=huffingtonpost.com&utm_medium=referral&utm_campaign=pubexchange",
+  "img_credit":"wikimedia.org",
+  "keywords":"reclame, tv, foto, eten, voedsel, ijs, melk, vlees, bewerkt, bewerken",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Dat reclame nooit helemaal echt is, weet iedereen. Maar hoe ver gaan ze daarin? Is de melk in een cornflakesreclame wel echt melk? En hoe kunnen ijsjes zo’n lange fotoshoot overleven zonder te smelten? <i>Spoiler alert</i>: het is geen melk, en het is ook geen ijs."},
+		   {"type": "paragraph",
+		   "content": "Om het simpele voorbeeld van ijsjes te nemen: in die reclame zie je bijna nooit echte ijsjes. Meestal worden kleurstoffen toegevoegd aan aardappelpuree en worden daarmee bolletjes geschept – het verschil is niet te zien, maar de puree zal niet smelten."},
+		   {"type": "image",
+		   "name": "2.jpg",
+		   "credit": "pexels.com"},
+		   {"type": "paragraph",
+		   "content": "Hetzelfde geldt voor een kom cornflakes met melk. De cornflakes lijken in reclame soms op de melk te zweven… Het is dan ook geen echte melk – zelfs geen echte kom. De kom is niet hol, maar heeft een plat oppervlak. Daarbovenop wordt een dikke laag lijm gesmeerd, en daarop worden de cornflakes mooi gerangschikt, precies zoals de fotograaf dat wil."},
+		   {"type": "paragraph",
+		   "content": "En wat dacht je van een lekker stukje vlees op de BBQ? Het vlees dat je in de reclame ziet, is bijna nooit echt gebakken of gebraden. Het wordt wel behandeld met allerlei producten om het zo te doen lijken… Zoals schoensmeer. Smakelijk!"}
+		   ]
+}
