@@ -8,14 +8,21 @@
 
 
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
 
-    .hv-tile-title span {
-    	font-size: 0.5em;
-    	line-height: 0.5em;
-    }
+	.thumblink {
+		font-size: 0.8em;
+		line-height: 0.8em;
 
+	}
+}
+@media all and (max-width: 350px) {
 
+	.thumblink {
+		font-size: 0.9em;
+		line-height: 0.8em;
+
+	}
 }
 .hv-tile-image-container {
   position: relative;
