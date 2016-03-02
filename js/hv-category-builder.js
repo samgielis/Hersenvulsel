@@ -40,19 +40,7 @@ var hv_category = function(){
       $( "#hv-most-recent-source-a" ).attr("href",article.source_url);
       $( "#hv-most-recent-source-a" ).text(article.source_name);
 
-      // set first 225 content characters (or full content if < 225 characters).
-      var fullcontent =""
-      for (var i = 0; i < article.content.length; i++) {
-        if (article.content[i].type == "paragraph") {
-            fullcontent += article.content[i].content + " ";
-        }
-      }
-      if(fullcontent.length < 225){
-        $("#most-recent-content").text(fullcontent);
-      }
-      else{
-        $("#most-recent-content").text(fullcontent.substring(0,224) + " [...]");
-      }
+      $("#most-recent-content").text(article_text_preview(article, 225) + " [...]");
 
 
     })
@@ -62,4 +50,20 @@ var hv_category = function(){
 
 
 
+}
+
+function article_text_preview(article, n){
+	var fullcontent =""
+    for (var i = 0; i < article.content.length; i++) {
+      if (article.content[i].type == "paragraph") {
+          fullcontent += article.content[i].content + " ";
+      }
+    }
+	//trim the string to the maximum length
+	var preview = fullcontent.substr(0, n);
+
+	//re-trim if we are in the middle of a word
+	preview = preview.substr(0, Math.min(preview.length, preview.lastIndexOf(" ")));	
+		
+	return preview;
 }

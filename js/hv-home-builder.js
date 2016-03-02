@@ -51,18 +51,7 @@ var hv_home = function(){
         carousel_item += "                  <\/b><\/h4>";
         carousel_item += "                  <p class=\"hv-most-recent-content\">";
 
-        var fullcontent =""
-        for (var i = 0; i < article.content.length; i++) {
-          if (article.content[i].type == "paragraph") {
-              fullcontent += article.content[i].content + " ";
-          }
-        }
-        if(fullcontent.length < 200){
-          carousel_item += "                    " + fullcontent;
-        }
-        else{
-          carousel_item += "                    " + fullcontent.substring(0,199) + "[...]";
-        }
+        carousel_item += "                    " + article_text_preview(article,200) + " [...]";
 
         carousel_item += "                  <\/p>";
         carousel_item += "                  <p class=\"hv-lees-meer\"><b><a href=\"./" + article.category + "/" + article.id + "/\">lees meer<\/a><\/b><\/p>";
@@ -126,18 +115,8 @@ var hv_home = function(){
         article += "      <\/b><\/h4>";
         article += "      <p class=\"hv-most-recent-content\">";
 
-        var fullcontent =""
-        for (var i = 0; i < art.content.length; i++) {
-          if (art.content[i].type == "paragraph") {
-              fullcontent += art.content[i].content + " ";
-          }
-        }
-        if(fullcontent.length < 200){
-          article += "                    " + fullcontent;
-        }
-        else{
-          article += "                    " + fullcontent.substring(0,199) + "[...]";
-        }
+        article += "                    " + article_text_preview(art,200) + " [...]";
+
         article += "      <\/p>";
         article += "      <p class=\"hv-lees-meer\"><b><a href=\"./" + art.category + "/" + art.id + "/\">lees meer<\/a><\/b><\/p>";
         article += "        <p style=\"text-transform: uppercase;\">";
@@ -150,4 +129,20 @@ var hv_home = function(){
 
         return article;
   }
+}
+
+function article_text_preview(article, n){
+	var fullcontent =""
+    for (var i = 0; i < article.content.length; i++) {
+      if (article.content[i].type == "paragraph") {
+          fullcontent += article.content[i].content + " ";
+      }
+    }
+	//trim the string to the maximum length
+	var preview = fullcontent.substr(0, n);
+
+	//re-trim if we are in the middle of a word
+	preview = preview.substr(0, Math.min(preview.length, preview.lastIndexOf(" ")));	
+		
+	return preview;
 }
