@@ -40,7 +40,7 @@ var hv_category = function(){
       $( "#hv-most-recent-source-a" ).attr("href",article.source_url);
       $( "#hv-most-recent-source-a" ).text(article.source_name);
 
-      $("#most-recent-content").text(article_text_preview(article, 225) + " [...]");
+      $("#most-recent-content").append(article_text_preview(article, 225) + " [...]");
 
 
     })
