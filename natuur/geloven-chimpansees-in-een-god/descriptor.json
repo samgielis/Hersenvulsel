@@ -1,0 +1,31 @@
+{
+  "id":"geloven-chimpansees-in-een-god",
+  "title":"Geloven deze chimpansees in een god?",
+  "authorid":"samgielis",
+  "authorname":"Sam Gielis",
+  "category":"natuur",
+  "day":"2016/03/04",
+  "time":"14:55:00",
+  "source_name":"mpg.de",
+  "source_url":"http://www.mpg.de/10328790/chimpanzee-stone-tree",
+  "img_credit":"publicdomainpictures.net",
+  "keywords":"chimpansee, theologie, god, steen, boom, cultuur",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Wetenschappers van het Max Planck Instituut voor Evolutionaire Antropologie kwamen begin deze week met een <a href=\"http://www.mpg.de/10328790/chimpanzee-stone-tree\" target=\"_blank\">opvallend persbericht</a>. Daarin stellen ze dat ze mogelijk voor het eerst ritueel religieus gedrag hebben waargenomen bij chimpansees in West Afrika."},
+		   {"type": "paragraph",
+		   "content": "De wetenschappers gebruiken al jarenlang camera's om het cultureel gedrag bij mensapen van naderbij te kunnen observeren. Op recente beelden is te zien hoe de chimpansees met stenen naar specifieke bomen gooien. Daardoor ontstaat er een grote berg stenen aan de voet van die bomen"},
+		   { "type":"image",
+		   "name":"stenen.jpg",
+		   "credit":"mpg.de"
+		   },
+		   {"type": "paragraph",
+		   "content": "Dat chimpansees stenen gebruiken als werktuigen weten we al langer. Toch is dit niet hetzelfde. De stapels stenen lijken geen enkel functioneel nut te hebben. De wetenschappers denken daarom dat dit wel eens een voorbeeld zou kunnen zijn van een vroege vorm van ritueel gedrag bij de dieren."},
+		   {"type": "paragraph",
+		   "content": "De ontdekking kan ons meer leren over het ontstaan van rituelen en religie bij de mens. De wetenschappers zien immers een duidelijke link tussen dit gedrag en gelijkaardige gebruiken in onze eigen geschiedenis. Onze voorouders stapelden bijvoorbeeld stenen op bij de graftombes van hun overleden stamgenoten. Dat gedrag staat bekend als het vroegste voorbeeld van ritueel gedrag bij de mens. Het gebruik van stenen stapels komt ook later voor bij meer gesofisticeerd ritueel-religieus gedrag. Denk maar een <a href=\"https://nl.wikipedia.org/wiki/Stonehenge\" target=\"_blank\">Stonehenge</a> en de <a href=\"https://nl.wikipedia.org/wiki/Piramide_(bouwwerk)\" target=\"_blank\">piramiden</a>, of de <a href=\"https://nl.wikipedia.org/wiki/Menhir\" target=\"_blank\">dolmen en menhirs</a> die je ook in België kan vinden."},
+		   {"type": "paragraph",
+		   "content": "Laura Kehoe, één van de betrokken onderzoeksters, is alvast bezig met het vervolg van het onderzoek. Zo stelt ze: \"Het markeren van wegen en gebieden met wegwijzers zoals stapels stenen was een belangrijke stap in de geschiedenis van de mens. We gaan nu onderzoeken of er een verband is tussen het territorium en de locaties waar de chimpansees hun rituelen voltrekken.\""},
+		   {"type": "embed",
+		   "code": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/yWFZpJBqPbA\" frameborder=\"0\" allowfullscreen></iframe>"}
+		   ]
+}
