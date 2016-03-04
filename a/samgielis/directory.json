@@ -1,6 +1,11 @@
 {
 	"articles":[
 		{
+			"id":		"geloven-chimpansees-in-een-god",
+			"category":	"natuur",
+			"pubtime":	"2016/03/04 14:55:00"
+		},
+		{
 			"id":		"opwarming-aarde-in-beeld",
 			"category":	"natuur",
 			"pubtime":	"2014/11/08 19:15:00"
