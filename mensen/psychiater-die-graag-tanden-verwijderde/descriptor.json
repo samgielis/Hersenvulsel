@@ -1,6 +1,6 @@
 {
-  "id":"krankzinnig-laat-je-tanden-verwijderen",
-  "title":"Krankzinnig? Laat al je tanden verwijderen",
+  "id":"psychiater-die-graag-tanden-verwijderde",
+  "title":"De psychiater die maar al te graag tanden verwijderde",
   "authorid":"samgielis",
   "authorname":"Sam Gielis",
   "category":"mensen",
@@ -8,11 +8,11 @@
   "time":"22:15:00",
   "source_name":"telegraph.co.uk",
   "source_url":"http://www.telegraph.co.uk/culture/books/3641744/The-madness-of-a-cure-for-insanity.html",
-  "img_credit":"",
+  "img_credit":"wikimedia.org",
   "keywords":"the knick, Dr. Henry Cotton, psychiatrie, tanden trekken, geneeskunde, 1900",
   "content":[
           {"type": "paragraph",
-		   "content": "Dat de psychiatrie in het begin van de twintigste eeuw nog niet bepaald op punt stond moeten we je waarschijnlijk niet vertellen. Het onderzoeksdomein wordt vooral gekenmerkt door een hele reeks twijfelachtige personages en lugubere behandelingen. Zo was er bijvoorbeeld Dr. Henry Cotton, medisch directeur in het <a href=\"http://www.nj.com/morris/index.ssf/2014/04/photos_see_the_nj_lunatic_asylum_some_are_fighting_to_save.html\" target=\"_blank\">Trenton State Lunatic Asylum</a>, een grote psychiatrische instelling in New Jersey."},
+		   "content": "Dat de psychiatrie in het begin van de twintigste eeuw nog niet bepaald op punt stond moeten we je waarschijnlijk niet vertellen. Het onderzoeksdomein wordt vooral gekenmerkt door een hele reeks twijfelachtige personages en lugubere behandelingen. Zo was er bijvoorbeeld Dr. Henry Cotton, medisch directeur in het <a href=\"http://www.nj.com/morris/index.ssf/2014/04/photos_see_the_nj_lunatic_asylum_some_are_fighting_to_save.html\" target=\"_blank\">Trenton State Lunatic Asylum</a>, een grote psychiatrische instelling in New Jersey. De dokter stond er om bekend zijn patiënten te behandelen door hun tanden stuk voor stuk te verwijderen."},
 		   {"type": "image",
 		   "name": "asylum.jpg",
 		   "credit": "Het Trenton State Lunatic Asylum - wikimedia.org"},
@@ -21,8 +21,8 @@
 		   {"type": "paragraph",
 		   "content": "Dr. Meyer deed onderzoek naar het effect van infecties op de psychische gezondheid. Hij observeerde dat patiënten die hoge koorts hadden vaak hallucineerden. Daaruit concludeerde hij dat infecties - op dat moment een ultramodern veld in de geneeskunde - een biologische verklaring waren voor gedragsstoornissen. Hij ging daarmee radicaal in tegen de meer gangbare verklaringen zoals <a href=\"https://nl.wikipedia.org/wiki/Erfelijkheid\" target=\"_blank\">erfelijkheid</a> en <a href=\"https://nl.wikipedia.org/wiki/Psychotrauma\" target=\"_blank\">Freud's kindertrauma's</a>."},
 		   {"type": "image",
-		   "name": "operatie.jpg",
-		   "credit": "Operatietaffereel uit de jaren 1900 - wikimedia.org"},
+		   "name": "drcotton.jpg",
+		   "credit": "Dr. Henry Cotton in 1932 - discovermagazine.com"},
 		   {"type": "paragraph",
 		   "content": "Toen hij aan het hoofd kwam van het Trenton State Lunatic Asylum, zette Henry Cotton de theorie van zijn leermeester om in de praktijk. Hij behandelde zijn patiënten door hun tanden stuk voor stuk te verwijderen. Tanden onsteken immers vaak - denk maar aan abcessen - en staan in direct contact met onze hersennen. Voor Dr. Cotton dus <i>de</i> hoofdverdachte. Als een ingreep niet efficiënt bleek te zijn ging Dr. Cotton over op meer drastischere ingrepen. Zo verwijderde hij onder meer de teelballen, eierstokken en baarmoederhalzen van zijn patiënten. Ook galblazen, magen, milten en dikke darmen beschouwde de dokter als gevaarlijk voor de psychische gezondheid."},
 		   {"type": "image",
@@ -33,6 +33,6 @@
 		   {"type": "paragraph",
 		   "content": "Henry Cotton geloofde zo sterk in zijn techiek dat hij de tanden van zijn twee zonen preventief liet verwijderen. Zijn eigen tanden had hij nog wel toen hij stierf aan een hartaanval in 1933."},
 		   {"type": "paragraph",
-		   "content": "<i>KIJKTIP - Het verhaal van Dr. Cotton komt ook aan bod in de dramaserie <a href=\"http://www.imdb.com/title/tt2937900/\" target=\"_blank\">'The Knick'</a>. De serie is een duistere cocktail van lugubere operaties, medische experimenten maar ook drugs, immigratie, racisme en seks die typerend was voor het begin van de twintigste eeuw. Wij zijn alvast grote fan.</i></div>"}
+		   "content": "<i>KIJKTIP - Het verhaal van Dr. Cotton komt ook aan bod in de dramaserie <a href=\"http://www.imdb.com/title/tt2937900/\" target=\"_blank\">'The Knick'</a>. De serie is een leerrijke maar duistere cocktail van lugubere operaties, medische experimenten maar ook drugs, immigratie, racisme en seks die typerend was voor het begin van de twintigste eeuw. Wij zijn alvast grote fan.</i></div>"}
 		   ]
 }
