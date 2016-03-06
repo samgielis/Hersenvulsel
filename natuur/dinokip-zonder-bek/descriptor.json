@@ -1,0 +1,21 @@
+{
+  "id":"dinokip-zonder-bek",
+  "title":"Er is een dinosaurus-kip gekweekt zonder bek",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"natuur",
+  "day":"2016/03/07",
+  "time":"15:15:00",
+  "source_name":"bbc.com",
+  "source_url":"http://www.bbc.com/earth/story/20150512-bird-grows-face-of-dinosaur",
+  "img_credit":"pexels.com",
+  "keywords":"dino, dinosaurus, dinosaurussen, kip, kippen, bek, mond, snavel, vogel, vogels, evolutie",
+  "content":[
+          {"type": "paragraph",
+		   "content": "De snavel van een vogel is een vreemd ding - ze hebben het allemaal, maar we weten er heel weinig over. Een team onderzoekers van de universiteiten Yale en Harvard probeert nu te onderzoeken hoe en wanneer die bek ontstaan is. Want vogels stammen eigenlijk af van dinosaurussen."},
+		   {"type": "paragraph",
+		   "content": "Voor dat onderzoek zijn ze begonnen bij de huis-, tuin- en keukenvogel - de kip! De wetenschappers namen een embryo van een kuiken en analyseerden welke genen precies voor de ontwikkeling van de bek zorgen. En die genen hebben ze dan uitgeschakeld. Zo ontwikkelde zich een feutus <i>zonder</i> bek... en met de snuit van een dinosaurus."},
+		   {"type": "paragraph",
+		   "content": "We moeten je teleurstellen - foto's van deze rare, maar sowieso schattige kuikens hebben we niet. De eieren zijn namelijk nooit volledig uitgebroed, omdat dat ethisch niet verantwoord zou zijn. Maar het onderzoek bewijst wel dat de snavel van een vogel eigenlijk een soort 'extraatje' is. Voor die bek er was, hadden vogels gewoon een snuit, net als vele andere dinosaurussen vroeger. Nu weten we dus al veel meer over dat mysterieuze stukje vogel!"}
+		   ]
+}
