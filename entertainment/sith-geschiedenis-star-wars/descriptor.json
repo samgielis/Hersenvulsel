@@ -1,0 +1,21 @@
+{
+  "id":"sith-geschiedenis-star-wars",
+  "title":"De volledige geschiedenis van de Sith in Star Wars",
+  "authorid":"glencallaert",
+  "authorname":"Glen Callaert",
+  "category":"entertainment",
+  "day":"2016/03/07",
+  "time":"20:00:00",
+  "source_name":"youtube.com",
+  "source_url":"https://www.youtube.com/watch?v=4kb5TyWS4qA",
+  "img_credit":"youtube.com/dashawnjohnson",
+  "keywords":"star, wars, sith, jedi, book, of, geschiedenis, cultuur, history, culture, comic, quips",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Heb je je altijd al afgevraagd hoe de Sith-orde in de <b>Star Wars</b>-films is ontstaan?"},
+		   {"type": "paragraph",
+		   "content": "De Sith hebben een rijke geschiedenis - en die willen wij graag met je delen in een video!"},
+		   {"type": "embed",
+		   "code": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/4kb5TyWS4qA\" frameborder=\"0\" allowfullscreen></iframe>"}
+		   ]
+}

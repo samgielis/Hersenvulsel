@@ -1,18 +1,17 @@
 {
 	"carousel":[
+			["entertainment", "sith-geschiedenis-star-wars"],
+			["natuur", "dinokip-zonder-bek"],
 			["faitsdivers", "iran-nieren-kopen"],
 			["mensen", "psychiater-die-graag-tanden-verwijderde"],
-			["natuur", "geloven-chimpansees-in-een-god"],
-			["geschiedenis", "stijgend-restaurant-wtc"],
-			["entertainment", "borat-toeristen-naar-kazachstan"],
-			["wetenschap", "muizen-en-penicilline"]
+			["natuur", "geloven-chimpansees-in-een-god"]
 	],
 	"articles":[
-			["wetenschap", "bomen-als-lantaarns"],
-			["geschiedenis", "brandweer-romeinse-tijd"],
+			["wetenschap", "muizen-en-penicilline"],
+			["geschiedenis", "stijgend-restaurant-wtc"],
 			["mensen", "margaret-bomen-klimmen-110-jaar"],
 			["natuur", "leopon-kruising-leeuw-luipaard"],
-			["entertainment", "rijkste-fictieve-personages"],
+			["entertainment", "borat-toeristen-naar-kazachstan"],
 			["faitsdivers", "viagra-met-toestemming"]
 	]
 }

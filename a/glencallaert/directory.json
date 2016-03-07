@@ -1,4 +1,9 @@
 {
 	"articles":[
+		{
+			"id":		"sith-geschiedenis-star-wars",
+			"category":	"entertainment",
+			"pubtime":	"2016/03/07 20:00:00"
+		}
 	]
 }
