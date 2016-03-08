@@ -1,0 +1,21 @@
+{
+  "id":"allergie-voorkomen-pindas-eten",
+  "title":"Om een pinda-allergie te voorkomen, moet je pinda's eten",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"wetenschap",
+  "day":"2016/03/09",
+  "time":"15:45:00",
+  "source_name":"bbc.com",
+  "source_url":"http://www.bbc.com/news/health-35727244",
+  "img_credit":"pexels.com",
+  "keywords":"pinda, pinda's, noot, noten, pindanoten, allergie, voedsel, voeding, allergieën, voedselallergie, genezen, voorkomen, medicijn, medicatie",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Voedselallergieën zijn helaas veelvoorkomend - en vaak ben je er genetisch voor aangelegd. Net dat is nu een interessante onderzoeksvraag. Kan je die allergie onderdrukken, door jonge kinderen een soort van vaccinatie te geven?"},
+		   {"type": "paragraph",
+		   "content": "Soms wel! Een studie in de New England Journal of Medicine toont aan dat een allergie voor pindanoten heel vaak voorkomen kan worden door de patiënt van jongs af aan pinda's te laten eten. Op die manier bouwen ze als het ware een tolerantie op, net zoals een vaccin zou zorgen voor een tolerantie tegen een bepaalde ziekte."},
+		   {"type": "paragraph",
+		   "content": "Voor het onderzoek werden kinderen gebruikt die genetisch gezien een grote kans hadden op de allergie. En volgens de onderzoekers ligt daar net het probleem. De ouders weten op voorhand dat hun kind waarschijnlijk allergisch is aan pinda's, dus gaan ze het kind weghouden van pinda's - waardoor de allergie <i>eigenlijk</i> net ontstaat. Geef je het jonge kind wel pinda's te eten, dan raakt het lichaam dat gewend. Maar deze studie spreekt voorlopig alleen over pindanoten - dit betekent dus niet dat je zomaar alles moet beginnen eten waar je eigenlijk allergisch voor bent!"}
+		   ]
+}
