@@ -1,10 +1,10 @@
 {
 	"carousel":[
+			["wetenschap", "waarom-nederlanders-grootsten-zijn"],
 			["wetenschap", "allergie-voorkomen-pindas-eten"],
 			["geschiedenis", "tank-die-kon-vliegen"],
 			["entertainment", "sith-geschiedenis-star-wars"],
-			["natuur", "dinokip-zonder-bek"],
-			["faitsdivers", "iran-nieren-kopen"]
+			["natuur", "dinokip-zonder-bek"]
 	],
 	"articles":[
 			["wetenschap", "muizen-en-penicilline"],
@@ -12,6 +12,6 @@
 			["mensen", "psychiater-die-graag-tanden-verwijderde"],
 			["natuur", "geloven-chimpansees-in-een-god"],
 			["entertainment", "borat-toeristen-naar-kazachstan"],
-			["faitsdivers", "viagra-met-toestemming"]
+			["faitsdivers", "iran-nieren-kopen"]
 	]
 }
