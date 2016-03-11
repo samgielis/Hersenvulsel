@@ -1,16 +1,16 @@
 {
 	"carousel":[
+			["geschiedenis", "fanta-nazi-duitsland"],
 			["wetenschap", "waarom-nederlanders-grootsten-zijn"],
 			["wetenschap", "allergie-voorkomen-pindas-eten"],
 			["geschiedenis", "tank-die-kon-vliegen"],
-			["entertainment", "sith-geschiedenis-star-wars"],
-			["natuur", "dinokip-zonder-bek"]
+			["entertainment", "sith-geschiedenis-star-wars"]
 	],
 	"articles":[
 			["wetenschap", "muizen-en-penicilline"],
 			["geschiedenis", "stijgend-restaurant-wtc"],
 			["mensen", "psychiater-die-graag-tanden-verwijderde"],
-			["natuur", "geloven-chimpansees-in-een-god"],
+			["natuur", "dinokip-zonder-bek"],
 			["entertainment", "borat-toeristen-naar-kazachstan"],
 			["faitsdivers", "iran-nieren-kopen"]
 	]
