@@ -1,17 +1,17 @@
 {
 	"carousel":[
+			["entertainment", "spielberg-bang-paranormal-activity"],
 			["geschiedenis", "fanta-nazi-duitsland"],
 			["wetenschap", "waarom-nederlanders-grootsten-zijn"],
 			["wetenschap", "allergie-voorkomen-pindas-eten"],
-			["geschiedenis", "tank-die-kon-vliegen"],
-			["entertainment", "sith-geschiedenis-star-wars"]
+			["geschiedenis", "tank-die-kon-vliegen"]
 	],
 	"articles":[
 			["wetenschap", "muizen-en-penicilline"],
 			["geschiedenis", "stijgend-restaurant-wtc"],
 			["mensen", "psychiater-die-graag-tanden-verwijderde"],
 			["natuur", "dinokip-zonder-bek"],
-			["entertainment", "borat-toeristen-naar-kazachstan"],
+			["entertainment", "sith-geschiedenis-star-wars"],
 			["faitsdivers", "iran-nieren-kopen"]
 	]
 }
