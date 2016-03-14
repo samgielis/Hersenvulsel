@@ -1,13 +1,13 @@
 {
 	"carousel":[
+			["wetenschap", "20-seconden-rode-bloedcellen"],
 			["entertainment", "spielberg-bang-paranormal-activity"],
 			["geschiedenis", "fanta-nazi-duitsland"],
 			["wetenschap", "waarom-nederlanders-grootsten-zijn"],
-			["wetenschap", "allergie-voorkomen-pindas-eten"],
 			["geschiedenis", "tank-die-kon-vliegen"]
 	],
 	"articles":[
-			["wetenschap", "muizen-en-penicilline"],
+			["wetenschap", "allergie-voorkomen-pindas-eten"],
 			["geschiedenis", "stijgend-restaurant-wtc"],
 			["mensen", "psychiater-die-graag-tanden-verwijderde"],
 			["natuur", "dinokip-zonder-bek"],
