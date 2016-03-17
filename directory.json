@@ -1,13 +1,13 @@
 {
 	"carousel":[
+			["entertainment", "cake-by-the-ocean"],
 			["natuur", "boa-alleen-voortgeplant"],
 			["wetenschap", "20-seconden-rode-bloedcellen"],
 			["entertainment", "spielberg-bang-paranormal-activity"],
-			["geschiedenis", "fanta-nazi-duitsland"],
-			["wetenschap", "waarom-nederlanders-grootsten-zijn"]
+			["geschiedenis", "fanta-nazi-duitsland"]
 	],
 	"articles":[
-			["wetenschap", "allergie-voorkomen-pindas-eten"],
+			["wetenschap", "waarom-nederlanders-grootsten-zijn"],
 			["geschiedenis", "tank-die-kon-vliegen"],
 			["mensen", "psychiater-die-graag-tanden-verwijderde"],
 			["natuur", "dinokip-zonder-bek"],
