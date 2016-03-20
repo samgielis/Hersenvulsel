@@ -1,17 +1,17 @@
 {
 	"carousel":[
+			["faitsdivers", "auto-antoniem-wat-is-dat"],
 			["geschiedenis", "slechte-adem-scheiding"],
 			["entertainment", "cake-by-the-ocean"],
 			["natuur", "boa-alleen-voortgeplant"],
-			["wetenschap", "20-seconden-rode-bloedcellen"],
-			["entertainment", "spielberg-bang-paranormal-activity"]
+			["wetenschap", "20-seconden-rode-bloedcellen"]
 	],
 	"articles":[
 			["wetenschap", "waarom-nederlanders-grootsten-zijn"],
 			["geschiedenis", "fanta-nazi-duitsland"],
 			["mensen", "psychiater-die-graag-tanden-verwijderde"],
 			["natuur", "dinokip-zonder-bek"],
-			["entertainment", "sith-geschiedenis-star-wars"],
+			["entertainment", "spielberg-bang-paranormal-activity"],
 			["faitsdivers", "iran-nieren-kopen"]
 	]
 }
