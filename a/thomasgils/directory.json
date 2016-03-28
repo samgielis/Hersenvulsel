@@ -1,6 +1,11 @@
 {
 	"articles":[
 		{
+			"id":		"3d-printen-huis-van-zand",
+			"category":	"wetenschap",
+			"pubtime":	"2016/03/28 14:00:00"
+		},
+		{
 			"id":		"tank-die-kon-vliegen",
 			"category":	"geschiedenis",
 			"pubtime":	"2016/03/08 16:30:00"

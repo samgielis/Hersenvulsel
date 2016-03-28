@@ -1,10 +1,10 @@
 {
 	"carousel":[
+			["wetenschap", "3d-printen-huis-van-zand"],
 			["mensen", "10-jarige-maakte-enige-snoep-pasen"],
 			["wetenschap", "kater-na-alcohol-waarom"],
 			["mensen", "john-titor-tijdreiziger"],
-			["natuur", "geur-gras-schreeuw-om-hulp"],
-			["faitsdivers", "auto-antoniem-wat-is-dat"]
+			["natuur", "geur-gras-schreeuw-om-hulp"]
 	],
 	"articles":[
 			["wetenschap", "20-seconden-rode-bloedcellen"],
@@ -12,6 +12,6 @@
 			["mensen", "psychiater-die-graag-tanden-verwijderde"],
 			["natuur", "boa-alleen-voortgeplant"],
 			["entertainment", "cake-by-the-ocean"],
-			["faitsdivers", "iran-nieren-kopen"]
+			["faitsdivers", "auto-antoniem-wat-is-dat"]
 	]
 }
