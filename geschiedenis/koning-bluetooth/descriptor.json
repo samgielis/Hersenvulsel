@@ -1,0 +1,21 @@
+{
+  "id":"koning-bluetooth",
+  "title":"De Noorse koning Bluetooth",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"2016/03/31",
+  "time":"14:30:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Bluetooth#Name_and_logo",
+  "img_credit":"wikimedia.org - de begrafenis van koning Bluetooth",
+  "keywords":"bluetooth, naam, afkomst, afkomstig, vernoemd, naar, koning, Harald, rune, runen",
+  "content":[
+          {"type": "paragraph",
+		   "content": "De Bluetooth-technologie is uitgevonden in 1989. Het zorgt ervoor <b>dat gsm's en computers met elkaar kunnen communiceren</b> - zo kan je bijvoorbeeld makkelijk foto's doorsturen, of kan je je telefoon opnemen via een knop in de auto. Origineel heette het 'short-link radio technologie', maar in 1997 kreeg het de naam 'Bluetooth', <b>naar de Noorse koning Harald Bluetooth.</b>"},
+		   {"type": "paragraph",
+		   "content": "Geen grap, die man heette echt zo! Hij was koning van Noorwegen en Denemarken in de tiende eeuw. Zijn volledige naam was <b>Harald Blåtand Gormsson</b>, in het Engels werd dat 'Bluetooth', of 'blauwe tand' dus."},
+		   {"type": "paragraph",
+		   "content": "Koning Bluetooth staat erom bekend dat hij <b>verschillende Deense stammen verenigd</b> heeft in één koninkrijk - Denemarken - en het volk ook verenigde door het Christendom te introduceren. Volgens Jim Kardach, één van de ontwikkelaars van de Bluetooth-technologie in de jaren '90, was dat dus de perfecte naam. Koning Bluetooth verenigde het volk <b>net zoals deze technologie verschillende apparaten verenigt!</b>"}
+		   ]
+}

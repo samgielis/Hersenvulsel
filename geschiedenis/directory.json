@@ -61,6 +61,11 @@
 			"pubtime":	"2014/11/01 15:30:00"
 		},
 		{
+			"id":		"koning-bluetooth",
+			"category":	"geschiedenis",
+			"pubtime":	"2016/03/31 14:30:00"
+		},
+		{
 			"id":		"langste-palindroom-ooit",
 			"category":	"geschiedenis",
 			"pubtime":	"2014/07/30 20:00:00"

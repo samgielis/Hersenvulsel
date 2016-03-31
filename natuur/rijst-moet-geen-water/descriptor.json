@@ -1,0 +1,19 @@
+{
+  "id":"rijst-moet-geen-water",
+  "title":"Rijst moet helemaal niet in water groeien",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"natuur",
+  "day":"2016/03/31",
+  "time":"15:15:00",
+  "source_name":"sagevfoods.com",
+  "source_url":"http://www.sagevfoods.com/MainPages/Rice101/Production2.htm",
+  "img_credit":"wikimedia.org",
+  "keywords":"rijst, plant, planten, groeit, groeien, water, niet, nodig, droog, grond",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Rijst wordt meestal gekweekt op een overstoomd veld - de planten staan voor een groot deel in het water. Rijst is een graan, een soort gras dus, en <b>het heeft eigenlijk helemaal niet zoveel water nodig</b> om te groeien. Je kan rijst perfect kweken op droge grond."},
+		   {"type": "paragraph",
+		   "content": "En toch hebben die overstroomde velden een groot nut: <b>ze houden namelijk andere planten tegen!</b> De rijst kan met gemak tegen al dat water - het doet de plant niks - maar andere soorten grassen en onkruid kunnen er niet groeien. <b>Door al het water krijgt de rijst dus een monopolie op het veld.</b> Er kan niets anders groeien, dus groeit er meer rijst <b>en kan er ook meer geoogst worden!</b>"}
+		   ]
+}

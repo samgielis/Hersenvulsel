@@ -1,15 +1,15 @@
 {
 	"carousel":[
+			["natuur", "rijst-moet-geen-water"],
+			["geschiedenis", "koning-bluetooth"],
 			["entertainment", "nightmare-elm-street-waargebeurde-feiten"],
 			["natuur", "prairiehonden-praten-over-ons"],
-			["wetenschap", "3d-printen-huis-van-zand"],
-			["mensen", "10-jarige-maakte-enige-snoep-pasen"],
-			["wetenschap", "kater-na-alcohol-waarom"]
+			["wetenschap", "3d-printen-huis-van-zand"]
 	],
 	"articles":[
-			["wetenschap", "20-seconden-rode-bloedcellen"],
+			["wetenschap", "kater-na-alcohol-waarom"],
 			["geschiedenis", "slechte-adem-scheiding"],
-			["mensen", "john-titor-tijdreiziger"],
+			["mensen", "10-jarige-maakte-enige-snoep-pasen"],
 			["natuur", "geur-gras-schreeuw-om-hulp"],
 			["entertainment", "cake-by-the-ocean"],
 			["faitsdivers", "auto-antoniem-wat-is-dat"]
