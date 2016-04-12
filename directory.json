@@ -1,13 +1,13 @@
 {
 	"carousel":[
+			["mensen", "kleur-zwart-van-mij"],
 			["natuur", "rijst-moet-geen-water"],
 			["geschiedenis", "koning-bluetooth"],
 			["entertainment", "nightmare-elm-street-waargebeurde-feiten"],
-			["natuur", "prairiehonden-praten-over-ons"],
-			["wetenschap", "3d-printen-huis-van-zand"]
+			["natuur", "prairiehonden-praten-over-ons"]
 	],
 	"articles":[
-			["wetenschap", "kater-na-alcohol-waarom"],
+			["wetenschap", "3d-printen-huis-van-zand"],
 			["geschiedenis", "slechte-adem-scheiding"],
 			["mensen", "10-jarige-maakte-enige-snoep-pasen"],
 			["natuur", "geur-gras-schreeuw-om-hulp"],
