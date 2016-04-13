@@ -1,17 +1,17 @@
 {
 	"carousel":[
+			["entertainment", "fallout-ruineerde-leven"],
 			["natuur", "verhuis-een-koraalrif"],
 			["mensen", "kleur-zwart-van-mij"],
 			["natuur", "rijst-moet-geen-water"],
-			["geschiedenis", "koning-bluetooth"],
-			["entertainment", "nightmare-elm-street-waargebeurde-feiten"]
+			["geschiedenis", "koning-bluetooth"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
 			["geschiedenis", "slechte-adem-scheiding"],
 			["mensen", "10-jarige-maakte-enige-snoep-pasen"],
 			["natuur", "prairiehonden-praten-over-ons"],
-			["entertainment", "cake-by-the-ocean"],
+			["entertainment", "nightmare-elm-street-waargebeurde-feiten"],
 			["faitsdivers", "auto-antoniem-wat-is-dat"]
 	]
 }
