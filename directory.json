@@ -1,14 +1,14 @@
 {
 	"carousel":[
+			["geschiedenis", "gin-tonic-dankzij-malaria"],
 			["entertainment", "fallout-ruineerde-leven"],
 			["natuur", "verhuis-een-koraalrif"],
 			["mensen", "kleur-zwart-van-mij"],
-			["natuur", "rijst-moet-geen-water"],
-			["geschiedenis", "koning-bluetooth"]
+			["natuur", "rijst-moet-geen-water"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
-			["geschiedenis", "slechte-adem-scheiding"],
+			["geschiedenis", "koning-bluetooth"],
 			["mensen", "10-jarige-maakte-enige-snoep-pasen"],
 			["natuur", "prairiehonden-praten-over-ons"],
 			["entertainment", "nightmare-elm-street-waargebeurde-feiten"],

@@ -1,0 +1,26 @@
+{
+  "id":"gin-tonic-dankzij-malaria",
+  "title":"Gin-tonic bestaat dankzij malaria",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"2016/04/15",
+  "time":"14:15:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Gin_and_tonic",
+  "img_credit":"wikimedia.org",
+  "keywords":"gin, tonic, en, and, gin-tonic, geschiedenis, oorsprong, ontstaan, malaria, ziekte, antibacterieel, genezen, genezing, oorlog, soldaten, india",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Ga je misschien een gin-tonic drinken dit weekend? Dat heb je dan allemaal te danken aan <b>malaria!</b> De geweldig populaire cocktail is <b>uitgevonden om de ziekte te voorkomen en te behandelen.</b> Dankjewel, geneeskunde!"},
+		   {"type": "paragraph",
+		   "content": "Het begon allemaal <b>in India, in de 18e eeuw.</b> Het Verenigd Koninkrijk had daar de Britse Oost-Indische Compagnie opgestart, om <b>handel</b> te voeren vanuit India. Na verloop van tijd werd die commerciële onderneming <b>steeds machtiger</b>, waardoor er zich ook een groot Brits leger vestigde... Maar de soldaten werden geveld door malaria."},
+		   {"type": "image",
+		   "name": "2.jpg",
+		   "credit": "wikimedia.org"},
+		   {"type": "paragraph",
+		   "content": "Gelukkig vond de legertop een oplossing: bepaalde medicijnen die de stof <b>kinine</b> bevatten, leken ook tegen malaria te werken. Kinine zorgde bij die medicatie ook voor een enorm <b>bittere smaak.</b> Omdat de soldaten het zo vaak moesten drinken, probeerden ze het dus <b>wat lekkerder te maken</b> - en ze hadden een grote voorraad gin in India..."},
+		   {"type": "paragraph",
+		   "content": "Kinine zorgt vandaag de dag <b>nog steeds voor de bittere smaak in tonic</b>, maar met een veel kleinere dosis dan in die vroegere medicijnen. Een gin-tonic op een terras zal je in elk geval <b>niet meer beschermen tegen malaria</b>, maar oorspronkelijk was die cocktail dus wel een belangrijk medicijn!"}
+		   ]
+}
