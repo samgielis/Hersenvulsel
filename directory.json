@@ -1,17 +1,17 @@
 {
 	"carousel":[
+			["mensen", "julian-ontdekt-13-jaar-vermist"],
 			["natuur", "avocado-evolutie-grote-pit"],
 			["faitsdivers", "soviet-stemmen-op-tv"],
 			["entertainment", "game-of-thrones-sterfgevallen"],
-			["geschiedenis", "gin-tonic-dankzij-malaria"],
-			["entertainment", "fallout-ruineerde-leven"]
+			["geschiedenis", "gin-tonic-dankzij-malaria"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
 			["geschiedenis", "koning-bluetooth"],
 			["mensen", "kleur-zwart-van-mij"],
 			["natuur", "verhuis-een-koraalrif"],
-			["entertainment", "nightmare-elm-street-waargebeurde-feiten"],
+			["entertainment", "fallout-ruineerde-leven"],
 			["faitsdivers", "auto-antoniem-wat-is-dat"]
 	]
 }
