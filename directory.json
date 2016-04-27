@@ -1,10 +1,10 @@
 {
 	"carousel":[
+			["mensen", "slash-iconische-hoed-gestolen"],
 			["entertainment", "the-unknown-film-vermist"],
 			["natuur", "vliegen-radslag-op-plafond"],
 			["mensen", "julian-ontdekt-13-jaar-vermist"],
-			["natuur", "avocado-evolutie-grote-pit"],
-			["faitsdivers", "soviet-stemmen-op-tv"]
+			["natuur", "avocado-evolutie-grote-pit"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
@@ -12,6 +12,6 @@
 			["mensen", "kleur-zwart-van-mij"],
 			["natuur", "verhuis-een-koraalrif"],
 			["entertainment", "game-of-thrones-sterfgevallen"],
-			["faitsdivers", "auto-antoniem-wat-is-dat"]
+			["faitsdivers", "soviet-stemmen-op-tv"]
 	]
 }
