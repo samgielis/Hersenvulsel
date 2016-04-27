@@ -1,17 +1,17 @@
 {
 	"carousel":[
+			["entertainment", "the-unknown-film-vermist"],
 			["natuur", "vliegen-radslag-op-plafond"],
 			["mensen", "julian-ontdekt-13-jaar-vermist"],
 			["natuur", "avocado-evolutie-grote-pit"],
-			["faitsdivers", "soviet-stemmen-op-tv"],
-			["entertainment", "game-of-thrones-sterfgevallen"]
+			["faitsdivers", "soviet-stemmen-op-tv"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
 			["geschiedenis", "gin-tonic-dankzij-malaria"],
 			["mensen", "kleur-zwart-van-mij"],
 			["natuur", "verhuis-een-koraalrif"],
-			["entertainment", "fallout-ruineerde-leven"],
+			["entertainment", "game-of-thrones-sterfgevallen"],
 			["faitsdivers", "auto-antoniem-wat-is-dat"]
 	]
 }
