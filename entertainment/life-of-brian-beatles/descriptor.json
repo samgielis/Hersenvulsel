@@ -1,0 +1,24 @@
+{
+  "id":"life-of-brian-beatles",
+  "title":"'Life of Brian', betaald door The Beatles",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2016/09/19",
+  "time":"15:00:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Monty_Python%27s_Life_of_Brian",
+  "img_credit":"imdb.com",
+  "keywords":"monty, python, life, of, brian, movie, film, cleese, chapman, gilliam, betaald, geld, george, harrison, beatle, beatles",
+  "content":[
+          {"type": "paragraph",
+		   "content": "<b>Monty Python's Life of Brian</b>, de satirische film over de geboorte en het leven van Christus, zou er nooit geweest zijn <b>zonder The Beatles.</b>"},
+		   {"type": "paragraph",
+		   "content": "Filmstudio <b>EMI Films</b> zou normaal voor het geld zorgen om de legendarische film uit 1979 te produceren, maar trok zich plots terug. Gelukkig was daar <b>George Harrison</b>: ex-gitarist van The Beatles, stinkend rijk en <b>grote fan van Monty Python.</b> Hij bood zijn portefeuille aan om te film te financieren via zijn bedrijf HandMade Films."},
+		   {"type": "image",
+		   "name": "2.png",
+		   "credit": "vlnr: Paul McCartney, George Harrison en John Lennon - wikipedia.org"},
+		   {"type": "paragraph",
+		   "content": "Het feit dat John Cleese en co Life of Brian hebben kunnen maken <i>- en wij ervan kunnen genieten -</i> hebben we dus allemaal te danken aan het grote succes van The Beatles. Dankzij dat succes had Harrison natuurlijk een goed gevulde portefeuille!"}
+		   ]
+}

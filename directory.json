@@ -1,15 +1,15 @@
 {
 	"carousel":[
+			["entertainment", "life-of-brian-beatles"],
 			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
 			["mensen", "slash-iconische-hoed-gestolen"],
 			["entertainment", "the-unknown-film-vermist"],
-			["natuur", "vliegen-radslag-op-plafond"],
-			["mensen", "julian-ontdekt-13-jaar-vermist"]
+			["natuur", "vliegen-radslag-op-plafond"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
 			["geschiedenis", "gin-tonic-dankzij-malaria"],
-			["mensen", "kleur-zwart-van-mij"],
+			["mensen", "julian-ontdekt-13-jaar-vermist"],
 			["natuur", "avocado-evolutie-grote-pit"],
 			["entertainment", "game-of-thrones-sterfgevallen"],
 			["faitsdivers", "soviet-stemmen-op-tv"]
