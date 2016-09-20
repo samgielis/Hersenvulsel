@@ -1,0 +1,19 @@
+{
+  "id":"oudste-hotel-ter-wereld",
+  "title":"Het oudste hotel ter wereld bestaat al 1311 jaar",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"geschiedenis",
+  "day":"2016/09/21",
+  "time":"15:00:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Nishiyama_Onsen_Keiunkan",
+  "img_credit":"keiunkan.co.jp",
+  "keywords":"hotel, japan, warmwaterbronnen, eeuwen, oud, oudste, ooit, wereldrecord, Guinness, World, Records",
+  "content":[
+          {"type": "paragraph",
+		   "content": "<b>Nishiyama Onsen Keiunkan</b>, een hotel in Japan, is al <b>open sinds het jaar 705.</b> Het is daarmee officieel <b>het oudste hotel ter wereld.</b>"},
+		   {"type": "paragraph",
+		   "content": "Om het allemaal nog specialer te maken: het hotel is <b>al die tijd binnen dezelfde familie gebleven!</b> Dat was mogelijk dankzij een soort <b>'volwassen adoptie'</b> die in Japan vrij vaak voorkomt. Een werknemer die bijvoorbeeld in staat was het hotel over te nemen van de oude eigenaar, werd geadopteerd en werd dus deel van de familie. Zo ging het hotel steeds verder <b>van vader op zoon, al 52 generaties lang.</b>"}
+		   ]
+}

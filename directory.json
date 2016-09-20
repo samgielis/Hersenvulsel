@@ -1,16 +1,16 @@
 {
 	"carousel":[
+			["geschiedenis", "oudste-hotel-ter-wereld"],
 			["entertainment", "life-of-brian-beatles"],
 			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
 			["mensen", "slash-iconische-hoed-gestolen"],
-			["entertainment", "the-unknown-film-vermist"],
-			["natuur", "vliegen-radslag-op-plafond"]
+			["entertainment", "the-unknown-film-vermist"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
 			["geschiedenis", "gin-tonic-dankzij-malaria"],
 			["mensen", "julian-ontdekt-13-jaar-vermist"],
-			["natuur", "avocado-evolutie-grote-pit"],
+			["natuur", "vliegen-radslag-op-plafond"],
 			["entertainment", "game-of-thrones-sterfgevallen"],
 			["faitsdivers", "soviet-stemmen-op-tv"]
 	]
