@@ -1,17 +1,17 @@
 {
 	"carousel":[
+			["natuur", "giraffe-slaapt-30-minuten"],
 			["geschiedenis", "oudste-hotel-ter-wereld"],
 			["entertainment", "life-of-brian-beatles"],
 			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
-			["mensen", "slash-iconische-hoed-gestolen"],
-			["entertainment", "the-unknown-film-vermist"]
+			["mensen", "slash-iconische-hoed-gestolen"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
 			["geschiedenis", "gin-tonic-dankzij-malaria"],
 			["mensen", "julian-ontdekt-13-jaar-vermist"],
 			["natuur", "vliegen-radslag-op-plafond"],
-			["entertainment", "game-of-thrones-sterfgevallen"],
+			["entertainment", "the-unknown-film-vermist"],
 			["faitsdivers", "soviet-stemmen-op-tv"]
 	]
 }

@@ -1,0 +1,26 @@
+{
+  "id":"giraffe-slaapt-30-minuten",
+  "title":"Een giraffe slaapt maar 30 minuten per dag",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"natuur",
+  "day":"2016/09/23",
+  "time":"14:45:00",
+  "source_name":"thomsonsafaris.com",
+  "source_url":"http://www.thomsonsafaris.com/blog/sleeping-habits-of-giraffes/",
+  "img_credit":"publicdomainpictures.net",
+  "keywords":"giraffe, giraf, slaap, slaappatroon, rust, per, nacht, dag, dertig, 30, minuten, kortste, minste",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Van alle dieren heeft de giraffe het minste slaap nodig. De gigantische beesten komen toe met <b>maar 30 minuten slaap per dag!</b> Gelukkig doen ze dat ook nog op een hele schattige manier."},
+		   {"type": "paragraph",
+		   "content": "Hoewel een volwassen giraffe <b>rechtop leert slapen</b>, doen de kleintjes het liggend. Ze leggen zich plat op de grond, poten onder hun lijf, en <b>met hun kop op hun kont!</b> Blijkbaar biedt hun achterwerk een heel zacht kussen en met die lange nek is dat natuurlijk perfect mogelijk."},
+		   {"type": "image",
+		   "name": "2.jpg",
+		   "credit": "thomsonsafaris.com"},
+		   {"type": "paragraph",
+		   "content": "Een volwassen giraffe durft zich ook al eens neerleggen, maar <b>zelden in het wild.</b> Het duurt namelijk een tijdje voor ze liggen en vooral voor ze terug rechtstaan. Zo'n slaappositie maakt van een giraffe dus <b>een te makkelijke prooi.</b>"},
+		   {"type": "paragraph",
+		   "content": "Hoe slapen ze dan wel? <b>Rechtopstaand, met de ogen half open en de oren alert omhoog.</b> Net als sommige andere dieren kan de giraffe tijdens de slaap <b>deels wakker blijven</b>, om alert te zijn voor gevaren. Dat is ook de reden waarom ze maar <b>enkele minuutjes aan een stuk slapen</b> en dat een paar keer per dag. Met een halfuurtje slaap per dag komen ze blijkbaar toe!"}
+		   ]
+}
