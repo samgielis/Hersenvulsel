@@ -1,0 +1,21 @@
+{
+  "id":"odlum-eerste-sprong-brooklyn-bridge",
+  "title":"Robert Odlum, de eerste die van de Brooklyn Bridge sprong",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"mensen",
+  "day":"2016/09/24",
+  "time":"14:30:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Robert_Emmet_Odlum",
+  "img_credit":"commons.wikimedia.org",
+  "keywords":"robert, emmet, odlum, brooklyn, bridge, new, york, amerika, usa, spring, springen, sprong, zelfmoord, brug, eerste, keer",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Helaas gebeurt het regelmatig dat mensen van een brug springen om zelfmoord te plegen. De allereerste persoon die <b>in 1885 van de Brooklyn Bridge in New York sprong, Robert Odlum</b>, had een heel ander plan. Hij wou <b>bewijzen dat je niet sterft door een val door de lucht</b> - de impact van land of water is pas dodelijk."},
+		   {"type": "paragraph",
+		   "content": "Met zijn stunt hoopte Odlum heel wat levens te redden. In die tijd waren mensen namelijk vaak bang om bijvoorbeeld <b>uit een brandend gebouw te springen</b>, omdat ze geloofden dat de val zelf dodelijk was, zelfs wanneer ze veilig opgevangen zouden worden."},
+		   {"type": "paragraph",
+		   "content": "En Odlum slaagde in zijn opzet. Zijn vrienden, die op een boot op hem wachtten, konden hem levend uit het water halen. <b>Helaas overleed Odlum kort daarna aan een hersenschudding die hij opliep door de klap op het water.</b> Toch was zijn stelling bewezen: <b>de val zelf is niet gevaarlijk.</b>"}
+		   ]
+}

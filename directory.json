@@ -1,15 +1,15 @@
 {
 	"carousel":[
+			["mensen", "odlum-eerste-sprong-brooklyn-bridge"],
 			["natuur", "giraffe-slaapt-30-minuten"],
 			["geschiedenis", "oudste-hotel-ter-wereld"],
 			["entertainment", "life-of-brian-beatles"],
-			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
-			["mensen", "slash-iconische-hoed-gestolen"]
+			["wetenschap", "alcohol-of-niks-drinken-woestijn"]
 	],
 	"articles":[
 			["wetenschap", "3d-printen-huis-van-zand"],
 			["geschiedenis", "gin-tonic-dankzij-malaria"],
-			["mensen", "julian-ontdekt-13-jaar-vermist"],
+			["mensen", "slash-iconische-hoed-gestolen"],
 			["natuur", "vliegen-radslag-op-plafond"],
 			["entertainment", "the-unknown-film-vermist"],
 			["faitsdivers", "soviet-stemmen-op-tv"]
