@@ -1,13 +1,13 @@
 {
 	"carousel":[
+			["wetenschap", "stem-in-hoofd-praat-echt"]
 			["mensen", "odlum-eerste-sprong-brooklyn-bridge"],
 			["natuur", "giraffe-slaapt-30-minuten"],
 			["geschiedenis", "oudste-hotel-ter-wereld"],
-			["entertainment", "life-of-brian-beatles"],
-			["wetenschap", "alcohol-of-niks-drinken-woestijn"]
+			["entertainment", "life-of-brian-beatles"]
 	],
 	"articles":[
-			["wetenschap", "3d-printen-huis-van-zand"],
+			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
 			["geschiedenis", "gin-tonic-dankzij-malaria"],
 			["mensen", "slash-iconische-hoed-gestolen"],
 			["natuur", "vliegen-radslag-op-plafond"],
