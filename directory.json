@@ -1,17 +1,17 @@
 {
 	"carousel":[
-			["wetenschap", "stem-in-hoofd-praat-echt"]
+			["geschiedenis", "steen-van-rosetta"],
+			["wetenschap", "stem-in-hoofd-praat-echt"],
 			["mensen", "odlum-eerste-sprong-brooklyn-bridge"],
 			["natuur", "giraffe-slaapt-30-minuten"],
-			["geschiedenis", "oudste-hotel-ter-wereld"],
-			["entertainment", "life-of-brian-beatles"]
+			["geschiedenis", "oudste-hotel-ter-wereld"]
 	],
 	"articles":[
 			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
 			["geschiedenis", "gin-tonic-dankzij-malaria"],
 			["mensen", "slash-iconische-hoed-gestolen"],
 			["natuur", "vliegen-radslag-op-plafond"],
-			["entertainment", "the-unknown-film-vermist"],
+			["entertainment", "life-of-brian-beatles"],
 			["faitsdivers", "soviet-stemmen-op-tv"]
 	]
 }
