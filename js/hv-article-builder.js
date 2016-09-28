@@ -278,7 +278,7 @@ var hv_article = function(){
 	  ga('send', 'event', {
 			eventCategory: 'Outbound Link',
 			eventAction: 'fb_cta_click',
-			eventLabel: window.location.path
+			eventLabel: window.location.pathname
 		});
   }
   
