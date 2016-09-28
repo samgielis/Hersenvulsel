@@ -252,17 +252,27 @@ var hv_article = function(){
 
       }
     }
-    var source = "<span id=\"hv-most-recent-source-p\" style=\"text-transform: uppercase; font-size: 0.6em !important; padding-top: 22px; display: table;\">";
-    source    +=    "<img src=\"../../img/source.png\" title=\"Bron\" style=\"width: 23px;\"/>";
-    source    +=    "<a id=\"hv-most-recent-source-a\" href=\"" + article.source_url + "\" target=\"_blank\" style=\"padding-left: 10px; display: table-cell;  vertical-align: middle;\">";
-    source    +=      article.source_name;
-    source    +=    "</a>";
-    source    += "</span>";
-    $( "#article_body" ).append(source);
+	
+	hv_article.source_ref(article, $( "#article_body" ));
+	hv_article.facebook_cta($( "#article_body" ));
   }
 
+  hv_article.prototype.source_ref = function(article, elementToAppendTo) {
+	  var source = "<span id=\"hv-most-recent-source-p\" style=\"text-transform: uppercase; font-size: 0.6em !important; padding-top: 22px; display: table;\">";
+		source    +=    "<img src=\"../../img/source.png\" title=\"Bron\" style=\"width: 23px;\"/>";
+		source    +=    "<a id=\"hv-most-recent-source-a\" href=\"" + article.source_url + "\" target=\"_blank\" style=\"padding-left: 10px; display: table-cell;  vertical-align: middle;\">";
+		source    +=      article.source_name;
+		source    +=    "</a>";
+		source    += "</span>";
+		elementToAppendTo.append(source);
+  }
 
-
+  hv_article.prototype.facebook_cta = function(elementToAppendTo) {
+	  var cta = "<p style='text-align: center; margin-top: 1.5em;'>";
+	  cta	+= "<a href='http://facebook.com/hersenvulsel'><i>Interessant? Zin in meer? Volg ons via Facebook!</i></a>";
+	  cta	+= "</p>";
+	  elementToAppendTo.append(cta);
+  }
   ////////////////////////////////
   // CONTENT TYPES FOR ARTICLES //
   ////////////////////////////////
