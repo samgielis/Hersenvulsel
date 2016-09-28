@@ -277,8 +277,8 @@ var hv_article = function(){
   hv_article.prototype.handle_fb_cta_click = function () {
 	  ga('send', 'event', {
 			eventCategory: 'Outbound Link',
-			eventAction: 'click',
-			eventLabel: 'fb_cta_click'
+			eventAction: 'fb_cta_click',
+			eventLabel: window.location.path
 		});
   }
   
