@@ -269,10 +269,19 @@ var hv_article = function(){
 
   hv_article.prototype.facebook_cta = function(elementToAppendTo) {
 	  var cta = "<p style='text-align: center; margin-top: 1.5em;'>";
-	  cta	+= "<a href='http://facebook.com/hersenvulsel'><i>Interessant? Zin in meer? Volg ons via Facebook!</i></a>";
+	  cta	+= "<a href='http://facebook.com/hersenvulsel' onclick='hv_article.handle_fb_cta_click()' target='_blank'><i>Interessant? Zin in meer? Volg ons via Facebook!</i></a>";
 	  cta	+= "</p>";
 	  elementToAppendTo.append(cta);
   }
+  
+  hv_article.prototype.handle_fb_cta_click = function () {
+	  ga('send', 'event', {
+			eventCategory: 'Outbound Link',
+			eventAction: 'click',
+			eventLabel: 'fb_cta_click'
+		});
+  }
+  
   ////////////////////////////////
   // CONTENT TYPES FOR ARTICLES //
   ////////////////////////////////
