@@ -1,14 +1,14 @@
 {
 	"carousel":[
+			["faitsdivers", "president-usa-mag-niet-rijden"],
 			["geschiedenis", "steen-van-rosetta"],
 			["wetenschap", "stem-in-hoofd-praat-echt"],
 			["mensen", "odlum-eerste-sprong-brooklyn-bridge"],
-			["natuur", "giraffe-slaapt-30-minuten"],
-			["geschiedenis", "oudste-hotel-ter-wereld"]
+			["natuur", "giraffe-slaapt-30-minuten"]
 	],
 	"articles":[
 			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
-			["geschiedenis", "gin-tonic-dankzij-malaria"],
+			["geschiedenis", "oudste-hotel-ter-wereld"],
 			["mensen", "slash-iconische-hoed-gestolen"],
 			["natuur", "vliegen-radslag-op-plafond"],
 			["entertainment", "life-of-brian-beatles"],
