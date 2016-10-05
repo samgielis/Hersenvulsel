@@ -1,16 +1,16 @@
 {
 	"carousel":[
+			["wetenschap", "aardbeving-stoep-opnieuw-aangelegd"],
 			["faitsdivers", "president-usa-mag-niet-rijden"],
 			["geschiedenis", "steen-van-rosetta"],
 			["wetenschap", "stem-in-hoofd-praat-echt"],
-			["mensen", "odlum-eerste-sprong-brooklyn-bridge"],
-			["natuur", "giraffe-slaapt-30-minuten"]
+			["mensen", "odlum-eerste-sprong-brooklyn-bridge"]
 	],
 	"articles":[
 			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
 			["geschiedenis", "oudste-hotel-ter-wereld"],
 			["mensen", "slash-iconische-hoed-gestolen"],
-			["natuur", "vliegen-radslag-op-plafond"],
+			["natuur", "giraffe-slaapt-30-minuten"],
 			["entertainment", "life-of-brian-beatles"],
 			["faitsdivers", "soviet-stemmen-op-tv"]
 	]
