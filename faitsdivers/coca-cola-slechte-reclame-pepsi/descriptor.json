@@ -1,0 +1,30 @@
+{
+  "id":"coca-cola-slechte-reclame-pepsi",
+  "title":"Coca-Cola deed Pepsi floppen met slechte reclame",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"faitsdivers",
+  "day":"2016/10/10",
+  "time":"15:00:00",
+  "source_name":"wikipedia.org",
+  "source_url":"https://en.wikipedia.org/wiki/Crystal_Pepsi#History",
+  "img_credit":"flickr.com/photos/jeepersmedia",
+  "keywords":"coca, cola, coca-cola, company, pepsi, clear, crystal, tab, reclame, slecht, aanval",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Begin jaren '90 kwam Pepsi met het briljante plan om <b>doorzichtige cola</b> te maken. Het product was meteen redelijk populair, totdat de concurrentie zich ermee ging bemoeien. Coca-Cola maakte een gelijkaardig product <b>en maakte expres slechte reclame</b>, zodat de klant ook geen Pepsi meer zou kopen."},
+		   {"type": "paragraph",
+		   "content": "Zo'n 25 jaar geleden waren allerlei doorzichtige drankjes plots populair. Mensen linkten ze aan <b>gezondheid</b>, bewust of onbewust. Daar speelde Pepsi gretig op in met <b>'Crystal Pepsi'.</b>"},
+		   {"type": "image",
+		   "name": "2.jpg",
+		   "credit": "Kevin Trotman, flickr.com/photos/kt - Tab Clear van The Coca-Cola Company"},
+		   {"type": "paragraph",
+		   "content": "The Coca-Cola Company zette de tegenaanval in met <b>Tab Clear</b>, maar al snel flopten beide dranken. Volgens de reclame was Tab Clear <b>heel gezond, suikervrij en dus ideaal voor vrouwen die op dieet waren, bijvoorbeeld.</b>"},
+		   {"type": "paragraph",
+		   "content": "Jaren later verklaarde <b>Sergio Zyman, marketing-baas bij The Coca-Cola Company</b>, dat ze het drankje expres als extreem gezond aanprezen. Volgens hem zouden klanten <b>Tab Clear verwarren met Crystal Pepsi</b> en denken dat dat dus ook gezond zou zijn. Die klanten zouden dus enorm teleurgesteld zijn door het toch-niet-zo-gezonde Crystal Pepsi."},
+		   {"type": "paragraph",
+		   "content": "Beide producten zijn dus na een paar jaar van de markt gehaald. Punten voor Coca-Cola dus, hoewel niet iedereen het sabotageverhaal gelooft. Misschien wou Coca-Cola gewoon profiteren van het succes van Pepsi en mislukte het hele plan? Wanneer we naar onderstaand filmpje kijken, denken we toch dat die reclame <i>echt</i> expres slecht was."},
+		   {"type": "embed",
+		   "code": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/0vz2nxdM0qc\" frameborder=\"0\" allowfullscreen></iframe>"}
+		   ]
+}
