@@ -1,13 +1,13 @@
 {
 	"carousel":[
+			["entertainment", "mario-is-25"],
 			["faitsdivers", "coca-cola-slechte-reclame-pepsi"],
 			["wetenschap", "aardbeving-stoep-opnieuw-aangelegd"],
 			["faitsdivers", "president-usa-mag-niet-rijden"],
-			["geschiedenis", "steen-van-rosetta"],
-			["wetenschap", "stem-in-hoofd-praat-echt"]
+			["geschiedenis", "steen-van-rosetta"]
 	],
 	"articles":[
-			["wetenschap", "alcohol-of-niks-drinken-woestijn"],
+			["wetenschap", "stem-in-hoofd-praat-echt"],
 			["geschiedenis", "oudste-hotel-ter-wereld"],
 			["mensen", "odlum-eerste-sprong-brooklyn-bridge"],
 			["natuur", "giraffe-slaapt-30-minuten"],
