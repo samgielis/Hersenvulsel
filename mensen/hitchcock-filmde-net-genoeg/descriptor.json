@@ -1,0 +1,21 @@
+{
+  "id":"hitchcock-filmde-net-genoeg",
+  "title":"Alfred Hitchcock filmde altijd net genoeg",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"mensen",
+  "day":"2016/10/17",
+  "time":"15:00:00",
+  "source_name":"rogerebert.com",
+  "source_url":"http://www.rogerebert.com/rogers-journal/the-directors",
+  "img_credit":"commons.wikimedia.org",
+  "keywords":"alfred, hitchcock, regisseur, director, film, films, beeld, materiaal, footage, opname, vertigo, psycho",
+  "content":[
+          {"type": "paragraph",
+		   "content": "De beroemde regisseur Alfred Hitchcock staat bekend om zijn <b>iconische thrillers</b>, maar binnen het filmwereldje stond hij ook bekend als <b>een moeilijk man om mee samen te werken.</b> Hitchcock maakte er een gewoonte van om <i>net</i> genoeg beeldmateriaal op te nemen, zodat een producer <b>niets meer aan de film kon veranderen.</b>"},
+		   {"type": "paragraph",
+		   "content": "In de jaren '40 trok de Brit naar Hollywood voor een contract met David Selznick. Die deed dus beroep op Hitchcock als regisseur voor de films die hij zou produceren. Niet altijd een lachertje, want Hitchcock maakte het hem dus niet makkelijk."},
+		   {"type": "paragraph",
+		   "content": "Hoewel Selznick voor het geld zorgde en gezien werd als <b>de grote baas van de productie</b>, had hij bijzonder weinig inspraak voor die tijd. Hitchcocks manier van werken zorgde ervoor dat hij de film precies kon maken zoals hij dat zelf wou. Want de producer kon bitter weinig veranderen als er geen extra beeldmateriaal was!"}
+		   ]
+}
