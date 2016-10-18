@@ -1,12 +1,12 @@
 {
 	"carousel":[
+			["natuur", "olifanten-begrijpen-wijzen"],
 			["mensen", "hitchcock-filmde-net-genoeg"],
 			["entertainment", "mario-is-25"],
-			["faitsdivers", "coca-cola-slechte-reclame-pepsi"],
-			["wetenschap", "aardbeving-stoep-opnieuw-aangelegd"]
+			["faitsdivers", "coca-cola-slechte-reclame-pepsi"]
 	],
 	"articles":[
-			["wetenschap", "stem-in-hoofd-praat-echt"],
+			["wetenschap", "aardbeving-stoep-opnieuw-aangelegd"],
 			["geschiedenis", "steen-van-rosetta"],
 			["mensen", "odlum-eerste-sprong-brooklyn-bridge"],
 			["natuur", "giraffe-slaapt-30-minuten"],
