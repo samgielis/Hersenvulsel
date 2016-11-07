@@ -1,0 +1,19 @@
+{
+  "id":"boom-weet-wanneer-ree-eet",
+  "title":"Een boom weet wanneer een ree ervan eet",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"natuur",
+  "day":"2016/11/07",
+  "time":"12:00:00",
+  "source_name":"phys.org",
+  "source_url":"http://phys.org/news/2016-09-trees-roe-deer-saliva.html?scrlybrkr=3b4cb886",
+  "img_credit":"commons.wikimedia.org",
+  "keywords":"boom, bomen, plant, planten, hert, herten, ree, reeën, dier, dieren, eet, eten, bijten, knabbelen",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Voor een reetje is er niets lekkerder dan de verse scheuten en knoppen aan een boom in de lente. Voor die boom is het natuurlijk niet zo leuk dat reeën steeds komen knabbelen. Daarom hebben bomen <b>een afweermechanisme</b> ontwikkeld om zichzelf tegen hongerige reeën te beschermen!"},
+		   {"type": "paragraph",
+		   "content": "Duitse onderzoekers hebben ontdekt dat bomen kunnen detecteren of een bepaalde tak <b>afgeknabbeld</b> is of door andere omstandigheden afgevallen is. De boom gaat als het ware na <b>of er speeksel van een ree is achtergebleven.</b> Is dat het geval, dan maakt de boom meer salicylzuur en tannine aan. Dat zijn <b>hormonen en chemische verbindingen die de smaak aantasten,</b> zodat de bewuste boom niet meer aantrekkelijk is voor de snoeper."}
+		   ]
+}
