@@ -1,15 +1,15 @@
 {
 	"carousel":[
+			["wetenschap", "luidste-geluid-ooit"],
 			["natuur", "boom-weet-wanneer-ree-eet"],
 			["geschiedenis", "geen-vers-brood-oorlog"],
-			["mensen", "james-bond-meets-james-bond"],
-			["natuur", "olifanten-begrijpen-wijzen"]
+			["mensen", "james-bond-meets-james-bond"]
 	],
 	"articles":[
 			["wetenschap", "aardbeving-stoep-opnieuw-aangelegd"],
 			["geschiedenis", "steen-van-rosetta"],
 			["mensen", "hitchcock-filmde-net-genoeg"],
-			["natuur", "giraffe-slaapt-30-minuten"],
+			["natuur", "olifanten-begrijpen-wijzen"],
 			["entertainment", "mario-is-25"],
 			["faitsdivers", "coca-cola-slechte-reclame-pepsi"]
 	]
