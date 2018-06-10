@@ -1,3 +1,7 @@
+function filterUnpublishedArticles(article) {
+    return new Date() >= new Date(article.pubtime);
+}
+
 /*
   THE INDEX BUILDER (HV) OBJECT
   Constructs elements of the different Indexes (home and separate category indexes).
@@ -9,6 +13,7 @@ var hv_directory = function(){
     var self = this;
     $.getJSON("./directory.json", { as: this.object }, function(dir) {
       self.directory = dir.articles;
+      self.directory = self.directory.filter(filterUnpublishedArticles);
       set_newest_first(self.directory);
       self.show_directory(supercat);
 
@@ -25,6 +30,7 @@ var hv_directory = function(){
     for (i = 0; i < cats.length; i++) {
       $.getJSON("./" + cats[i] + "/directory.json", function(directory) {
         var newest = directory.articles;
+        newest = newest.filter(filterUnpublishedArticles)
         set_newest_first(newest);
         newest = newest.slice(0,5);
         $.merge(allarticles, newest);
