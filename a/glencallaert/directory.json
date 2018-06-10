@@ -1,19 +1,14 @@
 {
-    "articles": [
-        {
-            "id": "sith-geschiedenis-star-wars",
-            "category": "entertainment",
-            "pubtime": "2016/03/07 20:00:00"
-        },
-        {
-            "id": "game-of-thrones-sterfgevallen",
-            "category": "entertainment",
-            "pubtime": "2016/04/18 14:25:00"
-        },
-        {
-            "id": "tetetetstste",
-            "category": "wetenschap",
-            "pubtime": "2018/06/30 06:59"
-        }
-    ]
+	"articles":[
+		{
+			"id":		"game-of-thrones-sterfgevallen",
+			"category":	"entertainment",
+			"pubtime":	"2016/04/18 14:25:00"
+		},
+		{
+			"id":		"sith-geschiedenis-star-wars",
+			"category":	"entertainment",
+			"pubtime":	"2016/03/07 20:00:00"
+		}
+	]
 }

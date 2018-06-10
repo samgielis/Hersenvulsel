@@ -1,16 +1,16 @@
-{
-    "id": "glencallaert",
-    "fname": "Glen",
-    "lname": "Callaert",
-    "url": "http://glencallaert.com/",
-    "urlname": "glencallaert.com",
-    "contact": "glen@hersenvulsel.be",
-    "bio": "Interaction designer met een passie voor webdevelopment, animatie & video productie. Geek out.",
-    "count": "2",
-    "wcount": 1,
-    "gcount": 0,
-    "mcount": 0,
-    "ncount": 0,
-    "ecount": 2,
-    "fcount": 0
-}
+		{
+			"id":		"glencallaert",
+			"fname":	"Glen",
+			"lname":		"Callaert",
+			"url":	"http://glencallaert.com/",
+			"urlname":		"glencallaert.com",
+			"contact":	"glen@hersenvulsel.be",
+			"bio":	"Interaction designer met een passie voor webdevelopment, animatie & video productie. Geek out.",
+			"count":	"2",
+			"wcount":	"0",
+			"gcount":	"0",
+			"mcount":	"0",
+			"ncount":	"0",
+			"ecount":	"2",
+			"fcount":	"0"
+		}

@@ -1,199 +1,194 @@
 {
-    "articles": [
-        {
-            "id": "15-procent-wordt-nooit-fitter",
-            "category": "wetenschap",
-            "pubtime": "2014/09/16 17:40:00"
-        },
-        {
-            "id": "20-seconden-rode-bloedcellen",
-            "category": "wetenschap",
-            "pubtime": "2016/03/14 16:20:00"
-        },
-        {
-            "id": "2suit-een-ruimtepak-voor-koppels",
-            "category": "wetenschap",
-            "pubtime": "2014/11/11 20:10:00"
-        },
-        {
-            "id": "3d-printen-huis-van-zand",
-            "category": "wetenschap",
-            "pubtime": "2016/03/28 14:00:00"
-        },
-        {
-            "id": "aardbeving-stoep-opnieuw-aangelegd",
-            "category": "wetenschap",
-            "pubtime": "2016/10/05 15:00:00"
-        },
-        {
-            "id": "afvallen-supporter-winnaars",
-            "category": "wetenschap",
-            "pubtime": "2014/10/25 19:55:00"
-        },
-        {
-            "id": "alcohol-of-niks-drinken-woestijn",
-            "category": "wetenschap",
-            "pubtime": "2016/05/03 14:40:00"
-        },
-        {
-            "id": "allergie-voorkomen-pindas-eten",
-            "category": "wetenschap",
-            "pubtime": "2016/03/09 15:45:00"
-        },
-        {
-            "id": "bad-om-te-groeien",
-            "category": "wetenschap",
-            "pubtime": "2014/08/20 14:20:00"
-        },
-        {
-            "id": "bomen-als-lantaarns",
-            "category": "wetenschap",
-            "pubtime": "2016/02/02 19:00:00"
-        },
-        {
-            "id": "de-perfecte-kaastosti",
-            "category": "wetenschap",
-            "pubtime": "2014/10/21 17:50:00"
-        },
-        {
-            "id": "dutjes-zijn-goed-voor-je",
-            "category": "wetenschap",
-            "pubtime": "2014/10/23 20:10:00"
-        },
-        {
-            "id": "electronica-gaat-snel-stuk",
-            "category": "wetenschap",
-            "pubtime": "2014/08/31 20:45:00"
-        },
-        {
-            "id": "eten-volgens-wetenschap",
-            "category": "wetenschap",
-            "pubtime": "2014/08/4 17:00:00"
-        },
-        {
-            "id": "foreign-accent-syndrome",
-            "category": "wetenschap",
-            "pubtime": "2014/10/28 18:12:00"
-        },
-        {
-            "id": "functie-appendix",
-            "category": "wetenschap",
-            "pubtime": "2014/10/27 17:50:00"
-        },
-        {
-            "id": "kan-jij-goed-liegen",
-            "category": "wetenschap",
-            "pubtime": "2014/10/21 19:35:00"
-        },
-        {
-            "id": "kater-na-alcohol-waarom",
-            "category": "wetenschap",
-            "pubtime": "2016/03/26 15:00:00"
-        },
-        {
-            "id": "kinderen-sugar-rush",
-            "category": "wetenschap",
-            "pubtime": "2014/09/14 15:15:00"
-        },
-        {
-            "id": "koffie-om-1416",
-            "category": "wetenschap",
-            "pubtime": "2014/08/10 14:16:00"
-        },
-        {
-            "id": "luidste-geluid-ooit",
-            "category": "wetenschap",
-            "pubtime": "2016/11/15 15:00:00"
-        },
-        {
-            "id": "muizen-en-penicilline",
-            "category": "wetenschap",
-            "pubtime": "2016/01/25 19:00:00"
-        },
-        {
-            "id": "muziek-neemt-pijn-weg",
-            "category": "wetenschap",
-            "pubtime": "2014/08/9 17:00:00"
-        },
-        {
-            "id": "pek-vast-of-vloeibaar",
-            "category": "wetenschap",
-            "pubtime": "2014/08/27 18:20:00"
-        },
-        {
-            "id": "placebo-zonder-pil",
-            "category": "wetenschap",
-            "pubtime": "2014/08/4 20:20:00"
-        },
-        {
-            "id": "ritueel-maakt-eten-beter",
-            "category": "wetenschap",
-            "pubtime": "2014/08/19 14:45:00"
-        },
-        {
-            "id": "schaak-winnen-met-wit",
-            "category": "wetenschap",
-            "pubtime": "2014/11/08 17:35:00"
-        },
-        {
-            "id": "schommelen-beste-manier",
-            "category": "wetenschap",
-            "pubtime": "2014/08/14 14:45:00"
-        },
-        {
-            "id": "stem-in-hoofd-praat-echt",
-            "category": "wetenschap",
-            "pubtime": "2016/09/25 15:00:00"
-        },
-        {
-            "id": "sterren-die-je-kan-aanraken",
-            "category": "wetenschap",
-            "pubtime": "2014/09/11 14:45:00"
-        },
-        {
-            "id": "stilste-kamer-ter-wereld",
-            "category": "wetenschap",
-            "pubtime": "2014/08/6 17:20:00"
-        },
-        {
-            "id": "tranen-van-geluk",
-            "category": "wetenschap",
-            "pubtime": "2014/08/18 15:10:00"
-        },
-        {
-            "id": "truc-blad-steen-schaar",
-            "category": "wetenschap",
-            "pubtime": "2014/08/2 15:15:00"
-        },
-        {
-            "id": "tweelingen-ander-jaar-geboren",
-            "category": "wetenschap",
-            "pubtime": "2014/07/31 15:00:00"
-        },
-        {
-            "id": "vier-op-een-rij-winnen",
-            "category": "wetenschap",
-            "pubtime": "2014/08/28 18:25:00"
-        },
-        {
-            "id": "vijfsecondenregel-klopt-dat",
-            "category": "wetenschap",
-            "pubtime": "2014/11/04 19:55:00"
-        },
-        {
-            "id": "waar-denk-je-aan",
-            "category": "wetenschap",
-            "pubtime": "2014/09/03 14:20:00"
-        },
-        {
-            "id": "waarom-nederlanders-grootsten-zijn",
-            "category": "wetenschap",
-            "pubtime": "2016/03/10 15:30:00"
-        },
-        {
-            "id": "tetetetstste",
-            "category": "wetenschap",
-            "pubtime": "2018/06/30 06:59"
-        }
-    ]
+	"articles":[
+		{
+			"id":		"15-procent-wordt-nooit-fitter",
+			"category":	"wetenschap",
+			"pubtime":	"2014/09/16 17:40:00"
+		},
+		{
+			"id":		"20-seconden-rode-bloedcellen",
+			"category":	"wetenschap",
+			"pubtime":	"2016/03/14 16:20:00"
+		},
+		{
+			"id":		"2suit-een-ruimtepak-voor-koppels",
+			"category":	"wetenschap",
+			"pubtime":	"2014/11/11 20:10:00"
+		},
+		{
+			"id":		"3d-printen-huis-van-zand",
+			"category":	"wetenschap",
+			"pubtime":	"2016/03/28 14:00:00"
+		},
+		{
+			"id":		"aardbeving-stoep-opnieuw-aangelegd",
+			"category":	"wetenschap",
+			"pubtime":	"2016/10/05 15:00:00"
+		},
+		{
+			"id":		"afvallen-supporter-winnaars",
+			"category":	"wetenschap",
+			"pubtime":	"2014/10/25 19:55:00"
+		},
+		{
+			"id":		"alcohol-of-niks-drinken-woestijn",
+			"category":	"wetenschap",
+			"pubtime":	"2016/05/03 14:40:00"
+		},
+		{
+			"id":		"allergie-voorkomen-pindas-eten",
+			"category":	"wetenschap",
+			"pubtime":	"2016/03/09 15:45:00"
+		},
+		{
+			"id":		"bad-om-te-groeien",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/20 14:20:00"
+		},
+		{
+			"id":		"bomen-als-lantaarns",
+			"category":	"wetenschap",
+			"pubtime":	"2016/02/02 19:00:00"
+		},
+		{
+			"id":		"de-perfecte-kaastosti",
+			"category":	"wetenschap",
+			"pubtime":	"2014/10/21 17:50:00"
+		},
+		{
+			"id":		"dutjes-zijn-goed-voor-je",
+			"category":	"wetenschap",
+			"pubtime":	"2014/10/23 20:10:00"
+		},
+		{
+			"id":		"electronica-gaat-snel-stuk",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/31 20:45:00"
+		},
+		{
+			"id":		"eten-volgens-wetenschap",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/4 17:00:00"
+		},
+		{
+			"id":		"foreign-accent-syndrome",
+			"category":	"wetenschap",
+			"pubtime":	"2014/10/28 18:12:00"
+		},
+		{
+			"id":		"functie-appendix",
+			"category":	"wetenschap",
+			"pubtime":	"2014/10/27 17:50:00"
+		},
+		{
+			"id":		"kan-jij-goed-liegen",
+			"category":	"wetenschap",
+			"pubtime":	"2014/10/21 19:35:00"
+		},
+		{
+			"id":		"kater-na-alcohol-waarom",
+			"category":	"wetenschap",
+			"pubtime":	"2016/03/26 15:00:00"
+		},
+		{
+			"id":		"kinderen-sugar-rush",
+			"category":	"wetenschap",
+			"pubtime":	"2014/09/14 15:15:00"
+		},
+		{
+			"id":		"koffie-om-1416",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/10 14:16:00"
+		},
+		{
+			"id":		"luidste-geluid-ooit",
+			"category":	"wetenschap",
+			"pubtime":	"2016/11/15 15:00:00"
+		},
+		{
+			"id":		"muizen-en-penicilline",
+			"category":	"wetenschap",
+			"pubtime":	"2016/01/25 19:00:00"
+		},
+		{
+			"id":		"muziek-neemt-pijn-weg",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/9 17:00:00"
+		},
+		{
+			"id":		"pek-vast-of-vloeibaar",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/27 18:20:00"
+		},
+		{
+			"id":		"placebo-zonder-pil",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/4 20:20:00"
+		},
+		{
+			"id":		"ritueel-maakt-eten-beter",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/19 14:45:00"
+		},
+		{
+			"id":		"schaak-winnen-met-wit",
+			"category":	"wetenschap",
+			"pubtime":	"2014/11/08 17:35:00"
+		},
+		{
+			"id":		"schommelen-beste-manier",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/14 14:45:00"
+		},
+		{
+			"id":		"stem-in-hoofd-praat-echt",
+			"category":	"wetenschap",
+			"pubtime":	"2016/09/25 15:00:00"
+		},
+		{
+			"id":		"sterren-die-je-kan-aanraken",
+			"category":	"wetenschap",
+			"pubtime":	"2014/09/11 14:45:00"
+		},
+		{
+			"id":		"stilste-kamer-ter-wereld",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/6 17:20:00"
+		},
+		{
+			"id":		"tranen-van-geluk",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/18 15:10:00"
+		},
+		{
+			"id":		"truc-blad-steen-schaar",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/2 15:15:00"
+		},
+		{
+			"id":		"tweelingen-ander-jaar-geboren",
+			"category":	"wetenschap",
+			"pubtime":	"2014/07/31 15:00:00"
+		},
+		{
+			"id":		"vier-op-een-rij-winnen",
+			"category":	"wetenschap",
+			"pubtime":	"2014/08/28 18:25:00"
+		},
+		{
+			"id":		"vijfsecondenregel-klopt-dat",
+			"category":	"wetenschap",
+			"pubtime":	"2014/11/04 19:55:00"
+		},
+		{
+			"id":		"waar-denk-je-aan",
+			"category":	"wetenschap",
+			"pubtime":	"2014/09/03 14:20:00"
+		},
+		{
+			"id":		"waarom-nederlanders-grootsten-zijn",
+			"category":	"wetenschap",
+			"pubtime":	"2016/03/10 15:30:00"
+		}
+	]
 }
