@@ -1,0 +1,24 @@
+{
+    "title": "tetetetstste",
+    "id": "tetetetstste",
+    "category": "wetenschap",
+    "keywords": "tetetetstste",
+    "day": "2018/06/30",
+    "time": "06:59",
+    "source_name": "tetetetstste",
+    "source_url": "tetetetstste",
+    "img_credit": "tetetetstste",
+    "content": [
+        {
+            "type": "paragraph",
+            "content": "tetetetststetetetetstste tetetetststetetetetststetetetetststetetetetstste"
+        },
+        {
+            "type": "image",
+            "credit": "tetetetstste",
+            "name": "contact_page.jpg"
+        }
+    ],
+    "authorid": "glencallaert",
+    "authorname": "Glen Callaert"
+}
