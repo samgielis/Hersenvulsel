@@ -1,0 +1,31 @@
+{
+    "title": "De eerste virale video",
+    "id": "de-eerste-virale-video",
+    "category": "entertainment",
+    "keywords": "virale, video, internet, online, e-mail, vinny, licciardi, eerste",
+    "day": "2018/06/21",
+    "time": "09:00",
+    "source_name": "wired.com",
+    "source_url": "https://www.wired.com/story/history-of-the-first-viral-video/",
+    "img_credit": "commons.wikimedia.org",
+    "content": [
+        {
+            "type": "paragraph",
+            "content": "In 1997 ging een van de eerste video’s ooit viraal. Vinny Licciardi werd zonder het te beseffen wereldberoemd, toen een filmpje van hem op het werk <b>massaal verspreid werd via e-mail.</b>"
+        },
+        {
+            "type": "embed",
+            "code": "<iframe src=\"https://www.youtube.com/embed/rCO0VYBsLFE\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+        },
+        {
+            "type": "paragraph",
+            "content": "Tegenwoordig zorgen YouTube en sociale media ervoor dat foto’s en video’s massaal gedeeld kunnen worden. In 1997 was dat nog niet zo simpel. Maar het filmpje waarin Vinny <b>zijn computer op de grond gooit</b> vonden mensen zó grappig, dat ze het wilden delen met vrienden en familie. Dat was niet zonder gevolgen: <b>de video heeft eind jaren ‘90 menig e-mailserver platgelegd.</b> Het was namelijk niet zo eenvoudig om grote bestanden door te sturen en te downloaden."
+        },
+        {
+            "type": "paragraph",
+            "content": "<b>En zoals dat vaak gaat met virale video’s, was ook deze nep.</b> Vinny werkte voor een bedrijf dat technologie voor bewakingscamera’s ontwierp. De opnames waren dus <b>niet meer dan een promostunt.</b> Het filmpje moest mogelijke klanten overtuigen, maar Vinny heeft er de hele wereld mee veroverd."
+        }
+    ],
+    "authorid": "shannaverspreet",
+    "authorname": "Shanna Verspreet"
+}
