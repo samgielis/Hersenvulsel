@@ -22,7 +22,7 @@ var hv_home = function(){
 
     for (var i = 0; i < dir.carousel.length; i++) {
       $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators');
-      $.getJSON("./" + dir.carousel[i][0] + "/" + dir.carousel[i][1] + "/descriptor.json", function(article, i) {
+      $.getJSON("./" + dir.carousel[i].category + "/" + dir.carousel[i].articleId + "/descriptor.json", function(article, i) {
         $( "#carousel-entries" ).append(self.carousel_entry(article, i));
         $('.item').removeClass('active');
         $('.item').first().addClass('active');
@@ -75,22 +75,22 @@ var hv_home = function(){
   ////////////////////////////////
   hv_home.prototype.articles = function(dir){
     var self = this;
-    $.getJSON("./" + dir.articles[0][0] + "/" + dir.articles[0][1] + "/descriptor.json", function(art) {
+    $.getJSON("./" + dir.articles[0].category + "/" + dir.articles[0].articleId + "/descriptor.json", function(art) {
       $("#hv-art123").append(self.article(art));
     });
-    $.getJSON("./" + dir.articles[1][0] + "/" + dir.articles[1][1] + "/descriptor.json", function(art) {
+    $.getJSON("./" + dir.articles[1].category + "/" + dir.articles[1].articleId + "/descriptor.json", function(art) {
       $("#hv-art123").append(self.article(art));
     });
-    $.getJSON("./" + dir.articles[2][0] + "/" + dir.articles[2][1] + "/descriptor.json", function(art) {
+    $.getJSON("./" + dir.articles[2].category + "/" + dir.articles[2].articleId + "/descriptor.json", function(art) {
       $("#hv-art123").append(self.article(art));
     });
-    $.getJSON("./" + dir.articles[3][0] + "/" + dir.articles[3][1] + "/descriptor.json", function(art) {
+    $.getJSON("./" + dir.articles[3].category + "/" + dir.articles[3].articleId + "/descriptor.json", function(art) {
       $("#hv-art456").append(self.article(art));
     });
-    $.getJSON("./" + dir.articles[4][0] + "/" + dir.articles[4][1] + "/descriptor.json", function(art) {
+    $.getJSON("./" + dir.articles[4].category + "/" + dir.articles[4].articleId + "/descriptor.json", function(art) {
       $("#hv-art456").append(self.article(art));
     });
-    $.getJSON("./" + dir.articles[5][0] + "/" + dir.articles[5][1] + "/descriptor.json", function(art) {
+    $.getJSON("./" + dir.articles[5].category + "/" + dir.articles[5].articleId + "/descriptor.json", function(art) {
       $("#hv-art456").append(self.article(art));
     });
   }

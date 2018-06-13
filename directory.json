@@ -1,16 +1,46 @@
 {
-	"carousel":[
-			["wetenschap", "luidste-geluid-ooit"],
-			["natuur", "boom-weet-wanneer-ree-eet"],
-			["geschiedenis", "geen-vers-brood-oorlog"],
-			["mensen", "james-bond-meets-james-bond"]
-	],
-	"articles":[
-			["wetenschap", "aardbeving-stoep-opnieuw-aangelegd"],
-			["geschiedenis", "steen-van-rosetta"],
-			["mensen", "hitchcock-filmde-net-genoeg"],
-			["natuur", "olifanten-begrijpen-wijzen"],
-			["entertainment", "mario-is-25"],
-			["faitsdivers", "coca-cola-slechte-reclame-pepsi"]
-	]
+  "carousel": [
+    {
+      "category": "wetenschap",
+      "articleId": "luidste-geluid-ooit"
+    },
+    {
+      "category": "natuur",
+      "articleId": "boom-weet-wanneer-ree-eet"
+    },
+    {
+      "category": "geschiedenis",
+      "articleId": "geen-vers-brood-oorlog"
+    },
+    {
+      "category": "mensen",
+      "articleId": "james-bond-meets-james-bond"
+    }
+  ],
+  "articles": [
+    {
+      "category": "wetenschap",
+      "articleId": "aardbeving-stoep-opnieuw-aangelegd"
+    },
+    {
+      "category": "geschiedenis",
+      "articleId": "steen-van-rosetta"
+    },
+    {
+      "category": "mensen",
+      "articleId": "hitchcock-filmde-net-genoeg"
+    },
+    {
+      "category": "natuur",
+      "articleId": "olifanten-begrijpen-wijzen"
+    },
+    {
+      "category": "entertainment",
+      "articleId": "mario-is-25"
+    },
+    {
+      "category": "faitsdivers",
+      "articleId": "coca-cola-slechte-reclame-pepsi"
+    }
+  ]
 }
