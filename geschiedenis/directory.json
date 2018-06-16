@@ -1,149 +1,154 @@
 {
-	"articles":[
-		{
-			"id":		"apollo-11-tapes",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/01/08 15:20:00"
-		},
-		{
-			"id":		"bevers-zijn-eigenlijk-vissen",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/01/29 15:10:00"
-		},
-		{
-			"id":		"brandweer-romeinse-tijd",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/02/24 14:30:00"
-		},
-		{
-			"id":		"broek-dragen-toegestaan",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/09/02 18:45:00"
-		},
-		{
-			"id":		"contactlenzen-da-vinci",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/10/26 16:50:00"
-		},
-		{
-			"id":		"de-saaiste-dag",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/11/03 20:27:00"
-		},
-		{
-			"id":		"eiffeltoren-te-koop",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/08/1 15:10:00"
-		},
-		{
-			"id":		"fanta-nazi-duitsland",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/03/11 15:00:00"
-		},
-		{
-			"id":		"geen-vers-brood-oorlog",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/10/31 15:00:00"
-		},
-		{
-			"id":		"gin-tonic-dankzij-malaria",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/04/15 14:15:00"
-		},
-		{
-			"id":		"groenland-verkeerde-naam",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/08/22 14:10:00"
-		},
-		{
-			"id":		"haatberichtjes-op-valentijn",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/02/14 15:00:00"
-		},
-		{
-			"id":		"hebreeuws-bijna-verdwenen",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/02/08 15:10:00"
-		},
-		{
-			"id":		"het-jaar-zonder-zomer",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/11/01 15:30:00"
-		},
-		{
-			"id":		"koning-bluetooth",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/03/31 14:30:00"
-		},
-		{
-			"id":		"langste-palindroom-ooit",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/07/30 20:00:00"
-		},
-		{
-			"id":		"meme-in-1924",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/02/16 15:00:00"
-		},
-		{
-			"id":		"museum-vol-oude-robots",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/10/30 19:35:00"
-		},
-		{
-			"id":		"oudste-hotel-ter-wereld",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/09/21 15:00:00"
-		},
-		{
-			"id":		"president-kop-of-munt",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/02/03 15:10:00"
-		},
-		{
-			"id":		"rap-battles-in-de-5e-eeuw",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/11/07 17:10:00"
-		},
-		{
-			"id":		"samen-op-jacht-met-orkas",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/10/28 20:10:00"
-		},
-		{
-			"id":		"slechte-adem-scheiding",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/03/18 14:20:00"
-		},
-		{
-			"id":		"spotify-in-1897",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/02/10 15:10:00"
-		},
-		{
-			"id":		"steen-van-rosetta",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/09/27 14:30:00"
-		},
-		{
-			"id":		"stijgend-restaurant-wtc",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/03/02 16:20:00"
-		},
-		{
-			"id":		"tandenfee-uitvinding-disney",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/08/5 15:00:00"
-		},
-		{
-			"id":		"tank-die-kon-vliegen",
-			"category":	"geschiedenis",
-			"pubtime":	"2016/03/08 16:30:00"
-		},
-		{
-			"id":		"wortels-goed-voor-ogen",
-			"category":	"geschiedenis",
-			"pubtime":	"2014/08/28 14:25:00"
-		}
-	]
+    "articles": [
+        {
+            "id": "apollo-11-tapes",
+            "category": "geschiedenis",
+            "pubtime": "2016/01/08 15:20:00"
+        },
+        {
+            "id": "bevers-zijn-eigenlijk-vissen",
+            "category": "geschiedenis",
+            "pubtime": "2016/01/29 15:10:00"
+        },
+        {
+            "id": "brandweer-romeinse-tijd",
+            "category": "geschiedenis",
+            "pubtime": "2016/02/24 14:30:00"
+        },
+        {
+            "id": "broek-dragen-toegestaan",
+            "category": "geschiedenis",
+            "pubtime": "2014/09/02 18:45:00"
+        },
+        {
+            "id": "contactlenzen-da-vinci",
+            "category": "geschiedenis",
+            "pubtime": "2014/10/26 16:50:00"
+        },
+        {
+            "id": "de-saaiste-dag",
+            "category": "geschiedenis",
+            "pubtime": "2014/11/03 20:27:00"
+        },
+        {
+            "id": "eiffeltoren-te-koop",
+            "category": "geschiedenis",
+            "pubtime": "2014/08/1 15:10:00"
+        },
+        {
+            "id": "fanta-nazi-duitsland",
+            "category": "geschiedenis",
+            "pubtime": "2016/03/11 15:00:00"
+        },
+        {
+            "id": "geen-vers-brood-oorlog",
+            "category": "geschiedenis",
+            "pubtime": "2016/10/31 15:00:00"
+        },
+        {
+            "id": "gin-tonic-dankzij-malaria",
+            "category": "geschiedenis",
+            "pubtime": "2016/04/15 14:15:00"
+        },
+        {
+            "id": "groenland-verkeerde-naam",
+            "category": "geschiedenis",
+            "pubtime": "2014/08/22 14:10:00"
+        },
+        {
+            "id": "haatberichtjes-op-valentijn",
+            "category": "geschiedenis",
+            "pubtime": "2016/02/14 15:00:00"
+        },
+        {
+            "id": "hebreeuws-bijna-verdwenen",
+            "category": "geschiedenis",
+            "pubtime": "2016/02/08 15:10:00"
+        },
+        {
+            "id": "het-jaar-zonder-zomer",
+            "category": "geschiedenis",
+            "pubtime": "2014/11/01 15:30:00"
+        },
+        {
+            "id": "koning-bluetooth",
+            "category": "geschiedenis",
+            "pubtime": "2016/03/31 14:30:00"
+        },
+        {
+            "id": "langste-palindroom-ooit",
+            "category": "geschiedenis",
+            "pubtime": "2014/07/30 20:00:00"
+        },
+        {
+            "id": "meme-in-1924",
+            "category": "geschiedenis",
+            "pubtime": "2016/02/16 15:00:00"
+        },
+        {
+            "id": "museum-vol-oude-robots",
+            "category": "geschiedenis",
+            "pubtime": "2014/10/30 19:35:00"
+        },
+        {
+            "id": "oudste-hotel-ter-wereld",
+            "category": "geschiedenis",
+            "pubtime": "2016/09/21 15:00:00"
+        },
+        {
+            "id": "president-kop-of-munt",
+            "category": "geschiedenis",
+            "pubtime": "2016/02/03 15:10:00"
+        },
+        {
+            "id": "rap-battles-in-de-5e-eeuw",
+            "category": "geschiedenis",
+            "pubtime": "2014/11/07 17:10:00"
+        },
+        {
+            "id": "samen-op-jacht-met-orkas",
+            "category": "geschiedenis",
+            "pubtime": "2014/10/28 20:10:00"
+        },
+        {
+            "id": "slechte-adem-scheiding",
+            "category": "geschiedenis",
+            "pubtime": "2016/03/18 14:20:00"
+        },
+        {
+            "id": "spotify-in-1897",
+            "category": "geschiedenis",
+            "pubtime": "2016/02/10 15:10:00"
+        },
+        {
+            "id": "steen-van-rosetta",
+            "category": "geschiedenis",
+            "pubtime": "2016/09/27 14:30:00"
+        },
+        {
+            "id": "stijgend-restaurant-wtc",
+            "category": "geschiedenis",
+            "pubtime": "2016/03/02 16:20:00"
+        },
+        {
+            "id": "tandenfee-uitvinding-disney",
+            "category": "geschiedenis",
+            "pubtime": "2014/08/5 15:00:00"
+        },
+        {
+            "id": "tank-die-kon-vliegen",
+            "category": "geschiedenis",
+            "pubtime": "2016/03/08 16:30:00"
+        },
+        {
+            "id": "wortels-goed-voor-ogen",
+            "category": "geschiedenis",
+            "pubtime": "2014/08/28 14:25:00"
+        },
+        {
+            "id": "uitvinding-rode-en-gele-kaart",
+            "category": "geschiedenis",
+            "pubtime": "2018/06/18 09:00"
+        }
+    ]
 }
