@@ -1,16 +1,16 @@
 {
     "carousel": [
         {
+            "articleId": "bijen-weten-wat-nul-betekent",
+            "category": "natuur"
+        },
+        {
             "articleId": "vrouwen-mogen-geen-sushi-maken",
             "category": "faitsdivers"
         },
         {
             "articleId": "luidste-geluid-ooit",
             "category": "wetenschap"
-        },
-        {
-            "articleId": "boom-weet-wanneer-ree-eet",
-            "category": "natuur"
         }
     ],
     "articles": [
@@ -27,7 +27,7 @@
             "category": "mensen"
         },
         {
-            "articleId": "olifanten-begrijpen-wijzen",
+            "articleId": "boom-weet-wanneer-ree-eet",
             "category": "natuur"
         },
         {
