@@ -1,25 +1,25 @@
 {
     "carousel": [
         {
-            "articleId": "bijen-weten-wat-nul-betekent",
+            "articleId": "hond-geheugen-twee-minuten",
             "category": "natuur"
         },
         {
-            "articleId": "vrouwen-mogen-geen-sushi-maken",
-            "category": "faitsdivers"
+            "articleId": "de-eerste-virale-video",
+            "category": "entertainment"
         },
         {
-            "articleId": "luidste-geluid-ooit",
-            "category": "wetenschap"
+            "articleId": "adam-rainer-dwerg-en-reus",
+            "category": "mensen"
         }
     ],
     "articles": [
         {
-            "articleId": "aardbeving-stoep-opnieuw-aangelegd",
+            "articleId": "luidste-geluid-ooit",
             "category": "wetenschap"
         },
         {
-            "articleId": "geen-vers-brood-oorlog",
+            "articleId": "uitvinding-rode-en-gele-kaart",
             "category": "geschiedenis"
         },
         {
@@ -27,7 +27,7 @@
             "category": "mensen"
         },
         {
-            "articleId": "boom-weet-wanneer-ree-eet",
+            "articleId": "bijen-weten-wat-nul-betekent",
             "category": "natuur"
         },
         {
@@ -35,7 +35,7 @@
             "category": "entertainment"
         },
         {
-            "articleId": "coca-cola-slechte-reclame-pepsi",
+            "articleId": "vrouwen-mogen-geen-sushi-maken",
             "category": "faitsdivers"
         }
     ]
