@@ -1,16 +1,16 @@
 {
     "carousel": [
         {
+            "articleId": "prikkeldraad-eerste-sociale-netwerk",
+            "category": "geschiedenis"
+        },
+        {
             "articleId": "hond-geheugen-twee-minuten",
             "category": "natuur"
         },
         {
             "articleId": "de-eerste-virale-video",
             "category": "entertainment"
-        },
-        {
-            "articleId": "adam-rainer-dwerg-en-reus",
-            "category": "mensen"
         }
     ],
     "articles": [
@@ -23,7 +23,7 @@
             "category": "geschiedenis"
         },
         {
-            "articleId": "hitchcock-filmde-net-genoeg",
+            "articleId": "adam-rainer-dwerg-en-reus",
             "category": "mensen"
         },
         {
