@@ -1,16 +1,16 @@
 {
     "carousel": [
         {
-            "articleId": "prikkeldraad-eerste-sociale-netwerk",
-            "category": "geschiedenis"
+            "articleId": "woord-robot-betekent-slaaf",
+            "category": "faitsdivers"
         },
         {
-            "articleId": "hond-geheugen-twee-minuten",
-            "category": "natuur"
+            "articleId": "jupiter-krimpt-jaarlijks-twee-centimeter",
+            "category": "wetenschap"
         },
         {
-            "articleId": "de-eerste-virale-video",
-            "category": "entertainment"
+            "articleId": "universele-taal-van-de-lucht",
+            "category": "faitsdivers"
         }
     ],
     "articles": [
@@ -19,7 +19,7 @@
             "category": "wetenschap"
         },
         {
-            "articleId": "uitvinding-rode-en-gele-kaart",
+            "articleId": "prikkeldraad-eerste-sociale-netwerk",
             "category": "geschiedenis"
         },
         {
@@ -27,11 +27,11 @@
             "category": "mensen"
         },
         {
-            "articleId": "bijen-weten-wat-nul-betekent",
+            "articleId": "hond-geheugen-twee-minuten",
             "category": "natuur"
         },
         {
-            "articleId": "mario-is-25",
+            "articleId": "de-eerste-virale-video",
             "category": "entertainment"
         },
         {
