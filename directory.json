@@ -1,16 +1,16 @@
 {
     "carousel": [
         {
+            "articleId": "zondeneter-zuivert-ziel",
+            "category": "geschiedenis"
+        },
+        {
             "articleId": "woord-robot-betekent-slaaf",
             "category": "faitsdivers"
         },
         {
             "articleId": "jupiter-krimpt-jaarlijks-twee-centimeter",
             "category": "wetenschap"
-        },
-        {
-            "articleId": "universele-taal-van-de-lucht",
-            "category": "faitsdivers"
         }
     ],
     "articles": [
@@ -35,7 +35,7 @@
             "category": "entertainment"
         },
         {
-            "articleId": "vrouwen-mogen-geen-sushi-maken",
+            "articleId": "universele-taal-van-de-lucht",
             "category": "faitsdivers"
         }
     ]
