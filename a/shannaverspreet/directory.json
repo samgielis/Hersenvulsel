@@ -1171,9 +1171,19 @@
             "pubtime": "2018/06/28 07:00"
         },
         {
+            "id": "michael-phelps-olympisch-record",
+            "category": "mensen",
+            "pubtime": "2018/07/05 07:00"
+        },
+        {
             "id": "longvis-overleeft-jaar-op-het-droge",
             "category": "natuur",
             "pubtime": "2018/07/07 07:00"
+        },
+        {
+            "id": "verzonnen-woorden-in-woordenboeken",
+            "category": "faitsdivers",
+            "pubtime": "2018/07/08 07:00"
         }
     ]
 }
