@@ -1,21 +1,28 @@
 {
-  "id":"betekenis-paper-towns",
-  "title":"De betekenis achter 'Paper Towns'",
-  "authorid":"shannaverspreet",
-  "authorname":"Shanna Verspreet",
-  "category":"entertainment",
-  "day":"2016/01/27",
-  "time":"15:00:00",
-  "source_name":"wikipedia.org",
-  "source_url":"https://en.wikipedia.org/wiki/Fictitious_entry",
-  "img_credit":"youtube.com",
-  "keywords":"john green, paper towns",
-  "content":[
-          {"type": "paragraph",
-		   "content": "Paper Towns is de titel van het wereldwijd bekende boek van John Green, maar die titel is eigenlijk ook een eeuwenoud begrip dat bijna niemand nog kent."},
-		   {"type": "paragraph",
-		   "content": "Een 'paper town' staat voor een zelfverzonnen stad. Wanneer kaartenmakers vroeger een kaart uittekenden, voegden ze daar zo'n zelfverzonnen stad of straat ('paper street') aan toe. Als iemand dan de kaart plagieerde, kon de originele tekenaar dat zo bewijzen: 'ze hebben mijn kaart volledig gekopieerd, zelfs mijn zelfverzonnen stad!'"},
-		   {"type": "paragraph",
-		   "content": "Modernere auteurs hebben de werkwijze van die oude kaartenmakers overgenomen. In een encyclopedie zou bijvoorbeeld weleens een woord kunnen staan dat helemaal niet bestaat - een begrip dat de auteur zelf verzonnen heeft. Op deze Wikipedia-pagina vind je héél wat voorbeelden!"}
-		   ]
+    "title": "De betekenis achter 'Paper Towns'",
+    "id": "betekenis-paper-towns",
+    "category": "entertainment",
+    "keywords": "john, green, paper, towns, nep, stad, nepstad, verzonnen, kaartenmakers",
+    "shortDescription": "Paper Towns is de titel van het wereldwijd bekende boek van John Green, maar die titel is eigenlijk ook een eeuwenoud begrip dat bijna niemand nog kent.",
+    "day": "2016/01/27",
+    "time": "15:00:00",
+    "source_name": "wikipedia.org",
+    "source_url": "https://en.wikipedia.org/wiki/Fictitious_entry",
+    "img_credit": "youtube.com",
+    "content": [
+        {
+            "type": "paragraph",
+            "content": "Paper Towns is de titel van het wereldwijd bekende boek van John Green, maar die titel is eigenlijk ook een eeuwenoud begrip dat bijna niemand nog kent."
+        },
+        {
+            "type": "paragraph",
+            "content": "Een 'paper town' staat voor een zelfverzonnen stad. Wanneer kaartenmakers vroeger een kaart uittekenden, voegden ze daar zo'n zelfverzonnen stad of straat ('paper street') aan toe. Als iemand dan de kaart plagieerde, kon de originele tekenaar dat zo bewijzen: 'ze hebben mijn kaart volledig gekopieerd, zelfs mijn zelfverzonnen stad!'"
+        },
+        {
+            "type": "paragraph",
+            "content": "Moderne auteurs hebben de werkwijze van die oude kaartenmakers overgenomen. In een encyclopedie zou bijvoorbeeld weleens een woord kunnen staan dat helemaal niet bestaat - een begrip dat de auteur zelf verzonnen heeft. <a href=\"http://hersenvulsel.be/faitsdivers/verzonnen-woorden-in-woordenboeken/\" target=\"_blank\">Meer over nepwoorden in woordenboeken lees je in dit artikel!</a>"
+        }
+    ],
+    "authorid": "shannaverspreet",
+    "authorname": "Shanna Verspreet"
 }
