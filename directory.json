@@ -1,29 +1,29 @@
 {
     "carousel": [
         {
-            "articleId": "zondeneter-zuivert-ziel",
-            "category": "geschiedenis"
+            "articleId": "halle-berry-stunt-double-man",
+            "category": "entertainment"
         },
         {
-            "articleId": "woord-robot-betekent-slaaf",
+            "articleId": "verzonnen-woorden-in-woordenboeken",
             "category": "faitsdivers"
         },
         {
-            "articleId": "jupiter-krimpt-jaarlijks-twee-centimeter",
-            "category": "wetenschap"
+            "articleId": "longvis-overleeft-jaar-op-het-droge",
+            "category": "natuur"
         }
     ],
     "articles": [
         {
-            "articleId": "luidste-geluid-ooit",
+            "articleId": "jupiter-krimpt-jaarlijks-twee-centimeter",
             "category": "wetenschap"
         },
         {
-            "articleId": "prikkeldraad-eerste-sociale-netwerk",
+            "articleId": "zondeneter-zuivert-ziel",
             "category": "geschiedenis"
         },
         {
-            "articleId": "adam-rainer-dwerg-en-reus",
+            "articleId": "michael-phelps-olympisch-record",
             "category": "mensen"
         },
         {
@@ -35,7 +35,7 @@
             "category": "entertainment"
         },
         {
-            "articleId": "universele-taal-van-de-lucht",
+            "articleId": "woord-robot-betekent-slaaf",
             "category": "faitsdivers"
         }
     ]
