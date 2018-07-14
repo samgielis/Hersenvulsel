@@ -1,16 +1,16 @@
 {
     "carousel": [
         {
+            "articleId": "je-ziet-sneller-slang-dan-spin",
+            "category": "wetenschap"
+        },
+        {
+            "articleId": "dode-paus-die-terechtstond",
+            "category": "geschiedenis"
+        },
+        {
             "articleId": "halle-berry-stunt-double-man",
             "category": "entertainment"
-        },
-        {
-            "articleId": "verzonnen-woorden-in-woordenboeken",
-            "category": "faitsdivers"
-        },
-        {
-            "articleId": "longvis-overleeft-jaar-op-het-droge",
-            "category": "natuur"
         }
     ],
     "articles": [
@@ -27,7 +27,7 @@
             "category": "mensen"
         },
         {
-            "articleId": "hond-geheugen-twee-minuten",
+            "articleId": "longvis-overleeft-jaar-op-het-droge",
             "category": "natuur"
         },
         {
@@ -35,7 +35,7 @@
             "category": "entertainment"
         },
         {
-            "articleId": "woord-robot-betekent-slaaf",
+            "articleId": "verzonnen-woorden-in-woordenboeken",
             "category": "faitsdivers"
         }
     ]
