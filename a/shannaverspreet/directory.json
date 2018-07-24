@@ -961,11 +961,6 @@
             "pubtime": "2014/10/30 16:40:00"
         },
         {
-            "id": "mr-bean-bestuurt-vliegtuig",
-            "category": "entertainment",
-            "pubtime": "2018/07/21 06:00"
-        },
-        {
             "id": "vrouw-onvriendelijke-films",
             "category": "entertainment",
             "pubtime": "2014/07/29 14:18:00"
@@ -1231,9 +1226,14 @@
             "pubtime": "2016/02/7 15:10:00"
         },
         {
-            "id": "elke-europeaan-van-koninklijke-afkomst",
-            "category": "wetenschap",
-            "pubtime": "2018/07/28 06:00"
+            "id": "katten-helpen-schepen-navigeren",
+            "category": "geschiedenis",
+            "pubtime": "2018/07/26 06:00"
+        },
+        {
+            "id": "mr-bean-bestuurt-vliegtuig",
+            "category": "entertainment",
+            "pubtime": "2018/07/21 06:00"
         }
     ]
 }
