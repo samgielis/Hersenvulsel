@@ -1,16 +1,16 @@
 {
     "carousel": [
         {
+            "articleId": "elke-europeaan-van-koninklijke-afkomst",
+            "category": "wetenschap"
+        },
+        {
+            "articleId": "katten-helpen-schepen-navigeren",
+            "category": "geschiedenis"
+        },
+        {
             "articleId": "pronoia-waanidee-alles-in-je-voordeel",
             "category": "faitsdivers"
-        },
-        {
-            "articleId": "gevangene-vond-tandenborstel-uit",
-            "category": "mensen"
-        },
-        {
-            "articleId": "mr-bean-bestuurt-vliegtuig",
-            "category": "entertainment"
         }
     ],
     "articles": [
@@ -23,7 +23,7 @@
             "category": "geschiedenis"
         },
         {
-            "articleId": "michael-phelps-olympisch-record",
+            "articleId": "gevangene-vond-tandenborstel-uit",
             "category": "mensen"
         },
         {
@@ -31,7 +31,7 @@
             "category": "natuur"
         },
         {
-            "articleId": "halle-berry-stunt-double-man",
+            "articleId": "mr-bean-bestuurt-vliegtuig",
             "category": "entertainment"
         },
         {
