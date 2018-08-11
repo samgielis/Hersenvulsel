@@ -1,25 +1,25 @@
 {
     "carousel": [
         {
+            "articleId": "cleopatra-was-grieks",
+            "category": "mensen"
+        },
+        {
+            "articleId": "et-spielbergs-denkbeeldige-vriend",
+            "category": "entertainment"
+        },
+        {
+            "articleId": "slak-duizenden-tanden",
+            "category": "natuur"
+        }
+    ],
+    "articles": [
+        {
             "articleId": "elke-europeaan-van-koninklijke-afkomst",
             "category": "wetenschap"
         },
         {
             "articleId": "katten-helpen-schepen-navigeren",
-            "category": "geschiedenis"
-        },
-        {
-            "articleId": "pronoia-waanidee-alles-in-je-voordeel",
-            "category": "faitsdivers"
-        }
-    ],
-    "articles": [
-        {
-            "articleId": "je-ziet-sneller-slang-dan-spin",
-            "category": "wetenschap"
-        },
-        {
-            "articleId": "voetbal-zwart-wit-voor-tv-kijkers",
             "category": "geschiedenis"
         },
         {
@@ -35,7 +35,7 @@
             "category": "entertainment"
         },
         {
-            "articleId": "word-lid-orde-van-de-feniks",
+            "articleId": "pronoia-waanidee-alles-in-je-voordeel",
             "category": "faitsdivers"
         }
     ]
