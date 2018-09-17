@@ -1,15 +1,15 @@
 {
     "carousel": [
         {
+            "articleId": "dronken-bijen-mogen-korf-niet-in",
+            "category": "natuur"
+        },
+        {
+            "articleId": "eerste-man-op-mount-everest",
+            "category": "mensen"
+        },
+        {
             "articleId": "meest-voorkomende-verjaardag",
-            "category": "faitsdivers"
-        },
-        {
-            "articleId": "laatste-maaltijd-spoken-voorkomen",
-            "category": "geschiedenis"
-        },
-        {
-            "articleId": "coca-cola-geen-patent-op-formule",
             "category": "faitsdivers"
         }
     ],
@@ -19,7 +19,7 @@
             "category": "wetenschap"
         },
         {
-            "articleId": "katten-helpen-schepen-navigeren",
+            "articleId": "laatste-maaltijd-spoken-voorkomen",
             "category": "geschiedenis"
         },
         {
@@ -35,7 +35,7 @@
             "category": "entertainment"
         },
         {
-            "articleId": "pronoia-waanidee-alles-in-je-voordeel",
+            "articleId": "coca-cola-geen-patent-op-formule",
             "category": "faitsdivers"
         }
     ]
