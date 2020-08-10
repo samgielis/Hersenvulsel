@@ -1,0 +1,24 @@
+{
+  "id":"aardbeving-stoep-opnieuw-aangelegd",
+  "title":"Een wetenschappelijke stoep is per ongeluk afgebroken",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"wetenschap",
+  "day":"2016/10/05",
+  "time":"15:00:00",
+  "source_name":"latimes.com",
+  "source_url":"http://www.latimes.com/local/lanow/la-me-ln-earthquake-curb-destroyed-20160705-snap-htmlstory.html",
+  "img_credit":"news.nationalpost.com",
+  "keywords":"stoep, rand, stoeprand, curb, los angeles, oakland, hayward, californië, wetenschappers, aardbeving, aardbevingen, verschuiving, straat, straathoek",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Wetenschappers vinden soms verklaringen en bewijzen op hele vreemde plaatsen. De stoep, bijvoorbeeld. In <b>Hayward, Californië,</b> lag een stoeprand die <b>bij elke aardbeving een beetje verschoof</b> en zo een prachtig stukje studiemateriaal was voor wetenschappers. Tot de stad deze zomer <b>de stoep per ongeluk heraanlegde.</b>"},
+		   {"type": "paragraph",
+		   "content": "De bewuste stoep bevond zich op de hoek tussen twee straten, Rose Street en Prospect Street. Toevallig lag de hoek van die straten <b>exact op de 'Hayward Fault Zone'</b>, een denkbeeldige lijn langs de westkust van Amerika <b>waar veel gevaarlijke aardbevingen plaatsvinden.</b> Telkens wanneer er zo'n aardbeving was, kon je daarna het verschil zien aan de stoeprand. Door de jaren heen was er een grote kloof ontstaan."},
+		   {"type": "image",
+		   "name": "2.jpg",
+		   "credit": "sfgate.com - de reparatiewerken aan de stoep"},
+		   {"type": "paragraph",
+		   "content": "Sinds de jaren '70 was die straathoek een prachtfenomeen voor wetenschappers, tot deze zomer dus. <b>Het stadsbestuur had er blijkbaar geen idee van</b> dat er zich op hun gebied zo'n speciale stoep bevond. Omdat de kloof op de hoek zo groot was geworden, besloten ze de stoep te <b>repareren.</b> Tot grote spijt van wetenschappers wereldwijd."}
+		   ]
+}

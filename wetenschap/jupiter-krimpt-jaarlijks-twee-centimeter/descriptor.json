@@ -1,0 +1,37 @@
+{
+    "title": "Jupiter krimpt elk jaar 2 centimeter",
+    "id": "jupiter-krimpt-jaarlijks-twee-centimeter",
+    "category": "wetenschap",
+    "keywords": "planeet, jupiter, gas, gasreus, gaswet, krimpt, krimpen, afnemen, grootte, grootste, Kelvin-Helmholtzmechanisme, druk, volume",
+    "shortDescription": "Jupiter is de grootste planeet in ons zonnestelsel. En ooit was de planeet zelfs nog groter. Hij krimpt namelijk beetje bij beetje!",
+    "day": "2018/06/30",
+    "time": "13:00",
+    "source_name": "wikipedia.org",
+    "source_url": "https://en.wikipedia.org/wiki/Jupiter",
+    "img_credit": "commons.wikimedia.org",
+    "content": [
+        {
+            "type": "paragraph",
+            "content": "Jupiter is de grootste planeet in ons zonnestelsel. <b>En ooit was de planeet zelfs nog groter.</b> Hij krimpt namelijk beetje bij beetje!"
+        },
+        {
+            "type": "paragraph",
+            "content": "Jupiter is <b>een gasreus</b> en heeft dus geen vast oppervlak. Het afkoelen van het gasoppervlak, vooral bestaande uit waterstof en helium, zorgt ervoor dat <b>het Kelvin-Helmholtzmechanisme</b> optreedt."
+        },
+        {
+            "type": "image",
+            "credit": "commons.wikimedia.org",
+            "name": "Jupiter planeten.jpg"
+        },
+        {
+            "type": "paragraph",
+            "content": "Als de temperatuur van een gas daalt, <b>moet de verhouding druk en volume ook dalen.</b> Doordat het oppervlak afkoelt, daalt de totale temperatuur en daardoor ook de druk in de volledige planeet. De gasreus wordt dan eigenlijk samengeperst <b>om die drukverlaging te compenseren.</b>"
+        },
+        {
+            "type": "paragraph",
+            "content": "Dankzij dit proces krimpt de planeet ongeveer 2 cm per jaar. Bij zijn ontstaan was Jupiter dubbel zo groot als nu!"
+        }
+    ],
+    "authorid": "shannaverspreet",
+    "authorname": "Shanna Verspreet"
+}

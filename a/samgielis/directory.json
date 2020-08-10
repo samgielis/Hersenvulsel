@@ -1,9 +1,24 @@
 {
-	"articles":[
-		{
-			"id":		"opwarming-aarde-in-beeld",
-			"category":	"natuur",
-			"pubtime":	"2014/11/08 19:15:00"
-		}
-	]
+    "articles": [
+        {
+            "id": "psychiater-die-graag-tanden-verwijderde",
+            "category": "mensen",
+            "pubtime": "2016/03/05 17:00:00"
+        },
+        {
+            "id": "opwarming-aarde-in-beeld",
+            "category": "natuur",
+            "pubtime": "2014/11/08 19:15:00"
+        },
+        {
+            "id": "geloven-chimpansees-in-een-god",
+            "category": "natuur",
+            "pubtime": "2016/03/04 14:55:00"
+        },
+        {
+            "id": "zondeneter-zuivert-ziel",
+            "category": "geschiedenis",
+            "pubtime": "2018/07/03 07:00"
+        }
+    ]
 }

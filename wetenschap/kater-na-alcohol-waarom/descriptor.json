@@ -1,0 +1,30 @@
+{
+  "id":"kater-na-alcohol-waarom",
+  "title":"Waarom je morgenvroeg misschien een kater hebt",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"wetenschap",
+  "day":"2016/03/26",
+  "time":"15:00:00",
+  "source_name":"theatlantic.com",
+  "source_url":"http://www.theatlantic.com/health/archive/2014/06/the-painful-science-of-hangovers/373138/?single_page=true&_ga=1.51969833.1011068906.1386858283",
+  "img_credit":"wikimedia.org",
+  "keywords":"drank, alcohol, dronken, zat, te, veel, kater, hangover, ochtend, morgen, hoofdpijn, waarom, genen, wetenschap",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Waarom kan de ene persoon dronken worden zonder problemen, en kan de andere de volgende dag niet uit z'n bed? Of misschien nog belangrijker: <b>waarom krijgen we een kater na te veel alcohol? En kunnen we dat voorkomen?</b>"},
+		   {"type": "paragraph",
+		   "content": "Het waarom van een kater is eigenlijk vrij makkelijk. Na een avondje drinken word je weer nuchter doordat je lichaam de alcohol in je lijf afbreekt. <b>De ethanol wordt dan omgezet in methanol.</b> Later - gemiddeld 10 uur nadat je gedronken hebt - wordt die methanol weer afgebroken, en komen er stoffen als formaldehyde en methaanzuur vrij. Dat zegt je misschien niets, maar dat zijn eigenlijk <b>giftige stoffen</b>."},
+		   {"type": "paragraph",
+		   "content": "Als je dus 's avonds te veel alcohol drinkt, heb je de volgende ochtend <b>te veel van die stoffen</b> in je lichaam en <b>voel je je dus ziek: een kater!</b>"},
+		   {"type": "image",
+		   "name": "2.jpg",
+		   "credit": "pexels.com"},
+		   {"type": "paragraph",
+		   "content": "De oplossing? <b>Die is er niet echt...</b> Wie dus beweert hét middeltje gevonden te hebben, liegt! Natuurlijk kan het altijd helpen <b>de symptomen te behandelen.</b> Als je door een kater hoofdpijn hebt, kan die weggaan door een pilletje tegen de hoofdpijn te nemen."},
+		   {"type": "paragraph",
+		   "content": "Volgens veel wetenschappers is het wel belangrijk <b>veel suikers op te nemen</b>, omdat een teveel aan alcohol vaak zorgt voor een tekort aan suikers in je bloed. Door een uitgebreid ontbijt met een fruitsapje, kan je dus ook de symptomen van een kater verminderen. En goed hydrateren, natuurlijk!"},
+		   {"type": "paragraph",
+		   "content": "Nog wel leuk om weten: uit verschillende onderzoeken blijkt dat <b>zo'n 22 procent van de mensen geen kater krijgt!</b> Of dat genetisch bepaald is, weten we voorlopig nog niet. Als je geluk hebt, dan heb je dus helemaal geen anti-kater-tips nodig!"}
+		   ]
+}

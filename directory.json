@@ -1,18 +1,42 @@
 {
-	"carousel":[
-			["entertainment", "borat-toeristen-naar-kazachstan"],
-			["mensen", "boogschutter-zonder-armen"],
-			["geschiedenis", "brandweer-romeinse-tijd"],
-			["natuur", "leopon-kruising-leeuw-luipaard"],
-			["faitsdivers", "viagra-met-toestemming"],
-			["wetenschap", "muizen-en-penicilline"]
-	],
-	"articles":[
-			["wetenschap", "bomen-als-lantaarns"],
-			["geschiedenis", "haatberichtjes-op-valentijn"],
-			["mensen", "de-succesvolste-investeerder-ooit"],
-			["natuur", "de-duurste-koe-ter-wereld"],
-			["entertainment", "rijkste-fictieve-personages"],
-			["faitsdivers", "potlood-opgebruiken-45000-woorden"]
-	]
+    "carousel": [
+        {
+            "articleId": "dronken-bijen-mogen-korf-niet-in",
+            "category": "natuur"
+        },
+        {
+            "articleId": "eerste-man-op-mount-everest",
+            "category": "mensen"
+        },
+        {
+            "articleId": "meest-voorkomende-verjaardag",
+            "category": "faitsdivers"
+        }
+    ],
+    "articles": [
+        {
+            "articleId": "elke-europeaan-van-koninklijke-afkomst",
+            "category": "wetenschap"
+        },
+        {
+            "articleId": "laatste-maaltijd-spoken-voorkomen",
+            "category": "geschiedenis"
+        },
+        {
+            "articleId": "cleopatra-was-grieks",
+            "category": "mensen"
+        },
+        {
+            "articleId": "slak-duizenden-tanden",
+            "category": "natuur"
+        },
+        {
+            "articleId": "et-spielbergs-denkbeeldige-vriend",
+            "category": "entertainment"
+        },
+        {
+            "articleId": "coca-cola-geen-patent-op-formule",
+            "category": "faitsdivers"
+        }
+    ]
 }

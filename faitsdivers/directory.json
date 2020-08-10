@@ -1,194 +1,259 @@
 {
-	"articles":[
-		{
-			"id":		"22u-verboden-te-studeren",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/2 20:30:00"
-		},
-		{
-			"id":		"40-procent-snuffelt",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/11/05 19:25:00"
-		},
-		{
-			"id":		"altijd-941-apple",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/27 14:00:00"
-		},
-		{
-			"id":		"app-verplicht-ouders-terugbellen",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/24 18:30:00"
-		},
-		{
-			"id":		"ave-maria-geen-stemrecht",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/11/11 18:35:00"
-		},
-		{
-			"id":		"beste-brood-ter-wereld",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/10/14 18:22:00"
-		},
-		{
-			"id":		"beste-plaats-bioscoop",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/13 18:00:00"
-		},
-		{
-			"id":		"dikkerdjeskamp-voor-honden",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/8 18:30:00"
-		},
-		{
-			"id":		"dilemma-trilemma",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/3 14:15:00"
-		},
-		{
-			"id":		"fietsen-in-de-amsterdamse-kanalen",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/11/01 18:50:00"
-		},
-		{
-			"id":		"het-bed-van-murphy",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/10/16 2014/10/16 20:38:00"
-		},
-		{
-			"id":		"hoe-lang-duurt-een-momentje",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/07/30 16:16:00"
-		},
-		{
-			"id":		"huh-begrijpt-iedereen",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/12 18:00:00"
-		},
-		{
-			"id":		"jamais-vu-presque-vu",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/11 16:30:00"
-		},
-		{
-			"id":		"kidzania-kinderen-volwassenen",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/10/19 17:22:00"
-		},
-		{
-			"id":		"kleine-lettertjes-lezen",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/09/08 14:30:00"
-		},
-		{
-			"id":		"lezen-maakt-gelukkig",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/21 18:50:00"
-		},
-		{
-			"id":		"linkshandig-dodelijker-dan-haai",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/09/15 17:50:00"
-		},
-		{
-			"id":		"M-V-X-geslachten",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/14 18:15:00"
-		},
-		{
-			"id":		"mag-ik-geld-verkopen",
-			"category":	"faitsdivers",
-			"pubtime":	"2016/02/02 15:10:00"
-		},
-		{
-			"id":		"medische-bijstand-vliegtuig",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/29 18:15:00"
-		},
-		{
-			"id":		"meest-gebruikte-woorden",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/09/08 18:40:00"
-		},
-		{
-			"id":		"potlood-opgebruiken-45000-woorden",
-			"category":	"faitsdivers",
-			"pubtime":	"2016/02/18 15:15:00"
-		},
-		{
-			"id":		"reclame-trucs",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/09/16 20:30:00"
-		},
-		{
-			"id":		"restaurant-voor-een-dag",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/16 14:45:00"
-		},
-		{
-			"id":		"robot-lift-canada",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/24 14:50:00"
-		},
-		{
-			"id":		"samjiyon-noord-koreaanse-tablet",
-			"category":	"faitsdivers",
-			"pubtime":	"2016/01/31 15:10:00"
-		},
-		{
-			"id":		"scrabble-valsspelen-mag",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/22 18:15:00"
-		},
-		{
-			"id":		"skelet-in-het-biologielokaal-begraven",
-			"category":	"faitsdivers",
-			"pubtime":	"2016/01/18 15:30:00"
-		},
-		{
-			"id":		"tieners-te-vondeling",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/1 15:10:00"
-		},
-		{
-			"id":		"toestemming-vragen-voor-een-snor",
-			"category":	"faitsdivers",
-			"pubtime":	"2016/01/05 15:20:00"
-		},
-		{
-			"id":		"vergiftigd-door-halloweensnoep",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/10/31 17:50:00"
-		},
-		{
-			"id":		"viagra-met-toestemming",
-			"category":	"faitsdivers",
-			"pubtime":	"2016/02/17 15:00:00"
-		},
-		{
-			"id":		"waar-komt-dude-vandaan",
-			"category":	"faitsdivers",
-			"pubtime":	"2016/02/7 15:10:00"
-		},
-		{
-			"id":		"waar-komt-vinkje-vandaan",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/11/06 19:09:00"
-		},
-		{
-			"id":		"wat-als-shitterton",
-			"category":	"faitsdivers",
-			"pubtime":	"2016/01/30 15:05:00"
-		},
-		{
-			"id":		"weermannen-liegen-expres",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/09/03 18:40:00"
-		},
-		{
-			"id":		"zweden-dansen-verboden",
-			"category":	"faitsdivers",
-			"pubtime":	"2014/08/23 17:55:00"
-		}
-	]
+    "articles": [
+        {
+            "id": "22u-verboden-te-studeren",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/2 20:30:00"
+        },
+        {
+            "id": "40-procent-snuffelt",
+            "category": "faitsdivers",
+            "pubtime": "2014/11/05 19:25:00"
+        },
+        {
+            "id": "altijd-941-apple",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/27 14:00:00"
+        },
+        {
+            "id": "app-verplicht-ouders-terugbellen",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/24 18:30:00"
+        },
+        {
+            "id": "auto-antoniem-wat-is-dat",
+            "category": "faitsdivers",
+            "pubtime": "2016/03/21 14:20:00"
+        },
+        {
+            "id": "ave-maria-geen-stemrecht",
+            "category": "faitsdivers",
+            "pubtime": "2014/11/11 18:35:00"
+        },
+        {
+            "id": "beste-brood-ter-wereld",
+            "category": "faitsdivers",
+            "pubtime": "2014/10/14 18:22:00"
+        },
+        {
+            "id": "beste-plaats-bioscoop",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/13 18:00:00"
+        },
+        {
+            "id": "coca-cola-slechte-reclame-pepsi",
+            "category": "faitsdivers",
+            "pubtime": "2016/10/10 15:00:00"
+        },
+        {
+            "id": "dikkerdjeskamp-voor-honden",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/8 18:30:00"
+        },
+        {
+            "id": "dilemma-trilemma",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/3 14:15:00"
+        },
+        {
+            "id": "fietsen-in-de-amsterdamse-kanalen",
+            "category": "faitsdivers",
+            "pubtime": "2014/11/01 18:50:00"
+        },
+        {
+            "id": "het-bed-van-murphy",
+            "category": "faitsdivers",
+            "pubtime": "2014/10/16 2014/10/16 20:38:00"
+        },
+        {
+            "id": "hoe-lang-duurt-een-momentje",
+            "category": "faitsdivers",
+            "pubtime": "2014/07/30 16:16:00"
+        },
+        {
+            "id": "huh-begrijpt-iedereen",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/12 18:00:00"
+        },
+        {
+            "id": "iran-nieren-kopen",
+            "category": "faitsdivers",
+            "pubtime": "2016/03/06 16:30:00"
+        },
+        {
+            "id": "jamais-vu-presque-vu",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/11 16:30:00"
+        },
+        {
+            "id": "kidzania-kinderen-volwassenen",
+            "category": "faitsdivers",
+            "pubtime": "2014/10/19 17:22:00"
+        },
+        {
+            "id": "kleine-lettertjes-lezen",
+            "category": "faitsdivers",
+            "pubtime": "2014/09/08 14:30:00"
+        },
+        {
+            "id": "lezen-maakt-gelukkig",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/21 18:50:00"
+        },
+        {
+            "id": "linkshandig-dodelijker-dan-haai",
+            "category": "faitsdivers",
+            "pubtime": "2014/09/15 17:50:00"
+        },
+        {
+            "id": "M-V-X-geslachten",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/14 18:15:00"
+        },
+        {
+            "id": "mag-ik-geld-verkopen",
+            "category": "faitsdivers",
+            "pubtime": "2016/02/02 15:10:00"
+        },
+        {
+            "id": "medische-bijstand-vliegtuig",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/29 18:15:00"
+        },
+        {
+            "id": "meest-gebruikte-woorden",
+            "category": "faitsdivers",
+            "pubtime": "2014/09/08 18:40:00"
+        },
+        {
+            "id": "potlood-opgebruiken-45000-woorden",
+            "category": "faitsdivers",
+            "pubtime": "2016/02/18 15:15:00"
+        },
+        {
+            "id": "president-usa-mag-niet-rijden",
+            "category": "faitsdivers",
+            "pubtime": "2016/09/29 15:00:00"
+        },
+        {
+            "id": "reclame-trucs",
+            "category": "faitsdivers",
+            "pubtime": "2014/09/16 20:30:00"
+        },
+        {
+            "id": "restaurant-voor-een-dag",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/16 14:45:00"
+        },
+        {
+            "id": "robot-lift-canada",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/24 14:50:00"
+        },
+        {
+            "id": "samjiyon-noord-koreaanse-tablet",
+            "category": "faitsdivers",
+            "pubtime": "2016/01/31 15:10:00"
+        },
+        {
+            "id": "scrabble-valsspelen-mag",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/22 18:15:00"
+        },
+        {
+            "id": "skelet-in-het-biologielokaal-begraven",
+            "category": "faitsdivers",
+            "pubtime": "2016/01/18 15:30:00"
+        },
+        {
+            "id": "soviet-stemmen-op-tv",
+            "category": "faitsdivers",
+            "pubtime": "2016/04/20 14:20:00"
+        },
+        {
+            "id": "tieners-te-vondeling",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/1 15:10:00"
+        },
+        {
+            "id": "toestemming-vragen-voor-een-snor",
+            "category": "faitsdivers",
+            "pubtime": "2016/01/05 15:20:00"
+        },
+        {
+            "id": "vergiftigd-door-halloweensnoep",
+            "category": "faitsdivers",
+            "pubtime": "2014/10/31 17:50:00"
+        },
+        {
+            "id": "viagra-met-toestemming",
+            "category": "faitsdivers",
+            "pubtime": "2016/02/17 15:00:00"
+        },
+        {
+            "id": "waar-komt-dude-vandaan",
+            "category": "faitsdivers",
+            "pubtime": "2016/02/7 15:10:00"
+        },
+        {
+            "id": "waar-komt-vinkje-vandaan",
+            "category": "faitsdivers",
+            "pubtime": "2014/11/06 19:09:00"
+        },
+        {
+            "id": "wat-als-shitterton",
+            "category": "faitsdivers",
+            "pubtime": "2016/01/30 15:05:00"
+        },
+        {
+            "id": "weermannen-liegen-expres",
+            "category": "faitsdivers",
+            "pubtime": "2014/09/03 18:40:00"
+        },
+        {
+            "id": "zweden-dansen-verboden",
+            "category": "faitsdivers",
+            "pubtime": "2014/08/23 17:55:00"
+        },
+        {
+            "id": "vrouwen-mogen-geen-sushi-maken",
+            "category": "faitsdivers",
+            "pubtime": "2018/06/16 09:00"
+        },
+        {
+            "id": "universele-taal-van-de-lucht",
+            "category": "faitsdivers",
+            "pubtime": "2018/06/28 07:00"
+        },
+        {
+            "id": "woord-robot-betekent-slaaf",
+            "category": "faitsdivers",
+            "pubtime": "2018/07/01 07:00"
+        },
+        {
+            "id": "verzonnen-woorden-in-woordenboeken",
+            "category": "faitsdivers",
+            "pubtime": "2018/07/08 07:00"
+        },
+        {
+            "id": "word-lid-orde-van-de-feniks",
+            "category": "faitsdivers",
+            "pubtime": "2018/07/17 06:00"
+        },
+        {
+            "id": "pronoia-waanidee-alles-in-je-voordeel",
+            "category": "faitsdivers",
+            "pubtime": "2018/07/24 06:00"
+        },
+        {
+            "id": "coca-cola-geen-patent-op-formule",
+            "category": "faitsdivers",
+            "pubtime": "2018/08/12 06:00"
+        },
+        {
+            "id": "meest-voorkomende-verjaardag",
+            "category": "faitsdivers",
+            "pubtime": "2018/09/09 19:00"
+        }
+    ]
 }

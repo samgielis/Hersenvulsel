@@ -1,0 +1,23 @@
+{
+  "id":"mario-is-25",
+  "title":"Mario is 25 jaar oud",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"entertainment",
+  "day":"2016/10/12",
+  "time":"15:00:00",
+  "source_name":"telegraph.co.uk",
+  "source_url":"http://www.telegraph.co.uk/technology/2016/09/30/gamers-stunned-after-learning-how-old-mario-is-supposed-to-be/",
+  "img_credit":"flickr.com/photos/johannahobbs",
+  "keywords":"mario, super, bros, nintendo, leeftijd, hoe, oud, vijfentwintig, vijf, twintig, 25, loodgieter",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Het internet is geschokt, want <b>'s werelds bekendste loodgieter</b> blijkt nog een jong gastje te zijn! Mario, de <b>Nintendo</b>-held die in zijn vrije tijd prinsessen redt, is volgens zijn makers <b>slechts 25 jaar oud.</b>"},
+		   {"type": "paragraph",
+		   "content": "Onlangs dook een oud interview op met <b>Shigeru Miyamoto, Mario's geestesvader.</b> Daarin vertelde hij dat hij heel blij was dat <b>de volledige persoonlijkheid van Mario nooit uitgewerkt is.</b> Niemand weet wat zijn favoriete kleur is of wat hij graag eet - <b>alleen dat hij een 25-jarige loodgieter is.</b>"},
+		   {"type": "paragraph",
+		   "content": "En dat kwam voor velen blijkbaar als een schok. De wereld had niet <i>echt</i> de nood om de leeftijd van Mario te kennen, maar iedereen lijkt het erover eens te zijn dat hij toch een veertiger of vijftiger was. Helaas!"},
+		   {"type": "paragraph",
+		   "content": "Geïnteresseerden vinden <a href='http://www.nintendo.co.jp/nom/0510/interv/' target='_blank'>het volledige interview</a> trouwens bij <b>Nintendo Online Monthly.</b> Helaas hebben wij deze originele bron niet kunnen verifiëren."}
+		   ]
+}

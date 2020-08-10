@@ -1,16 +1,16 @@
-		{
-			"id":		"samgielis",
-			"fname":	"Sam",
-			"lname":		"Gielis",
-			"url":	"http://nachtwezen.tumblr.com",
-			"urlname":		"nwz.tumblr.com",
-			"contact":	"sam@hersenvulsel.be",
-			"bio":	"Technisch creator van Hersenvulsel a.k.a. 'De Schepper'. Webdesigner, fotograaf, programmeur, ... Amateur.",
-			"count":	"1",
-			"wcount":	"0",
-			"gcount":	"0",
-			"mcount":	"0",
-			"ncount":	"1",
-			"ecount":	"0",
-			"fcount":	"0"
-		}
+{
+    "id": "samgielis",
+    "fname": "Sam",
+    "lname": "Gielis",
+    "url": "http://nachtwezen.tumblr.com",
+    "urlname": "nwz.tumblr.com",
+    "contact": "sam@hersenvulsel.be",
+    "bio": "Technisch creator van Hersenvulsel a.k.a. 'De Schepper'. Webdesigner, fotograaf, programmeur, ... Amateur.",
+    "count": "3",
+    "wcount": 0,
+    "gcount": 1,
+    "mcount": 1,
+    "ncount": 2,
+    "ecount": 0,
+    "fcount": 0
+}

@@ -1,0 +1,21 @@
+{
+  "id":"james-bond-meets-james-bond",
+  "title":"James Bond meets James Bond",
+  "authorid":"shannaverspreet",
+  "authorname":"Shanna Verspreet",
+  "category":"mensen",
+  "day":"2016/10/22",
+  "time":"15:00:00",
+  "source_name":"huffingtonpost.co.uk",
+  "source_url":"http://www.huffingtonpost.co.uk/2015/08/25/james-bond-sean-connery_n_8036238.html",
+  "img_credit":"commons.wikimedia.org",
+  "keywords":"james, bond, 007, sean, connery, tegengehouden, auto, te, snel, rijden, boete, agent, zelfde, naam, film, films",
+  "content":[
+          {"type": "paragraph",
+		   "content": "Toeval bestaat niet, ook niet voor agent 007. <b>Sean Connery</b>, ex-James Bond, kreeg bijvoorbeeld ooit een snelheidsboete. <b>Van James Bond.</b>"},
+		   {"type": "paragraph",
+		   "content": "Connery, die natuurlijk wereldwijd bekend staat als de eerste acteur die in de huid van James Bond kroop, nam het niet zo nauw met de snelheidslimiet. <b>Hij werd tegengehouden door een agent met een voor hem wel heel bekende naam.</b>"},
+		   {"type": "paragraph",
+		   "content": "Jammer genoeg zijn er heel weinig details te vinden over hun ontmoeting, maar wij geloven graag dat James bond die dag een selfie scoorde met James Bond."}
+		   ]
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Je hond heeft een geheugen van 2 minuten",
+    "id": "hond-geheugen-twee-minuten",
+    "category": "natuur",
+    "keywords": "hond, honden, geheugen, onthouden, hoelang, hoe, lang",
+    "shortDescription": "Honden zijn vaak heel blij om hun baasjes terug te zien. Maar ze zijn dan eigenlijk allang vergeten wanneer ze je voor het laatst zagen. Honden hebben namelijk maar een geheugen van zo’n 2 minuten!",
+    "day": "2018/06/23",
+    "time": "09:00",
+    "source_name": "nationalgeographic.com",
+    "source_url": "https://news.nationalgeographic.com/2015/02/150225-dogs-memories-animals-chimpanzees-science-mind-psychology/",
+    "img_credit": "commons.wikimedia.org",
+    "content": [
+        {
+            "type": "paragraph",
+            "content": "Honden zijn vaak heel blij om hun baasjes terug te zien. Maar ze zijn dan eigenlijk allang vergeten wanneer ze je voor het laatst zagen. Honden hebben namelijk <b>maar een geheugen van zo’n 2 minuten!</b>"
+        },
+        {
+            "type": "paragraph",
+            "content": "Het geheugen van mensen <b>werkt volledig anders</b> dan dat van andere dieren. Wij kunnen ons perfect <b>triviale dingen herinneren.</b> Waar de auto geparkeerd staat bijvoorbeeld, of langs welke weg je vorige week naar huis wandelde."
+        },
+        {
+            "type": "image",
+            "credit": "flickr.com/emeryway",
+            "name": "hond geheugen stofzuiger.jpg"
+        },
+        {
+            "type": "paragraph",
+            "content": "Dieren herinneren zich vooral zaken <b>die biologisch belangrijk zijn.</b> Zo zullen ze weten waar ze ooit voedsel gevonden hebben en zullen ze bang zijn van plaatsen of zaken die ze met gevaar associëren. Onbelangrijke zaken horen bij het <b>kortetermijngeheugen</b> en dat is voor de meeste dieren erg kort."
+        },
+        {
+            "type": "paragraph",
+            "content": "Je hond zal zich dus zeker herinneren waar zijn voederbak staat en dat hij bang is voor de stofzuiger. Wanneer je precies naar je werk vertrok, of waar jullie gisteren heen wandelden, is hij waarschijnlijk allang vergeten."
+        }
+    ],
+    "authorid": "shannaverspreet",
+    "authorname": "Shanna Verspreet"
+}

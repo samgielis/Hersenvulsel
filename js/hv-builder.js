@@ -24,7 +24,7 @@ var hv = function(){
         navbar += "        <li><a href=\"" + prefix + "faitsdivers\">Faits Divers<\/a><\/li>";
         navbar += "      <\/ul>";
         navbar += "      <ul class=\"nav pull-right navbar-nav\">";
-        navbar += "        <li><a href=\"https:\/\/facebook.com\/hersenvulsel\" target=\"_blank\" ><i class=\"fa fa-facebook fa-lg\"><\/i><\/a><\/li>";
+        navbar += "        <li><a href=\"https:\/\/facebook.com\/hersenvulsel\" onclick='hv.handle_navbar_fbbutton_click()' target=\"_blank\" ><i class=\"fa fa-facebook fa-lg\"><\/i><\/a><\/li>";
         navbar += "        <li><a href=\"" + prefix + "contact" + "\"><i class=\"fa fa-envelope fa-lg\"><\/i>  <\/a><\/li>";
         navbar += "      <\/ul>";
         navbar += "    <\/div><\/div><\/div><\/div>";
@@ -33,6 +33,14 @@ var hv = function(){
           offset: {
             top: $('header').height()
           }});
+  }
+  
+  hv.prototype.handle_navbar_fbbutton_click = function(){
+	  ga('send', 'event', {
+			eventCategory: 'Outbound Link',
+			eventAction: 'navbar_fbbutton_click',
+			eventLabel: window.location.pathname
+		});
   }
 
   hv.prototype.header = function(cat, prefix){
@@ -51,6 +59,7 @@ var hv = function(){
   }
 
   hv.prototype.footer =  function(prefix){
+    var currentYear = new Date().getUTCFullYear();
     var footer="";
         footer += "<div class=\"row hv-footer-inner-container\">";
         footer += "        <div class=\"container\">";
@@ -58,7 +67,7 @@ var hv = function(){
         footer += "            <div class=\"col-sm-4\">";
         footer += "              <img class=\"logo-footer pull-left\"src=\"" + prefix + "img\/logo\/hv-footr.png\" \/>";
         footer += "              <div class=\"credits-label\">";
-        footer += "                © <a class=\"footer-link-red\" href=\"http:\/\/facebook.com\/hersenvulsel\" target=\"_blank\">Hersenvulsel<\/a> 2016 <br>";
+        footer += "                © <a class=\"footer-link-red\" href=\"http:\/\/facebook.com\/hersenvulsel\" target=\"_blank\">Hersenvulsel<\/a> "+ currentYear + " <br>";
         footer += "                Design: <a class=\"footer-link-red\" href=\"https:\/\/be.linkedin.com\/in\/samgielis\" target=\"_blank\">Sam Gielis<\/a>";
         footer += "                <div class=\"footer-spacer\"><\/div>";
         footer += "              <\/div>";
