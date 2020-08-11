@@ -7,12 +7,12 @@
   "day":"2016/03/05",
   "time":"17:00:00",
   "source_name":"telegraph.co.uk",
-  "source_url":"http://www.telegraph.co.uk/culture/books/3641744/The-madness-of-a-cure-for-insanity.html",
+  "source_url":"https://www.telegraph.co.uk/culture/books/3641744/The-madness-of-a-cure-for-insanity.html",
   "img_credit":"wikimedia.org",
   "keywords":"the knick, Dr. Henry Cotton, psychiatrie, tanden trekken, geneeskunde, 1900",
   "content":[
           {"type": "paragraph",
-		   "content": "Dat de psychiatrie in het begin van de twintigste eeuw nog niet bepaald op punt stond, moeten we je waarschijnlijk niet vertellen. Het onderzoeksdomein wordt vooral gekenmerkt door een hele reeks twijfelachtige personages en lugubere behandelingen. Zo was er bijvoorbeeld Dr. Henry Cotton, medisch directeur in het <a href=\"http://www.nj.com/morris/index.ssf/2014/04/photos_see_the_nj_lunatic_asylum_some_are_fighting_to_save.html\" target=\"_blank\">Trenton State Lunatic Asylum</a>, een grote psychiatrische instelling in New Jersey. De dokter stond erom bekend zijn patiënten te behandelen door hun tanden stuk voor stuk te verwijderen."},
+		   "content": "Dat de psychiatrie in het begin van de twintigste eeuw nog niet bepaald op punt stond, moeten we je waarschijnlijk niet vertellen. Het onderzoeksdomein wordt vooral gekenmerkt door een hele reeks twijfelachtige personages en lugubere behandelingen. Zo was er bijvoorbeeld Dr. Henry Cotton, medisch directeur in het <a href=\"https://www.nj.com/morris/index.ssf/2014/04/photos_see_the_nj_lunatic_asylum_some_are_fighting_to_save.html\" target=\"_blank\">Trenton State Lunatic Asylum</a>, een grote psychiatrische instelling in New Jersey. De dokter stond erom bekend zijn patiënten te behandelen door hun tanden stuk voor stuk te verwijderen."},
 		   {"type": "image",
 		   "name": "asylum.jpg",
 		   "credit": "Het Trenton State Lunatic Asylum - wikimedia.org"},
@@ -33,6 +33,6 @@
 		   {"type": "paragraph",
 		   "content": "Henry Cotton geloofde zo sterk in zijn techiek dat hij de tanden van zijn twee zonen preventief liet verwijderen. Zijn eigen tanden had hij nog wel toen hij stierf aan een hartaanval in 1933."},
 		   {"type": "paragraph",
-		   "content": "<i>KIJKTIP - Het verhaal van Dr. Cotton komt ook aan bod in de dramaserie <a href=\"http://www.imdb.com/title/tt2937900/\" target=\"_blank\">'The Knick'</a>. De serie is een leerrijke maar duistere cocktail van lugubere operaties, medische experimenten maar ook drugs, immigratie, racisme en seks die typerend was voor het begin van de twintigste eeuw. Wij zijn alvast grote fan.</i></div>"}
+		   "content": "<i>KIJKTIP - Het verhaal van Dr. Cotton komt ook aan bod in de dramaserie <a href=\"https://www.imdb.com/title/tt2937900/\" target=\"_blank\">'The Knick'</a>. De serie is een leerrijke maar duistere cocktail van lugubere operaties, medische experimenten maar ook drugs, immigratie, racisme en seks die typerend was voor het begin van de twintigste eeuw. Wij zijn alvast grote fan.</i></div>"}
 		   ]
 }

@@ -269,7 +269,7 @@ var hv_article = function(){
 
   hv_article.prototype.facebook_cta = function(elementToAppendTo) {
 	  var cta = "<p style='text-align: center; margin-top: 1.5em;'>";
-	  cta	+= "<a href='http://facebook.com/hersenvulsel' onclick='hv_article.handle_fb_cta_click()' target='_blank'><i>Interessant? Zin in meer? Volg ons via Facebook!</i></a>";
+	  cta	+= "<a href='https://facebook.com/hersenvulsel' onclick='hv_article.handle_fb_cta_click()' target='_blank'><i>Interessant? Zin in meer? Volg ons via Facebook!</i></a>";
 	  cta	+= "</p>";
 	  elementToAppendTo.append(cta);
   }

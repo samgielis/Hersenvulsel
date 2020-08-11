@@ -7,7 +7,7 @@
   "day":"2014/09/08",
   "time":"18:40:00",
   "source_name":"world-english.org",
-  "source_url":"http://www.world-english.org/english500.htm",
+  "source_url":"https://www.world-english.org/english500.htm",
   "img_credit":"wikimedia.org",
   "keywords":"woord, woorden, taal, gebruik, vaak, voorkomen, meest",
   "content":[
@@ -18,6 +18,6 @@
 		   {"type": "paragraph",
 		   "content": "Ook in het Nederlands is een gelijkaardig onderzoek gedaan, maar dan wel op kleinere schaal. Onderzoekers aan de universiteit van Gent bekeken ondertitels van films en series en rangschikten ook deze woorden. Het meest voorkomende woord in het Nederlands blijkt wel ‘ik’ te zijn, gevolgd door ‘je’, ‘het’, ‘de’, ‘dat’, ‘is’ en ‘niet’."},
 		   {"type": "paragraph",
-		   "content": "Het is niet alleen leuk om te weten – deze onderzoeken hebben wel degelijk nut. Volgens de onderzoekers aan de UGent leren we veel beter woorden lezen en schrijven wanneer we ze vaker zien. De frequentie waarmee een woord voorkomt in ondertitels, kan dus aantonen hoe goed we de woorden ook ‘kennen’. En die frequentie kan je opzoeken op <a href=\"http://crr.ugent.be/isubtlex/\">de website van de UGent</a>. ‘Hersenen’ zou 35,79 keer voorkomen op een miljoen woorden, ‘vulsel’ 0,18 keer."}
+		   "content": "Het is niet alleen leuk om te weten – deze onderzoeken hebben wel degelijk nut. Volgens de onderzoekers aan de UGent leren we veel beter woorden lezen en schrijven wanneer we ze vaker zien. De frequentie waarmee een woord voorkomt in ondertitels, kan dus aantonen hoe goed we de woorden ook ‘kennen’. En die frequentie kan je opzoeken op <a href=\"https://crr.ugent.be/isubtlex/\">de website van de UGent</a>. ‘Hersenen’ zou 35,79 keer voorkomen op een miljoen woorden, ‘vulsel’ 0,18 keer."}
 		   ]
 }

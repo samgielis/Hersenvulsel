@@ -1,5 +1,5 @@
 # Hersenvulsel
-Repository and Hosting for Hersenvulsel's website. Available now at [http://hersenvulsel.be](hersenvulsel.be).
+Repository and Hosting for Hersenvulsel's website. Available now at [https://hersenvulsel.be](hersenvulsel.be).
 
 ### Status: PREPARING FOR LAUNCH & IMPROVEMENTS
 All necessary aspects of the website have been designed and implemented. We're currently in the process of migrating articles from Facebook (2014 - Now). Some parts of the website will be further optimised to perfect the design. Some functional extensions might be implemented to improve usability.

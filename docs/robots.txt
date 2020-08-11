@@ -13,10 +13,10 @@ Disallow:
 Crawl-delay: 5
 Disallow: /cgi-bin/
 Disallow: /textpattern/
-Sitemap: http://hersenvulsel.be/sitemap.xml
-Sitemap: http://hersenvulsel.be/wetenschap/sitemap.xml
-Sitemap: http://hersenvulsel.be/geschiedenis/sitemap.xml
-Sitemap: http://hersenvulsel.be/natuur/sitemap.xml
-Sitemap: http://hersenvulsel.be/mensen/sitemap.xml
-Sitemap: http://hersenvulsel.be/entertainment/sitemap.xml
-Sitemap: http://hersenvulsel.be/faitsdivers/sitemap.xml
+Sitemap: https://hersenvulsel.be/sitemap.xml
+Sitemap: https://hersenvulsel.be/wetenschap/sitemap.xml
+Sitemap: https://hersenvulsel.be/geschiedenis/sitemap.xml
+Sitemap: https://hersenvulsel.be/natuur/sitemap.xml
+Sitemap: https://hersenvulsel.be/mensen/sitemap.xml
+Sitemap: https://hersenvulsel.be/entertainment/sitemap.xml
+Sitemap: https://hersenvulsel.be/faitsdivers/sitemap.xml
