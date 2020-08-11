@@ -1,0 +1,27 @@
+{
+  "name": "hersenvulsel",
+  "version": "1.0.0",
+  "description": "Repository for the hersenvulsel.be website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samgielis/Hersenvulsel.git"
+  },
+  "author": "Sam Gielis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samgielis/Hersenvulsel/issues"
+  },
+  "homepage": "https://github.com/samgielis/Hersenvulsel#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
