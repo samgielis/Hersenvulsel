@@ -7,7 +7,7 @@
   "day":"2014/08/8",
   "time":"18:30:00",
   "source_name":"smithsonianmag.com",
-  "source_url":"http://www.smithsonianmag.com/smart-news/there-are-obese-dogs-so-naturally-there-are-dog-weight-loss-camps-123317/",
+  "source_url":"https://www.smithsonianmag.com/smart-news/there-are-obese-dogs-so-naturally-there-are-dog-weight-loss-camps-123317/",
   "img_credit":"flickr.com",
   "keywords":"hond, overgewicht, sport",
   "content":[
@@ -18,6 +18,6 @@
 		   {"type": "paragraph",
 		   "content": "Een tip: zwemmen is goed voor zowat elke hond! Ze halen er veel beweging uit en het is niet belastend voor de gewrichten. Natuurlijk wil iedereen nu een video zien van honden in de fitness... Alsjeblieft! Graag gedaan! "},
 		   {"type": "embed",
-		   "code": "<iframe title=\"New York Times Video - Embed Player\" width=\"100%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\" marginheight=\"0\" marginwidth=\"0\" id=\"nyt_video_player\" src=\"http://graphics8.nytimes.com/video/players/offsite/index.html?videoId=100000002419571\"></iframe>"}
+		   "code": "<iframe title=\"New York Times Video - Embed Player\" width=\"100%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\" marginheight=\"0\" marginwidth=\"0\" id=\"nyt_video_player\" src=\"https://graphics8.nytimes.com/video/players/offsite/index.html?videoId=100000002419571\"></iframe>"}
 		   ]
 }

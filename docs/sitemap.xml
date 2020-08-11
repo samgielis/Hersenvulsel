@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://hersenvulsel.be/</loc>
+  <loc>https://hersenvulsel.be/</loc>
   <lastmod>2016-02-14T10:45:53+00:00</lastmod>
   <changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/wetenschap/</loc>
+  <loc>https://hersenvulsel.be/wetenschap/</loc>
   <lastmod>2016-02-14T10:45:53+00:00</lastmod>
   <changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/natuur/</loc>
+  <loc>https://hersenvulsel.be/natuur/</loc>
   <lastmod>2016-02-14T10:45:53+00:00</lastmod>
   <changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/geschiedenis/</loc>
+  <loc>https://hersenvulsel.be/geschiedenis/</loc>
   <lastmod>2016-02-14T10:45:53+00:00</lastmod>
   <changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/faitsdivers/</loc>
+  <loc>https://hersenvulsel.be/faitsdivers/</loc>
   <lastmod>2016-02-14T10:45:53+00:00</lastmod>
   <changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/entertainment/</loc>
+  <loc>https://hersenvulsel.be/entertainment/</loc>
   <lastmod>2016-02-14T10:45:53+00:00</lastmod>
   <changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/mensen/</loc>
+  <loc>https://hersenvulsel.be/mensen/</loc>
   <lastmod>2016-02-14T10:45:53+00:00</lastmod>
   <changefreq>hourly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/contact/</loc>
+  <loc>https://hersenvulsel.be/contact/</loc>
   <lastmod>2016-02-15T22:24:53+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/cookies-en-privacy/</loc>
+  <loc>https://hersenvulsel.be/cookies-en-privacy/</loc>
   <lastmod>2016-02-25T13:24:53+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/adverteren/</loc>
+  <loc>https://hersenvulsel.be/adverteren/</loc>
   <lastmod>2016-02-17T13:24:53+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://hersenvulsel.be/gebruiksvoorwaarden/</loc>
+  <loc>https://hersenvulsel.be/gebruiksvoorwaarden/</loc>
   <lastmod>2016-02-25T17:24:53+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>

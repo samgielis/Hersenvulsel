@@ -7,7 +7,7 @@
   "day":"2014/07/29",
   "time":"14:18:00",
   "source_name":"bechdeltest.com ",
-  "source_url":"http://bechdeltest.com",
+  "source_url":"https://bechdeltest.com",
   "img_credit":"metrotime.be",
   "content":[
       {"type":"paragraph",
@@ -17,6 +17,6 @@
       {"type":"paragraph",
       "content":"Niet alle films slagen in deze test, maar vreemd genoeg komen sommigen zelfs niet verder dan het eerste criterium. Hoewel we alles natuurlijk met een korreltje zout moeten nemen. De film Gravity (2013), met Sandra Bullock, faalt bijvoorbeeld op de volledige Bechdel-test – maar natuurlijk draait de hele film rond het personage van Bullock als astronaut. Vrouwonvriendelijk kunnen we hem dus niet noemen."},
 	  {"type":"paragraph",
-	  "content":"Op <a href=\"http://bechdeltest.com\"> http://bechdeltest.com </a> kan je een lijst met geslaagde én gefaalde films zien, of zelf de test toepassen op een film!"}
+	  "content":"Op <a href=\"https://bechdeltest.com\"> https://bechdeltest.com </a> kan je een lijst met geslaagde én gefaalde films zien, of zelf de test toepassen op een film!"}
   ]
 }
