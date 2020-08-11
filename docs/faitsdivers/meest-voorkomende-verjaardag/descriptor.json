@@ -7,7 +7,7 @@
     "day": "2018/09/09",
     "time": "19:00",
     "source_name": "thedailyviz.com",
-    "source_url": "http://thedailyviz.com/2016/09/17/how-common-is-your-birthday-dailyviz/",
+    "source_url": "https://thedailyviz.com/2016/09/17/how-common-is-your-birthday-dailyviz/",
     "img_credit": "publicdomainpictures.net",
     "content": [
         {
@@ -24,7 +24,7 @@
         },
         {
             "type": "paragraph",
-            "content": "Neem vooral zelf een kijkje op <a href=\"http://thedailyviz.com/2016/09/17/how-common-is-your-birthday-dailyviz/\" target=\"_blank\">de website van Matt</a> om te zien hoe veel voorkomend jouw verjaardag is!"
+            "content": "Neem vooral zelf een kijkje op <a href=\"https://thedailyviz.com/2016/09/17/how-common-is-your-birthday-dailyviz/\" target=\"_blank\">de website van Matt</a> om te zien hoe veel voorkomend jouw verjaardag is!"
         }
     ],
     "authorid": "shannaverspreet",
