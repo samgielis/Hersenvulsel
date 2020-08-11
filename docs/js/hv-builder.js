@@ -67,7 +67,7 @@ var hv = function(){
         footer += "            <div class=\"col-sm-4\">";
         footer += "              <img class=\"logo-footer pull-left\"src=\"" + prefix + "img\/logo\/hv-footr.png\" \/>";
         footer += "              <div class=\"credits-label\">";
-        footer += "                © <a class=\"footer-link-red\" href=\"http:\/\/facebook.com\/hersenvulsel\" target=\"_blank\">Hersenvulsel<\/a> "+ currentYear + " <br>";
+        footer += "                © <a class=\"footer-link-red\" href=\"https:\/\/facebook.com\/hersenvulsel\" target=\"_blank\">Hersenvulsel<\/a> "+ currentYear + " <br>";
         footer += "                Design: <a class=\"footer-link-red\" href=\"https:\/\/be.linkedin.com\/in\/samgielis\" target=\"_blank\">Sam Gielis<\/a>";
         footer += "                <div class=\"footer-spacer\"><\/div>";
         footer += "              <\/div>";
