@@ -8,6 +8,7 @@ import {
   writeFileSync,
   existsSync,
   mkdirSync,
+  copyFileSync,
 } from "fs";
 import { sep, join } from "path";
 import { ArticleDescriptor } from "./ArticleDescriptor";
@@ -71,7 +72,21 @@ function migrateImages(
   articleId: string,
   legacyPath: string,
   destinationPath: string
-): void {}
+): void {
+  const legacyImageFolder = join(legacyPath, articleId, "/img/");
+  const entries: Dirent[] = readdirSync(legacyImageFolder, {
+    withFileTypes: true,
+  });
+
+  entries.forEach((entry) => {
+    if (entry.isFile()) {
+      copyFileSync(
+        join(legacyImageFolder, entry.name),
+        join(destinationPath, entry.name)
+      );
+    }
+  });
+}
 
 function writeFileSyncRecursive(filename, content, charset) {
   const folders = filename.split(sep).slice(0, -1);
