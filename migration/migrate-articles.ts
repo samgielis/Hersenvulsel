@@ -1,8 +1,6 @@
 import * as util from "util";
 import {
   Dirent,
-  readdir,
-  readFile,
   readdirSync,
   readFileSync,
   writeFileSync,
@@ -16,11 +14,11 @@ import convertDescriptorToMD from "./MarkdownGenerator";
 
 const categories = [
   "geschiedenis",
-  /*"wetenschap",
+  "wetenschap",
   "mensen",
   "natuur",
   "faitsdivers",
-  "entertainment",*/
+  "entertainment",
 ];
 
 function migrateCategory(categoryName: string): void {
