@@ -30,7 +30,7 @@ function generateMDFrontMatter(descriptor: ArticleDescriptor): string {
     keywords.length === 0 ? "[]" : `["${keywords.join('","')}"]`;
 
   return `---
-id:"${descriptor.id}",
+id: "${descriptor.id}",
 authorid: "${descriptor.authorid}",
 day: "${descriptor.day}",
 source_url: "${descriptor.source_url}",
