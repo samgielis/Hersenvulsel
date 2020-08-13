@@ -59,10 +59,10 @@ function migrateDescriptor(
 ): void {
   const legacyDescriptorURI = join(legacyPath, articleId, "descriptor.json");
   const rawDescriptor = readFileSync(legacyDescriptorURI);
+
   const descriptor: ArticleDescriptor = JSON.parse(rawDescriptor as any);
   const descriptorAsMD = convertDescriptorToMD(descriptor);
-  // TODO: write MD to file
-  console.log(descriptorAsMD);
+
   const destinationFilePath = join(destinationPath, "article.md");
   writeFileSyncRecursive(destinationFilePath, descriptorAsMD, "utf8");
 }
