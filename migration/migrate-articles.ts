@@ -92,7 +92,7 @@ function migrateCategory(categoryName: string): void {
         const articleId = entry.name;
         const destinationPath = join(
             __dirname,
-            `../data/${categoryName}/${articleId}/`
+            `../data/articles/${categoryName}/${articleId}/`
         );
 
         migrateDescriptor(articleId, legacyPath, destinationPath);
