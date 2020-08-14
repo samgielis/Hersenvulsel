@@ -48,7 +48,7 @@
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "migrate::articles": "ts-node .\\migration\\migrate-articles.ts"
+    "migrate::articles": "ts-node --project .\\migration\\tsconfig.json .\\migration\\migrate-articles.ts"
   },
   "repository": {
     "type": "git",
