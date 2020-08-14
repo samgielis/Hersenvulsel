@@ -48,6 +48,8 @@
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "migrate": "npm run migrate::authors && npm run migrate::articles",
+    "migrate::authors": "ts-node --project .\\migration\\tsconfig.json .\\migration\\migrate-authors.ts",
     "migrate::articles": "ts-node --project .\\migration\\tsconfig.json .\\migration\\migrate-articles.ts"
   },
   "repository": {
