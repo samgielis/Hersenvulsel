@@ -3,13 +3,12 @@ import {
     readdirSync,
     readFileSync,
     writeFileSync,
-    existsSync,
-    mkdirSync,
     copyFileSync,
 } from 'fs';
-import { sep, join } from 'path';
+import { join } from 'path';
 import { ArticleDescriptor } from './ArticleDescriptor';
 import convertDescriptorToMD from './MarkdownGenerator';
+import createFolderHierarchySync from './Utils';
 
 const categories = [
     'geschiedenis',
@@ -19,25 +18,6 @@ const categories = [
     'faitsdivers',
     'entertainment',
 ];
-
-function writeFileSyncRecursive(
-    filename: string,
-    content: string | NodeJS.ArrayBufferView,
-    charset: string
-) {
-    const folders = filename.split(sep).slice(0, -1);
-    if (folders.length) {
-        // create folder path if it doesn't exist
-        folders.reduce((last, folder) => {
-            const folderPath = last ? last + sep + folder : folder;
-            if (!existsSync(folderPath)) {
-                mkdirSync(folderPath);
-            }
-            return folderPath;
-        });
-    }
-    writeFileSync(filename, content, charset);
-}
 
 function migrateDescriptor(
     articleId: string,
@@ -51,7 +31,9 @@ function migrateDescriptor(
     const descriptorAsMD = convertDescriptorToMD(descriptor);
 
     const destinationFilePath = join(destinationPath, 'article.md');
-    writeFileSyncRecursive(destinationFilePath, descriptorAsMD, 'utf8');
+
+    createFolderHierarchySync(destinationPath);
+    writeFileSync(destinationFilePath, descriptorAsMD, 'utf8');
 }
 
 function migrateImages(
@@ -92,7 +74,7 @@ function migrateCategory(categoryName: string): void {
         const articleId = entry.name;
         const destinationPath = join(
             __dirname,
-            `../data/${categoryName}/${articleId}/`
+            `../data/articles/${categoryName}/${articleId}/`
         );
 
         migrateDescriptor(articleId, legacyPath, destinationPath);
