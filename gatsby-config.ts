@@ -1,7 +1,15 @@
 export const siteMetadata = {
-    title: `Gatsby TypeScript + ESlint + Prettier Starter`,
-    description: `This Gatsby starter is an adaptation of the default Gatsby starter with TypeScript, ESlint and Prettier pre-configured, bringing you everything you need to get up and running with Gatsby in a type-safe and style-safe way.`,
-    author: `@Tielem <ttielu@gmail.com>`,
+    title: `Hersenvulsel`,
+    description: `Hersenvulsel is een website boordevol interessante weetjes en entertainment.`,
+    author: `Sam Gielis`,
+    categories: [
+        'Wetenschap',
+        'Geschiedenis',
+        'Mensen',
+        'Natuur',
+        'Entertainment',
+        'Faits Divers',
+    ],
 };
 
 export const plugins = [
