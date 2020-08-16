@@ -76,6 +76,8 @@ export const createPages: GatsbyNode['createPages'] = async ({
                     fname
                     id
                     lname
+                    url
+                    urlname
                     fields {
                         slug
                     }
