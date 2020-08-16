@@ -3,12 +3,117 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+import { resolve } from 'path';
+import { GatsbyNode, Node } from 'gatsby';
+import { AuthorsJsonNode } from './src/templates/AuthorPage';
 
-import { GatsbyNode } from 'gatsby';
+/*
+interface FileSystemNode extends Node {
+    relativePath: string;
+    sourceInstanceName: string;
+}
+*/
 
-// You can delete this file if you're not using it
-const onCreateNode: GatsbyNode['onCreateNode'] = () => {
-    (() => {})();
+/* function isFileSystemNode(node: Node): node is FileSystemNode {
+    return !!node.relativePath && node.internal.type === 'File';
+}
+
+*/
+
+interface AuthorDescriptorNode extends Node {
+    id: string;
+    bio: string;
+    contact: string;
+    fname: string;
+    lname: string;
+    url: string;
+    urlname: string;
+}
+
+function isAuthorDescriptorNode(node: Node): node is AuthorDescriptorNode {
+    return node.internal.owner === 'gatsby-transformer-json';
+}
+
+export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
+    const { createNodeField } = actions;
+
+    if (isAuthorDescriptorNode(node)) {
+        const slug = `/a/${node.id}/`;
+        createNodeField({
+            node,
+            name: `slug`,
+            value: slug,
+        });
+    }
 };
 
-export default onCreateNode;
+interface AuthorsJsonData {
+    allAuthorsJson: {
+        nodes: AuthorsJsonNode[];
+    };
+}
+
+export function isAuthorsJsonData(data: any): data is AuthorsJsonData {
+    return (
+        !!data &&
+        !!data.allAuthorsJson &&
+        !!data.allAuthorsJson.nodes &&
+        data.allAuthorsJson.nodes.length > 0
+    );
+}
+
+export const createPages: GatsbyNode['createPages'] = async ({
+    actions,
+    graphql,
+}) => {
+    const { createPage } = actions;
+    const result = await graphql(`
+        query {
+            allAuthorsJson {
+                nodes {
+                    bio
+                    contact
+                    fname
+                    id
+                    lname
+                    fields {
+                        slug
+                    }
+                }
+            }
+        }
+    `);
+
+    if (!result || !result.data) {
+        return;
+    }
+
+    const { data } = result;
+
+    if (isAuthorsJsonData(data)) {
+        await Promise.all(
+            data.allAuthorsJson.nodes.map(
+                async ({ fields }: AuthorsJsonNode) => {
+                    const component = resolve('./src/templates/AuthorPage.tsx');
+
+                    if (!component) {
+                        return;
+                    }
+
+                    // eslint-disable-next-line no-console
+                    console.log('Creating AuthorPage', fields.slug);
+
+                    await createPage({
+                        path: fields.slug,
+                        component,
+                        context: {
+                            // Data passed to context is available
+                            // in page queries as GraphQL variables.
+                            slug: fields.slug,
+                        },
+                    });
+                }
+            )
+        );
+    }
+};
