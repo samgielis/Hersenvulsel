@@ -1,0 +1,291 @@
+@media all and (max-width: 1199px) and (min-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+/* PADDINGS */
+.pad-bot-20{
+  padding-bottom: 20px;
+}
+.pad-bot-30{
+  padding-bottom: 30px;
+}
+
+
+/* HEADER STYLE */
+header {
+  height:14vw;
+  /*background-image: url(../img/bg.png);*/
+  background-size: cover;
+}
+
+.header-default {
+  background: #c93c3c !important;
+  background-size: cover;
+}
+.header-wetenschap {
+  background: #2869a4 !important;
+  background-size: cover;
+}
+.header-geschiedenis {
+  background: #e9d822 !important;
+  background-size: cover;
+}
+.header-mensen {
+  background: #de3737 !important;
+  background-size: cover;
+}
+.header-natuur {
+  background: #4ea648 !important;
+  background-size: cover;
+}
+.header-entertainment {
+  background: #8833af !important;
+  background-size: cover;
+}
+.header-faitsdivers {
+  background: #ff8534 !important;
+  background-size: cover;
+}
+* {
+  border-radius: 0 !important;
+}
+
+/* TITE STYLE */
+.hv-article-title, .hv-article-title-mostrecent {
+  color: #1A1A1A;
+  font-size: 4.2em;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+/* SMALLER SCREENS -> SMALLER TITLE*/
+@media all and (max-width: 460px) {
+    .hv-article-title, .hv-article-title-mostrecent  {
+        font-size: 2.2em;
+    }
+}
+/* SMALLER SCREENS -> SMALLER TITLE*/
+@media all and (min-width: 460px) and (max-width: 1000px) {
+    .hv-article-title, .hv-article-title-mostrecent  {
+        font-size: 3.2em;
+    }
+}
+.hv-article-title-mostrecent {
+  text-align: left;
+  font-size: 2.5em !important;
+  min-height: 125px
+}
+.hv-category-title, .hv-category-title-15px, .hv-category-title-30px-top, .hv-category-title-small {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.hv-category-title-30px-top {
+	padding-top: 30px;
+}
+.hv-category-title-15px {
+  padding-top: 15px;
+}
+@media all and (max-width: 460px) {
+    .hv-category-title-15px {
+	  margin-top: -50px !important;
+	}
+	.hv-category-title-30px-top {
+	  margin-top: -30px !important;
+	}
+}
+
+.hv-category-title-small {
+  font-size: 1.5em;
+  margin:0 ! important
+}
+.hv-c-default {
+  color: #c93c3c !important;
+}
+.hv-c-mensen {
+  color: #de3737 !important;
+}
+.hv-c-wetenschap {
+  color: #2a6fa4 !important;
+}
+.hv-c-geschiedenis {
+  color: #e9d822 !important;
+}
+.hv-c-natuur {
+  color: #4ea648 !important;
+}
+.hv-c-entertainment {
+  color: #8833af !important;
+}
+.hv-c-faitsdivers {
+  color: #ff8534 !important;
+}
+.hv-title-container {
+  width: 100%;
+  border-bottom:none;
+}
+
+/* AUTHOR STYLE */
+.hv-author-thumbnail {
+  max-height: 70px;
+}
+.hv-author-thumbnail-container {
+  max-height: 70px;
+  padding-right: 10px
+}
+.hv-author-thumbnail:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+.hv-author-name {
+  letter-spacing: -1px;
+  font-size: 1.7em;
+  font-weight: 350;
+  margin:0;
+  padding-top:10px;
+}
+.hv-author-name-link {
+  color: #333333 !important;
+}
+.hv-date-line {
+  color: #595959;
+  font-size: 1.1em;
+  padding: 0
+}
+.hv-author-date-most-recent {
+  margin-bottom: 11px;
+  font-size: 1.3em;
+  transform:scale(1,1.1);
+}
+
+/* CONTENT STYLE */
+hv-content-body-p {
+  line-height: 130%;
+}
+
+hv-10bot {
+  padding-bottom: 10px;
+}
+.hv-article-figcaption {
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+.maintext-col {
+  text-align: justify;
+  font-size: 1.5em;
+  width: 100%
+}
+/* SMALLER SCREENS -> DONT JUSTIFY TEXT*/
+@media all and (max-width: 460px) {
+    .maintext-col {
+        text-align: initial !important;
+    }
+}
+.maintext-row {
+  max-width: 100%;
+  padding-bottom: 3em;
+}
+
+
+/* MOST RECENT STYLE */
+.hv-lees-meer {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+.hv-most-recent-content {
+  font-size: 1.34em;
+  font-weight: 200;
+  transform:scale(1,1.1);
+}
+
+/* SOCIAL STYLE */
+#share-buttons {
+  padding-top:13px;
+  text-align: right
+}
+#share-buttons img {
+  width: 40px;
+  padding: 0px;
+}
+/* SIDEBAR STYLE */
+.sidebar-article-entry {
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.hv-sidebar-head {
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+}
+/* NAVBAR STYLE */
+.navbar-nav > li > a {
+  height: 65px !important;
+  vertical-align: middle;
+  display: table-cell;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.05em
+}
+.navbar-brand {
+  height: 64px;
+  padding-right: 50px !important;
+  padding-left: 8px !important;
+}
+#nav.affix {
+  top: 0px;
+  width: 100%;
+  z-index:10;
+}
+
+
+/* HEADER STYLE */
+.hv-pagehead {
+
+  text-align:center;
+  font: 0/0 a;
+  vertical-align: middle;
+  height: 14vw;
+  max-width: 100%
+}
+.hv-pagehead-cont {
+  width: 100%;
+  height: 14vw;
+}
