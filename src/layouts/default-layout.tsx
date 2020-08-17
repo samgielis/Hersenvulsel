@@ -7,7 +7,7 @@
 
 import React, { ReactNode } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Header from '../components/header';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './default-layout.css';
 import './hv.css';
