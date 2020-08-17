@@ -1,6 +1,7 @@
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import Layout from '../layouts/default-layout';
+import SEO from '../components/seo';
 
 export interface AuthorsJsonNode {
     bio: string;
@@ -24,6 +25,7 @@ export default function AuthorPage({
     const author = data.authorsJson;
     return (
         <Layout>
+            <SEO title={`${author.fname} ${author.lname}`} />
             <div>
                 <div className="container">
                     <div className="row">
