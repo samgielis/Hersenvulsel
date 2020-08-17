@@ -44,6 +44,13 @@ const Footer = ({ categories }: FooterProps) => {
                     author
                 }
             }
+            footerImage: file(relativePath: { eq: "hv-footer.png" }) {
+                childImageSharp {
+                    fixed {
+                        src
+                    }
+                }
+            }
         }
     `);
 
@@ -55,7 +62,7 @@ const Footer = ({ categories }: FooterProps) => {
                         <div className="col-sm-4">
                             <img
                                 className="logo-footer pull-left"
-                                src="./img/logo/hv-footr.png"
+                                src={data.footerImage.childImageSharp.fixed.src}
                                 alt={data.site.siteMetadata.title}
                             />
                             <div className="credits-label">
