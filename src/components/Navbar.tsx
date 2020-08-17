@@ -1,7 +1,27 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'gatsby';
+import { linkTitleToUrl } from '../utils/StringUtils';
 
-const Navbar = () => (
+interface NavbarLinkProps {
+    title: string;
+}
+
+const NavbarLink = ({ title }: NavbarLinkProps) => {
+    return (
+        <li>
+            <Link className="footer-link" to={`/${linkTitleToUrl(title)}`}>
+                {title}
+            </Link>
+        </li>
+    );
+};
+
+interface NavbarProps {
+    categories: string[];
+}
+
+const Navbar = ({ categories }: NavbarProps) => (
     <div id="nav-wrapper" className="nav-wrapper" style={{ height: '90px' }}>
         <div id="nav">
             <div
@@ -21,27 +41,9 @@ const Navbar = () => (
                     </button>
                     <div className="navbar-collapse collapse">
                         <ul className="nav  navbar-nav">
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="/wetenschap">Wetenschap</a>
-                            </li>
-                            <li>
-                                <a href="/geschiedenis">Geschiedenis</a>
-                            </li>
-                            <li>
-                                <a href="/mensen">Mensen</a>
-                            </li>
-                            <li>
-                                <a href="/natuur">Natuur</a>
-                            </li>
-                            <li>
-                                <a href="/entertainment">Entertainment</a>
-                            </li>
-                            <li>
-                                <a href="/faitsdivers">Faits Divers</a>
-                            </li>
+                            {['Home', ...categories].map((title) => {
+                                return <NavbarLink key={title} title={title} />;
+                            })}
                         </ul>
                         <ul className="nav pull-right navbar-nav">
                             <li>

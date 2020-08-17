@@ -29,7 +29,7 @@ const Layout = ({ children }: LayoutProperties): JSX.Element => {
 
     return (
         <>
-            <Navbar />
+            <Navbar categories={data.site.siteMetadata.categories} />
             <div>
                 <main>{children}</main>
                 <Footer categories={data.site.siteMetadata.categories} />
