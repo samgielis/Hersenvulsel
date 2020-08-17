@@ -56,9 +56,9 @@ const Navbar = ({ categories }: NavbarProps) => (
                                 </a>
                             </li>
                             <li>
-                                <a href="/contact">
+                                <Link to="/contact">
                                     <i className="fa fa-envelope fa-lg" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
