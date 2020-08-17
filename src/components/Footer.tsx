@@ -29,16 +29,19 @@ const FooterLinkColumn = ({ content }: { content: string[] }) => (
     </div>
 );
 
-const Footer = () => {
+interface FooterProps {
+    categories: string[];
+}
+
+const Footer = ({ categories }: FooterProps) => {
     const currentYear = new Date().getUTCFullYear();
 
     const data = useStaticQuery(graphql`
-        query HeaderQuery {
+        query FooterQuery {
             site {
                 siteMetadata {
                     title
                     author
-                    categories
                 }
             }
         }
@@ -79,11 +82,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <FooterLinkColumn
-                            content={[
-                                'Home',
-                                ...data.site.siteMetadata.categories,
-                                'Random',
-                            ]}
+                            content={['Home', ...categories, 'Random']}
                         />
                         <FooterLinkColumn
                             content={[

@@ -6,6 +6,7 @@
  */
 
 import React, { ReactNode } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import Footer from '../components/Footer';
 import './default-layout.css';
 import './hv.css';
@@ -16,12 +17,22 @@ interface LayoutProperties {
 }
 
 const Layout = ({ children }: LayoutProperties): JSX.Element => {
+    const data = useStaticQuery(graphql`
+        query defaultQuery {
+            site {
+                siteMetadata {
+                    categories
+                }
+            }
+        }
+    `);
+
     return (
         <>
             <Navbar />
             <div>
                 <main>{children}</main>
-                <Footer />
+                <Footer categories={data.site.siteMetadata.categories} />
             </div>
         </>
     );
