@@ -91,7 +91,7 @@ export default function AuthorPage({
                                 className="hv-c-default hv-category-title"
                                 style={{ paddingTop: '20px' }}
                             >
-                                DOOR
+                                DOOR {author.fname}
                             </h2>
 
                             <div
