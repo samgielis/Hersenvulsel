@@ -10,9 +10,7 @@ interface NavbarLinkProps {
 const NavbarLink = ({ title }: NavbarLinkProps) => {
     return (
         <li>
-            <Link className="footer-link" to={`/${linkTitleToUrl(title)}`}>
-                {title}
-            </Link>
+            <Link to={`/${linkTitleToUrl(title)}`}>{title}</Link>
         </li>
     );
 };
