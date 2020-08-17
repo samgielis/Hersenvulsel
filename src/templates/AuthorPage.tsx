@@ -14,16 +14,27 @@ export interface AuthorsJsonNode {
     urlname: string;
     fields: {
         slug: string;
+        authorimg: string;
     };
 }
 
 interface AuthorPageDataType {
     authorsJson: AuthorsJsonNode;
+    allFile: {
+        nodes: {
+            childImageSharp: {
+                fixed: {
+                    src: string;
+                };
+            };
+        }[];
+    };
 }
 export default function AuthorPage({
     data,
 }: PageProps<AuthorPageDataType, any>): JSX.Element {
     const author = data.authorsJson;
+    const imgUrl = data.allFile.nodes[0].childImageSharp.fixed.src;
     return (
         <Layout>
             <SEO title={`${author.fname} ${author.lname}`} />
@@ -44,7 +55,7 @@ export default function AuthorPage({
                                 <div className="col-sm-4 pad-bot-20">
                                     <img
                                         alt={`${author.fname} ${author.lname}`}
-                                        src="./profiel.png"
+                                        src={imgUrl}
                                         style={{ width: '190px' }}
                                     />
                                 </div>
@@ -116,7 +127,7 @@ export default function AuthorPage({
 }
 
 export const query = graphql`
-    query($slug: String!) {
+    query($slug: String!, $authorimg: String!) {
         authorsJson(fields: { slug: { eq: $slug } }) {
             bio
             contact
@@ -125,6 +136,20 @@ export const query = graphql`
             lname
             url
             urlname
+        }
+        allFile(
+            filter: {
+                sourceInstanceName: { eq: "authorimages" }
+                relativePath: { regex: $authorimg }
+            }
+        ) {
+            nodes {
+                childImageSharp {
+                    fixed {
+                        src
+                    }
+                }
+            }
         }
     }
 `;

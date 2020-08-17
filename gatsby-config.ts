@@ -33,6 +33,13 @@ export const plugins = [
             path: `${__dirname}/src/images`,
         },
     },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            name: `authorimages`,
+            path: `${__dirname}/data/authors`,
+        },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

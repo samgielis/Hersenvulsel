@@ -44,6 +44,11 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
             name: `slug`,
             value: slug,
         });
+        createNodeField({
+            node,
+            name: `authorimg`,
+            value: `/${node.id}.png/g`,
+        });
     }
 };
 
@@ -80,6 +85,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
                     urlname
                     fields {
                         slug
+                        authorimg
                     }
                 }
             }
@@ -112,6 +118,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
                             // Data passed to context is available
                             // in page queries as GraphQL variables.
                             slug: fields.slug,
+                            authorimg: fields.authorimg,
                         },
                     });
                 }
