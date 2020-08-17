@@ -17,6 +17,19 @@ const NavbarLink = ({ title }: NavbarLinkProps) => {
     );
 };
 
+const NavbarButton = () => (
+    <button
+        type="button"
+        className="navbar-toggle"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+    >
+        <span className="icon-bar" />
+        <span className="icon-bar" />
+        <span className="icon-bar" />
+    </button>
+);
+
 interface NavbarProps {
     categories: string[];
 }
@@ -29,16 +42,7 @@ const Navbar = ({ categories }: NavbarProps) => (
                 style={{ zIndex: 10 }}
             >
                 <div className="container">
-                    <button
-                        type="button"
-                        className="navbar-toggle"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                    >
-                        <span className="icon-bar" />
-                        <span className="icon-bar" />
-                        <span className="icon-bar" />
-                    </button>
+                    <NavbarButton />
                     <div className="navbar-collapse collapse">
                         <ul className="nav  navbar-nav">
                             {['Home', ...categories].map((title) => {
