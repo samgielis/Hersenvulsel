@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import stringReplaceAll from '../utils/StringUtils';
+import { linkTitleToUrl } from '../utils/StringUtils';
 import './Footer.css';
 
 interface FooterLinkProps {
@@ -8,15 +8,8 @@ interface FooterLinkProps {
 }
 
 const FooterLink = ({ title }: FooterLinkProps) => {
-    let url = '';
-
-    if (title !== 'Home') {
-        url = stringReplaceAll(title.toLowerCase(), ' ', '-');
-        url = stringReplaceAll(url, '&', 'en');
-    }
-
     return (
-        <Link className="footer-link" to={`/${url}`}>
+        <Link className="footer-link" to={`/${linkTitleToUrl(title)}`}>
             {title}
         </Link>
     );

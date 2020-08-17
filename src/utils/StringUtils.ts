@@ -1,4 +1,4 @@
-function stringReplaceAll(
+export function stringReplaceAll(
     input: string,
     toReplace: string,
     replacement: string
@@ -6,4 +6,15 @@ function stringReplaceAll(
     return input.split(toReplace).join(replacement);
 }
 
-export default stringReplaceAll;
+export function linkTitleToUrl(title: string): string {
+    if (title === 'Faits Divers') {
+        return 'faitsdivers';
+    }
+
+    if (title === 'Home') {
+        return '';
+    }
+
+    const url = stringReplaceAll(title.toLowerCase(), ' ', '-');
+    return stringReplaceAll(url, '&', 'en');
+}
