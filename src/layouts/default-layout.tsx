@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from '../components/header';
 import './default-layout.css';
+import Footer from '../components/Footer';
 
 interface LayoutProperties {
     children: ReactNode;
@@ -37,11 +38,7 @@ const Layout = ({ children }: LayoutProperties): JSX.Element => {
                 }}
             >
                 <main>{children}</main>
-                <footer>
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </footer>
+                <Footer />
             </div>
         </>
     );
