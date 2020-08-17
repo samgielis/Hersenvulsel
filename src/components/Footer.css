@@ -11,7 +11,7 @@
     color: #818181;
     margin: auto;
   }
-  .hv-footer-inner-container {
+  .row.hv-footer-inner-container {
     padding-top: 50px;
     padding-bottom: 0px;
     margin: 0 auto;
