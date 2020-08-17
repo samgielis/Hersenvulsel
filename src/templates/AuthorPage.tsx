@@ -2,6 +2,7 @@ import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import Layout from '../layouts/default-layout';
 import SEO from '../components/seo';
+import './AuthorPage.css';
 
 export interface AuthorsJsonNode {
     bio: string;
