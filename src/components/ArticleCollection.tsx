@@ -55,7 +55,15 @@ const ArticleCollection = ({ articles }: ArticleCollectionProps) => (
     <div className="row">
         <div className="col-sm-12" style={{ paddingBottom: '50px' }}>
             <div className="row" id="hv-directory-container">
-                {articles.map(ArticleTile)}
+                {articles.map((article) => (
+                    <ArticleTile
+                        title={article.title}
+                        id={article.id}
+                        category={article.category}
+                        key={article.id}
+                        image={article.image}
+                    />
+                ))}
             </div>
         </div>
     </div>
