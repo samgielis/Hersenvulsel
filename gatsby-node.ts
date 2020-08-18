@@ -6,7 +6,10 @@
 import { resolve } from 'path';
 import { GatsbyNode, Node, Page } from 'gatsby';
 import { AuthorsJsonNode } from './src/templates/AuthorPage';
-import { getArticleCategoryFromAbsolutePath } from './src/utils/StringUtils';
+import {
+    getArticleCategoryFromAbsolutePath,
+    getArticleTitleFromRawMarkdown,
+} from './src/utils/StringUtils';
 
 /*
 interface FileSystemNode extends Node {
@@ -40,6 +43,7 @@ interface ArticleDescriptorNode extends Node {
     frontmatter: {
         id: string;
     };
+    rawMarkdownBody: string;
 }
 
 function isArticleDescriptorNode(node: Node): node is ArticleDescriptorNode {
@@ -71,6 +75,12 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
             node.fileAbsolutePath
         );
         const slug = `/${category}/${node.frontmatter.id}/`;
+        const title = getArticleTitleFromRawMarkdown(node.rawMarkdownBody);
+        createNodeField({
+            node,
+            name: `slug`,
+            value: slug,
+        });
         createNodeField({
             node,
             name: `category`,
@@ -78,8 +88,8 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
         });
         createNodeField({
             node,
-            name: `slug`,
-            value: slug,
+            name: `title`,
+            value: title,
         });
     }
 };

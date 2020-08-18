@@ -26,3 +26,11 @@ export function getArticleCategoryFromAbsolutePath(path: string): string {
     }
     return regexResult[1];
 }
+
+export function getArticleTitleFromRawMarkdown(raw: string): string {
+    const regexResult = raw.match(/# ([^\n]+)\n/);
+    if (!regexResult || regexResult.length < 2) {
+        return '';
+    }
+    return regexResult[1];
+}

@@ -16,6 +16,11 @@ interface ArticlePageDataType {
             title: string;
         };
         rawMarkdownBody: string;
+        fields: {
+            slug: string;
+            title: string;
+            category: string;
+        };
     };
 }
 export default function ArticlePage({
@@ -25,8 +30,8 @@ export default function ArticlePage({
 
     return (
         <Layout>
-            <SEO title={`${article.frontmatter.id}`} />
-            <div>{article.frontmatter.id}</div>
+            <SEO title={`${article.fields.title}`} />
+            <div>{article.fields.title}</div>
         </Layout>
     );
 }
@@ -44,6 +49,11 @@ export const query = graphql`
                 title
             }
             rawMarkdownBody
+            fields {
+                slug
+                title
+                category
+            }
         }
     }
 `;

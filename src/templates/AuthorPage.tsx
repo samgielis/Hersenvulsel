@@ -7,15 +7,17 @@ import './AuthorPage.css';
 import ArticleCollection, {
     ArticleTileData,
 } from '../components/ArticleCollection';
-import { getArticleCategoryFromAbsolutePath } from '../utils/StringUtils';
 
 interface RawArticleData {
     node: {
         frontmatter: {
             id: string;
         };
-        rawMarkdownBody: string;
-        fileAbsolutePath: string;
+        fields: {
+            slug: string;
+            category: string;
+            title: string;
+        };
     };
 }
 
@@ -75,23 +77,13 @@ function findImageForArticle(
     return undefined;
 }
 
-function getArticleTitleFromRawMarkdown(raw: string): string {
-    const regexResult = raw.match(/# ([^\n]+)\n/);
-    if (!regexResult || regexResult.length < 2) {
-        return '';
-    }
-    return regexResult[1];
-}
-
 function rawArticleToThumbnailData(
     data: RawArticleData,
     image?: FluidObject
 ): ArticleTileData {
     return {
-        title: getArticleTitleFromRawMarkdown(data.node.rawMarkdownBody),
-        category: getArticleCategoryFromAbsolutePath(
-            data.node.fileAbsolutePath
-        ),
+        title: data.node.fields.title,
+        category: data.node.fields.category,
         id: data.node.frontmatter.id,
         image,
     };
@@ -238,8 +230,11 @@ export const query = graphql`
                     frontmatter {
                         id
                     }
-                    rawMarkdownBody
-                    fileAbsolutePath
+                    fields {
+                        category
+                        slug
+                        title
+                    }
                 }
             }
         }
