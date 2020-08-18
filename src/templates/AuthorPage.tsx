@@ -3,6 +3,19 @@ import React from 'react';
 import Layout from '../layouts/default-layout';
 import SEO from '../components/seo';
 import './AuthorPage.css';
+import ArticleCollection, {
+    ArticleThumbnailData,
+} from '../components/ArticleCollection';
+
+interface RawArticleData {
+    node: {
+        frontmatter: {
+            id: string;
+        };
+        rawMarkdownBody: string;
+        fileAbsolutePath: string;
+    };
+}
 
 export interface AuthorsJsonNode {
     bio: string;
@@ -31,22 +44,44 @@ interface AuthorPageDataType {
         }[];
     };
     allMarkdownRemark: {
-        edges: {
-            node: {
-                frontmatter: {
-                    id: string;
-                };
-                rawMarkdownBody: string;
-                fileAbsolutePath: string;
-            };
-        }[];
+        edges: RawArticleData[];
     };
 }
+
+function getArticleTitleFromRawMarkdown(raw: string): string {
+    const regexResult = raw.match(/# ([^\n]+)\n/);
+    if (!regexResult || regexResult.length < 2) {
+        return '';
+    }
+    return regexResult[1];
+}
+
+function getArticleCategoryFromAbsolutePath(path: string): string {
+    const regexResult = path.match(/\/articles\/([^/]+)\//);
+    if (!regexResult || regexResult.length < 2) {
+        return '';
+    }
+    return regexResult[1];
+}
+
+function rawArticleToThumbnailData(data: RawArticleData): ArticleThumbnailData {
+    return {
+        title: getArticleTitleFromRawMarkdown(data.node.rawMarkdownBody),
+        category: getArticleCategoryFromAbsolutePath(
+            data.node.fileAbsolutePath
+        ),
+    };
+}
+
 export default function AuthorPage({
     data,
 }: PageProps<AuthorPageDataType, any>): JSX.Element {
     const author = data.authorsJson;
     const imgUrl = data.allFile.nodes[0].childImageSharp.fixed.src;
+    const articles = data.allMarkdownRemark.edges.map(
+        rawArticleToThumbnailData
+    );
+    console.log(articles);
     return (
         <Layout>
             <SEO title={`${author.fname} ${author.lname}`} />
@@ -114,7 +149,7 @@ export default function AuthorPage({
                                 className="hv-c-default hv-category-title"
                                 style={{ paddingTop: '20px' }}
                             >
-                                DOOR {author.fname}
+                                DOOR {author.fname} ({articles.length})
                             </h2>
 
                             <div
@@ -130,6 +165,8 @@ export default function AuthorPage({
                                 </div>
                                 <div className="col-sm-3" />
                             </div>
+
+                            <ArticleCollection articles={articles} />
                         </div>
                     </div>
                 </div>
