@@ -1,5 +1,6 @@
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
+import { FluidObject } from 'gatsby-image';
 import Layout from '../layouts/default-layout';
 import SEO from '../components/seo';
 import './AuthorPage.css';
@@ -32,6 +33,15 @@ export interface AuthorsJsonNode {
     };
 }
 
+interface ImageNode {
+    node: {
+        absolutePath: string;
+        childImageSharp: {
+            fluid: FluidObject;
+        };
+    };
+}
+
 interface AuthorPageDataType {
     authorsJson: AuthorsJsonNode;
     allFile: {
@@ -46,6 +56,22 @@ interface AuthorPageDataType {
     allMarkdownRemark: {
         edges: RawArticleData[];
     };
+    articleThumbnails: {
+        edges: ImageNode[];
+    };
+}
+
+function findImageForArticle(
+    articleId: string,
+    images: ImageNode[]
+): FluidObject | undefined {
+    const result = images.filter((image) => {
+        return image.node.absolutePath.indexOf(articleId) > -1;
+    });
+    if (result.length > 0) {
+        return result[0].node.childImageSharp.fluid;
+    }
+    return undefined;
 }
 
 function getArticleTitleFromRawMarkdown(raw: string): string {
@@ -64,13 +90,17 @@ function getArticleCategoryFromAbsolutePath(path: string): string {
     return regexResult[1];
 }
 
-function rawArticleToThumbnailData(data: RawArticleData): ArticleTileData {
+function rawArticleToThumbnailData(
+    data: RawArticleData,
+    image?: FluidObject
+): ArticleTileData {
     return {
         title: getArticleTitleFromRawMarkdown(data.node.rawMarkdownBody),
         category: getArticleCategoryFromAbsolutePath(
             data.node.fileAbsolutePath
         ),
         id: data.node.frontmatter.id,
+        image,
     };
 }
 
@@ -79,9 +109,14 @@ export default function AuthorPage({
 }: PageProps<AuthorPageDataType, any>): JSX.Element {
     const author = data.authorsJson;
     const imgUrl = data.allFile.nodes[0].childImageSharp.fixed.src;
-    const articles = data.allMarkdownRemark.edges.map(
-        rawArticleToThumbnailData
-    );
+    const thumbnailImages = data.articleThumbnails.edges;
+    const articles = data.allMarkdownRemark.edges.map((rawData) => {
+        const correspondingThumbnail = findImageForArticle(
+            rawData.node.frontmatter.id,
+            thumbnailImages
+        );
+        return rawArticleToThumbnailData(rawData, correspondingThumbnail);
+    });
     return (
         <Layout>
             <SEO title={`${author.fname} ${author.lname}`} />
@@ -210,6 +245,20 @@ export const query = graphql`
                     }
                     rawMarkdownBody
                     fileAbsolutePath
+                }
+            }
+        }
+        articleThumbnails: allFile(
+            filter: { relativePath: { regex: "/main.jpg/g" } }
+        ) {
+            edges {
+                node {
+                    absolutePath
+                    childImageSharp {
+                        fluid(maxWidth: 300) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
                 }
             }
         }
