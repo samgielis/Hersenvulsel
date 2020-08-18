@@ -82,7 +82,6 @@ export default function AuthorPage({
     const articles = data.allMarkdownRemark.edges.map(
         rawArticleToThumbnailData
     );
-    console.log(articles);
     return (
         <Layout>
             <SEO title={`${author.fname} ${author.lname}`} />
