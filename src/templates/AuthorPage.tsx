@@ -4,7 +4,7 @@ import Layout from '../layouts/default-layout';
 import SEO from '../components/seo';
 import './AuthorPage.css';
 import ArticleCollection, {
-    ArticleThumbnailData,
+    ArticleTileData,
 } from '../components/ArticleCollection';
 
 interface RawArticleData {
@@ -64,12 +64,13 @@ function getArticleCategoryFromAbsolutePath(path: string): string {
     return regexResult[1];
 }
 
-function rawArticleToThumbnailData(data: RawArticleData): ArticleThumbnailData {
+function rawArticleToThumbnailData(data: RawArticleData): ArticleTileData {
     return {
         title: getArticleTitleFromRawMarkdown(data.node.rawMarkdownBody),
         category: getArticleCategoryFromAbsolutePath(
             data.node.fileAbsolutePath
         ),
+        id: data.node.frontmatter.id,
     };
 }
 
