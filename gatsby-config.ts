@@ -40,6 +40,7 @@ export const plugins = [
             path: `${__dirname}/data/authors`,
         },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
