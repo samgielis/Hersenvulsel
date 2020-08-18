@@ -18,3 +18,11 @@ export function linkTitleToUrl(title: string): string {
     const url = stringReplaceAll(title.toLowerCase(), ' ', '-');
     return stringReplaceAll(url, '&', 'en');
 }
+
+export function getArticleCategoryFromAbsolutePath(path: string): string {
+    const regexResult = path.match(/\/articles\/([^/]+)\//);
+    if (!regexResult || regexResult.length < 2) {
+        return '';
+    }
+    return regexResult[1];
+}

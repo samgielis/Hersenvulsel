@@ -6,6 +6,7 @@
 import { resolve } from 'path';
 import { GatsbyNode, Node, Page } from 'gatsby';
 import { AuthorsJsonNode } from './src/templates/AuthorPage';
+import { getArticleCategoryFromAbsolutePath } from './src/utils/StringUtils';
 
 /*
 interface FileSystemNode extends Node {
@@ -34,6 +35,17 @@ function isAuthorDescriptorNode(node: Node): node is AuthorDescriptorNode {
     return node.internal.owner === 'gatsby-transformer-json';
 }
 
+interface ArticleDescriptorNode extends Node {
+    fileAbsolutePath: string;
+    frontmatter: {
+        id: string;
+    };
+}
+
+function isArticleDescriptorNode(node: Node): node is ArticleDescriptorNode {
+    return node.internal.owner === 'gatsby-transformer-remark';
+}
+
 export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
     const { createNodeField } = actions;
 
@@ -54,6 +66,21 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
             name: `authorid`,
             value: node.id,
         });
+    } else if (isArticleDescriptorNode(node)) {
+        const category = getArticleCategoryFromAbsolutePath(
+            node.fileAbsolutePath
+        );
+        const slug = `/${category}/${node.frontmatter.id}/`;
+        createNodeField({
+            node,
+            name: `category`,
+            value: category,
+        });
+        createNodeField({
+            node,
+            name: `slug`,
+            value: slug,
+        });
     }
 };
 
@@ -69,6 +96,103 @@ function isAuthorsJsonData(data: any): data is AuthorsJsonData {
         !!data.allAuthorsJson &&
         !!data.allAuthorsJson.nodes &&
         data.allAuthorsJson.nodes.length > 0
+    );
+}
+
+interface MDRemarkNode {
+    fileAbsolutePath: string;
+    frontmatter: {
+        authorid: string;
+        day: string;
+        id: string;
+        keywords: string;
+        source_url: string;
+        title: string;
+        img_credit: string;
+    };
+    fields: {
+        slug: string;
+        category: string;
+    };
+}
+
+interface ArticleData {
+    allMarkdownRemark: {
+        nodes: MDRemarkNode[];
+    };
+}
+
+function isArticleData(data: any): data is ArticleData {
+    return !!data && !!data.allMarkdownRemark;
+}
+
+async function createArticlePages(
+    createPage: <TContext = Record<string, unknown>>(
+        args: Page<TContext>
+    ) => void,
+    graphql: <TData, TVariables = any>(
+        query: string,
+        variables?: TVariables | undefined
+    ) => Promise<{
+        errors?: any;
+        data?: TData | undefined;
+    }>
+): Promise<void> {
+    const result = await graphql(`
+        query {
+            allMarkdownRemark {
+                nodes {
+                    fileAbsolutePath
+                    frontmatter {
+                        authorid
+                        day
+                        id
+                        keywords
+                        source_url
+                        title
+                        img_credit
+                    }
+                    fields {
+                        slug
+                        category
+                    }
+                }
+            }
+        }
+    `);
+
+    if (!result || !result.data) {
+        return;
+    }
+
+    const { data } = result;
+
+    if (!isArticleData(data)) {
+        return;
+    }
+
+    await Promise.all(
+        data.allMarkdownRemark.nodes.map(async ({ fields }: MDRemarkNode) => {
+            const component = resolve('./src/templates/ArticlePage.tsx');
+
+            if (!component) {
+                return;
+            }
+
+            // eslint-disable-next-line no-console
+            console.log('Creating ArticlePage', fields.slug);
+
+            await createPage({
+                path: fields.slug,
+                component,
+                context: {
+                    // Data passed to context is available
+                    // in page queries as GraphQL variables.
+                    slug: fields.slug,
+                    category: fields.category,
+                },
+            });
+        })
     );
 }
 
@@ -147,4 +271,5 @@ export const createPages: GatsbyNode['createPages'] = async ({
 }) => {
     const { createPage } = actions;
     await createAuthorPages(createPage, graphql);
+    await createArticlePages(createPage, graphql);
 };

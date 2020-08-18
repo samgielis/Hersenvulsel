@@ -7,6 +7,7 @@ import './AuthorPage.css';
 import ArticleCollection, {
     ArticleTileData,
 } from '../components/ArticleCollection';
+import { getArticleCategoryFromAbsolutePath } from '../utils/StringUtils';
 
 interface RawArticleData {
     node: {
@@ -82,14 +83,6 @@ function getArticleTitleFromRawMarkdown(raw: string): string {
     return regexResult[1];
 }
 
-function getArticleCategoryFromAbsolutePath(path: string): string {
-    const regexResult = path.match(/\/articles\/([^/]+)\//);
-    if (!regexResult || regexResult.length < 2) {
-        return '';
-    }
-    return regexResult[1];
-}
-
 function rawArticleToThumbnailData(
     data: RawArticleData,
     image?: FluidObject
@@ -104,9 +97,9 @@ function rawArticleToThumbnailData(
     };
 }
 
-export default function AuthorPage({
+const AuthorPage = ({
     data,
-}: PageProps<AuthorPageDataType, any>): JSX.Element {
+}: PageProps<AuthorPageDataType, any>): JSX.Element => {
     const author = data.authorsJson;
     const imgUrl = data.allFile.nodes[0].childImageSharp.fixed.src;
     const thumbnailImages = data.articleThumbnails.edges;
@@ -208,7 +201,9 @@ export default function AuthorPage({
             </div>
         </Layout>
     );
-}
+};
+
+export default AuthorPage;
 
 export const query = graphql`
     query($slug: String!, $authorimg: String!, $authorid: String!) {
