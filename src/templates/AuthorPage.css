@@ -1,0 +1,18 @@
+
+.hv-auth-links .hv-auth-bio {
+    color: #555555;
+  }
+  .hv-auth-bio {
+    font-size: 1.2em;
+  }
+  .hv-auth-links {
+    font-size: 1.1em;
+    padding-top: 20px;
+  }
+  .hv-auth-info-fa {
+    padding-right: 5px;
+  }
+  .hv-auth-name {
+    font-size: 3em !important;
+  }
+  

@@ -1,0 +1,108 @@
+@media only screen and (max-width: 360px) {
+
+    .hv-tile-title span {
+    	font-size: 0.5em;
+    	line-height: 0.5em;
+    }
+
+
+
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+	.thumblink {
+		font-size: 0.8em;
+		line-height: 0.8em;
+
+	}
+}
+@media all and (max-width: 350px) {
+
+	.thumblink {
+		font-size: 0.9em;
+		line-height: 0.8em;
+
+	}
+}
+.hv-tile-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 220px;
+  background: black;
+}
+.hv-tile-image-container img {
+  height: 100%;
+  opacity: 0.71;
+  width: 100%;
+
+}
+.hv-tile-title-container {
+    position: absolute;
+    top: 35px;
+    left: 3px;
+    width: 95%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hv-tile-title {
+    position: absolute;
+}
+
+.hv-tile-title-default span:hover {
+    background-color: rgba(222,55,55,0.8);
+    box-shadow: 10px 0 0 rgba(222,55,55,0.8),-0 0 0 rgba(222,55,55,0.8);
+}
+.hv-tile-title-wetenschap span:hover {
+    background-color: rgba(40,105,164,0.8);
+    box-shadow: 10px 0 0 rgba(40,105,164,0.8),-0 0 0 rgba(208,44,42,0.8);
+}
+.hv-tile-title-geschiedenis span:hover {
+    background-color: rgba(233,216,34,0.8);
+    box-shadow: 10px 0 0 rgba(233,216,34,0.8),-0 0 0 rgba(233,216,34,0.8);
+}
+.hv-tile-title-mensen span:hover {
+    background-color: rgba(222,55,55,0.8);
+    box-shadow: 10px 0 0 rgba(222,55,55,0.8),-0 0 0 rgba(222,55,55,0.8);
+}
+.hv-tile-title-natuur span:hover {
+    background-color: rgba(78,166,72,0.8);
+    box-shadow: 10px 0 0 rgba(78,166,72,0.8),-0 0 0 rgba(78,166,72,0.8);
+}
+.hv-tile-title-entertainment span:hover {
+    background-color: rgba(136,51,175,0.8);
+    box-shadow: 10px 0 0 rgba(136,51,175,0.8),-0 0 0 rgba(136,51,175,0.8);
+}
+.hv-tile-title-faitsdivers span:hover {
+    background-color: rgba(255,133,52,0.8);
+    box-shadow: 10px 0 0 rgba(255,133,52,0.8),-0 0 0 rgba(255,133,52,0.8);
+}
+
+.hv-tile-title span {
+    display: inline;
+    font-family: arial;
+    box-shadow: 10px 0 0 rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 1.05em;
+    line-height: 1.15em;
+    background: rgba(0,0,0,0.6);
+}
+
+.hv-tile-category {
+    font-weight: 700;
+    font-family: arial;
+    position: absolute;
+    font-size: .8em;
+    top: 15px;
+    left: 25px;
+    color: #fff;
+    padding-bottom: 2px;
+    border-bottom: 3px solid rgb(208,44,42);
+    transform:scale(1,1.1);
+}
+
+.thumblink {
+  color: white !important;
+  text-decoration: none !important;
+}

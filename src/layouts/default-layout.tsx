@@ -7,9 +7,10 @@
 
 import React, { ReactNode } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-
-import Header from '../components/header';
+import Footer from '../components/Footer';
 import './default-layout.css';
+import './hv.css';
+import Navbar from '../components/Navbar';
 
 interface LayoutProperties {
     children: ReactNode;
@@ -17,10 +18,10 @@ interface LayoutProperties {
 
 const Layout = ({ children }: LayoutProperties): JSX.Element => {
     const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
+        query defaultQuery {
             site {
                 siteMetadata {
-                    title
+                    categories
                 }
             }
         }
@@ -28,20 +29,10 @@ const Layout = ({ children }: LayoutProperties): JSX.Element => {
 
     return (
         <>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <div
-                style={{
-                    margin: `0 auto`,
-                    maxWidth: 960,
-                    padding: `0 1.0875rem 1.45rem`,
-                }}
-            >
+            <Navbar categories={data.site.siteMetadata.categories} />
+            <div>
                 <main>{children}</main>
-                <footer>
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </footer>
+                <Footer categories={data.site.siteMetadata.categories} />
             </div>
         </>
     );
