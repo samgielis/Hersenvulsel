@@ -58,7 +58,7 @@ interface AuthorsJsonData {
     };
 }
 
-export function isAuthorsJsonData(data: any): data is AuthorsJsonData {
+function isAuthorsJsonData(data: any): data is AuthorsJsonData {
     return (
         !!data &&
         !!data.allAuthorsJson &&
