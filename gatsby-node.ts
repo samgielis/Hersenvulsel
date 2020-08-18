@@ -49,6 +49,11 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
             name: `authorimg`,
             value: `/${node.id}.png/g`,
         });
+        createNodeField({
+            node,
+            name: `authorid`,
+            value: node.id,
+        });
     }
 };
 
@@ -86,6 +91,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
                     fields {
                         slug
                         authorimg
+                        authorid
                     }
                 }
             }
@@ -119,6 +125,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
                             // in page queries as GraphQL variables.
                             slug: fields.slug,
                             authorimg: fields.authorimg,
+                            authorid: fields.authorid,
                         },
                     });
                 }

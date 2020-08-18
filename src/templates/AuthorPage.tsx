@@ -15,6 +15,7 @@ export interface AuthorsJsonNode {
     fields: {
         slug: string;
         authorimg: string;
+        authorid: string;
     };
 }
 
@@ -26,6 +27,17 @@ interface AuthorPageDataType {
                 fixed: {
                     src: string;
                 };
+            };
+        }[];
+    };
+    allMarkdownRemark: {
+        edges: {
+            node: {
+                frontmatter: {
+                    id: string;
+                };
+                rawMarkdownBody: string;
+                fileAbsolutePath: string;
             };
         }[];
     };
@@ -127,7 +139,7 @@ export default function AuthorPage({
 }
 
 export const query = graphql`
-    query($slug: String!, $authorimg: String!) {
+    query($slug: String!, $authorimg: String!, $authorid: String!) {
         authorsJson(fields: { slug: { eq: $slug } }) {
             bio
             contact
@@ -148,6 +160,19 @@ export const query = graphql`
                     fixed {
                         src
                     }
+                }
+            }
+        }
+        allMarkdownRemark(
+            filter: { frontmatter: { authorid: { eq: $authorid } } }
+        ) {
+            edges {
+                node {
+                    frontmatter {
+                        id
+                    }
+                    rawMarkdownBody
+                    fileAbsolutePath
                 }
             }
         }
