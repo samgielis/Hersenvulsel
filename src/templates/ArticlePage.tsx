@@ -4,7 +4,7 @@ import React from 'react';
 export default function ArticlePage({
     data,
 }: PageProps<any, any>): JSX.Element {
-    return <div>This is an article, {data}</div>;
+    return <div>This is an article, {data?.markdownRemark?.fields?.slug}</div>;
 }
 
 export const query = graphql`
