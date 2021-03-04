@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 import { resolve } from 'path';
-import { GatsbyNode, Node } from 'gatsby';
+import { Actions, CreatePagesArgs, GatsbyNode, Node } from 'gatsby';
 import { AuthorsJsonNode } from './src/templates/AuthorPage';
 
 /*
@@ -20,6 +20,12 @@ interface FileSystemNode extends Node {
 
 */
 
+export const createPages: GatsbyNode['createPages'] = async (args: CreatePagesArgs) => {
+    await createAuthorPages(args);
+};
+
+
+/* AUTHOR PAGES */
 interface AuthorDescriptorNode extends Node {
     id: string;
     bio: string;
@@ -72,11 +78,7 @@ function isAuthorsJsonData(data: any): data is AuthorsJsonData {
     );
 }
 
-export const createPages: GatsbyNode['createPages'] = async ({
-    actions,
-    graphql,
-}) => {
-    const { createPage } = actions;
+async function createAuthorPages({ actions, graphql }: CreatePagesArgs) {
     const result = await graphql(`
         query {
             allAuthorsJson {
@@ -106,30 +108,32 @@ export const createPages: GatsbyNode['createPages'] = async ({
 
     if (isAuthorsJsonData(data)) {
         await Promise.all(
-            data.allAuthorsJson.nodes.map(
-                async ({ fields }: AuthorsJsonNode) => {
-                    const component = resolve('./src/templates/AuthorPage.tsx');
-
-                    if (!component) {
-                        return;
-                    }
-
-                    // eslint-disable-next-line no-console
-                    console.log('Creating AuthorPage', fields.slug);
-
-                    await createPage({
-                        path: fields.slug,
-                        component,
-                        context: {
-                            // Data passed to context is available
-                            // in page queries as GraphQL variables.
-                            slug: fields.slug,
-                            authorimg: fields.authorimg,
-                            authorid: fields.authorid,
-                        },
-                    });
-                }
-            )
+            data.allAuthorsJson.nodes.map(authorNode => createAuthorPage(actions, authorNode))
         );
     }
-};
+
+}
+
+async function createAuthorPage(actions: Actions, { fields }: AuthorsJsonNode): Promise<void> {
+    const { createPage } = actions;
+    const component = resolve('./src/templates/AuthorPage.tsx');
+
+    if (!component) {
+        return;
+    }
+
+    // eslint-disable-next-line no-console
+    console.log('Creating AuthorPage', fields.slug);
+
+    await createPage({
+        path: fields.slug,
+        component,
+        context: {
+            // Data passed to context is available
+            // in page queries as GraphQL variables.
+            slug: fields.slug,
+            authorimg: fields.authorimg,
+            authorid: fields.authorid,
+        },
+    });
+}
