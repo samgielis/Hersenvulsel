@@ -101,6 +101,7 @@ function generateMDFrontMatter(descriptor: ArticleDescriptor): string {
 
     return `---
 id: "${descriptor.id}"
+title: "${descriptor.title}"
 authorid: "${descriptor.authorid}"
 day: "${descriptor.day}"
 source_url: "${descriptor.source_url}"
