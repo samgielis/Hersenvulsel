@@ -24,6 +24,12 @@ export const createPages: GatsbyNode['createPages'] = async (args: CreatePagesAr
     await createAuthorPages(args);
 };
 
+export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
+    if (isAuthorDescriptorNode(node)) {
+        enrichAuthorDescriptorNode(node, actions);
+    }
+};
+
 
 /* AUTHOR PAGES */
 interface AuthorDescriptorNode extends Node {
@@ -40,28 +46,24 @@ function isAuthorDescriptorNode(node: Node): node is AuthorDescriptorNode {
     return node.internal.owner === 'gatsby-transformer-json';
 }
 
-export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
-    const { createNodeField } = actions;
-
-    if (isAuthorDescriptorNode(node)) {
-        const slug = `/a/${node.id}/`;
-        createNodeField({
-            node,
-            name: `slug`,
-            value: slug,
-        });
-        createNodeField({
-            node,
-            name: `authorimg`,
-            value: `/${node.id}.png/g`,
-        });
-        createNodeField({
-            node,
-            name: `authorid`,
-            value: node.id,
-        });
-    }
-};
+function enrichAuthorDescriptorNode(node: AuthorDescriptorNode, { createNodeField }: Actions) {
+    const slug = `/a/${node.id}/`;
+    createNodeField({
+        node,
+        name: `slug`,
+        value: slug,
+    });
+    createNodeField({
+        node,
+        name: `authorimg`,
+        value: `/${node.id}.png/g`,
+    });
+    createNodeField({
+        node,
+        name: `authorid`,
+        value: node.id,
+    });
+}
 
 interface AuthorsJsonData {
     allAuthorsJson: {
