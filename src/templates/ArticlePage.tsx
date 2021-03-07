@@ -1,5 +1,6 @@
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
+import CategoryTitle from '../components/CategoryTitle';
 import SEO from '../components/seo';
 import Layout from '../layouts/default-layout';
 import { Category } from '../types/Category';
@@ -25,6 +26,7 @@ export default function ArticlePage({
     return (
         <Layout category={fields.category}>
             <SEO title={frontmatter.title} />
+            <CategoryTitle category={fields.category} />
 
             <div>This is an article, {fields?.slug}</div>
             <div>In the category, {fields?.category}</div>
