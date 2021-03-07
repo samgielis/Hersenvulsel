@@ -11,12 +11,15 @@ import Footer from '../components/Footer';
 import './default-layout.css';
 import './hv.css';
 import Navbar from '../components/Navbar';
+import { Category } from '../types/Category';
+import CategoryHeader from '../components/CategoryHeader';
 
 interface LayoutProperties {
     children: ReactNode;
+    category?: Category | 'default';
 }
 
-const Layout = ({ children }: LayoutProperties): JSX.Element => {
+const Layout = ({ children, category }: LayoutProperties): JSX.Element => {
     const data = useStaticQuery(graphql`
         query defaultQuery {
             site {
@@ -29,6 +32,7 @@ const Layout = ({ children }: LayoutProperties): JSX.Element => {
 
     return (
         <>
+            {category && <CategoryHeader category={category} />}
             <Navbar categories={data.site.siteMetadata.categories} />
             <div>
                 <main>{children}</main>
