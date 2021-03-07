@@ -9,6 +9,7 @@ interface ArticleNode extends Node {
     fileAbsolutePath: string;
     fields: {
         slug: string;
+        category: string;
     };
 }
 interface ArticleMarkdownData {
@@ -32,10 +33,16 @@ export function enrichArticleNode(
     const slugRegex = /\/articles(\/\S+\/)article.md/gm;
     const regexResult = slugRegex.exec(node.fileAbsolutePath);
     const slug = regexResult && regexResult[1];
+    const category = slug?.split('/')[1];
     createNodeField({
         node,
         name: `slug`,
         value: slug,
+    });
+    createNodeField({
+        node,
+        name: `category`,
+        value: category,
     });
     createNodeField({
         node,
@@ -91,6 +98,7 @@ export async function createArticlePages({
                         slug
                         authorimg
                         authorid
+                        category
                     }
                 }
             }

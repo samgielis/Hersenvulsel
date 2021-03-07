@@ -7,6 +7,7 @@ export default function ArticlePage({
     return (
         <>
             <div>This is an article, {data?.markdownRemark?.fields?.slug}</div>
+            <div>In the category, {data?.markdownRemark?.fields?.category}</div>
             <div
                 className="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: data?.markdownRemark?.html }}
@@ -21,6 +22,7 @@ export const query = graphql`
             html
             fields {
                 slug
+                category
             }
         }
     }
