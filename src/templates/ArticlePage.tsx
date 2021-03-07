@@ -1,18 +1,38 @@
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
+import SEO from '../components/seo';
+import Layout from '../layouts/default-layout';
+import { Category } from '../types/Category';
+
+interface ArticlePageDataType {
+    markdownRemark: {
+        html: string;
+        fields: {
+            slug: string;
+            category: Category;
+        };
+        frontmatter: {
+            title: string;
+        };
+    };
+}
 
 export default function ArticlePage({
     data,
-}: PageProps<any, any>): JSX.Element {
+}: PageProps<ArticlePageDataType, any>): JSX.Element {
+    const { markdownRemark } = data;
+    const { fields, frontmatter, html } = markdownRemark;
     return (
-        <>
-            <div>This is an article, {data?.markdownRemark?.fields?.slug}</div>
-            <div>In the category, {data?.markdownRemark?.fields?.category}</div>
+        <Layout category={fields.category}>
+            <SEO title={frontmatter.title} />
+
+            <div>This is an article, {fields?.slug}</div>
+            <div>In the category, {fields?.category}</div>
             <div
                 className="blog-post-content"
-                dangerouslySetInnerHTML={{ __html: data?.markdownRemark?.html }}
+                dangerouslySetInnerHTML={{ __html: html }}
             />
-        </>
+        </Layout>
     );
 }
 
@@ -23,6 +43,9 @@ export const query = graphql`
             fields {
                 slug
                 category
+            }
+            frontmatter {
+                title
             }
         }
     }
