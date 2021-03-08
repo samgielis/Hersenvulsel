@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -38,6 +38,14 @@ const SEO = ({
 
     const metaDescription = description || site.siteMetadata.description;
 
+    const bootstrapStyleSheet = document.createElement('link');
+    bootstrapStyleSheet.type = 'text/css';
+    bootstrapStyleSheet.href =
+        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+    bootstrapStyleSheet.rel = 'stylesheet';
+    useEffect(() => {
+        document.head.prepend(bootstrapStyleSheet);
+    });
     return (
         <Helmet
             htmlAttributes={{
@@ -82,12 +90,8 @@ const SEO = ({
         >
             <link
                 type="text/css"
-                rel="stylesheet"
-                href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-            />
-            <link
-                type="text/css"
-                rel="stylesheet"
+                rel="preload"
+                as="style"
                 href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
             />
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />
