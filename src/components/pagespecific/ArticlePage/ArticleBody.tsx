@@ -35,10 +35,7 @@ function createImageRenderer(images: FluidArticleImageData[]) {
 const ArticleBody = ({ rawMarkdownBody, images }: ArticleBodyProps) => {
     return (
         <div className="row maintext-row">
-            <div
-                className="col-sm-5 maintext-col"
-                id="article_body"
-            >
+            <div className="col-sm-5 maintext-col" id="article_body">
                 <ReactMarkdown
                     renderers={{
                         image: createImageRenderer(images),

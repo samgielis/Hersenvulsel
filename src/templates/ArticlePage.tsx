@@ -84,8 +84,7 @@ export default function ArticlePage({
                         <ArticleBody
                             rawMarkdownBody={rawMarkdownBody}
                             images={images.edges.map(
-                                (edge) =>
-                                    edge.node.childImageSharp.fluid
+                                (edge) => edge.node.childImageSharp.fluid
                             )}
                         />
 
