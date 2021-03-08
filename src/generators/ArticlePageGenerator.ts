@@ -30,10 +30,10 @@ export function enrichArticleNode(
     node: ArticleNode,
     { createNodeField }: Actions
 ) {
-    const slugRegex = /\/articles(\/\S+\/)article.md/gm;
+    const slugRegex = /\/articles\/(\S+)\/article.md/gm;
     const regexResult = slugRegex.exec(node.fileAbsolutePath);
     const slug = regexResult && regexResult[1];
-    const category = slug?.split('/')[1];
+    const category = slug?.split('/')[0];
     createNodeField({
         node,
         name: `slug`,
