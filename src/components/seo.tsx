@@ -9,6 +9,13 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+function createStyleSheetNode(href: string): HTMLLinkElement {
+    const node = document.createElement('link');
+    node.type = 'text/css';
+    node.href = href;
+    node.rel = 'stylesheet';
+    return node;
+}
 interface SEOProperties {
     description?: string;
     lang?: string;
@@ -38,14 +45,19 @@ const SEO = ({
 
     const metaDescription = description || site.siteMetadata.description;
 
-    const bootstrapStyleSheet = document.createElement('link');
-    bootstrapStyleSheet.type = 'text/css';
-    bootstrapStyleSheet.href =
-        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
-    bootstrapStyleSheet.rel = 'stylesheet';
     useEffect(() => {
-        document.head.prepend(bootstrapStyleSheet);
-    });
+        document.head.prepend(
+            createStyleSheetNode(
+                'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
+            )
+        );
+        document.head.prepend(
+            createStyleSheetNode(
+                'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'
+            )
+        );
+    }, []);
+
     return (
         <Helmet
             htmlAttributes={{
@@ -88,12 +100,6 @@ const SEO = ({
                 },
             ].concat(meta)}
         >
-            <link
-                type="text/css"
-                rel="preload"
-                as="style"
-                href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-            />
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" />
         </Helmet>
