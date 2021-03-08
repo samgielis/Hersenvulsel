@@ -4,6 +4,7 @@ import CategoryTitle from '../components/CategoryTitle';
 import ArticleBody, {
     FluidArticleImageData,
 } from '../components/pagespecific/ArticlePage/ArticleBody';
+import MainArticleImage from '../components/pagespecific/ArticlePage/MainArticleImage';
 import SEO from '../components/seo';
 import Layout from '../layouts/default-layout';
 import { Category } from '../types/Category';
@@ -17,6 +18,7 @@ interface ArticlePageDataType {
         };
         frontmatter: {
             title: string;
+            img_credit: string;
         };
     };
     images: {
@@ -35,6 +37,9 @@ export default function ArticlePage({
 }: PageProps<ArticlePageDataType, any>): JSX.Element {
     const { markdownRemark, images } = data;
     const { fields, frontmatter, rawMarkdownBody } = markdownRemark;
+    const mainImage = images.edges.find(
+        (edge) => edge.node.childImageSharp.fluid.originalName === 'main.jpg'
+    );
     return (
         <Layout category={fields.category}>
             <SEO title={frontmatter.title} />
@@ -68,23 +73,13 @@ export default function ArticlePage({
                     <div className="col-sm-3 col-sm-offset-1 blog-sidebar" />
 
                     <div className="col-sm-8 blog-main">
-                        <div
-                            className="pull-left"
-                            style={{ width: '100%', paddingBottom: '50px' }}
-                        >
-                            <figure>
-                                <img
-                                    alt="main article"
-                                    src="./img/main.jpg"
-                                    className="pull-left"
-                                    style={{ float: 'left', maxWidth: '100%' }}
-                                />
-                                <figcaption
-                                    className="hv-article-figcaption"
-                                    id="hv-article-figcaption"
-                                />
-                            </figure>
-                        </div>
+                        <MainArticleImage
+                            srcSet={
+                                mainImage?.node.childImageSharp.fluid.srcSet ||
+                                ''
+                            }
+                            credit={frontmatter.img_credit}
+                        />
 
                         <div className="row maintext-row">
                             <div
@@ -139,6 +134,7 @@ export const query = graphql`
             }
             frontmatter {
                 title
+                img_credit
             }
         }
         images: allFile(

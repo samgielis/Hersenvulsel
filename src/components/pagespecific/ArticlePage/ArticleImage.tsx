@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ArticleImageProps {
+export interface ArticleImageProps {
     srcSet: string;
     credit?: string;
 }
