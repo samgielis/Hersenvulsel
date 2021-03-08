@@ -81,20 +81,13 @@ export default function ArticlePage({
                             credit={frontmatter.img_credit}
                         />
 
-                        <div className="row maintext-row">
-                            <div
-                                className="col-sm-5 maintext-col"
-                                id="article_body"
-                            >
-                                <ArticleBody
-                                    rawMarkdownBody={rawMarkdownBody}
-                                    images={images.edges.map(
-                                        (edge) =>
-                                            edge.node.childImageSharp.fluid
-                                    )}
-                                />
-                            </div>
-                        </div>
+                        <ArticleBody
+                            rawMarkdownBody={rawMarkdownBody}
+                            images={images.edges.map(
+                                (edge) =>
+                                    edge.node.childImageSharp.fluid
+                            )}
+                        />
 
                         <div className="col-sm-3 col-sm-offset-1 blog-sidebar">
                             <div
