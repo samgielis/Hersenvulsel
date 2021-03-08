@@ -11,6 +11,10 @@ interface ArticleBodyProps {
     images: FluidArticleImageData[];
 }
 
+function headingRenderer() {
+    return null;
+}
+
 function createImageRenderer(images: FluidArticleImageData[]) {
     const ImageRenderer = ({ alt, src }: { alt: string; src: string }) => {
         const image = images.find(
@@ -33,6 +37,7 @@ const ArticleBody = ({ rawMarkdownBody, images }: ArticleBodyProps) => {
         <ReactMarkdown
             renderers={{
                 image: createImageRenderer(images),
+                heading: headingRenderer,
             }}
         >
             {rawMarkdownBody}
