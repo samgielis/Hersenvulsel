@@ -1,13 +1,14 @@
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import CategoryTitle from '../components/CategoryTitle';
+import ArticleBody from '../components/pagespecific/ArticlePage/ArticleBody';
 import SEO from '../components/seo';
 import Layout from '../layouts/default-layout';
 import { Category } from '../types/Category';
 
 interface ArticlePageDataType {
     markdownRemark: {
-        html: string;
+        rawMarkdownBody: string;
         fields: {
             slug: string;
             category: Category;
@@ -22,7 +23,7 @@ export default function ArticlePage({
     data,
 }: PageProps<ArticlePageDataType, any>): JSX.Element {
     const { markdownRemark } = data;
-    const { fields, frontmatter, html } = markdownRemark;
+    const { fields, frontmatter, rawMarkdownBody } = markdownRemark;
     return (
         <Layout category={fields.category}>
             <SEO title={frontmatter.title} />
@@ -106,10 +107,7 @@ export default function ArticlePage({
                 </div>
                 <div>This is an article, {fields?.slug}</div>
                 <div>In the category, {fields?.category}</div>
-                <div
-                    className="blog-post-content"
-                    dangerouslySetInnerHTML={{ __html: html }}
-                />
+                <ArticleBody rawMarkdownBody={rawMarkdownBody} />
             </div>
         </Layout>
     );
@@ -118,7 +116,7 @@ export default function ArticlePage({
 export const query = graphql`
     query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
-            html
+            rawMarkdownBody
             fields {
                 slug
                 category
