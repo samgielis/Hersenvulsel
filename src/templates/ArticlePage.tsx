@@ -1,7 +1,9 @@
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import CategoryTitle from '../components/CategoryTitle';
-import ArticleBody from '../components/pagespecific/ArticlePage/ArticleBody';
+import ArticleBody, {
+    FluidArticleImageData,
+} from '../components/pagespecific/ArticlePage/ArticleBody';
 import SEO from '../components/seo';
 import Layout from '../layouts/default-layout';
 import { Category } from '../types/Category';
@@ -17,12 +19,21 @@ interface ArticlePageDataType {
             title: string;
         };
     };
+    images: {
+        edges: {
+            node: {
+                childImageSharp: {
+                    fluid: FluidArticleImageData;
+                };
+            };
+        }[];
+    };
 }
 
 export default function ArticlePage({
     data,
 }: PageProps<ArticlePageDataType, any>): JSX.Element {
-    const { markdownRemark } = data;
+    const { markdownRemark, images } = data;
     const { fields, frontmatter, rawMarkdownBody } = markdownRemark;
     return (
         <Layout category={fields.category}>
@@ -82,6 +93,10 @@ export default function ArticlePage({
                             >
                                 <ArticleBody
                                     rawMarkdownBody={rawMarkdownBody}
+                                    images={images.edges.map(
+                                        (edge) =>
+                                            edge.node.childImageSharp.fluid
+                                    )}
                                 />
                             </div>
                         </div>
@@ -124,6 +139,23 @@ export const query = graphql`
             }
             frontmatter {
                 title
+            }
+        }
+        images: allFile(
+            filter: {
+                relativeDirectory: { eq: $slug }
+                extension: { regex: "/(jpg)|(png)|(gif)|(jpeg)/g" }
+            }
+        ) {
+            edges {
+                node {
+                    childImageSharp {
+                        fluid {
+                            srcSet
+                            originalName
+                        }
+                    }
+                }
             }
         }
     }
