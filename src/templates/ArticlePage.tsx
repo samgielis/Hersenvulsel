@@ -79,7 +79,11 @@ export default function ArticlePage({
                             <div
                                 className="col-sm-5 maintext-col"
                                 id="article_body"
-                            />
+                            >
+                                <ArticleBody
+                                    rawMarkdownBody={rawMarkdownBody}
+                                />
+                            </div>
                         </div>
 
                         <div className="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -105,9 +109,6 @@ export default function ArticlePage({
                         </div>
                     </div>
                 </div>
-                <div>This is an article, {fields?.slug}</div>
-                <div>In the category, {fields?.category}</div>
-                <ArticleBody rawMarkdownBody={rawMarkdownBody} />
             </div>
         </Layout>
     );
