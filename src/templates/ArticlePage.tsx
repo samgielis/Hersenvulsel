@@ -4,6 +4,7 @@ import CategoryTitle from '../components/CategoryTitle';
 import ArticleBody, {
     FluidArticleImageData,
 } from '../components/pagespecific/ArticlePage/ArticleBody';
+import AuthorAndDate from '../components/pagespecific/ArticlePage/AuthorAndDate';
 import MainArticleImage from '../components/pagespecific/ArticlePage/MainArticleImage';
 import SEO from '../components/seo';
 import Layout from '../layouts/default-layout';
@@ -19,6 +20,7 @@ interface ArticlePageDataType {
         frontmatter: {
             title: string;
             img_credit: string;
+            day: string;
         };
     };
     images: {
@@ -30,12 +32,27 @@ interface ArticlePageDataType {
             };
         }[];
     };
+    author: {
+        id: string;
+        bio: string;
+        contact: string;
+        count: string;
+        fname: string;
+        lname: string;
+        url: string;
+        urlname: string;
+    };
+    authorImage: {
+        fluid: {
+            src: string;
+        };
+    };
 }
 
 export default function ArticlePage({
     data,
 }: PageProps<ArticlePageDataType, any>): JSX.Element {
-    const { markdownRemark, images } = data;
+    const { markdownRemark, images, author, authorImage } = data;
     const { fields, frontmatter, rawMarkdownBody } = markdownRemark;
     const mainImage = images.edges.find(
         (edge) => edge.node.childImageSharp.fluid.originalName === 'main.jpg'
@@ -63,7 +80,12 @@ export default function ArticlePage({
                         </div>
 
                         <div className="row">
-                            <div className="col-sm-8" id="author-and-date" />
+                            <AuthorAndDate
+                                authorId={author.id}
+                                authorName={`${author.fname} ${author.lname}`}
+                                authorImageSrc={authorImage.fluid.src}
+                                dateString={frontmatter.day}
+                            />
                             <div className="col-sm-4">
                                 <div id="share-buttons" />
                             </div>
@@ -117,7 +139,7 @@ export default function ArticlePage({
 }
 
 export const query = graphql`
-    query($slug: String!) {
+    query($slug: String!, $authorid: String!, $authorimg: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
             rawMarkdownBody
             fields {
@@ -127,6 +149,7 @@ export const query = graphql`
             frontmatter {
                 title
                 img_credit
+                day
             }
         }
         images: allFile(
@@ -144,6 +167,23 @@ export const query = graphql`
                         }
                     }
                 }
+            }
+        }
+        author: authorsJson(id: { eq: $authorid }) {
+            id
+            bio
+            contact
+            count
+            fname
+            lname
+            url
+            urlname
+        }
+        authorImage: imageSharp(
+            fluid: { originalName: { regex: $authorimg } }
+        ) {
+            fluid {
+                src
             }
         }
     }

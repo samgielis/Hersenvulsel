@@ -10,6 +10,8 @@ interface ArticleNode extends Node {
     fields: {
         slug: string;
         category: string;
+        authorid: string;
+        authorimg: string;
     };
 }
 interface ArticleMarkdownData {
@@ -77,6 +79,8 @@ async function createArticlePage(
             // Data passed to context is available
             // in page queries as GraphQL variables.
             slug: fields.slug,
+            authorid: fields.authorid,
+            authorimg: fields.authorimg,
         },
     });
 }
