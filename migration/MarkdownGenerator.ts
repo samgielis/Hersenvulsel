@@ -56,7 +56,7 @@ function replaceHTMLAnchorsWithMDLinks(paragraph: string): string {
 function convertParagraphItemToMD(paragraph: ParagraphItem): string {
     const rawContent = paragraph.content;
     let content = rawContent.replace(/<b>/g, '**').replace(/<\/b>/g, '**');
-    content = content.replace(/<i>/g, '_').replace(/<\/i>/, '_');
+    content = content.replace(/<i>/g, '_').replace(/<\/i>/g, '_');
     return replaceHTMLAnchorsWithMDLinks(content);
 }
 
