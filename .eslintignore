@@ -1,3 +1,6 @@
 .cache
 node_modules
 public
+data
+docs
+gatsby-config.js
