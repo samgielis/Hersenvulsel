@@ -16,7 +16,7 @@ function headingRenderer() {
 }
 
 function createImageRenderer(images: FluidArticleImageData[]) {
-    const ImageRenderer = ({ alt, src }: { alt: string; src: string }) => {
+    const ImageRenderer = ({ alt, src }: { alt?: string; src?: string }) => {
         const image = images.find(
             (possibleImage) => possibleImage.originalName === src
         );
@@ -37,9 +37,13 @@ const ArticleBody = ({ rawMarkdownBody, images }: ArticleBodyProps) => {
         <div className="row maintext-row">
             <div className="col-sm-5 maintext-col" id="article_body">
                 <ReactMarkdown
-                    renderers={{
-                        image: createImageRenderer(images),
-                        heading: headingRenderer,
+                    components={{
+                        img: createImageRenderer(images),
+                        h1: headingRenderer,
+                        h2: headingRenderer,
+                        h3: headingRenderer,
+                        h4: headingRenderer,
+                        h5: headingRenderer,
                     }}
                 >
                     {rawMarkdownBody}
