@@ -21,6 +21,8 @@ interface ArticlePageDataType {
             title: string;
             img_credit: string;
             day: string;
+            source_name: string;
+            source_url: string;
         };
     };
     images: {
@@ -102,12 +104,13 @@ export default function ArticlePage({
                             }
                             credit={frontmatter.img_credit}
                         />
-
                         <ArticleBody
                             rawMarkdownBody={rawMarkdownBody}
                             images={images.edges.map(
                                 (edge) => edge.node.childImageSharp.fluid
                             )}
+                            sourceName={markdownRemark.frontmatter.source_name}
+                            sourceUrl={markdownRemark.frontmatter.source_url}
                         />
 
                         <div className="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -150,6 +153,8 @@ export const query = graphql`
                 title
                 img_credit
                 day
+                source_name
+                source_url
             }
         }
         images: allFile(

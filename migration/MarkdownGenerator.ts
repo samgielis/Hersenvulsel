@@ -105,6 +105,7 @@ title: "${descriptor.title}"
 authorhandle: "${descriptor.authorid}"
 day: "${descriptor.day}"
 source_url: "${descriptor.source_url}"
+source_name: "${descriptor.source_name}"
 img_credit: "${descriptor.img_credit}"
 keywords: ${keywordsString}
 ---`;
