@@ -7,45 +7,6 @@
 }
 
 
-/* HEADER STYLE */
-header {
-  height:14vw;
-  /*background-image: url(../img/bg.png);*/
-  background-size: cover;
-}
-
-.header-default {
-  background: #c93c3c !important;
-  background-size: cover;
-}
-.header-wetenschap {
-  background: #2869a4 !important;
-  background-size: cover;
-}
-.header-geschiedenis {
-  background: #e9d822 !important;
-  background-size: cover;
-}
-.header-mensen {
-  background: #de3737 !important;
-  background-size: cover;
-}
-.header-natuur {
-  background: #4ea648 !important;
-  background-size: cover;
-}
-.header-entertainment {
-  background: #8833af !important;
-  background-size: cover;
-}
-.header-faitsdivers {
-  background: #ff8534 !important;
-  background-size: cover;
-}
-* {
-  border-radius: 0 !important;
-}
-
 /* TITE STYLE */
 .hv-article-title, .hv-article-title-mostrecent {
   color: #1A1A1A;

@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/layout';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Category } from '../types/Category';
@@ -27,7 +28,6 @@ function getHeaderImageURL(
     const categoryNode = data.allImageSharp.nodes.find((node) => {
         return node.fluid.originalImg.indexOf(category) > -1;
     });
-    console.log(categoryNode)
     return categoryNode?.fluid.originalImg || '';
 }
 
@@ -52,7 +52,7 @@ const CategoryHeader = ({ category }: CategoryHeaderProps) => {
     `);
 
     return (
-        <div className={`hv-pagehead header-${category}`}>
+        <Box className={`hv-pagehead`} bgColor={`hersenvulsel.${category}`} h="14vw" bgSize="cover">
             <img
                 style={{
                     paddingTop: '0.49vw',
@@ -63,7 +63,7 @@ const CategoryHeader = ({ category }: CategoryHeaderProps) => {
                 src={getHeaderImageURL(category, data)}
                 alt="Category header"
             />
-        </div>
+        </Box>
     );
 };
 
