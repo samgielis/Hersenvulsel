@@ -7,6 +7,8 @@ import './AuthorPage.css';
 import ArticleCollection, {
     ArticleTileData,
 } from '../components/ArticleCollection';
+import { ProfileDetails } from '../components/pagespecific/AuthorPage/ProfileDetails';
+
 
 interface RawArticleData {
     node: {
@@ -118,91 +120,44 @@ export default function AuthorPage({
         return rawArticleToThumbnailData(rawData, correspondingThumbnail);
     });
     return (
-        <Layout>
+        <Layout containerSize='lg'>
             <SEO title={`${author.fname} ${author.lname}`} />
+            <ProfileDetails author={author} profileImgURL={imgUrl}/>
             <div>
-                <div className="container">
-                    <div className="row">
-                        <div
-                            className="col-sm-12 pad-bot-20"
-                            style={{
-                                paddingTop: '20px',
-                                textAlign: 'center',
-                                display: 'table-cell !important',
-                                verticalAlign: 'middle !important',
-                            }}
+                <div className="row">
+                    <div
+                        className="col-sm-12 pad-bot-20"
+                        style={{
+                            paddingTop: '20px',
+                            textAlign: 'center',
+                            display: 'table-cell !important',
+                            verticalAlign: 'middle !important',
+                        }}
+                    >
+
+                        <h2
+                            id="hv-most-recent-mr"
+                            className="hv-c-default hv-category-title"
+                            style={{ paddingTop: '20px' }}
                         >
-                            <div className="row">
-                                <div className="col-sm-4" />
-                                <div className="col-sm-4 pad-bot-20">
-                                    <img
-                                        alt={`${author.fname} ${author.lname}`}
-                                        src={imgUrl}
-                                        style={{ width: '190px' }}
-                                    />
-                                </div>
-                                <div className="col-sm-4" />
-                            </div>
-                            <div className="row">
-                                <div className="col-sm-3" />
-                                <div className="col-sm-6">
-                                    <h5
-                                        className="hv-article-title hv-auth-name"
-                                        id="hv-auth-name"
-                                    >{`${author.fname} ${author.lname}`}</h5>
-                                    <p
-                                        className="hv-auth-bio"
-                                        id="hv-auth-bio"
-                                        dangerouslySetInnerHTML={{
-                                            __html: author.bio,
-                                        }}
-                                    />
-                                    <p className="hv-auth-links">
-                                        <i className="fa fa-link hv-auth-info-fa" />
-                                        <a
-                                            id="hv-auth-link"
-                                            href={author.url}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            {author.urlname}
-                                        </a>
-                                        <br />
-                                        <i className="fa fa-envelope hv-auth-info-fa" />
-                                        <a
-                                            id="hv-auth-mail"
-                                            href={`mailto:${author.contact}`}
-                                        >
-                                            {author.contact}
-                                        </a>
-                                    </p>
-                                </div>
-                                <div className="col-sm-3" />
-                            </div>
-                            <h2
-                                id="hv-most-recent-mr"
-                                className="hv-c-default hv-category-title"
-                                style={{ paddingTop: '20px' }}
-                            >
-                                DOOR {author.fname} ({articles.length})
-                            </h2>
+                            DOOR {author.fname} ({articles.length})
+                        </h2>
 
-                            <div
-                                className="row"
-                                style={{ paddingTop: '-50px' }}
-                            >
-                                <div className="col-sm-3" />
-                                <div className="col-sm-6 pad-bot-20">
-                                    <div
-                                        id="author-chart"
-                                        style={{ width: '100%' }}
-                                    />
-                                </div>
-                                <div className="col-sm-3" />
+                        <div
+                            className="row"
+                            style={{ paddingTop: '-50px' }}
+                        >
+                            <div className="col-sm-3" />
+                            <div className="col-sm-6 pad-bot-20">
+                                <div
+                                    id="author-chart"
+                                    style={{ width: '100%' }}
+                                />
                             </div>
-
-                            <ArticleCollection articles={articles} />
+                            <div className="col-sm-3" />
                         </div>
+
+                        <ArticleCollection articles={articles} />
                     </div>
                 </div>
             </div>
