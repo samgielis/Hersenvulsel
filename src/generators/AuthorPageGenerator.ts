@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import { AuthorsJsonNode } from '../templates/AuthorPage';
 
 interface AuthorDescriptorNode extends Node {
-    id: string;
+    authorhandle: string;
     bio: string;
     contact: string;
     fname: string;
@@ -22,7 +22,7 @@ export function enrichAuthorDescriptorNode(
     node: AuthorDescriptorNode,
     { createNodeField }: Actions
 ) {
-    const slug = `/a/${node.id}/`;
+    const slug = `/a/${node.authorhandle}/`;
     createNodeField({
         node,
         name: `slug`,
@@ -31,12 +31,12 @@ export function enrichAuthorDescriptorNode(
     createNodeField({
         node,
         name: `authorimg`,
-        value: `/${node.id}.png/g`,
+        value: `/${node.authorhandle}.png/g`,
     });
     createNodeField({
         node,
-        name: `authorid`,
-        value: node.id,
+        name: `authorhandle`,
+        value: node.authorhandle,
     });
 }
 
@@ -77,7 +77,7 @@ async function createAuthorPage(
             // in page queries as GraphQL variables.
             slug: fields.slug,
             authorimg: fields.authorimg,
-            authorid: fields.authorid,
+            authorhandle: fields.authorhandle,
         },
     });
 }
@@ -87,17 +87,18 @@ export async function createAuthorPages({ actions, graphql }: CreatePagesArgs) {
         query {
             allAuthorsJson {
                 nodes {
+                    id
                     bio
                     contact
                     fname
-                    id
+                    authorhandle
                     lname
                     url
                     urlname
                     fields {
                         slug
                         authorimg
-                        authorid
+                        authorhandle
                     }
                 }
             }

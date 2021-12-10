@@ -4,13 +4,13 @@ import { resolve } from 'path';
 interface ArticleNode extends Node {
     frontmatter: {
         id: string;
-        authorid: string;
+        authorhandle: string;
     };
     fileAbsolutePath: string;
     fields: {
         slug: string;
         category: string;
-        authorid: string;
+        authorhandle: string;
         authorimg: string;
     };
 }
@@ -49,12 +49,12 @@ export function enrichArticleNode(
     createNodeField({
         node,
         name: `authorimg`,
-        value: `/${node.frontmatter.authorid}.png/g`,
+        value: `/${node.frontmatter.authorhandle}.png/g`,
     });
     createNodeField({
         node,
-        name: `authorid`,
-        value: node.frontmatter.authorid,
+        name: `authorhandle`,
+        value: node.frontmatter.authorhandle,
     });
 }
 
@@ -79,7 +79,7 @@ async function createArticlePage(
             // Data passed to context is available
             // in page queries as GraphQL variables.
             slug: fields.slug,
-            authorid: fields.authorid,
+            authorhandle: fields.authorhandle,
             authorimg: fields.authorimg,
         },
     });
@@ -95,13 +95,13 @@ export async function createArticlePages({
                 nodes {
                     frontmatter {
                         id
-                        authorid
+                        authorhandle
                     }
                     fileAbsolutePath
                     fields {
                         slug
                         authorimg
-                        authorid
+                        authorhandle
                         category
                     }
                 }

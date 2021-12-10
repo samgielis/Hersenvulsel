@@ -33,7 +33,7 @@ interface ArticlePageDataType {
         }[];
     };
     author: {
-        id: string;
+        authorhandle: string;
         bio: string;
         contact: string;
         count: string;
@@ -81,7 +81,7 @@ export default function ArticlePage({
 
                         <div className="row">
                             <AuthorAndDate
-                                authorId={author.id}
+                                authorhandle={author.authorhandle}
                                 authorName={`${author.fname} ${author.lname}`}
                                 authorImageSrc={authorImage.fluid.src}
                                 dateString={frontmatter.day}
@@ -139,7 +139,7 @@ export default function ArticlePage({
 }
 
 export const query = graphql`
-    query($slug: String!, $authorid: String!, $authorimg: String!) {
+    query($slug: String!, $authorhandle: String!, $authorimg: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
             rawMarkdownBody
             fields {
@@ -169,8 +169,8 @@ export const query = graphql`
                 }
             }
         }
-        author: authorsJson(id: { eq: $authorid }) {
-            id
+        author: authorsJson(authorhandle: { eq: $authorhandle }) {
+            authorhandle
             bio
             contact
             count

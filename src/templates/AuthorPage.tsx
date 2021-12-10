@@ -22,14 +22,14 @@ export interface AuthorsJsonNode {
     bio: string;
     contact: string;
     fname: string;
-    id: string;
+    authorhandle: string;
     lname: string;
     url: string;
     urlname: string;
     fields: {
         slug: string;
         authorimg: string;
-        authorid: string;
+        authorhandle: string;
     };
 }
 
@@ -211,12 +211,12 @@ export default function AuthorPage({
 }
 
 export const query = graphql`
-    query($slug: String!, $authorimg: String!, $authorid: String!) {
+    query($slug: String!, $authorimg: String!, $authorhandle: String!) {
         authorsJson(fields: { slug: { eq: $slug } }) {
             bio
             contact
             fname
-            id
+            authorhandle
             lname
             url
             urlname
@@ -236,7 +236,7 @@ export const query = graphql`
             }
         }
         allMarkdownRemark(
-            filter: { frontmatter: { authorid: { eq: $authorid } } }
+            filter: { frontmatter: { authorhandle: { eq: $authorhandle } } }
         ) {
             edges {
                 node {

@@ -1,3 +1,4 @@
+import { Heading } from '@chakra-ui/react';
 import React from 'react';
 import { Category } from '../types/Category';
 
@@ -7,9 +8,13 @@ interface CategoryTitleProps {
 
 const CategoryTitle = ({ category }: CategoryTitleProps) => {
     return (
-        <h3 className={`hv-category-title-15px hv-c-${category}`}>
+        <Heading
+            as="h3"
+            size="xl"
+            className={`hv-category-title-15px hv-c-${category}`}
+        >
             {category === 'faitsdivers' ? 'faits divers' : category}
-        </h3>
+        </Heading>
     );
 };
 

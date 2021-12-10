@@ -3,14 +3,14 @@ import React from 'react';
 import { monthNumeralToName } from '../../../utils/StringUtils';
 
 interface AuthorAndDateProps {
-    authorId: string;
+    authorhandle: string;
     authorName: string;
     authorImageSrc: string;
     dateString: string;
 }
 
 const AuthorAndDate = ({
-    authorId,
+    authorhandle,
     authorName,
     authorImageSrc,
     dateString,
@@ -20,7 +20,7 @@ const AuthorAndDate = ({
         date[2] = date[2].charAt(1);
     }
 
-    const authorProfileLink = `../../a/${authorId}`;
+    const authorProfileLink = `../../a/${authorhandle}`;
     return (
         <div className="col-sm-8">
             <HStack className="hv-author-thumbnail-container">
