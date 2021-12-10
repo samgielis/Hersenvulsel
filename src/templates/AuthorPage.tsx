@@ -128,8 +128,8 @@ export default function AuthorPage({
                 <Center>
                     <Heading as="h2" size="3xl" color="hersenvulsel.highlight" textTransform="uppercase" >DOOR {author.fname} ({articles.length})</Heading>
                 </Center>
-                <ArticleCollection articles={articles} />
             </VStack>
+            <ArticleCollection articles={articles} />
         </Layout>
     );
 }

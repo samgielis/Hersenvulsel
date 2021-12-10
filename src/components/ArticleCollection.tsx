@@ -52,7 +52,7 @@ const ArticleTile = ({ title, category, id, image }: ArticleTileData) => {
 };
 
 const ArticleCollection = ({ articles }: ArticleCollectionProps) => (
-    <SimpleGrid spacingX={8} spacingY={8} w="100%" maxW="1200px" minChildWidth="300px" margin="auto">
+    <SimpleGrid spacingX={8} spacingY={8} py={10} w="100%" maxW="1200px" minChildWidth="300px" margin="auto">
         {articles.map((article) => (
             <ArticleTile
                 title={article.title}
