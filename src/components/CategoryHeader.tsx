@@ -32,11 +32,12 @@ function getHeaderImageURL(
     return categoryNode?.fluid.originalImg || '';
 }
 
+// somehow regex /header-/ doesn't work for the header-wetenschap.
 const CategoryHeader = ({ category }: CategoryHeaderProps) => {
     const data = useStaticQuery(graphql`
         query headerImages {
             allImageSharp(
-                filter: { fixed: { originalName: { regex: "/header-/g" } } }
+                filter: { fixed: { originalName: { regex: "/ea/g" } } }
             ) {
                 nodes {
                     fixed {
