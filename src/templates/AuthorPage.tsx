@@ -8,6 +8,7 @@ import ArticleCollection, {
     ArticleTileData,
 } from '../components/ArticleCollection';
 import { ProfileDetails } from '../components/pagespecific/AuthorPage/ProfileDetails';
+import { Center, Heading, VStack } from '@chakra-ui/layout';
 
 
 interface RawArticleData {
@@ -122,45 +123,13 @@ export default function AuthorPage({
     return (
         <Layout containerSize='lg'>
             <SEO title={`${author.fname} ${author.lname}`} />
-            <ProfileDetails author={author} profileImgURL={imgUrl}/>
-            <div>
-                <div className="row">
-                    <div
-                        className="col-sm-12 pad-bot-20"
-                        style={{
-                            paddingTop: '20px',
-                            textAlign: 'center',
-                            display: 'table-cell !important',
-                            verticalAlign: 'middle !important',
-                        }}
-                    >
-
-                        <h2
-                            id="hv-most-recent-mr"
-                            className="hv-c-default hv-category-title"
-                            style={{ paddingTop: '20px' }}
-                        >
-                            DOOR {author.fname} ({articles.length})
-                        </h2>
-
-                        <div
-                            className="row"
-                            style={{ paddingTop: '-50px' }}
-                        >
-                            <div className="col-sm-3" />
-                            <div className="col-sm-6 pad-bot-20">
-                                <div
-                                    id="author-chart"
-                                    style={{ width: '100%' }}
-                                />
-                            </div>
-                            <div className="col-sm-3" />
-                        </div>
-
-                        <ArticleCollection articles={articles} />
-                    </div>
-                </div>
-            </div>
+            <VStack spacing={20}>
+                <ProfileDetails author={author} profileImgURL={imgUrl} />
+                <Center>
+                    <Heading as="h2" size="3xl" color="hersenvulsel.highlight" textTransform="uppercase" >DOOR {author.fname} ({articles.length})</Heading>
+                </Center>
+                <ArticleCollection articles={articles} />
+            </VStack>
         </Layout>
     );
 }
