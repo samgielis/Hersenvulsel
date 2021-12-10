@@ -24,7 +24,6 @@ function getHeaderImageURL(
     category: Category | 'default',
     data: CategoryHeaderData
 ): string {
-    console.log("get headr url", category)
     const categoryNode = data.allImageSharp.nodes.find((node) => {
         return node.fluid.originalImg.indexOf(category) > -1;
     });
