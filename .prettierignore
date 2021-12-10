@@ -2,3 +2,7 @@
 package.json
 package-lock.json
 public
+data
+node_modules
+docs
+gatsby-browser.js

@@ -55,8 +55,8 @@ function replaceHTMLAnchorsWithMDLinks(paragraph: string): string {
 
 function convertParagraphItemToMD(paragraph: ParagraphItem): string {
     const rawContent = paragraph.content;
-    let content = rawContent.replace('<b>', '**').replace('</b>', '**');
-    content = content.replace('<i>', '_').replace('</i>', '_');
+    let content = rawContent.replace(/<b>/g, '**').replace(/<\/b>/g, '**');
+    content = content.replace(/<i>/g, '_').replace(/<\/i>/g, '_');
     return replaceHTMLAnchorsWithMDLinks(content);
 }
 
@@ -101,9 +101,11 @@ function generateMDFrontMatter(descriptor: ArticleDescriptor): string {
 
     return `---
 id: "${descriptor.id}"
-authorid: "${descriptor.authorid}"
+title: "${descriptor.title}"
+authorhandle: "${descriptor.authorid}"
 day: "${descriptor.day}"
 source_url: "${descriptor.source_url}"
+source_name: "${descriptor.source_name}"
 img_credit: "${descriptor.img_credit}"
 keywords: ${keywordsString}
 ---`;

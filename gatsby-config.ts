@@ -13,18 +13,6 @@ export const siteMetadata = {
 };
 
 export const plugins = [
-    {
-        resolve: `gatsby-plugin-ts`,
-        options: {
-            tsLoader: {
-                logLevel: `warn`,
-            },
-            forkTsCheckerPlugin: {
-                eslint: true,
-            },
-            codegen: false,
-        },
-    },
     `gatsby-plugin-react-helmet`,
     {
         resolve: `gatsby-source-filesystem`,
@@ -70,6 +58,7 @@ export const plugins = [
             path: 'data/authors',
         },
     },
+    `@chakra-ui/gatsby-plugin`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

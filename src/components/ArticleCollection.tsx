@@ -1,72 +1,70 @@
 import React from 'react';
 import './ArticleCollection.css';
 import Img, { FluidObject } from 'gatsby-image';
+import { AspectRatio, Box, Heading, SimpleGrid, Text } from '@chakra-ui/layout';
+import { Link } from 'gatsby';
 
 export interface ArticleTileData {
     title: string;
     category: string;
     id: string;
     image?: FluidObject;
+    publishDate: Date;
 }
 
 interface ArticleCollectionProps {
     articles: ArticleTileData[];
 }
 
-const ArticleTile = ({ title, category, id, image }: ArticleTileData) => {
+const ArticleTile = ({ title, category, id, image }: Omit<ArticleTileData, "publishDate">) => {
     return (
-        <div className="col-sm-4 pad-bot-20">
-            <div className="hv-tile-image-container">
+        <AspectRatio ratio={16 / 9} backgroundColor="black">
+            <Box>
                 {image ? (
                     <Img
                         alt={title}
                         fluid={image}
                         style={{
                             width: '100%',
-                            height: '100%',
-                            backgroundColor: 'black',
+                            height: "100%",
+                            opacity: ".7"
                         }}
                     />
                 ) : (
                     <div />
                 )}
                 <b>
-                    <p className="hv-tile-category">{category.toUpperCase()}</p>
+                    <Text textTransform="uppercase" className="hv-tile-category">{category}</Text>
                 </b>
 
-                <div className="hv-tile-title-container">
-                    <h2 className="hv-tile-title hv-tile-title-default">
-                        <span>
-                            <a
-                                href={`/${category}/${id}/`}
-                                className="thumblink"
-                            >
-                                {title}
-                            </a>
-                        </span>
-                    </h2>
-                </div>
-            </div>
-        </div>
+                <Heading m={2} size="2xl" textAlign="center" as="h2" fontWeight="normal" className="hv-tile-title hv-tile-title-default">
+                    <span>
+                        <Link
+                            to={`/${category}/${id}/`}
+                            className="thumblink"
+                        >
+                            {title}
+                        </Link>
+                    </span>
+                </Heading>
+            </Box>
+        </AspectRatio>
     );
 };
 
-const ArticleCollection = ({ articles }: ArticleCollectionProps) => (
-    <div className="row">
-        <div className="col-sm-12" style={{ paddingBottom: '50px' }}>
-            <div className="row" id="hv-directory-container">
-                {articles.map((article) => (
-                    <ArticleTile
-                        title={article.title}
-                        id={article.id}
-                        category={article.category}
-                        key={article.id}
-                        image={article.image}
-                    />
-                ))}
-            </div>
-        </div>
-    </div>
-);
+const ArticleCollection = ({ articles }: ArticleCollectionProps) => {
+    articles.sort((a, b) => { return (+b.publishDate - +a.publishDate) })
+    return <SimpleGrid spacingX={8} spacingY={8} py={10} w="100%" minChildWidth="300px" margin="auto">
+        {articles.map((article) => (
+            <ArticleTile
+                title={article.title}
+                id={article.id}
+                category={article.category}
+                key={article.id}
+                image={article.image}
+            />
+        ))}
+    </SimpleGrid>
+}
 
 export default ArticleCollection;

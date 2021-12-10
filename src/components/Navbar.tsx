@@ -58,6 +58,15 @@ const Navbar = ({ categories }: NavbarProps) => (
                                 </a>
                             </li>
                             <li>
+                                <a
+                                    href="https://instagram.com/hersenvulsel"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <i className="fa fa-instagram fa-lg" />
+                                </a>
+                            </li>
+                            <li>
                                 <Link to="/contact">
                                     <i className="fa fa-envelope fa-lg" />
                                 </Link>
