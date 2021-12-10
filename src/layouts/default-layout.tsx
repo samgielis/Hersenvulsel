@@ -14,6 +14,26 @@ import Navbar from '../components/Navbar';
 import { Category } from '../types/Category';
 import CategoryHeader from '../components/CategoryHeader';
 import { Container } from '@chakra-ui/layout';
+import { ChakraProvider, CSSReset, extendTheme } from '@chakra-ui/react';
+
+const customTheme = extendTheme({
+    fonts: {
+        body: `"Helvetica Neue",Helvetica,Arial,sans-serif`,
+        heading: `"Helvetica Neue",Helvetica,Arial,sans-serif`,
+        mono: `"Helvetica Neue",Helvetica,Arial,sans-serif`,
+    },
+    colors: {
+        hersenvulsel: {
+            highlight: "#c93c3c",
+            wetenschap: "#2a6fa4",
+            mensen: "#de3737",
+            geschiedenis: "#e9d822",
+            faitsdivers: "#ff8534",
+            natuur: "#4ea648",
+            entertainment: "#8833af"
+        }
+    }
+});
 
 interface LayoutProperties {
     children: ReactNode;
@@ -33,14 +53,15 @@ const Layout = ({ children, category, containerSize }: LayoutProperties): JSX.El
     `);
 
     return (
-        <>
+        <ChakraProvider theme={customTheme}>
+            <CSSReset />
             {category && <CategoryHeader category={category} />}
             <Navbar categories={data.site.siteMetadata.categories} />
             <Container maxW={containerSize === "lg" ? "ontainer.lg" : "container.md"}>
                 <main>{children}</main>
             </Container>
             <Footer categories={data.site.siteMetadata.categories} />
-        </>
+        </ChakraProvider>
     );
 };
 
