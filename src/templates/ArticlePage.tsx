@@ -88,9 +88,6 @@ export default function ArticlePage({
                                 authorImageSrc={authorImage.fluid.src}
                                 dateString={frontmatter.day}
                             />
-                            <div className="col-sm-4">
-                                <div id="share-buttons" />
-                            </div>
                         </div>
                     </div>
 

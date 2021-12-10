@@ -137,12 +137,9 @@ header {
   letter-spacing: -1px;
   font-size: 1.7em;
   font-weight: 350;
-  margin:0;
-  padding-top:10px;
-}
-.hv-author-name-link {
   color: #333333 !important;
 }
+
 .hv-date-line {
   color: #595959;
   font-size: 1.1em;

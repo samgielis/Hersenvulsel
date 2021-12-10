@@ -1,4 +1,6 @@
-import { HStack } from '@chakra-ui/layout';
+import { HStack, Stack } from '@chakra-ui/layout';
+import { Avatar } from '@chakra-ui/react';
+import { Link } from 'gatsby';
 import React from 'react';
 import { monthNumeralToName } from '../../../utils/StringUtils';
 
@@ -23,29 +25,22 @@ const AuthorAndDate = ({
     const authorProfileLink = `../../a/${authorhandle}`;
     return (
         <div className="col-sm-8">
-            <HStack className="hv-author-thumbnail-container">
-                <a href={authorProfileLink}>
-                    <img
-                        alt={authorName}
-                        title={authorName}
-                        className="hv-author-thumbnail"
-                        src={authorImageSrc}
-                    />
-                </a>
-                <div style={{ paddingLeft: '10px' }}>
-                    <p className="hv-author-name">
-                        <a
-                            style={{ color: 'black' }}
-                            className="hv-author-name-link"
-                            href={authorProfileLink}
-                        >
-                            {authorName}
-                        </a>
-                    </p>
+            <HStack className="hv-author-thumbnail-container" spacing={6} mb={2}>
+
+                <Avatar as={Link} to={authorProfileLink} name={authorName} src={authorImageSrc} background="transparent" size="2xl" transition="opacity .3s ease-in-out" _hover={{ opacity: ".8" }} />
+
+                <Stack spacing={0}>
+                    <a
+                        className="hv-author-name"
+                        style={{ color: 'black' }}
+                        href={authorProfileLink}
+                    >
+                        {authorName}
+                    </a>
                     <p className="hv-date-line">
                         {`${date[2]} ${monthNumeralToName(date[1])} ${date[0]}`}
                     </p>
-                </div>
+                </Stack>
             </HStack>
         </div>
     );
