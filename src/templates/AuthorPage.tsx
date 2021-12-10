@@ -15,6 +15,7 @@ interface RawArticleData {
     node: {
         frontmatter: {
             id: string;
+            day: string;
         };
         rawMarkdownBody: string;
         fileAbsolutePath: string;
@@ -104,6 +105,7 @@ function rawArticleToThumbnailData(
         ),
         id: data.node.frontmatter.id,
         image,
+        publishDate: new Date(data.node.frontmatter.day),
     };
 }
 
@@ -166,6 +168,7 @@ export const query = graphql`
                 node {
                     frontmatter {
                         id
+                        day
                     }
                     rawMarkdownBody
                     fileAbsolutePath
