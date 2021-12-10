@@ -1,3 +1,4 @@
+import { Stack } from '@chakra-ui/layout';
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import CategoryTitle from '../components/CategoryTitle';
@@ -62,80 +63,46 @@ export default function ArticlePage({
     return (
         <Layout category={fields.category}>
             <SEO title={frontmatter.title} />
-            <div className="container">
-                <div className="row">
+            <Stack w="100%" spacing={8}>
+                <div>
                     <div
-                        className="col-sm-8 blog-main"
-                        style={{ paddingBottom: '20px' }}
+                        className="page-header hv-title-container"
+                        id="hv-title-container"
                     >
-                        <div
-                            className="page-header hv-title-container"
-                            id="hv-title-container"
+                        <CategoryTitle category={fields.category} />
+                        <h1
+                            className="hv-article-title"
+                            id="hv-article-title"
                         >
-                            <CategoryTitle category={fields.category} />
-                            <h1
-                                className="hv-article-title"
-                                id="hv-article-title"
-                            >
-                                {frontmatter.title}
-                            </h1>
-                        </div>
-
-                        <div className="row">
-                            <div className="col-sm-12">
-                                    <AuthorAndDate
-                                        authorhandle={author.authorhandle}
-                                        authorName={`${author.fname} ${author.lname}`}
-                                        authorImageSrc={authorImage.fluid.src}
-                                        dateString={frontmatter.day}
-                                    />
-                            </div>
-                        </div>
+                            {frontmatter.title}
+                        </h1>
                     </div>
 
-                    <div className="col-sm-3 col-sm-offset-1 blog-sidebar" />
-
-                    <div className="col-sm-8 blog-main">
-                        <MainArticleImage
-                            srcSet={
-                                mainImage?.node.childImageSharp.fluid.srcSet ||
-                                ''
-                            }
-                            credit={frontmatter.img_credit}
-                        />
-                        <ArticleBody
-                            rawMarkdownBody={rawMarkdownBody}
-                            images={images.edges.map(
-                                (edge) => edge.node.childImageSharp.fluid
-                            )}
-                            sourceName={markdownRemark.frontmatter.source_name}
-                            sourceUrl={markdownRemark.frontmatter.source_url}
-                        />
-
-                        <div className="col-sm-3 col-sm-offset-1 blog-sidebar">
-                            <div
-                                className="list-group"
-                                id="hv-sidebar-newest-list"
-                            >
-                                <div
-                                    className="list-group-item active hv-sidebar-head"
-                                    id="hv-sidebar-newest-title"
-                                />
-                            </div>
-
-                            <div
-                                className="list-group"
-                                id="hv-sidebar-more-x-list"
-                            >
-                                <div
-                                    className="list-group-item active hv-sidebar-head"
-                                    id="hv-sidebar-more-x-title"
-                                />
-                            </div>
-                        </div>
-                    </div>
+                    <AuthorAndDate
+                        authorhandle={author.authorhandle}
+                        authorName={`${author.fname} ${author.lname}`}
+                        authorImageSrc={authorImage.fluid.src}
+                        dateString={frontmatter.day}
+                    />
                 </div>
-            </div>
+                <div>
+                    <MainArticleImage
+                        srcSet={
+                            mainImage?.node.childImageSharp.fluid.srcSet ||
+                            ''
+                        }
+                        credit={frontmatter.img_credit}
+                    />
+                    <ArticleBody
+                        rawMarkdownBody={rawMarkdownBody}
+                        images={images.edges.map(
+                            (edge) => edge.node.childImageSharp.fluid
+                        )}
+                        sourceName={markdownRemark.frontmatter.source_name}
+                        sourceUrl={markdownRemark.frontmatter.source_url}
+                    />
+                </div>
+            </Stack>
         </Layout>
     );
 }

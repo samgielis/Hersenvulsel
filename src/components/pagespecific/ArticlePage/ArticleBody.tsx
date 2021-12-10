@@ -38,8 +38,8 @@ function createImageRenderer(images: FluidArticleImageData[]) {
 
 const ArticleBody = ({ rawMarkdownBody, images, sourceName, sourceUrl }: ArticleBodyProps) => {
     return (
-        <div className="row maintext-row">
-            <div className="col-sm-5 maintext-col" id="article_body">
+        <div className="maintext-row">
+            <div className="maintext-col" id="article_body">
                 <Stack w="100%" spacing={8}>
                     <ReactMarkdown
                         components={{

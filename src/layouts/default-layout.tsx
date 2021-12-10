@@ -13,13 +13,15 @@ import './hv.css';
 import Navbar from '../components/Navbar';
 import { Category } from '../types/Category';
 import CategoryHeader from '../components/CategoryHeader';
+import { Container } from '@chakra-ui/layout';
 
 interface LayoutProperties {
     children: ReactNode;
     category?: Category | 'default';
+    containerSize?: "md" | "lg";
 }
 
-const Layout = ({ children, category }: LayoutProperties): JSX.Element => {
+const Layout = ({ children, category, containerSize }: LayoutProperties): JSX.Element => {
     const data = useStaticQuery(graphql`
         query defaultQuery {
             site {
@@ -34,10 +36,10 @@ const Layout = ({ children, category }: LayoutProperties): JSX.Element => {
         <>
             {category && <CategoryHeader category={category} />}
             <Navbar categories={data.site.siteMetadata.categories} />
-            <div>
+            <Container maxW={containerSize === "lg" ? "ontainer.lg" : "container.md"}>
                 <main>{children}</main>
-                <Footer categories={data.site.siteMetadata.categories} />
-            </div>
+            </Container>
+            <Footer categories={data.site.siteMetadata.categories} />
         </>
     );
 };
