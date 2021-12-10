@@ -11,7 +11,8 @@ const CategoryTitle = ({ category }: CategoryTitleProps) => {
         <Heading
             as="h3"
             size="xl"
-            className={`hv-category-title-15px hv-c-${category}`}
+            className={`hv-category-title-15px`}
+            color={`hersenvulsel.${category}`}
         >
             {category === 'faitsdivers' ? 'faits divers' : category}
         </Heading>
