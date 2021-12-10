@@ -24,9 +24,9 @@ const AuthorAndDate = ({
 
     const authorProfileLink = `../../a/${authorhandle}`;
     return (
-        <HStack className="hv-author-thumbnail-container" spacing={6} mb={2}>
+        <HStack spacing={6} mb={2}>
 
-            <Avatar as={Link} to={authorProfileLink} name={authorName} src={authorImageSrc} background="transparent" size="2xl" transition="opacity .3s ease-in-out" _hover={{ opacity: ".8" }} />
+            <Avatar as={Link} to={authorProfileLink} name={authorName} src={authorImageSrc} background="transparent" size="2xl" _hover={{ opacity: ".8" }} />
 
             <Stack spacing={0}>
                 <a
