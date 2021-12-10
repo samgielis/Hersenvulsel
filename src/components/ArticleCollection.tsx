@@ -54,7 +54,7 @@ const ArticleTile = ({ title, category, id, image }: Omit<ArticleTileData, "publ
 
 const ArticleCollection = ({ articles }: ArticleCollectionProps) => {
     articles.sort((a, b) => { return (+b.publishDate - +a.publishDate) })
-    return <SimpleGrid spacingX={8} spacingY={8} py={10} w="100%" maxW="1200px" minChildWidth="300px" margin="auto">
+    return <SimpleGrid spacingX={8} spacingY={8} py={10} w="100%" minChildWidth="300px" margin="auto">
         {articles.map((article) => (
             <ArticleTile
                 title={article.title}

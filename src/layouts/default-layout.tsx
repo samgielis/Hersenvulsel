@@ -57,7 +57,7 @@ const Layout = ({ children, category, containerSize }: LayoutProperties): JSX.El
             <CSSReset />
             {category && <CategoryHeader category={category} />}
             <Navbar categories={data.site.siteMetadata.categories} />
-            <Container maxW={containerSize === "lg" ? "ontainer.lg" : "container.md"}>
+            <Container maxW={containerSize === "lg" ? "1200px" : "container.md"}>
                 <main>{children}</main>
             </Container>
             <Footer categories={data.site.siteMetadata.categories} />
