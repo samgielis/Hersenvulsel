@@ -16,6 +16,7 @@ export const ProfileDetails = ({author, profileImgURL}: ProfileDetails) => {
     return <VStack w="100%" spacing={5} mt={{ base: 5, md: 10 }}>
         <Avatar w={{ base: "100px", md: "175px" }} size="full" bg="transparent" name={authorName} src={profileImgURL} />
         <Heading
+            as="h1"
             size="4xl"
             id="hv-auth-name"
         >{authorName}</Heading>
