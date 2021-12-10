@@ -24,25 +24,23 @@ const AuthorAndDate = ({
 
     const authorProfileLink = `../../a/${authorhandle}`;
     return (
-        <div className="col-sm-8">
-            <HStack className="hv-author-thumbnail-container" spacing={6} mb={2}>
+        <HStack className="hv-author-thumbnail-container" spacing={6} mb={2}>
 
-                <Avatar as={Link} to={authorProfileLink} name={authorName} src={authorImageSrc} background="transparent" size="2xl" transition="opacity .3s ease-in-out" _hover={{ opacity: ".8" }} />
+            <Avatar as={Link} to={authorProfileLink} name={authorName} src={authorImageSrc} background="transparent" size="2xl" transition="opacity .3s ease-in-out" _hover={{ opacity: ".8" }} />
 
-                <Stack spacing={0}>
-                    <a
-                        className="hv-author-name"
-                        style={{ color: 'black' }}
-                        href={authorProfileLink}
-                    >
-                        {authorName}
-                    </a>
-                    <p className="hv-date-line">
-                        {`${date[2]} ${monthNumeralToName(date[1])} ${date[0]}`}
-                    </p>
-                </Stack>
-            </HStack>
-        </div>
+            <Stack spacing={0}>
+                <a
+                    className="hv-author-name"
+                    style={{ color: 'black' }}
+                    href={authorProfileLink}
+                >
+                    {authorName}
+                </a>
+                <p className="hv-date-line">
+                    {`${date[2]} ${monthNumeralToName(date[1])} ${date[0]}`}
+                </p>
+            </Stack>
+        </HStack>
     );
 };
 

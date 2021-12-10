@@ -82,12 +82,14 @@ export default function ArticlePage({
                         </div>
 
                         <div className="row">
-                            <AuthorAndDate
-                                authorhandle={author.authorhandle}
-                                authorName={`${author.fname} ${author.lname}`}
-                                authorImageSrc={authorImage.fluid.src}
-                                dateString={frontmatter.day}
-                            />
+                            <div className="col-sm-12">
+                                    <AuthorAndDate
+                                        authorhandle={author.authorhandle}
+                                        authorName={`${author.fname} ${author.lname}`}
+                                        authorImageSrc={authorImage.fluid.src}
+                                        dateString={frontmatter.day}
+                                    />
+                            </div>
                         </div>
                     </div>
 
