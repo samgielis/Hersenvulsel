@@ -14,7 +14,7 @@ export const SecondarySpotlightArticle = ({ article }: SecondarySpotlightArticle
     const articleURL = `/${category}/${id}/`;
     return <LinkBox>
         <Stack>
-                <CategoryTitle category={category} size="2xl" />
+            <CategoryTitle category={category} size="2xl" />
             <AspectRatio ratio={16 / 11}>
                 {image && <Img
                     alt={title}
@@ -22,24 +22,18 @@ export const SecondarySpotlightArticle = ({ article }: SecondarySpotlightArticle
                     style={{
                         position: "",
                     }}
-                />}
+                    />}
             </AspectRatio>
+            <LinkOverlay as={Link} to={articleURL} _hover={{ color: `black` }}>
+                <Heading size="3xl" minH="130px">{title}</Heading>
+            </LinkOverlay>
+            <Spacer />
             <Box>
-                <Stack minH="100%" spacing={5}>
-                    <Box>
-                        <LinkOverlay as={Link} to={articleURL} _hover={{ color: `black` }}>
-                            <Heading size="3xl">{title}</Heading>
-                        </LinkOverlay>
-                    </Box>
-                    <Spacer />
-                    <Box>
-                        <Text fontSize="3xl" fontWeight="bold">{publishDate.toLocaleDateString()}</Text>
-                        <Text fontSize="4xl" >{excerpt}</Text>
-                        <Link fontSize="2xl" to={articleURL} _hover={{ color: `hersenvulsel.${category}` }} color={`hersenvulsel.${category}`} textTransform="uppercase" fontWeight="bold">
-                            Lees meer
-                        </Link>
-                    </Box>
-                </Stack>
+                    <Text fontSize="3xl" fontWeight="bold">{publishDate.toLocaleDateString()}</Text>
+                <Text fontSize="4xl" >{excerpt}</Text>
+                <Link fontSize="2xl" to={articleURL} _hover={{ color: `hersenvulsel.${category}` }} color={`hersenvulsel.${category}`} textTransform="uppercase" fontWeight="bold">
+                    Lees meer
+                </Link>
             </Box>
         </Stack>
     </LinkBox>
