@@ -14,6 +14,7 @@ import {
     enrichAuthorDescriptorNode,
     isAuthorDescriptorNode,
 } from './src/generators/AuthorPageGenerator';
+import { createCategoryPages } from './src/generators/CategoryPageGenerator';
 
 /*
 interface FileSystemNode extends Node {
@@ -33,6 +34,7 @@ export const createPages: GatsbyNode['createPages'] = async (
 ) => {
     await createAuthorPages(args);
     await createArticlePages(args);
+    await createCategoryPages(args);
 };
 
 export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'gatsby';
 import { linkTitleToUrl } from '../utils/StringUtils';
+import { Box } from '@chakra-ui/layout';
+import { Link } from './Link';
 
 interface NavbarLinkProps {
     title: string;
@@ -33,7 +34,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ categories }: NavbarProps) => (
-    <div id="nav-wrapper" className="nav-wrapper" style={{ height: '90px' }}>
+    <Box className="nav-wrapper" height='90px' mb={{base:0, md: 20}}>
         <div id="nav">
             <div
                 className="navbar navbar-inverse navbar-static"
@@ -76,7 +77,7 @@ const Navbar = ({ categories }: NavbarProps) => (
                 </div>
             </div>
         </div>
-    </div>
+    </Box>
 );
 
 export default Navbar;

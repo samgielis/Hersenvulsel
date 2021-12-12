@@ -1,5 +1,6 @@
-import { Center, HStack, Link } from '@chakra-ui/layout';
+import { Center, HStack } from '@chakra-ui/layout';
 import React from 'react';
+import { Link } from '../../Link';
 
 interface ArticleSourceReferenceProps {
     name: string;

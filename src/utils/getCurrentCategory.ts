@@ -8,5 +8,10 @@ export function getCurrentCategory(): Category | "default" {
             return category;
         }
     }
+    for (let category of allCategories) {
+        if (currentLocation.indexOf(`/${category}`) > -1) {
+            return category;
+        }
+    }
     return "default";
 }

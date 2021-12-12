@@ -1,6 +1,6 @@
-import { Heading } from '@chakra-ui/react';
 import React from 'react';
 import { Category } from '../types/Category';
+import { CategoryThemedHeading } from './CategoryThemedHeading';
 
 interface CategoryTitleProps {
     category: Category;
@@ -8,14 +8,11 @@ interface CategoryTitleProps {
 
 const CategoryTitle = ({ category }: CategoryTitleProps) => {
     return (
-        <Heading
-            as="h3"
+        <CategoryThemedHeading
             size="xl"
-            className={`hv-category-title-15px`}
-            color={`hersenvulsel.${category}`}
         >
             {category === 'faitsdivers' ? 'faits divers' : category}
-        </Heading>
+        </CategoryThemedHeading>
     );
 };
 

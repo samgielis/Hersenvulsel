@@ -1,9 +1,10 @@
 import React from 'react';
-import { Heading, HStack, Link, VStack, Text } from "@chakra-ui/layout"
+import { Heading, HStack, VStack, Text } from "@chakra-ui/layout"
 import { Avatar } from "@chakra-ui/react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { AuthorsJsonNode } from '../../../templates/AuthorPage';
+import { ExternalLink, Link } from '../../Link';
 
 interface ProfileDetails {
     profileImgURL: string;
@@ -13,7 +14,7 @@ interface ProfileDetails {
 export const ProfileDetails = ({author, profileImgURL}: ProfileDetails) => {
     const authorName = `${author.fname} ${author.lname}`;
 
-    return <VStack w="100%" spacing={5} mt={{ base: 5, md: 10 }}>
+    return <VStack w="100%" spacing={5}>
         <Avatar w={{ base: "100px", md: "175px" }} size="full" bg="transparent" name={authorName} src={profileImgURL} />
         <Heading
             as="h1"
@@ -33,7 +34,7 @@ export const ProfileDetails = ({author, profileImgURL}: ProfileDetails) => {
                 <HStack spacing={3}>
                     <FontAwesomeIcon icon={faLink} />
                     <Link
-                        href={author.url}
+                        to={author.url}
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -42,12 +43,11 @@ export const ProfileDetails = ({author, profileImgURL}: ProfileDetails) => {
                 </HStack>
                 <HStack spacing={3}>
                     <FontAwesomeIcon icon={faEnvelope} />
-                    <Link
-                        isExternal
+                    <ExternalLink
                         href={`mailto:${author.contact}`}
                     >
                         {author.contact}
-                    </Link>
+                    </ExternalLink>
                 </HStack>
             </VStack>
         </Text>

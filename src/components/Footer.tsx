@@ -1,7 +1,8 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import { linkTitleToUrl } from '../utils/StringUtils';
 import './Footer.css';
+import { Link } from './Link';
 
 interface FooterLinkProps {
     title: string;
