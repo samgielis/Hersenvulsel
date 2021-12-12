@@ -2,10 +2,7 @@ import { Box } from '@chakra-ui/layout';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Category } from '../types/Category';
-
-interface CategoryHeaderProps {
-    category: Category | 'default';
-}
+import { getCurrentCategory } from '../utils/getCurrentCategory';
 
 interface CategoryHeaderData {
     allImageSharp: {
@@ -32,7 +29,9 @@ function getHeaderImageURL(
 }
 
 // somehow regex /header-/ doesn't work for the header-wetenschap.
-const CategoryHeader = ({ category }: CategoryHeaderProps) => {
+const CategoryHeader = () => {
+    const category = getCurrentCategory();
+
     const data = useStaticQuery(graphql`
         query headerImages {
             allImageSharp(

@@ -11,7 +11,6 @@ import Footer from '../components/Footer';
 import './default-layout.css';
 import './hv.css';
 import Navbar from '../components/Navbar';
-import { Category } from '../types/Category';
 import CategoryHeader from '../components/CategoryHeader';
 import { Container } from '@chakra-ui/layout';
 import { ChakraProvider, CSSReset, extendTheme } from '@chakra-ui/react';
@@ -38,11 +37,10 @@ const customTheme = extendTheme({
 
 interface LayoutProperties {
     children: ReactNode;
-    category?: Category | 'default';
     containerSize?: "md" | "lg";
 }
 
-const Layout = ({ children, category, containerSize }: LayoutProperties): JSX.Element => {
+const Layout = ({ children, containerSize }: LayoutProperties): JSX.Element => {
     const data = useStaticQuery(graphql`
         query defaultQuery {
             site {
@@ -53,10 +51,11 @@ const Layout = ({ children, category, containerSize }: LayoutProperties): JSX.El
         }
     `);
 
+
     return (
         <ChakraProvider theme={customTheme}>
             <CSSReset />
-            {category && <CategoryHeader category={category} />}
+            <CategoryHeader />
             <Navbar categories={data.site.siteMetadata.categories} />
             <Container maxW={containerSize === "lg" ? "1200px" : "container.md"}>
                 <main>{children}</main>

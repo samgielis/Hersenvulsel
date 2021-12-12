@@ -61,7 +61,7 @@ export default function ArticlePage({
         (edge) => edge.node.childImageSharp.fluid.originalName === 'main.jpg'
     );
     return (
-        <Layout category={fields.category}>
+        <Layout>
             <SEO title={frontmatter.title} />
             <Stack w="100%" spacing={8}>
                 <div>
