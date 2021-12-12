@@ -30,7 +30,6 @@ async function createCategoryPage(
     console.log('Creating CategoryPage', category);
 
     const categoryThumbnailsRegex = `/(${category})\\/(\\S*)\\/main\\.(jpg|png)/`;
-    console.log(categoryThumbnailsRegex)
     await createPage({
         path: category,
         component,
