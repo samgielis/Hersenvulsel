@@ -1,15 +1,11 @@
 import React from 'react';
-import { Category } from '../types/Category';
-import { CategoryThemedHeading } from './CategoryThemedHeading';
+import { CategoryThemedHeading, CategoryThemedHeadingProps } from './CategoryThemedHeading';
 
-interface CategoryTitleProps {
-    category: Category;
-}
-
-const CategoryTitle = ({ category }: CategoryTitleProps) => {
+const CategoryTitle = ({ category , size}: CategoryThemedHeadingProps) => {
     return (
         <CategoryThemedHeading
-            size="xl"
+            size={size}
+            category={category}
         >
             {category === 'faitsdivers' ? 'faits divers' : category}
         </CategoryThemedHeading>
