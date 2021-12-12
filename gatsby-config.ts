@@ -1,7 +1,10 @@
+const siteUrl = `https://hersenvulsel.be`;
+
 export const siteMetadata = {
     title: `Hersenvulsel`,
     description: `Hersenvulsel is een website boordevol interessante weetjes en entertainment.`,
     author: `Sam Gielis`,
+    siteUrl,
     categories: [
         'Wetenschap',
         'Geschiedenis',
@@ -60,6 +63,29 @@ export const plugins = [
         },
     },
     `@chakra-ui/gatsby-plugin`,
+    {
+        resolve: `gatsby-plugin-sitemap`,
+        options: {
+            query: `
+            {
+              allSitePage {
+                nodes {
+                  path
+                }
+              }
+          }`,
+            resolveSiteUrl: () => siteUrl,
+            serialize: (props: { path: string }) => {
+                console.log("Data", props)
+                    return {
+                        url: `${siteUrl}${props.path}`,
+                        changefreq: `daily`,
+                        priority: 0.7,
+                        lastmod: new Date().toISOString()
+                    }
+            }
+        }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
