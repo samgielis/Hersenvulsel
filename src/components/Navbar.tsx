@@ -1,8 +1,8 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'gatsby';
 import { linkTitleToUrl } from '../utils/StringUtils';
 import { Box } from '@chakra-ui/layout';
+import { Link } from './Link';
 
 interface NavbarLinkProps {
     title: string;

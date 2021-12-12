@@ -1,11 +1,12 @@
 import React from 'react';
 import { AspectRatio, Box, Heading, Text } from "@chakra-ui/layout";
-import { Link } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
+import { Category } from '../../types/Category';
+import { Link } from '../Link';
 
 export interface ArticleTileData {
     title: string;
-    category: string;
+    category: Category;
     id: string;
     image?: FluidObject;
     publishDate: Date;
