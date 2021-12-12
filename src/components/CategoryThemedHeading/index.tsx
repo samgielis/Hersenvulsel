@@ -3,7 +3,7 @@ import React from 'react';
 import { Category } from '../../types/Category';
 import { getCurrentCategory } from '../../utils/getCurrentCategory';
 
-interface CategoryThemedHeadingProps {
+export interface CategoryThemedHeadingProps {
     category?: Category;
     size?: "xl" | "2xl";
 }

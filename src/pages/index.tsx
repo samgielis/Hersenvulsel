@@ -5,9 +5,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
 import { Category } from '../types/Category';
 import { ArticleTileData } from '../components/ArticleCollection/ArticleTile';
-import ArticleCollection from '../components/ArticleCollection';
+import ArticleCollection, { sortCollection } from '../components/ArticleCollection';
 import { SpotlightArticle } from '../components/SpotlightArticle';
-import { Stack } from '@chakra-ui/layout';
+import { SimpleGrid, Stack } from '@chakra-ui/layout';
+import { SecondarySpotlightArticle } from '../components/SecondarySpotlightArticle';
 
 interface RawArticleData {
     node: {
@@ -146,17 +147,37 @@ const IndexPage = (): JSX.Element => {
         }
         return true;
     })
-    //const [mostRecentArticle, ...otherArticles] = sortCollection(articlesWithoutSpotlight, "NEWEST_FIRST");
+    let sortedArticles = sortCollection(articlesWithoutSpotlight, "NEWEST_FIRST");
+    const wetenschapSpotlight = sortedArticles.find(article => article.category === "wetenschap");
+    const geschiedenisSpotlight = sortedArticles.find(article => article.category === "geschiedenis");
+    const mensenSpotlight = sortedArticles.find(article => article.category === "mensen");
+    const natuurSpotlight = sortedArticles.find(article => article.category === "natuur");
+    const entertainmentSpotlight = sortedArticles.find(article => article.category === "entertainment");
+    const faitsdiversSpotlight = sortedArticles.find(article => article.category === "faitsdivers");
+
+    const leftoverArticles = sortedArticles.filter(article => {
+        return article.id !== wetenschapSpotlight?.id && article.id !== geschiedenisSpotlight?.id && article.id !== mensenSpotlight?.id
+        && article.id !== natuurSpotlight?.id && article.id !== entertainmentSpotlight?.id && article.id !== faitsdiversSpotlight?.id
+    })
 
     if (!spotlightArticle) {
         return <></>;
     }
+
     return (
         <Layout containerSize='lg' >
             <SEO title="Home"/>
             <Stack spacing={20}>
                 <SpotlightArticle article={spotlightArticle} />
-                <ArticleCollection articles={articlesWithoutSpotlight} collectionTitle={'Meer artikels'} />
+                <SimpleGrid columns={{base: 1, md: 3}} spacingX={12} spacingY={16}>
+                    {wetenschapSpotlight && <SecondarySpotlightArticle article={wetenschapSpotlight} />}
+                    {geschiedenisSpotlight && <SecondarySpotlightArticle article={geschiedenisSpotlight} />}
+                    {mensenSpotlight && <SecondarySpotlightArticle article={mensenSpotlight} />}
+                    {natuurSpotlight && <SecondarySpotlightArticle article={natuurSpotlight} />}
+                    {entertainmentSpotlight && <SecondarySpotlightArticle article={entertainmentSpotlight} />}
+                    {faitsdiversSpotlight && <SecondarySpotlightArticle article={faitsdiversSpotlight} />}
+                </SimpleGrid>
+                <ArticleCollection articles={leftoverArticles} collectionTitle={'Meer artikels'} />
             </Stack>
         </Layout>
     );
