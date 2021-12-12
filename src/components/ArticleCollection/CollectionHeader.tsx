@@ -1,17 +1,16 @@
 import React from 'react';
-import { HStack, Heading, Spacer, Box } from "@chakra-ui/layout"
+import { HStack, Spacer, Box } from "@chakra-ui/layout"
 import { Select } from "@chakra-ui/react"
 import { SortMethod } from "."
-import { getCurrentCategory } from '../../utils/getCurrentCategory';
+import { CategoryThemedHeading } from '../CategoryThemedHeading';
 
 interface CollectionHeaderProps {
     onSortMethodChanged(sortMethod: SortMethod): void;
 }
 
 export const CollectionHeader: React.FC<CollectionHeaderProps> = ({ children, onSortMethodChanged }) => {
-    const category = getCurrentCategory();
     return <HStack>
-        <Heading size="3xl" color={`hersenvulsel.${category}`} textTransform={'uppercase'}>{children}</Heading>
+        <CategoryThemedHeading size="3xl">{children}</CategoryThemedHeading>
         <Spacer />
         <Box>
 

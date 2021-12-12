@@ -1,23 +1,18 @@
-import { Heading } from '@chakra-ui/react';
 import React from 'react';
 import { Category } from '../types/Category';
-import { getCurrentCategory } from '../utils/getCurrentCategory';
+import { CategoryThemedHeading } from './CategoryThemedHeading';
 
 interface CategoryTitleProps {
-    category?: Category;
+    category: Category;
 }
 
 const CategoryTitle = ({ category }: CategoryTitleProps) => {
-    const activeCategory = category || getCurrentCategory() || "default";
     return (
-        <Heading
-            as="h3"
+        <CategoryThemedHeading
             size="xl"
-            color={`hersenvulsel.${activeCategory}`}
-            textTransform="uppercase"
         >
-            {activeCategory === 'faitsdivers' ? 'faits divers' : activeCategory}
-        </Heading>
+            {category === 'faitsdivers' ? 'faits divers' : category}
+        </CategoryThemedHeading>
     );
 };
 
