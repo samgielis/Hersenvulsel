@@ -7,6 +7,7 @@ import ArticleCollection, {
 } from '../components/ArticleCollection';
 import { Stack } from '@chakra-ui/layout';
 import { ArticleTileData } from '../components/ArticleCollection/ArticleTile';
+import { CategoryThemedHeading } from '../components/CategoryThemedHeading';
 
 interface RawArticleData {
     node: {
@@ -103,6 +104,7 @@ export default function CategoryPage({
         <Layout containerSize='lg'>
             <SEO title={category} />
             <Stack spacing={20}>
+                <CategoryThemedHeading size="2xl">Meest recent</CategoryThemedHeading>
                 <ArticleCollection articles={articles} collectionTitle={'Meer artikels'} />
             </Stack>
         </Layout>

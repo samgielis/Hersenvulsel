@@ -5,7 +5,7 @@ import { getCurrentCategory } from '../../utils/getCurrentCategory';
 
 interface CategoryThemedHeadingProps {
     category?: Category;
-    size?: "xl" | "3xl";
+    size?: "xl" | "2xl";
 }
 
 export const CategoryThemedHeading: React.FC<CategoryThemedHeadingProps> = ({ category, size, children }) => {
