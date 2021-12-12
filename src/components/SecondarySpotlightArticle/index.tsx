@@ -25,7 +25,7 @@ export const SecondarySpotlightArticle = ({ article }: SecondarySpotlightArticle
                     />}
             </AspectRatio>
             <LinkOverlay as={Link} to={articleURL} _hover={{ color: `black` }}>
-                <Heading size="3xl" minH="130px">{title}</Heading>
+                <Heading size="3xl" minH={{base: "", md: "130px"}}>{title}</Heading>
             </LinkOverlay>
             <Spacer />
             <Box>
