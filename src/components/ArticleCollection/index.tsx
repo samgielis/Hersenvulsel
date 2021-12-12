@@ -18,9 +18,9 @@ const ArticleCollection = ({ articles, collectionTitle }: ArticleCollectionProps
         setSortedArticles(sortCollection(articles, sortMethod));
     }, [articles, sortMethod, setSortedArticles]);
 
-    return <Stack w="100%">
+    return <Stack w="100%" spacing={{base: 5, md: 10}}>
         <CollectionHeader onSortMethodChanged={setSortMethod}>{collectionTitle}</CollectionHeader>
-        <SimpleGrid spacingX={8} spacingY={8} py={10} w="100%" minChildWidth="300px" margin="auto">
+        <SimpleGrid spacingX={8} spacingY={8} pb={10} w="100%" minChildWidth="300px" margin="auto">
             {sortedArticles.map((article) => (
                 <ArticleTile
                     title={article.title}
@@ -38,7 +38,7 @@ export default ArticleCollection;
 
 export type SortMethod = "OLDEST_FIRST" | "NEWEST_FIRST";
 
-function sortCollection(articles: ArticleTileData[], method: SortMethod): ArticleTileData[] {
+export function sortCollection(articles: ArticleTileData[], method: SortMethod): ArticleTileData[] {
     if (method === "NEWEST_FIRST") {
         articles.sort((a, b) => { return (+b.publishDate - +a.publishDate) });
     } else if (method === 'OLDEST_FIRST') {

@@ -10,6 +10,7 @@ export interface ArticleTileData {
     id: string;
     image?: FluidObject;
     publishDate: Date;
+    excerpt?: string;
 }
 
 export const ArticleTile = ({ title, category, id, image }: Omit<ArticleTileData, "publishDate">) => {

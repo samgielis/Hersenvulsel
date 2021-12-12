@@ -3,14 +3,16 @@ import React from 'react';
 import { FluidObject } from 'gatsby-image';
 import Layout from '../layouts/default-layout';
 import SEO from '../components/seo';
-import ArticleCollection, {
-} from '../components/ArticleCollection';
+import ArticleCollection, { sortCollection } from '../components/ArticleCollection';
 import { Stack } from '@chakra-ui/layout';
 import { ArticleTileData } from '../components/ArticleCollection/ArticleTile';
 import { CategoryThemedHeading } from '../components/CategoryThemedHeading';
+import { ArticleHighlight } from '../components/ArticleHighlight';
+import { Category } from '../types/Category';
 
 interface RawArticleData {
     node: {
+        excerpt?: string
         frontmatter: {
             id: string;
             day: string;
@@ -59,12 +61,12 @@ function getArticleTitleFromRawMarkdown(raw: string): string {
     return regexResult[1];
 }
 
-function getArticleCategoryFromAbsolutePath(path: string): string {
+function getArticleCategoryFromAbsolutePath(path: string): Category {
     const regexResult = path.match(/\/articles\/([^/]+)\//);
     if (!regexResult || regexResult.length < 2) {
-        return '';
+        return 'wetenschap';
     }
-    return regexResult[1];
+    return regexResult[1] as Category;
 }
 
 function rawArticleToThumbnailData(
@@ -79,6 +81,7 @@ function rawArticleToThumbnailData(
         id: data.node.frontmatter.id,
         image,
         publishDate: new Date(data.node.frontmatter.day),
+        excerpt: data.node.excerpt,
     };
 }
 
@@ -91,7 +94,7 @@ export default function CategoryPage({
     data,
     pageContext
 }: PageProps<CategoryPageDataType, CategoryPageContext>): JSX.Element {
-    const {category} = pageContext;
+    const { category } = pageContext;
     const thumbnailImages = data.articleThumbnails.edges;
     const articles = data.allMarkdownRemark.edges.map((rawData) => {
         const correspondingThumbnail = findImageForArticle(
@@ -100,12 +103,16 @@ export default function CategoryPage({
         );
         return rawArticleToThumbnailData(rawData, correspondingThumbnail);
     });
+    const [mostRecentArticle, ...otherArticles] = sortCollection(articles, "NEWEST_FIRST");
     return (
         <Layout containerSize='lg'>
             <SEO title={category} />
             <Stack spacing={20}>
-                <CategoryThemedHeading size="2xl">Meest recent</CategoryThemedHeading>
-                <ArticleCollection articles={articles} collectionTitle={'Meer artikels'} />
+                <Stack spacing={{base: 5, md: 10}}>
+                    <CategoryThemedHeading size="2xl">Meest recent</CategoryThemedHeading>
+                    <ArticleHighlight article={mostRecentArticle} />
+                </Stack>
+                <ArticleCollection articles={otherArticles} collectionTitle={'Meer artikels'} />
             </Stack>
         </Layout>
     );
@@ -118,6 +125,7 @@ export const query = graphql`
         ) {
             edges {
                 node {
+                    excerpt(pruneLength: 200)
                     frontmatter {
                         id
                         day
