@@ -25,6 +25,7 @@ const customTheme = extendTheme({
     colors: {
         hersenvulsel: {
             highlight: "#c93c3c",
+            default: "#c93c3c",
             wetenschap: "#2a6fa4",
             mensen: "#de3737",
             geschiedenis: "#e9d822",
