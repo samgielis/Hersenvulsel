@@ -10,6 +10,7 @@ export const siteMetadata = {
         'Entertainment',
         'Faits Divers',
     ],
+    spotlightArticleIds: ['belle-en-het-beest-gearrangeerd-huwelijk'],
 };
 
 export const plugins = [

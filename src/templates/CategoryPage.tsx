@@ -7,7 +7,7 @@ import ArticleCollection, { sortCollection } from '../components/ArticleCollecti
 import { Stack } from '@chakra-ui/layout';
 import { ArticleTileData } from '../components/ArticleCollection/ArticleTile';
 import { CategoryThemedHeading } from '../components/CategoryThemedHeading';
-import { ArticleHighlight } from '../components/ArticleHighlight';
+import { SpotlightArticle } from '../components/SpotlightArticle';
 import { Category } from '../types/Category';
 
 interface RawArticleData {
@@ -107,10 +107,10 @@ export default function CategoryPage({
     return (
         <Layout containerSize='lg'>
             <SEO title={category} />
-            <Stack spacing={20}>
+            <Stack spacing={40}>
                 <Stack spacing={{base: 5, md: 10}}>
                     <CategoryThemedHeading size="2xl">Meest recent</CategoryThemedHeading>
-                    <ArticleHighlight article={mostRecentArticle} />
+                    <SpotlightArticle article={mostRecentArticle} />
                 </Stack>
                 <ArticleCollection articles={otherArticles} collectionTitle={'Meer artikels'} />
             </Stack>
