@@ -35,7 +35,7 @@ const CategoryHeader = () => {
     const data = useStaticQuery(graphql`
         query headerImages {
             allImageSharp(
-                filter: { fixed: { originalName: { regex: "/ea/g" } } }
+                filter: {original: {src: {regex: "\/(\\S)?header-(\\S)?\/g"}}}
             ) {
                 nodes {
                     fixed {
