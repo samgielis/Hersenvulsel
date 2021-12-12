@@ -18,7 +18,6 @@ export const ProfileDetails = ({author, profileImgURL}: ProfileDetails) => {
         <Heading
             as="h1"
             size="4xl"
-            id="hv-auth-name"
         >{authorName}</Heading>
         <Text
             textAlign="center"
@@ -34,7 +33,6 @@ export const ProfileDetails = ({author, profileImgURL}: ProfileDetails) => {
                 <HStack spacing={3}>
                     <FontAwesomeIcon icon={faLink} />
                     <Link
-                        id="hv-auth-link"
                         href={author.url}
                         target="_blank"
                         rel="noreferrer"

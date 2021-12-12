@@ -3,7 +3,6 @@ import React from 'react';
 import { FluidObject } from 'gatsby-image';
 import Layout from '../layouts/default-layout';
 import SEO from '../components/seo';
-import './AuthorPage.css';
 import ArticleCollection, {
 } from '../components/ArticleCollection';
 import { ProfileDetails } from '../components/pagespecific/AuthorPage/ProfileDetails';
