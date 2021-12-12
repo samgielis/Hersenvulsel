@@ -107,7 +107,7 @@ export default function CategoryPage({
     return (
         <Layout containerSize='lg'>
             <SEO title={category} />
-            <Stack spacing={20}>
+            <Stack spacing={40}>
                 <Stack spacing={{base: 5, md: 10}}>
                     <CategoryThemedHeading size="2xl">Meest recent</CategoryThemedHeading>
                     <SpotlightArticle article={mostRecentArticle} />

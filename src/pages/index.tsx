@@ -167,7 +167,7 @@ const IndexPage = (): JSX.Element => {
     return (
         <Layout containerSize='lg' >
             <SEO title="Home"/>
-            <Stack spacing={20}>
+            <Stack spacing={40}>
                 <SpotlightArticle article={spotlightArticle} />
                 <SimpleGrid columns={{base: 1, md: 3}} spacingX={12} spacingY={16}>
                     {wetenschapSpotlight && <SecondarySpotlightArticle article={wetenschapSpotlight} />}
