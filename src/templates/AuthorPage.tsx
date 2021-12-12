@@ -5,10 +5,10 @@ import Layout from '../layouts/default-layout';
 import SEO from '../components/seo';
 import './AuthorPage.css';
 import ArticleCollection, {
-    ArticleTileData,
 } from '../components/ArticleCollection';
 import { ProfileDetails } from '../components/pagespecific/AuthorPage/ProfileDetails';
-import { Center, Heading, VStack } from '@chakra-ui/layout';
+import { Stack } from '@chakra-ui/layout';
+import { ArticleTileData } from '../components/ArticleCollection/ArticleTile';
 
 
 interface RawArticleData {
@@ -125,13 +125,10 @@ export default function AuthorPage({
     return (
         <Layout containerSize='lg'>
             <SEO title={`${author.fname} ${author.lname}`} />
-            <VStack spacing={20}>
+            <Stack spacing={20}>
                 <ProfileDetails author={author} profileImgURL={imgUrl} />
-                <Center>
-                    <Heading as="h2" size="3xl" color="hersenvulsel.highlight" textTransform="uppercase" >DOOR {author.fname} ({articles.length})</Heading>
-                </Center>
-            </VStack>
-            <ArticleCollection articles={articles} />
+                <ArticleCollection articles={articles} collectionTitle={`DOOR ${author.fname} (${articles.length})`} />
+            </Stack>
         </Layout>
     );
 }

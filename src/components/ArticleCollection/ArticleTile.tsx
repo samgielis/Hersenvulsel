@@ -1,8 +1,7 @@
 import React from 'react';
-import './ArticleCollection.css';
-import Img, { FluidObject } from 'gatsby-image';
-import { AspectRatio, Box, Heading, SimpleGrid, Text } from '@chakra-ui/layout';
-import { Link } from 'gatsby';
+import { AspectRatio, Box, Heading, Text } from "@chakra-ui/layout";
+import { Link } from "gatsby";
+import Img, { FluidObject } from "gatsby-image";
 
 export interface ArticleTileData {
     title: string;
@@ -12,11 +11,7 @@ export interface ArticleTileData {
     publishDate: Date;
 }
 
-interface ArticleCollectionProps {
-    articles: ArticleTileData[];
-}
-
-const ArticleTile = ({ title, category, id, image }: Omit<ArticleTileData, "publishDate">) => {
+export const ArticleTile = ({ title, category, id, image }: Omit<ArticleTileData, "publishDate">) => {
     return (
         <AspectRatio ratio={16 / 9} backgroundColor="black">
             <Box>
@@ -51,20 +46,3 @@ const ArticleTile = ({ title, category, id, image }: Omit<ArticleTileData, "publ
         </AspectRatio>
     );
 };
-
-const ArticleCollection = ({ articles }: ArticleCollectionProps) => {
-    articles.sort((a, b) => { return (+b.publishDate - +a.publishDate) })
-    return <SimpleGrid spacingX={8} spacingY={8} py={10} w="100%" minChildWidth="300px" margin="auto">
-        {articles.map((article) => (
-            <ArticleTile
-                title={article.title}
-                id={article.id}
-                category={article.category}
-                key={article.id}
-                image={article.image}
-            />
-        ))}
-    </SimpleGrid>
-}
-
-export default ArticleCollection;
