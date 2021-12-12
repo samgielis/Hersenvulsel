@@ -5,11 +5,11 @@ import Img from "gatsby-image";
 import CategoryTitle from "../CategoryTitle";
 import { Link } from '../Link';
 
-interface ArticleHighlightProps {
+interface SpotlightArticleProps {
     article: ArticleTileData;
 }
 
-export const ArticleHighlight = ({ article }: ArticleHighlightProps) => {
+export const SpotlightArticle = ({ article }: SpotlightArticleProps) => {
     const { image, title, category, id, publishDate, excerpt } = article;
     const articleURL = `/${category}/${id}/`;
     return <LinkBox>

@@ -6,7 +6,7 @@ import { FluidObject } from 'gatsby-image';
 import { Category } from '../types/Category';
 import { ArticleTileData } from '../components/ArticleCollection/ArticleTile';
 import ArticleCollection from '../components/ArticleCollection';
-import { ArticleHighlight } from '../components/ArticleHighlight';
+import { SpotlightArticle } from '../components/SpotlightArticle';
 import { Stack } from '@chakra-ui/layout';
 
 interface RawArticleData {
@@ -155,7 +155,7 @@ const IndexPage = (): JSX.Element => {
         <Layout containerSize='lg' >
             <SEO title="Home"/>
             <Stack spacing={20}>
-                <ArticleHighlight article={spotlightArticle} />
+                <SpotlightArticle article={spotlightArticle} />
                 <ArticleCollection articles={articlesWithoutSpotlight} collectionTitle={'Meer artikels'} />
             </Stack>
         </Layout>
