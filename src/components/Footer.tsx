@@ -100,7 +100,6 @@ const Footer = ({ categories }: FooterProps) => {
                             <FooterLinkColumn
                                 content={[
                                     'Contact',
-                                    'Adverteren',
                                     'Cookies & Privacy',
                                     'Gebruiksvoorwaarden',
                                 ]}
