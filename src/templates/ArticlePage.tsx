@@ -26,6 +26,7 @@ interface ArticlePageDataType {
             source_url: string;
             keywords: string[];
         };
+        excerpt: string;
     };
     images: {
         edges: {
@@ -57,13 +58,13 @@ export default function ArticlePage({
     data,
 }: PageProps<ArticlePageDataType, any>): JSX.Element {
     const { markdownRemark, images, author, authorImage } = data;
-    const { fields, frontmatter, rawMarkdownBody } = markdownRemark;
+    const { fields, frontmatter, rawMarkdownBody, excerpt } = markdownRemark;
     const mainImage = images.edges.find(
         (edge) => edge.node.childImageSharp.fluid.originalName === 'main.jpg'
     );
     return (
         <Layout>
-            <SEO title={frontmatter.title} keywords={frontmatter.keywords} />
+            <SEO title={frontmatter.title} keywords={frontmatter.keywords} description={excerpt} />
             <Stack w="100%" spacing={8}>
                 <div>
                     <div
@@ -121,6 +122,7 @@ export const query = graphql`
                 source_url
                 keywords
             }
+            excerpt(pruneLength: 200)
         }
         images: allFile(
             filter: {
