@@ -172,7 +172,7 @@ export const query = graphql`
             }
         }
         articleThumbnails: allFile(
-            filter: { relativePath: { regex: "/main.jpg/g" } }
+            filter: { absolutePath: { regex: "/main/" } }
         ) {
             edges {
                 node {
