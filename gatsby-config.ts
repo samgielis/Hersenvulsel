@@ -18,6 +18,29 @@ export const siteMetadata = {
 
 export const plugins = [
     `gatsby-plugin-react-helmet`,
+
+    {
+        resolve: `gatsby-plugin-google-gtag`,
+        options: {
+            // You can add multiple tracking ids and a pageview event will be fired for all of them.
+            trackingIds: [
+                "G-GV5CW60KGE", // Google Analytics / GA4
+            ],
+            // This object gets passed directly to the gtag config command
+            // This config will be shared across all trackingIds
+            gtagConfig: {
+                anonymize_ip: true,
+                cookie_expires: 0,
+            },
+            // This object is used for configuration specific to this plugin
+            pluginConfig: {
+                // Puts tracking script in the head instead of the body
+                head: true,
+                // Setting this parameter is also optional
+                respectDNT: true,
+            },
+        },
+    },
     {
         resolve: `gatsby-source-filesystem`,
         options: {
@@ -77,12 +100,12 @@ export const plugins = [
             resolveSiteUrl: () => siteUrl,
             serialize: (props: { path: string }) => {
                 console.log("Data", props)
-                    return {
-                        url: `${siteUrl}${props.path}`,
-                        changefreq: `daily`,
-                        priority: 0.7,
-                        lastmod: new Date().toISOString()
-                    }
+                return {
+                    url: `${siteUrl}${props.path}`,
+                    changefreq: `daily`,
+                    priority: 0.7,
+                    lastmod: new Date().toISOString()
+                }
             }
         }
     },
