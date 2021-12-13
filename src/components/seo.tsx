@@ -21,6 +21,7 @@ interface SEOProperties {
     lang?: string;
     meta?: HTMLMetaElement[];
     title: string;
+    keywords?: string[];
 }
 
 const SEO = ({
@@ -28,6 +29,7 @@ const SEO = ({
     lang = 'en',
     meta = [],
     title,
+    keywords,
 }: SEOProperties): JSX.Element => {
     const { site } = useStaticQuery(
         graphql`
@@ -102,6 +104,10 @@ const SEO = ({
                     name: 'google-site-verification',
                     content: 'SqwmsNtaL3wujyp36G3HDwQF6qqmm4TeducdLnH8eIw',
                 },
+                {
+                    name: 'keywords',
+                    content: (keywords?.join(", ") || "") + ", weetjes, nieuws, wetenschap, entertainment, interessant, hersenen, geschiedenis, natuur, mensen, varia, trivia, wist je datjes, wist u dat",
+                }
             ].concat(meta)}
         >
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />

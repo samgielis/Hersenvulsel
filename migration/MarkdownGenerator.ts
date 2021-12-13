@@ -93,7 +93,7 @@ function convertContentToMD(content: ArticleContentItem[]): string {
 function generateMDFrontMatter(descriptor: ArticleDescriptor): string {
     let keywords: string[] = [];
     if (descriptor.keywords) {
-        keywords = descriptor.keywords.split(',');
+        keywords = descriptor.keywords.replace(/, /g, ",").split(',');
     }
 
     const keywordsString =
