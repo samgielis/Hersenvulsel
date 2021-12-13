@@ -2,13 +2,16 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { linkTitleToUrl } from '../utils/StringUtils';
 import './Footer.css';
-import { Link } from './Link';
+import { ExternalLink, Link } from './Link';
 
 interface FooterLinkProps {
     title: string;
 }
 
 const FooterLink = ({ title }: FooterLinkProps) => {
+    if (title === "Contact") {
+        return <ExternalLink href="mailto:info@hersenvulsel.be" className="footer-link">{title}</ExternalLink>
+    }
     return (
         <Link className="footer-link" to={`/${linkTitleToUrl(title)}`}>
             {title}
