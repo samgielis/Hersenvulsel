@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { linkTitleToUrl } from '../utils/StringUtils';
 import { Box } from '@chakra-ui/layout';
-import { Link } from './Link';
+import { ExternalLink, Link } from './Link';
 
 interface NavbarLinkProps {
     title: string;
@@ -50,27 +50,27 @@ const Navbar = ({ categories }: NavbarProps) => (
                         </ul>
                         <ul className="nav pull-right navbar-nav">
                             <li>
-                                <a
+                                <ExternalLink
                                     href="https://facebook.com/hersenvulsel"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
                                     <i className="fa fa-facebook fa-lg" />
-                                </a>
+                                </ExternalLink>
                             </li>
                             <li>
-                                <a
+                                <ExternalLink
                                     href="https://instagram.com/hersenvulsel"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
                                     <i className="fa fa-instagram fa-lg" />
-                                </a>
+                                </ExternalLink>
                             </li>
                             <li>
-                                <Link to="/contact">
+                                <ExternalLink href="mailto:info@hersenvulsel.be">
                                     <i className="fa fa-envelope fa-lg" />
-                                </Link>
+                                </ExternalLink>
                             </li>
                         </ul>
                     </div>
