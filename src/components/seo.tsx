@@ -98,6 +98,10 @@ const SEO = ({
                     name: `twitter:description`,
                     content: metaDescription,
                 },
+                {
+                    name: 'google-site-verification',
+                    content: 'SqwmsNtaL3wujyp36G3HDwQF6qqmm4TeducdLnH8eIw',
+                },
             ].concat(meta)}
         >
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />
