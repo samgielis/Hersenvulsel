@@ -137,7 +137,6 @@ const IndexPage = (): JSX.Element => {
         return rawArticleToThumbnailData(rawData, correspondingThumbnail);
     });
 
-    console.log(articles.map(a => a.image))
     const spotlightArticleId = site.siteMetadata.spotlightArticleIds[0];
     let spotlightArticle: ArticleTileData | undefined = undefined;
     const articlesWithoutSpotlight = articles.filter(article => {
