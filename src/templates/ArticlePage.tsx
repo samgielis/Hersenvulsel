@@ -24,6 +24,7 @@ interface ArticlePageDataType {
             day: string;
             source_name: string;
             source_url: string;
+            keywords: string[];
         };
     };
     images: {
@@ -62,7 +63,7 @@ export default function ArticlePage({
     );
     return (
         <Layout>
-            <SEO title={frontmatter.title} />
+            <SEO title={frontmatter.title} keywords={frontmatter.keywords} />
             <Stack w="100%" spacing={8}>
                 <div>
                     <div
@@ -118,6 +119,7 @@ export const query = graphql`
                 day
                 source_name
                 source_url
+                keywords
             }
         }
         images: allFile(
