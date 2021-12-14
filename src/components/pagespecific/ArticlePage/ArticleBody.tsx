@@ -1,4 +1,4 @@
-import { Stack } from '@chakra-ui/layout';
+import { Link, Stack } from '@chakra-ui/layout';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import ArticleImage from './ArticleImage';
@@ -49,6 +49,7 @@ const ArticleBody = ({ rawMarkdownBody, images, sourceName, sourceUrl }: Article
                             h3: headingRenderer,
                             h4: headingRenderer,
                             h5: headingRenderer,
+                            a: props => <Link {...props} color="#23527c"/>
                         }}
                     >
                         {rawMarkdownBody}
