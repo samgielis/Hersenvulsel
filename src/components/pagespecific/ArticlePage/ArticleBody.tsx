@@ -52,7 +52,7 @@ const ArticleBody = ({ rawMarkdownBody, images, sourceName, sourceUrl }: Article
                             h4: headingRenderer,
                             h5: headingRenderer,
                             a: props => <Link {...props} color="#23527c" />,
-                            iframe: props => { console.log(props, "iframe"); return <AspectRatio ratio={16/9} ><iframe {...props}/></AspectRatio> },
+                            iframe: props => <AspectRatio ratio={16/9} ><iframe {...props}/></AspectRatio>,
 
                         }}
                     >
