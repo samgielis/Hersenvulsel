@@ -1,0 +1,20 @@
+---
+id: "altijd-941-apple"
+title: "Het is altijd 9:41 bij Apple"
+authorhandle: "shannaverspreet"
+day: "2014/08/27"
+source_url: "https://www.phonearena.com/news/942-AM-is-Apples-favorite-time-of-the-day-and-here-is-why-it-will-stay-that-way_id26610"
+source_name: "phonearena.com"
+img_credit: "youtube.com/canaleapple1976"
+keywords: ["apple","iphone","ipad","ipod","klok","tijd","steve","jobs"]
+---
+# Het is altijd 9:41 bij Apple
+Zoek eens naar reclame van een iPhone of iPad, en je zal zien dat de klok op het toestel vaak 9:41 of 9:42 aangeeft. Apple gebruikte vroeger altijd deze tijd op foto’s van zijn apparatuur. Maar waarom? Er blijkt een simpele uitleg voor te zijn.
+
+Elk nieuw toestel van Apple wordt groots voorgesteld door de CEO. En deze presentaties worden tot in de kleinste details voorbreid. Ze beginnen telkens om 9u ’s ochtends, en na een uitleg van ongeveer 40 minuten krijgt het publiek eindelijk het nieuwe toestel te zien, op een groot scherm.
+
+![wikimedia.org](2.jpg "Credit: wikimedia.org")
+
+Na zo’n grondige voorbereiding moeten natuurlijk alle details kloppen – ook de tijd die op de foto’s van het toestel te zien is. Op het moment van de grote voorstelling is het namelijk 09:41 of 09:42. Het plaatje is dus compleet: de iPhone of iPad geeft de juiste tijd aan.
+
+Voormalig CEO Steve Jobs was een grote aanhanger van deze gewoonte. Na zijn dood is de standaardtijd 9:42 steeds minder gebruikt. Jobs heeft de voorstelling van de iPhone 4 nog gedaan, daarna nam de nieuwe CEO Tim Cook het over. In reclame van de iPhone 5 zie je al andere tijden verschijnen.

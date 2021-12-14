@@ -1,0 +1,16 @@
+---
+id: "kurt-searvogel-fietst-122000km-in-1-jaar"
+title: "Kurt Searvogel fietst 122.000km in 1 jaar"
+authorhandle: "shannaverspreet"
+day: "2016/01/12"
+source_url: "https://www.sport.be/cycling/nl/nieuws/article.html?Article_ID=753039"
+source_name: "sport.be"
+img_credit: "flickr.com/kurtz433"
+keywords: ["kurt searvogel","wielrennen","record"]
+---
+# Kurt Searvogel fietst 122.000km in 1 jaar
+De Amerikaan Kurt Searvogel heeft begin dit jaar een opmerkelijk wereldrecord op zijn naam gezet. Op één jaar tijd fietste hij maar liefst 122.432 kilometer - of 76.076 mijl, zoals je op de foto ziet.
+
+Kurt moest elke dag gemiddeld 335 kilometer trappen om het record te halen. En dat deed hij gemiddeld aan 35 kilometer per uur. Een stevige uitdaging - en gewoon omdat het kon.
+
+Het record 'aantal kilometers fietsen op één jaar tijd' stond sinds 1939 op naam van Tommy Godwin. Die fietste toen 120.805 kilometers bij elkaar. Ook eens proberen?

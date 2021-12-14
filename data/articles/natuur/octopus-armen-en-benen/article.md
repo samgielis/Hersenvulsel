@@ -1,0 +1,18 @@
+---
+id: "octopus-armen-en-benen"
+title: "Een octopus heeft acht armen, toch? Niet helemaal..."
+authorhandle: "shannaverspreet"
+day: "2014/07/29"
+source_url: "https://www.telegraph.co.uk/news/newstopics/howaboutthat/2547597/Octopuses-have-two-legs-and-six-arms.html"
+source_name: "telegraph.co.uk"
+img_credit: "wikimedia.org"
+keywords: []
+---
+# Een octopus heeft acht armen, toch? Niet helemaal...
+‘Een octopus heeft acht armen’. Feit? We hebben het waarschijnlijk allemaal op school geleerd, maar volgens experts zou het toch niet helemaal kloppen.
+
+Wanneer octopussen zich voortbewegen over de zeebodem, zijn er namelijk twee armen die meer als benen gebruikt worden. Met de twee ledematen die het meest vooraan zitten, ‘wandelt’ een octopus over de bodem. De andere zes armen worden meer gebruikt om de omgeving te ontdekken en voedsel te verzamelen.
+
+Uit een studie blijkt trouwens dat octopussen geen favoriete arm hebben – ze zijn dus ook niet links- of rechtshandig.
+
+Bonusfeitje: de armen van een octopus zijn geen tentakels! Andere zeedieren, zoals kwallen, hebben wel tentakels – die zijn langer en hebben meestal alleen zuignappen aan het uiteinde. Op de armen van een octopus zitten zowat overal zuignappen.
