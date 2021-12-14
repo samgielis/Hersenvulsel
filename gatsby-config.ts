@@ -55,7 +55,12 @@ export const plugins = [
             path: `${__dirname}/data/authors`,
         },
     },
-    `gatsby-transformer-remark`,
+    {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+            plugins: [`gatsby-remark-responsive-iframe`],
+        }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

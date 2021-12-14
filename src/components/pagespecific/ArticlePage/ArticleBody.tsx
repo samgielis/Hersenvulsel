@@ -1,8 +1,9 @@
-import { Link, Stack } from '@chakra-ui/layout';
+import { AspectRatio, Link, Stack } from '@chakra-ui/layout';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import ArticleImage from './ArticleImage';
 import { ArticleSourceReference } from './ArticleSourceReference';
+import rehypeRaw from 'rehype-raw'
 
 export interface FluidArticleImageData {
     srcSet: string;
@@ -42,6 +43,7 @@ const ArticleBody = ({ rawMarkdownBody, images, sourceName, sourceUrl }: Article
             <div className="maintext-col" id="article_body">
                 <Stack w="100%" spacing={8}>
                     <ReactMarkdown
+                        rehypePlugins={[rehypeRaw]}
                         components={{
                             img: createImageRenderer(images),
                             h1: headingRenderer,
@@ -49,7 +51,9 @@ const ArticleBody = ({ rawMarkdownBody, images, sourceName, sourceUrl }: Article
                             h3: headingRenderer,
                             h4: headingRenderer,
                             h5: headingRenderer,
-                            a: props => <Link {...props} color="#23527c"/>
+                            a: props => <Link {...props} color="#23527c" />,
+                            iframe: props => { console.log(props, "iframe"); return <AspectRatio ratio={16/9} ><iframe {...props}/></AspectRatio> },
+
                         }}
                     >
                         {rawMarkdownBody}
