@@ -62,6 +62,7 @@ export default function ArticlePage({
     const mainImage = images.edges.find(
         (edge) => edge.node.childImageSharp.fluid.originalName === 'main.jpg'
     );
+    console.log(rawMarkdownBody)
     return (
         <Layout>
             <SEO title={frontmatter.title} keywords={frontmatter.keywords} description={excerpt} />
