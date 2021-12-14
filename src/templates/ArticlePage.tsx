@@ -33,7 +33,10 @@ interface ArticlePageDataType {
             node: {
                 childImageSharp: {
                     fluid: FluidArticleImageData;
-                };
+                    original?: {
+                        src?: string;
+                    }
+                },
             };
         }[];
     };
@@ -62,10 +65,9 @@ export default function ArticlePage({
     const mainImage = images.edges.find(
         (edge) => edge.node.childImageSharp.fluid.originalName === 'main.jpg'
     );
-    console.log(rawMarkdownBody)
     return (
         <Layout>
-            <SEO title={frontmatter.title} keywords={frontmatter.keywords} description={excerpt} />
+            <SEO title={frontmatter.title} keywords={frontmatter.keywords} description={excerpt} socialImageUrl={mainImage?.node.childImageSharp.original?.src} />
             <Stack w="100%" spacing={8}>
                 <div>
                     <div
@@ -137,6 +139,9 @@ export const query = graphql`
                         fluid {
                             srcSet
                             originalName
+                        }
+                        original {
+                            src
                         }
                     }
                 }

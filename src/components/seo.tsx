@@ -22,6 +22,7 @@ interface SEOProperties {
     meta?: HTMLMetaElement[];
     title: string;
     keywords?: string[];
+    socialImageUrl?: string;
 }
 
 const SEO = ({
@@ -30,6 +31,7 @@ const SEO = ({
     meta = [],
     title,
     keywords,
+    socialImageUrl = "",
 }: SEOProperties): JSX.Element => {
     const { site } = useStaticQuery(
         graphql`
@@ -85,6 +87,10 @@ const SEO = ({
                     content: `website`,
                 },
                 {
+                    property: `og:image`,
+                    content: socialImageUrl,
+                },
+                {
                     name: `twitter:card`,
                     content: `summary`,
                 },
@@ -112,6 +118,8 @@ const SEO = ({
         >
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" />
+            <link rel="image_src" href={socialImageUrl} />
+
         </Helmet>
     );
 };
