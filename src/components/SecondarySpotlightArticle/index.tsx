@@ -14,7 +14,7 @@ export const SecondarySpotlightArticle = ({ article }: SecondarySpotlightArticle
     const articleURL = `/${category}/${id}/`;
     return <LinkBox>
         <Stack>
-            <CategoryTitle category={category} size="2xl" />
+            <CategoryTitle category={category} />
             <AspectRatio ratio={16 / 11}>
                 {image && <Img
                     alt={title}
@@ -25,13 +25,13 @@ export const SecondarySpotlightArticle = ({ article }: SecondarySpotlightArticle
                     />}
             </AspectRatio>
             <LinkOverlay as={Link} to={articleURL} _hover={{ color: `black` }}>
-                <Heading size="3xl" minH={{base: "", md: "130px"}}>{title}</Heading>
+                <Heading size="xl" minH={{base: "", md: "140px"}}>{title}</Heading>
             </LinkOverlay>
             <Spacer />
             <Box>
-                    <Text fontSize="3xl" fontWeight="bold">{publishDate.toLocaleDateString()}</Text>
-                <Text fontSize="4xl" >{excerpt}</Text>
-                <Link fontSize="2xl" to={articleURL} _hover={{ color: `hersenvulsel.${category}` }} color={`hersenvulsel.${category}`} textTransform="uppercase" fontWeight="bold">
+                    <Text fontSize="xl" fontWeight="bold">{publishDate.toLocaleDateString()}</Text>
+                <Text fontSize="2xl" >{excerpt}</Text>
+                <Link fontSize="lg" to={articleURL} _hover={{ color: `hersenvulsel.${category}` }} color={`hersenvulsel.${category}`} textTransform="uppercase" fontWeight="bold">
                     Lees meer
                 </Link>
             </Box>

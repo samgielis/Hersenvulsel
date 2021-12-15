@@ -17,8 +17,7 @@
     margin: 0 auto;
   }
   .logo-footer {
-    max-width: 4.5em;
-    padding-right: 20px;
+    max-width: 3em;
   }
   .footer-link .footer-red{
     font-size: 0.9em;
@@ -36,11 +35,8 @@
     border-left-width: 1px !important;
     text-transform: uppercase;
     padding-left: 7px;
-    display: table;
-    width: 250px;
   }
   .credits-label {
-    padding-top: 3px;
     font-size: 1.1em;
     line-height: 1.1em;
     text-transform: capitalize;

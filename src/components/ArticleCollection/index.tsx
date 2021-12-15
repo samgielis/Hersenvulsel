@@ -18,9 +18,9 @@ const ArticleCollection = ({ articles, collectionTitle }: ArticleCollectionProps
         setSortedArticles(sortCollection(articles, sortMethod));
     }, [articles, sortMethod, setSortedArticles]);
 
-    return <Stack w="100%" spacing={{base: 5, md: 10}}>
+    return <Stack w="100%" spacing={3}>
         <CollectionHeader onSortMethodChanged={setSortMethod}>{collectionTitle}</CollectionHeader>
-        <SimpleGrid spacingX={8} spacingY={8} pb={10} w="100%" minChildWidth="300px" margin="auto">
+        <SimpleGrid spacingX={4} spacingY={4} pb={10} w="100%" minChildWidth="300px" margin="auto">
             {sortedArticles.map((article) => (
                 <ArticleTile
                     title={article.title}

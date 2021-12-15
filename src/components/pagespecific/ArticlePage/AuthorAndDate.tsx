@@ -1,8 +1,8 @@
-import { HStack, Stack } from '@chakra-ui/layout';
+import { HStack, Stack, Text } from '@chakra-ui/layout';
 import { Avatar } from '@chakra-ui/react';
-import { Link } from 'gatsby';
 import React from 'react';
 import { monthNumeralToName } from '../../../utils/StringUtils';
+import { Link } from '../../Link';
 
 interface AuthorAndDateProps {
     authorhandle: string;
@@ -24,21 +24,21 @@ const AuthorAndDate = ({
 
     const authorProfileLink = `../../a/${authorhandle}`;
     return (
-        <HStack spacing={6} mb={2}>
+        <HStack spacing={4} mb={2}>
 
-            <Avatar as={Link} to={authorProfileLink} name={authorName} src={authorImageSrc} background="transparent" size="2xl" _hover={{ opacity: ".8" }} />
+            <Avatar as={Link} to={authorProfileLink} name={authorName} src={authorImageSrc} background="transparent" size="lg" _hover={{ opacity: ".8" }} />
 
             <Stack spacing={0}>
-                <a
-                    className="hv-author-name"
+                <Link
+                fontSize={"xl"}
                     style={{ color: 'black' }}
                     href={authorProfileLink}
                 >
                     {authorName}
-                </a>
-                <p className="hv-date-line">
+                </Link>
+                <Text fontSize={"md"}>
                     {`${date[2]} ${monthNumeralToName(date[1])} ${date[0]}`}
-                </p>
+                </Text>
             </Stack>
         </HStack>
     );
