@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { linkTitleToUrl } from '../utils/StringUtils';
-import { Box, Center, Container, HStack, Spacer, Stack } from '@chakra-ui/layout';
+import { Box, Center, HStack, Spacer, Stack } from '@chakra-ui/layout';
 import { ExternalLink, Link } from './Link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faFacebookF, faInstagram, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faEnvelope, faHamburger } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { IconButton, useBreakpointValue } from '@chakra-ui/react';
 
 interface NavbarLinkProps {
@@ -46,7 +46,7 @@ const Navbar = ({ categories }: NavbarProps) => {
     const collapsedHeight = isMobile ? MobileHeight : DesktopHeight;
     const height = isCollapsed ? collapsedHeight : "95vh"
 
-    return <Box mb={{ base: 0, md: 20 }} bgColor="hersenvulsel.darkgray" borderColor={"black"} textTransform="uppercase" fontWeight="bold" color="hersenvulsel.lightgray" h={height} w="100%" transition="all .2s ease-in-out" overflow="hidden">
+    return <Box mb={{ base: 10, md: 20 }} bgColor="hersenvulsel.darkgray" borderColor={"black"} textTransform="uppercase" fontWeight="bold" color="hersenvulsel.lightgray" h={height} w="100%" transition="all .2s ease-in-out" overflow="hidden">
         <NavBarToggle isCollapsed={isCollapsed} onToggle={() => setIsCollapsed(!isCollapsed)} />
             <Center h={isCollapsed && isMobile? "0px" : height} transition="all .2s ease-in-out" textAlign={"center"} opacity={isMobile && isCollapsed ? "0%" : "100%"} >
                 <Stack spacing={12} direction={isMobile ? "column" : "row"}>

@@ -1,4 +1,4 @@
-import { Stack } from '@chakra-ui/layout';
+import { Heading, Stack } from '@chakra-ui/layout';
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import CategoryTitle from '../components/CategoryTitle';
@@ -73,11 +73,13 @@ export default function ArticlePage({
                     <div
                     >
                         <CategoryTitle category={fields.category} />
-                        <h1
+                        <Heading
+                            size="3xl"
+                            as="h1"
                             className="hv-article-title"
                         >
                             {frontmatter.title}
-                        </h1>
+                        </Heading>
                     </div>
 
                     <AuthorAndDate

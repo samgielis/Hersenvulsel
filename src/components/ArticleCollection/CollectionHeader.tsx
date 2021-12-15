@@ -10,7 +10,7 @@ interface CollectionHeaderProps {
 
 export const CollectionHeader: React.FC<CollectionHeaderProps> = ({ children, onSortMethodChanged }) => {
     return <HStack>
-        <CategoryThemedHeading size="2xl">{children}</CategoryThemedHeading>
+        <CategoryThemedHeading size="xl">{children}</CategoryThemedHeading>
         <Spacer />
         <Box>
 

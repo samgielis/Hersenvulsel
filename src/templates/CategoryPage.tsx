@@ -109,7 +109,7 @@ export default function CategoryPage({
             <SEO title={category} />
             <Stack spacing={40}>
                 <Stack spacing={{base: 5, md: 10}}>
-                    <CategoryThemedHeading size="2xl">Meest recent</CategoryThemedHeading>
+                    <CategoryThemedHeading size="xl">Meest recent</CategoryThemedHeading>
                     <SpotlightArticle article={mostRecentArticle} />
                 </Stack>
                 <ArticleCollection articles={otherArticles} collectionTitle={'Meer artikels'} />
