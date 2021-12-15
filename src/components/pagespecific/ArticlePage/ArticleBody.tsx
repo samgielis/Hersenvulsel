@@ -40,7 +40,7 @@ function createImageRenderer(images: FluidArticleImageData[]) {
 const ArticleBody = ({ rawMarkdownBody, images, sourceName, sourceUrl }: ArticleBodyProps) => {
     return (
         <div className="maintext-row">
-            <div className="maintext-col" id="article_body">
+            <div className="maintext-col">
                 <Stack w="100%" spacing={8}>
                     <ReactMarkdown
                         rehypePlugins={[rehypeRaw]}
