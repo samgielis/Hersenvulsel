@@ -10,7 +10,7 @@ interface CollectionHeaderProps {
 
 export const CollectionHeader: React.FC<CollectionHeaderProps> = ({ children, onSortMethodChanged }) => {
     return <Stack direction={useBreakpointValue({base: "column", default: "row", sm: "row"})} >
-        <CategoryThemedHeading size="xl">{children}</CategoryThemedHeading>
+        <CategoryThemedHeading size="lg">{children}</CategoryThemedHeading>
         <Spacer />
         <Box>
 

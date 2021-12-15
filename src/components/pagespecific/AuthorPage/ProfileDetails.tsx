@@ -15,10 +15,10 @@ export const ProfileDetails = ({author, profileImgURL}: ProfileDetails) => {
     const authorName = `${author.fname} ${author.lname}`;
 
     return <VStack w="100%" spacing={5}>
-        <Avatar w={{ base: "100px", md: "175px" }} size="full" bg="transparent" name={authorName} src={profileImgURL} />
+        <Avatar w={{ base: "75px", md: "140px" }} size="full" bg="transparent" name={authorName} src={profileImgURL} />
         <Heading
             as="h1"
-            size="4xl"
+            size="2xl"
         >{authorName}</Heading>
         <Text
             textAlign="center"

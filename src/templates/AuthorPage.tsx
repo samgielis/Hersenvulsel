@@ -124,7 +124,7 @@ export default function AuthorPage({
     return (
         <Layout containerSize='lg'>
             <SEO title={`${author.fname} ${author.lname}`} />
-            <Stack spacing={40}>
+            <Stack spacing={20}>
                 <ProfileDetails author={author} profileImgURL={imgUrl} />
                 <ArticleCollection articles={articles} collectionTitle={`DOOR ${author.fname} (${articles.length})`} />
             </Stack>
