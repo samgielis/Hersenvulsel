@@ -5,17 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function createStyleSheetNode(href: string): HTMLLinkElement {
-    const node = document.createElement('link');
-    node.type = 'text/css';
-    node.href = href;
-    node.rel = 'stylesheet';
-    return node;
-}
 interface SEOProperties {
     description?: string;
     lang?: string;
@@ -48,19 +41,6 @@ const SEO = ({
     );
 
     const metaDescription = description || site.siteMetadata.description;
-
-    useEffect(() => {
-        document.head.prepend(
-            createStyleSheetNode(
-                'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
-            )
-        );
-        document.head.prepend(
-            createStyleSheetNode(
-                'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'
-            )
-        );
-    }, []);
 
     return (
         <Helmet
@@ -116,8 +96,6 @@ const SEO = ({
                 }
             ].concat(meta)}
         >
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" />
             <link rel="image_src" href={socialImageUrl} />
 
         </Helmet>
