@@ -35,10 +35,9 @@ export const ArticleTile = ({ title, category, id, image }: Omit<ArticleTileData
                         <Text textTransform="uppercase" className="hv-tile-category">{category}</Text>
                     </b>
 
-                    <Heading m={2} size="2xl" textAlign="center" as="h2" fontWeight="normal" className="hv-tile-title hv-tile-title-default">
+                    <Heading m={2} size="lg" textAlign="center" as="h2" fontWeight="normal" className="hv-tile-title hv-tile-title-default">
                         <LinkOverlay as={Link} to={`/${category}/${id}/`} _hover={{textDecor: "none"}}>
                             <span>
-
                                 <Link
                                     to={`/${category}/${id}/`}
                                     className="thumblink"
