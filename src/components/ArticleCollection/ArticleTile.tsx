@@ -17,36 +17,35 @@ export const ArticleTile = ({ title, category, id, image }: Omit<ArticleTileData
     return (
         <LinkBox>
             <AspectRatio ratio={16 / 9} backgroundColor="black">
-                <Box>
+                <Box w="100%" h="100%">
                     {image ? (
                         <Img
+
                             alt={title}
                             fluid={image}
                             style={{
                                 width: '100%',
                                 height: "100%",
-                                opacity: ".7"
+                                opacity: ".7",
+                                position: "absolute",
+                                zIndex: 0
                             }}
                         />
                     ) : (
                         <div />
                     )}
-                    <b>
-                        <Text textTransform="uppercase" className="hv-tile-category">{category}</Text>
-                    </b>
 
-                    <Heading m={2} size="lg" textAlign="center" as="h2" fontWeight="normal" className="hv-tile-title hv-tile-title-default">
-                        <LinkOverlay as={Link} to={`/${category}/${id}/`} _hover={{textDecor: "none"}}>
-                            <span>
-                                <Link
-                                    to={`/${category}/${id}/`}
-                                    className="thumblink"
-                                >
+                        <Text textTransform="uppercase" className="hv-tile-category">{category}</Text>
+                        <Box w="100%" zIndex={1}>
+
+                            <Heading m={2} size="lg" textAlign="center" as="h2" fontWeight="normal" className="hv-tile-title hv-tile-title-default">
+                                <span>
+                        <LinkOverlay as={Link} to={`/${category}/${id}/`} _hover={{ textDecor: "none" }} className='thumblink' >
                                     {title}
-                                </Link>
-                            </span>
                         </LinkOverlay>
-                    </Heading>
+                                </span>
+                            </Heading>
+                        </Box>
                 </Box>
             </AspectRatio>
         </LinkBox>

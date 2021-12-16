@@ -46,9 +46,6 @@
     padding-right: 20px;
 }
 
-.hv-tile-title {
-    position: absolute;
-}
 
 .hv-tile-title-default span:hover {
     background-color: rgba(222,55,55,0.8);
