@@ -1,4 +1,4 @@
-import { AspectRatio, Link, Stack } from '@chakra-ui/layout';
+import { AspectRatio, Stack } from '@chakra-ui/layout';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import ArticleImage from './ArticleImage';
