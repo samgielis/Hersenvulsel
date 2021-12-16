@@ -14,6 +14,7 @@ import Navbar from '../components/Navbar';
 import CategoryHeader from '../components/CategoryHeader';
 import { Container } from '@chakra-ui/layout';
 import { CustomThemeProvider } from '../components/CustomThemeProvider';
+import { RandomArticlePromotion } from '../components/RandomArticlePromotion';
 
 
 interface LayoutProperties {
@@ -35,6 +36,7 @@ const Layout = ({ children, containerSize }: LayoutProperties): JSX.Element => {
 
     return (
         <CustomThemeProvider>
+            <RandomArticlePromotion/>
             <CategoryHeader />
             <Navbar categories={data.site.siteMetadata.categories} />
             <Container maxW={containerSize === "lg" ? "1200px" : "container.md"}>
