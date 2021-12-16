@@ -97,7 +97,6 @@ const SEO = ({
             ].concat(meta)}
         >
             <link rel="image_src" href={socialImageUrl} />
-
         </Helmet>
     );
 };
