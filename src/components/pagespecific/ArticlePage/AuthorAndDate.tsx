@@ -32,7 +32,7 @@ const AuthorAndDate = ({
                 <Link
                 fontSize={"xl"}
                     style={{ color: 'black' }}
-                    href={authorProfileLink}
+                    to={authorProfileLink}
                 >
                     {authorName}
                 </Link>

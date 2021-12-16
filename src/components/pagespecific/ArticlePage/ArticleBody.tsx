@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import ArticleImage from './ArticleImage';
 import { ArticleSourceReference } from './ArticleSourceReference';
 import rehypeRaw from 'rehype-raw'
+import { ExternalLink } from '../../Link';
 
 export interface FluidArticleImageData {
     srcSet: string;
@@ -51,7 +52,7 @@ const ArticleBody = ({ rawMarkdownBody, images, sourceName, sourceUrl }: Article
                             h3: headingRenderer,
                             h4: headingRenderer,
                             h5: headingRenderer,
-                            a: props => <Link {...props} color="#23527c" />,
+                            a: props => <ExternalLink {...props} color="#23527c" />,
                             iframe: props => <AspectRatio ratio={16/9} ><iframe {...props}/></AspectRatio>,
 
                         }}
