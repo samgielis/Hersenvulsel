@@ -14,7 +14,7 @@ export const CollectionHeader: React.FC<CollectionHeaderProps> = ({ children, on
         <Spacer />
         <Box>
 
-            <Select size="md" onChange={({ currentTarget }) => { onSortMethodChanged(currentTarget.value as SortMethod) }}>
+            <Select borderRadius="none" size="md" onChange={({ currentTarget }) => { onSortMethodChanged(currentTarget.value as SortMethod) }}>
                 <option defaultChecked value='NEWEST_FIRST'>Nieuwste eerst</option>
                 <option value='OLDEST_FIRST'>Oudste eerst</option>
             </Select>
