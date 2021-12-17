@@ -1,0 +1,22 @@
+---
+id: "katten-negeren-mensen"
+title: "Ik hoor je, maar negeer je"
+authorhandle: "shannaverspreet"
+day: "2014/08/12"
+source_url: "https://www.smithsonianmag.com/smart-news/cats-recognize-their-owners-voice-but-choose-to-ignore-it-180948087/"
+source_name: "smithsonianmag.com"
+img_credit: "Sam Gielis"
+keywords: ["katten","negeren","baasje","herkennen"]
+---
+# Ik hoor je, maar negeer je
+Yep. Het is wetenschappelijk bewezen. Je eigen kat hoort je en herkent je wanneer je hem roept. Maar als hij niet komt of zelfs niet de moeite doet om om te kijken, is dat een bewuste keuze. Katten negeren ons gewoon.
+
+Katten kunnen heel aanhankelijk zijn, of net heel afstandelijk. Afhankelijk van hun mood zit het er soms ergens tussenin, maar elke katteneigenaar kent wel het koppig negeren van de beestjes wanneer je ze roept. Volgens een Japans onderzoek weten katten wel degelijk wanneer het baasje roept, maar kiezen ze er soms gewoon voor om strak de andere kant uit te kijken.
+
+![flickr.com](2.jpg "Credit: flickr.com")
+
+De wetenschappers onderwierpen twintig huiskatten aan een klein onderzoek. Ze lieten vier opnames horen waarop de kat met zijn of haar naam werd geroepen - één stem was die van het baasje, de andere drie van volslagen vreemden. De meerderheid van de katten leek geen enkele reactie te geven, maar toch reageerden ze bijna stiekem op het bekende stemgeluid. De oren, poten, staart en ogen bewogen namelijk op een andere manier wanneer ze hun baasje hoorden.
+
+Het is waarschijnlijk wel duidelijk hoeveel katten op dat vlak van honden verschillen. Dat heeft veel te maken met de manier waarop ze onze huisdieren geworden zijn, zeggen de onderzoekers. De mens heeft honden gekweekt om te trainen, om bevelen te kunnen opvolgen, om te kunnen werken. Maar katten hebben zichzelf eigenlijk uitgenodigd in ons huis, duizenden jaren geleden. Toen mensen voor het eerst in 'huizen' gingen wonen en land gingen bewerken, merkten katten dat daar weleens voedsel te rapen viel.
+
+Al die jaren later is er nog niet veel veranderd. Honden zijn gemaakt om te luisteren en bevelen op te volgen, maar katten doen zo'n beetje waar ze zin in hebben. Daarom komen ze ook vaak niet wanneer het 'baasje' roept - wie is er eigenlijk echt de baas?
