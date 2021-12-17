@@ -3,9 +3,9 @@ import React from 'react';
 import SEO from '../components/seo';
 import Layout from '../layouts/default-layout';
 
-const NotFoundPage = (): JSX.Element => (
+const CookiePage = (): JSX.Element => (
     <Layout>
-        <SEO title="Gebruiksvoorwaarden" />
+        <SEO title="Gebruiksvoorwaarden" disableAds />
         <Stack spacing={10}>
             <Heading as="h1" size='xl' textTransform="uppercase">COOKIES & PRIVACY</Heading>
 
@@ -40,4 +40,4 @@ const NotFoundPage = (): JSX.Element => (
     </Layout>
 );
 
-export default NotFoundPage;
+export default CookiePage;
