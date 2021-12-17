@@ -3,9 +3,9 @@ import React from 'react';
 import SEO from '../components/seo';
 import Layout from '../layouts/default-layout';
 
-const NotFoundPage = (): JSX.Element => (
+const GebruiksvoorwaardenPage = (): JSX.Element => (
     <Layout>
-        <SEO title="Gebruiksvoorwaarden" />
+        <SEO title="Gebruiksvoorwaarden"  disableAds/>
         <Stack spacing={5}>
             <Heading as="h1" size='xl' textTransform="uppercase">Gebruiksvoorwaarden</Heading>
 
@@ -118,4 +118,4 @@ const NotFoundPage = (): JSX.Element => (
     </Layout>
 );
 
-export default NotFoundPage;
+export default GebruiksvoorwaardenPage;

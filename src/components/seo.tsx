@@ -16,6 +16,7 @@ interface SEOProperties {
     title: string;
     keywords?: string[];
     socialImageUrl?: string;
+    disableAds?: boolean;
 }
 
 const SEO = ({
@@ -25,6 +26,7 @@ const SEO = ({
     title,
     keywords,
     socialImageUrl = "",
+    disableAds,
 }: SEOProperties): JSX.Element => {
     const { site } = useStaticQuery(
         graphql`
@@ -97,6 +99,7 @@ const SEO = ({
             ].concat(meta)}
         >
             <link rel="image_src" href={socialImageUrl} />
+            {!disableAds && <script data-ad-client="ca-pub-4533326203427746" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>}
         </Helmet>
     );
 };
