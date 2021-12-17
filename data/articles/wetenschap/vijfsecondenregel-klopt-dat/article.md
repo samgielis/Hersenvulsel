@@ -1,0 +1,16 @@
+---
+id: "vijfsecondenregel-klopt-dat"
+title: "Klopt dat wel, die vijfsecondenregel?"
+authorhandle: "shannaverspreet"
+day: "2014/11/04"
+source_url: "https://www.webmd.com/a-to-z-guides/features/5-second-rule-rules-sometimes-?page=1"
+source_name: "webmd.com"
+img_credit: "wikimedia.org"
+keywords: ["vijfsecondenregel"]
+---
+# Klopt dat wel, die vijfsecondenregel?
+Je eten op de grond laten vallen? Five second-rule! Raap het binnen de vijf seconden op, dan is het nog eetbaar. Die theorie heeft de Amerikaanse scholier Jillian Clarke getest - en de resultaten zullen je waarschijnlijk niet verbazen.
+
+Bacteriën twijfelen geen seconde om zich te hechten aan een nieuwe 'host'. De regel is dus complete onzin. Of je eten nu een seconde op de grond ligt of een minuut, maakt geen verschil.
+
+Toch een kleine troost: de kans is groot dat de vloer in je keuken en woonkamer redelijk veilig is. Op een droge ondergrond leven veel minder bacteriën. Buiten kan je best wel wat voorzichtiger zijn...

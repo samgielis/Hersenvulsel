@@ -1,0 +1,18 @@
+---
+id: "virtueel-onthoofd"
+title: "Virtueel onthoofd: de guillotine-simulator"
+authorhandle: "shannaverspreet"
+day: "2014/08/26"
+source_url: "https://www.smithsonianmag.com/smart-news/feel-your-head-roll-with-this-virtual-reality-guillotine-simulator-57969077/?no-ist"
+source_name: "smithsonianmag.com"
+img_credit: "flickr.com/pestoverde"
+keywords: ["game","virtual","reality","onthoofd","guillotine"]
+---
+# Virtueel onthoofd: de guillotine-simulator
+De game-industrie gaat enorm vooruit: tegenwoordig kan je met je hele lichaam een spel besturen. Nu wordt er vooral nog gewerkt aan virtuele realiteit – met een bril op je neus kan je in een spel rondkijken, en het zo ook interactiever besturen. Of je kan virtueel onthoofd worden.
+
+Een groep van jonge ontwikkelaars heeft een kort, maar interessant spel uitgebracht. Het doel: je zet een bril op, waardoor je in de Franse renaissance terechtkomt… onder een guillotine. Je kan je hoofd bewegen om het publiek rond je te zien, de mand waar je hoofd in terecht zal komen en de vlijmscherpe bijl die boven je hangt.
+
+Wanneer de bijl naar beneden valt en virtueel je nek raakt, krijg je in het echt ook een korte tik in je nek. Het klinkt misschien niet zo erg, maar de proefpersonen vonden het spel wel angstaanjagend.
+
+<iframe src="https://player.vimeo.com/video/65510054" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href="https://vimeo.com/65510054">Disunion - The guillotine simulator</a> from <a href="https://vimeo.com/user18138446">Andr&eacute; Berlemont</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
